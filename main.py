@@ -157,8 +157,7 @@ else:
 print("\n📡 Génération : Sorties à venir...")
 
 # Filtres ajoutés :
-# - category = (0, 8, 9) : Uniquement jeux complets, remakes et remasters.
-# - hypes != null : Il faut au moins 1 personne qui l'attend pour éviter les jeux "fantômes".
+# - hypes > 10 : Il faut qu'ils soient un peu demandés.
 query_upcoming = (
     f"{COMMON_FIELDS} "
     f"where first_release_date > {today} & hypes > 10 & cover=! null; "
