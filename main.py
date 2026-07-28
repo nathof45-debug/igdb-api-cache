@@ -17,37 +17,53 @@ headers = {
 
 # 2. Calcul du temps pour le filtrage
 current_time = int(time.time())
-# 90 jours * 24 heures * 60 minutes * 60 secondes
-three_months_ago = current_time - (90 * 24 * 60 * 60) 
+three_months_ago = current_time - (90 * 24 * 60 * 60)
 
-# 3. Requête IGDB sur le PopScore
-# On demande 500 résultats à IGDB pour être sûr d'avoir assez de jeux récents
-query = (
-    "fields game_id.name, game_id.cover.image_id, game_id.rating, game_id.first_release_date, value; "
-    "where popularity_type = 1; "
-    "sort value desc; "
-    "limit 500;"
-)
-pop_score_data = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query).json()
-
-# 4. Nettoyage et filtrage des dates avec Python
+# 3. Requête IGDB avec Pagination (Boucle "While")
 games = []
-for item in pop_score_data:
-    if "game_id" in item:
-        game_info = item["game_id"]
-        release_date = game_info.get("first_release_date")
-        
-        # On vérifie que le jeu possède une date de sortie
-        # Et qu'il est sorti entre il y a 3 mois et aujourd'hui
-        if release_date and (three_months_ago <= release_date <= current_time):
-            # On ajoute le PopScore dans les données du jeu
-            game_info["pop_score"] = item.get("value")
-            games.append(game_info)
+offset = 0
+max_games_to_check = 5000 # Sécurité : on s'arrête après avoir vérifié 5000 jeux
+
+# Tant qu'on n'a pas 50 jeux et qu'on n'a pas dépassé la limite de sécurité
+while len(games) < 50 and offset < max_games_to_check:
+    
+    query = (
+        "fields game_id.name, game_id.cover.image_id, game_id.rating, game_id.first_release_date, value; "
+        "where popularity_type = 1; "
+        "sort value desc; "
+        "limit 500; "
+        f"offset {offset};" # C'est ici qu'on décale la recherche (0, puis 500, puis 1000...)
+    )
+    
+    response = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query)
+    pop_score_data = response.json()
+    
+    # Si l'API ne renvoie plus de données, on arrête tout
+    if not pop_score_data or type(pop_score_data) is not list:
+        break
+
+    # 4. Filtrage des données de cette "page"
+    for item in pop_score_data:
+        if "game_id" in item:
+            game_info = item["game_id"]
+            release_date = game_info.get("first_release_date")
             
-            # Dès qu'on a nos 50 jeux récents, on arrête la recherche
-            if len(games) >= 50:
-                break
+            if release_date and (three_months_ago <= release_date <= current_time):
+                game_info["pop_score"] = item.get("value")
+                games.append(game_info)
+                
+                # On s'arrête dès qu'on en a 50
+                if len(games) >= 50:
+                    break
+    
+    # Petit message qui s'affichera dans les logs de GitHub Actions pour t'aider à suivre
+    print(f"Recherche dans les {offset + 500} jeux les plus populaires... Trouvés : {len(games)}/50")
+    
+    # On prépare le décalage pour la prochaine requête
+    offset += 500
 
 # 5. Sauvegarde du fichier JSON
 with open("popular.json", "w", encoding="utf-8") as f:
     json.dump(games, f, ensure_ascii=False, indent=2)
+    
+print("Terminé ! Le fichier popular.json a été mis à jour.")
