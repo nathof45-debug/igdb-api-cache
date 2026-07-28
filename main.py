@@ -115,7 +115,7 @@ print("\n📡 Génération : Les dernières sorties (Tri par popularité)...")
 query_latest = (
     f"{COMMON_FIELDS} "
     f"where first_release_date >= {fourteen_days_ago} & first_release_date <= {today} "
-    f"& category != (1, 2, 5, 6, 7) & cover != null; "
+    f"& cover != null; "
     f"sort follows desc; "
     f"limit 50;"
 )
