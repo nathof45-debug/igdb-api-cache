@@ -37,6 +37,7 @@ print("✅ Authentification réussie.")
 # ==========================================
 today = int(time.time())
 three_days_ago = today - (3 * 24 * 60 * 60)
+seven_days_ago = today - (7 * 24 * 60 * 60)
 fourteen_days_ago = today - (14 * 24 * 60 * 60)
 three_months_ago = today - (90 * 24 * 60 * 60)
 
@@ -109,15 +110,15 @@ def save_json(data, filename):
 print("\n📡 Génération : Les dernières sorties (Tri par popularité)...")
 
 # Filtres :
-# - Fenêtre de 3 jours (entre three_days_ago et today)
+# - Fenêtre de 7 jours (entre seven_days_ago et today)
 # - cover != null : pour des jeux un peu sérieux
 # - NOUVEAU TRI : sort follows desc (Les jeux les plus suivis en premier)
 query_latest = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date >= {three_days_ago} & first_release_date <= {today} "
+    f"where first_release_date >= {seven_days_ago} & first_release_date <= {today} "
     f"& cover != null & hypes > 0; "
     f"sort hypes desc; "
-    f"limit 50;"
+    f"limit 100;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_latest)
