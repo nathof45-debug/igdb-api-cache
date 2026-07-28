@@ -154,7 +154,7 @@ print("\n📡 Génération : Futurs blockbusters...")
 query_blockbusters = f"{COMMON_FIELDS} where first_release_date > {today} & hypes != null; sort hypes desc; limit 50;"
 res = requests.post(BASE_URL, headers=headers, data=query_blockbusters)
 if res.status_code == 200:
-    cleaned = sorted(cleaned, key=lambda x: x.get("first_release_date") or 9999999999)
+    cleaned = clean_games_data(res.json())
     save_json(cleaned, "blockbusters.json")
 else:
     print(f"❌ Erreur Blockbusters : {res.text}")
