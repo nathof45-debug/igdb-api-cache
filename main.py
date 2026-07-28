@@ -2,11 +2,10 @@ import os
 import json
 import requests
 import time
-from datetime import datetime
 
 print("🔄 Démarrage du script...")
 
-# 1. Authentification
+# 1. Authentification Twitch
 print("🔑 Authentification Twitch en cours...")
 auth_res = requests.post("https://id.twitch.tv/oauth2/token", data={
     "client_id": os.environ["TWITCH_CLIENT_ID"],
@@ -18,87 +17,76 @@ if "access_token" not in auth_res:
     print(f"❌ ERREUR AUTHENTIFICATION: {auth_res}")
     exit(1)
 
-print("✅ Authentification réussie !")
-
 headers = {
     "Client-ID": os.environ["TWITCH_CLIENT_ID"],
     "Authorization": f"Bearer {auth_res['access_token']}"
 }
 
-# 2. Calcul du temps
+# 2. Calcul du temps (Les 3 derniers mois)
 current_time = int(time.time())
 three_months_ago = current_time - (90 * 24 * 60 * 60)
 
-print(f"📅 Recherche des jeux sortis entre le : {datetime.fromtimestamp(three_months_ago)} et le {datetime.fromtimestamp(current_time)}")
-
-# 3. Requête IGDB avec Pagination
+# 3. Boucle de recherche
 games = []
 offset = 0
-max_games_to_check = 5000
+max_games_to_check = 5000 # On fouille jusqu'à 5000 jeux maximum
 
 while len(games) < 50 and offset < max_games_to_check:
-    print(f"\n📡 Envoi de la requête à IGDB (offset: {offset})...")
+    print(f"\n📡 1/2: Récupération des PopScores (offset: {offset})...")
     
-    query = (
-        "fields game_id.name, game_id.cover.image_id, game_id.rating, game_id.first_release_date, value; "
-        "where popularity_type = 1; "
-        "sort value desc; "
-        "limit 500; "
-        f"offset {offset};"
-    )
+    # REQUÊTE 1 : On récupère uniquement les IDs et les Scores
+    query_prims = f"fields game_id, value; where popularity_type = 1; sort value desc; limit 500; offset {offset};"
+    res_prims = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query_prims)
     
-    response = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query)
-    
-    if response.status_code != 200:
-        print(f"❌ ERREUR IGDB ({response.status_code}) : {response.text}")
+    if res_prims.status_code != 200:
+        print(f"❌ ERREUR PRIMITIVES: {res_prims.text}")
         break
         
-    pop_score_data = response.json()
-    print(f"✅ {len(pop_score_data)} résultats reçus pour cette page.")
-    
-    # Afficher la structure du TOUT PREMIER jeu pour vérifier le format de la donnée
-    if offset == 0 and len(pop_score_data) > 0:
-        print("🔍 Structure brute du premier jeu reçu :")
-        print(json.dumps(pop_score_data[0], indent=2))
-
-    if not pop_score_data:
-        print("🛑 Plus aucune donnée renvoyée par IGDB, arrêt de la recherche.")
+    prims_data = res_prims.json()
+    if not prims_data:
+        print("🛑 Plus de données dans le PopScore.")
         break
-
-    # Variables pour compter pourquoi les jeux sont rejetés
-    stats_no_date = 0
-    stats_too_old = 0
-    stats_future = 0
-    stats_added = 0
-
-    # 4. Filtrage
-    for item in pop_score_data:
-        if "game_id" in item:
-            game_info = item["game_id"]
-            release_date = game_info.get("first_release_date")
+        
+    # On stocke les scores dans un dictionnaire pour les associer plus tard { "ID_du_jeu": Score }
+    scores_dict = {}
+    for item in prims_data:
+        if "game_id" in item and "value" in item:
+            scores_dict[str(item["game_id"])] = item["value"]
             
-            if not release_date:
-                stats_no_date += 1
-            elif release_date < three_months_ago:
-                stats_too_old += 1
-            elif release_date > current_time:
-                stats_future += 1
-            else:
-                game_info["pop_score"] = item.get("value")
-                games.append(game_info)
-                stats_added += 1
-                
-                if len(games) >= 50:
-                    break
-
-    print(f"📊 Bilan de la page (offset {offset}) :")
-    print(f"   - Sans date de sortie : {stats_no_date}")
-    print(f"   - Trop vieux (< 3 mois) : {stats_too_old}")
-    print(f"   - Pas encore sortis (futur) : {stats_future}")
-    print(f"   - ✅ Validés et ajoutés : {stats_added}")
-    print(f"   - TOTAL validés pour l'instant : {len(games)}/50")
+    # REQUÊTE 2 : On demande les détails de ces jeux précis, ET on filtre la date directement via l'API !
+    print(f"📡 2/2: Récupération des détails et filtrage des dates pour ces {len(scores_dict)} jeux...")
+    ids_str = ",".join(scores_dict.keys())
     
+    query_games = (
+        f"fields name, cover.image_id, rating, first_release_date; "
+        f"where id = ({ids_str}) & first_release_date >= {three_months_ago} & first_release_date <= {current_time}; "
+        f"limit 500;"
+    )
+    
+    res_games = requests.post("https://api.igdb.com/v4/games", headers=headers, data=query_games)
+    
+    if res_games.status_code != 200:
+        print(f"❌ ERREUR GAMES: {res_games.text}")
+        break
+        
+    games_data = res_games.json()
+    print(f"✅ Trouvés : {len(games_data)} jeux sortis ces 3 derniers mois dans ce lot.")
+    
+    # On ajoute le PopScore aux données du jeu et on l'ajoute à notre liste finale
+    for game in games_data:
+        game["pop_score"] = scores_dict[str(game["id"])]
+        games.append(game)
+        
     offset += 500
+    print(f"📊 Total des jeux récents validés : {len(games)}/50")
+
+# 4. Tri et Nettoyage final
+# IGDB ne renvoie pas les jeux dans l'ordre demandé lors de la 2ème requête, 
+# donc on les trie nous-mêmes par PopScore décroissant.
+games = sorted(games, key=lambda x: x.get("pop_score", 0), reverse=True)
+
+# On coupe la liste pour n'en garder que 50 exactement
+games = games[:50]
 
 # 5. Sauvegarde
 print(f"\n💾 Sauvegarde de {len(games)} jeux dans popular.json...")
