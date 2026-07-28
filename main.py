@@ -115,7 +115,7 @@ print("\n📡 Génération : Les dernières sorties (Tri par popularité)...")
 query_latest = (
     f"{COMMON_FIELDS} "
     f"where first_release_date >= {fourteen_days_ago} & first_release_date <= {today} "
-    f"& category = (0, 8, 9) & cover != null & follows > 0; "
+    f"& category = (0, 8, 9) & cover != null; "
     f"sort follows desc; "
     f"limit 50;"
 )
@@ -160,7 +160,7 @@ print("\n📡 Génération : Sorties à venir...")
 # - hypes != null : Il faut au moins 1 personne qui l'attend pour éviter les jeux "fantômes".
 query_upcoming = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date > {today} & category = (0, 8, 9) & hypes != null; "
+    f"where first_release_date > {today} & category = (0, 8, 9) & cover=! null; "
     f"sort first_release_date asc; "
     f"limit 50;"
 )
