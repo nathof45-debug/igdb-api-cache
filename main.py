@@ -139,16 +139,26 @@ if res_prims.status_code == 200:
 else:
     print(f"❌ Erreur Popular (Primitives) : {res_prims.text}")
 
-# --- CATÉGORIE 3 : Sorties à venir (Attendus) ---
+# --- CATÉGORIE 3 : Sorties à venir (Attendus mais pas forcément blockbusters) ---
 print("\n📡 Génération : Sorties à venir...")
-query_upcoming = f"{COMMON_FIELDS} where first_release_date > {today}; sort first_release_date asc; limit 50;"
+
+# Filtres ajoutés :
+# - category = (0, 8, 9) : Uniquement jeux complets, remakes et remasters.
+# - hypes != null : Il faut au moins 1 personne qui l'attend pour éviter les jeux "fantômes".
+query_upcoming = (
+    f"{COMMON_FIELDS} "
+    f"where first_release_date > {today} & category = (0, 8, 9) & hypes != null; "
+    f"sort first_release_date asc; "
+    f"limit 50;"
+)
+
 res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())
     save_json(cleaned, "upcoming.json")
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
-
+    
 # --- CATÉGORIE 4 : Futurs blockbusters (Les plus attendus via Popscore Type 2) ---
 print("\n📡 Génération : Futurs blockbusters (Popscore)...")
 # Étape A : Top Primitives (Type 2 = Hypes / Attente)
