@@ -200,4 +200,24 @@ if res_prims_bb.status_code == 200:
 else:
     print(f"❌ Erreur Blockbusters (Primitives) : {res_prims_bb.text}")
 
+# --- CATÉGORIE 5 : Les plus attendus sans date (TBD) ---
+print("\n📡 Génération : Les plus attendus sans date...")
+
+query_tbd = (
+    f"{COMMON_FIELDS} "
+    f"where first_release_date = null "
+    f"& cover != null "
+    f"& hypes != null; "
+    f"sort hypes desc; "
+    f"limit 50;"
+)
+
+res = requests.post(BASE_URL, headers=headers, data=query_tbd)
+if res.status_code == 200:
+    cleaned = clean_games_data(res.json())
+    save_json(cleaned, "tbd.json")
+    print("✅ Fichier tbd.json généré avec succès.")
+else:
+    print(f"❌ Erreur TBD : {res.text}")
+
 print("\n🎉 Toutes les catégories ont été générées avec succès !")
