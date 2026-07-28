@@ -118,12 +118,12 @@ query_latest = (
     f"where first_release_date >= {seven_days_ago} & first_release_date <= {today} "
     f"& cover != null & hypes > 0; "
     f"sort hypes desc; "
-    f"limit 100;"
+    f"limit 500;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
-    cleaned = clean_games_data(res.json())
+    cleaned = clean_games_data(res.json())[:50]
     save_json(cleaned, "latest.json")
 else:
     print(f"❌ Erreur Latest : {res.text}")
@@ -163,12 +163,12 @@ query_upcoming = (
     f"where first_release_date > {today}; "
     f" & hypes > 10 & cover=! null;"
     f"sort first_release_date asc; "
-    f"limit 50;"
+    f"limit 500;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
 if res.status_code == 200:
-    cleaned = clean_games_data(res.json())
+    cleaned = clean_games_data(res.json())[:50]
     save_json(cleaned, "upcoming.json")
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
