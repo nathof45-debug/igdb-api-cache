@@ -149,32 +149,14 @@ if res.status_code == 200:
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
 
-# --- CATÉGORIE 4 : Futurs blockbusters (Les plus attendus via Popscore Type 2) ---
-print("\n📡 Génération : Futurs blockbusters (Popscore)...")
-# Étape A : Top Primitives (Type 2 = Hypes / Attente)
-query_prims_bb = "fields game_id, value; where popularity_type = 2; sort value desc; limit 500;"
-res_prims_bb = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query_prims_bb)
-
-if res_prims_bb.status_code == 200:
-    scores_dict_bb = {str(item["game_id"]): item["value"] for item in res_prims_bb.json() if "game_id" in item}
-    ids_str_bb = ",".join(scores_dict_bb.keys())
-    
-    # Étape B : Détails filtrés sur les dates futures
-    if ids_str_bb:
-        query_bb_games = f"{COMMON_FIELDS} where id = ({ids_str_bb}) & first_release_date > {today}; limit 500;"
-        res_bb_games = requests.post(BASE_URL, headers=headers, data=query_bb_games)
-        
-        if res_bb_games.status_code == 200:
-            cleaned_bb = clean_games_data(res_bb_games.json(), scores_dict_bb)
-            
-            # Tri local par date de sortie croissante (du plus proche au plus lointain)
-            # avec la protection contre les dates vides (null), et limitation à 50 jeux
-            cleaned_bb = sorted(cleaned_bb, key=lambda x: x.get("first_release_date") or 9999999999)[:50]
-            
-            save_json(cleaned_bb, "blockbusters.json")
-        else:
-            print(f"❌ Erreur Blockbusters (Games) : {res_bb_games.text}")
+# --- CATÉGORIE 4 : Futurs blockbusters (Les plus attendus) ---
+print("\n📡 Génération : Futurs blockbusters...")
+query_blockbusters = f"{COMMON_FIELDS} where first_release_date > {today} & hypes != null; sort hypes desc; limit 50;"
+res = requests.post(BASE_URL, headers=headers, data=query_blockbusters)
+if res.status_code == 200:
+    cleaned = sorted(cleaned, key=lambda x: x.get("first_release_date") or 9999999999)
+    save_json(cleaned, "blockbusters.json")
 else:
-    print(f"❌ Erreur Blockbusters (Primitives) : {res_prims_bb.text}")
+    print(f"❌ Erreur Blockbusters : {res.text}")
 
 print("\n🎉 Toutes les catégories ont été générées avec succès !")
