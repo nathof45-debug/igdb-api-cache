@@ -116,7 +116,7 @@ query_latest = (
     f"{COMMON_FIELDS} "
     f"where first_release_date >= {three_days_ago} & first_release_date <= {today} "
     f"& cover != null & hypes > 0; "
-    f"sort follows desc; "
+    f"sort hypes desc; "
     f"limit 50;"
 )
 
