@@ -160,7 +160,8 @@ print("\n📡 Génération : Sorties à venir...")
 # - hypes > 10 : Il faut qu'ils soient un peu demandés.
 query_upcoming = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date > {today} & hypes > 10 & cover=! null; "
+    f"where first_release_date > {today}; "
+    f" & hypes > 10 & cover=! null;"
     f"sort first_release_date asc; "
     f"limit 50;"
 )
