@@ -207,7 +207,7 @@ query_tbd = (
     f"{COMMON_FIELDS} "
     f"where first_release_date = null "
     f"& cover != null "
-    f"& hypes != null; "
+    f"& hypes > 10; "
     f"sort hypes desc; "
     f"limit 50;"
 )
