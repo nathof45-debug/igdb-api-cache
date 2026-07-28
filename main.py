@@ -151,12 +151,18 @@ else:
 
 # --- CATÉGORIE 4 : Futurs blockbusters (Les plus attendus) ---
 print("\n📡 Génération : Futurs blockbusters...")
+# 1. On demande à IGDB les 50 plus gros blockbusters (triés par hypes)
 query_blockbusters = f"{COMMON_FIELDS} where first_release_date > {today} & hypes != null; sort hypes desc; limit 50;"
 res = requests.post(BASE_URL, headers=headers, data=query_blockbusters)
+
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())
+    
+    # 2. NOUVEAU : On trie cette liste localement par date de sortie croissante
+    cleaned = sorted(cleaned, key=lambda x: x.get("first_release_date", 0))
+    
     save_json(cleaned, "blockbusters.json")
 else:
     print(f"❌ Erreur Blockbusters : {res.text}")
-
+    
 print("\n🎉 Toutes les catégories ont été générées avec succès !")
