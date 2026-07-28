@@ -104,9 +104,22 @@ def save_json(data, filename):
 # 4. EXÉCUTION DES CATÉGORIES
 # ==========================================
 
-# --- CATÉGORIE 1 : Les dernières sorties (14 jours) ---
-print("\n📡 Génération : Les dernières sorties...")
-query_latest = f"{COMMON_FIELDS} where first_release_date >= {fourteen_days_ago} & first_release_date <= {today}; sort first_release_date desc; limit 50;"
+# --- CATÉGORIE 1 : Les dernières sorties (Les 50 meilleurs jeux des 14 derniers jours) ---
+print("\n📡 Génération : Les dernières sorties (Tri par popularité)...")
+
+# Filtres :
+# - Fenêtre de 14 jours (entre fourteen_days_ago et today)
+# - category = (0, 8, 9) : Uniquement jeux complets, remakes et remasters
+# - cover != null : Indispensable pour l'UI
+# - NOUVEAU TRI : sort follows desc (Les jeux les plus suivis en premier)
+query_latest = (
+    f"{COMMON_FIELDS} "
+    f"where first_release_date >= {fourteen_days_ago} & first_release_date <= {today} "
+    f"& category = (0, 8, 9) & cover != null & follows > 0; "
+    f"sort follows desc; "
+    f"limit 50;"
+)
+
 res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())
