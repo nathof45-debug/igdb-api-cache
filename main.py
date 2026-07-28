@@ -161,7 +161,7 @@ print("\n📡 Génération : Sorties à venir...")
 query_upcoming = (
     f"{COMMON_FIELDS} "
     f"where first_release_date > {today}; "
-    f" & hypes > 10 & cover=! null;"
+    f" & hypes > 5 & cover=! null;"
     f"sort first_release_date asc; "
     f"limit 500;"
 )
