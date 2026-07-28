@@ -1,14 +1,22 @@
-name: Sync IGDB Data
+name: Generate IGDB BFF
 
+# QUAND LANCER LE WORKFLOW ?
 on:
   schedule:
-    - cron: '0 2 * * *'
-  workflow_dispatch:
+    - cron: '0 3 * * *'  # Automatiquement tous les jours à 3h00 du matin (UTC)
+  workflow_dispatch:     # Permet d'afficher le bouton pour le lancer manuellement
+  push:
+    branches:
+      - main             # (ou 'master' selon le nom de ta branche principale)
+
+# PERMISSIONS REQUISES
+permissions:
+  contents: write        # Indispensable pour que le bot puisse créer la branche gh-pages
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-   steps:
+    steps:
       - uses: actions/checkout@v3
       
       - name: Set up Python
