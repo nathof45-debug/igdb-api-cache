@@ -36,6 +36,7 @@ print("✅ Authentification réussie.")
 # 2. CONFIGURATION DES DATES ET CHAMPS
 # ==========================================
 today = int(time.time())
+three_days_ago = today - (3 * 24 * 60 * 60)
 fourteen_days_ago = today - (14 * 24 * 60 * 60)
 three_months_ago = today - (90 * 24 * 60 * 60)
 
@@ -108,14 +109,13 @@ def save_json(data, filename):
 print("\n📡 Génération : Les dernières sorties (Tri par popularité)...")
 
 # Filtres :
-# - Fenêtre de 14 jours (entre fourteen_days_ago et today)
-# - category = (0, 8, 9) : Uniquement jeux complets, remakes et remasters
-# - cover != null : Indispensable pour l'UI
+# - Fenêtre de 3 jours (entre three_days_ago et today)
+# - cover != null : pour des jeux un peu sérieux
 # - NOUVEAU TRI : sort follows desc (Les jeux les plus suivis en premier)
 query_latest = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date >= {fourteen_days_ago} & first_release_date <= {today} "
-    f"& cover != null & follows > 0; "
+    f"where first_release_date >= {three_days_ago} & first_release_date <= {today} "
+    f"& cover != null & hypes > 0; "
     f"sort follows desc; "
     f"limit 50;"
 )
