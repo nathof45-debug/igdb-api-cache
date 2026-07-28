@@ -29,12 +29,11 @@ three_months_ago = current_time - (90 * 24 * 60 * 60)
 # 3. Boucle de recherche
 games = []
 offset = 0
-max_games_to_check = 5000 # On fouille jusqu'à 5000 jeux maximum
+max_games_to_check = 5000
 
 while len(games) < 50 and offset < max_games_to_check:
     print(f"\n📡 1/2: Récupération des PopScores (offset: {offset})...")
     
-    # REQUÊTE 1 : On récupère uniquement les IDs et les Scores
     query_prims = f"fields game_id, value; where popularity_type = 1; sort value desc; limit 500; offset {offset};"
     res_prims = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query_prims)
     
@@ -44,21 +43,22 @@ while len(games) < 50 and offset < max_games_to_check:
         
     prims_data = res_prims.json()
     if not prims_data:
-        print("🛑 Plus de données dans le PopScore.")
         break
         
-    # On stocke les scores dans un dictionnaire pour les associer plus tard { "ID_du_jeu": Score }
     scores_dict = {}
     for item in prims_data:
         if "game_id" in item and "value" in item:
             scores_dict[str(item["game_id"])] = item["value"]
             
-    # REQUÊTE 2 : On demande les détails de ces jeux précis, ET on filtre la date directement via l'API !
     print(f"📡 2/2: Récupération des détails et filtrage des dates pour ces {len(scores_dict)} jeux...")
     ids_str = ",".join(scores_dict.keys())
     
+    # --- NOUVELLE REQUÊTE ENRICHIE ---
     query_games = (
-        f"fields name, cover.image_id, rating, first_release_date; "
+        f"fields name, cover.image_id, rating, first_release_date, "
+        f"platforms.name, genres.name, "
+        f"involved_companies.developer, involved_companies.publisher, involved_companies.company.name, "
+        f"language_supports.language.name; "
         f"where id = ({ids_str}) & first_release_date >= {three_months_ago} & first_release_date <= {current_time}; "
         f"limit 500;"
     )
@@ -70,22 +70,55 @@ while len(games) < 50 and offset < max_games_to_check:
         break
         
     games_data = res_games.json()
-    print(f"✅ Trouvés : {len(games_data)} jeux sortis ces 3 derniers mois dans ce lot.")
     
-    # On ajoute le PopScore aux données du jeu et on l'ajoute à notre liste finale
+    # --- NETTOYAGE ET FORMATAGE POUR LE MOBILE ---
     for game in games_data:
-        game["pop_score"] = scores_dict[str(game["id"])]
-        games.append(game)
+        # Création d'un objet propre et plat
+        clean_game = {
+            "id": game.get("id"),
+            "name": game.get("name"),
+            "cover": game.get("cover"),
+            "rating": game.get("rating"),
+            "first_release_date": game.get("first_release_date"),
+            "pop_score": scores_dict[str(game["id"])]
+        }
+
+        # Extraction des plateformes (Liste de strings)
+        clean_game["platforms"] = [p.get("name") for p in game.get("platforms", []) if "name" in p]
+        
+        # Extraction des genres (Liste de strings)
+        clean_game["genres"] = [g.get("name") for g in game.get("genres", []) if "name" in g]
+
+        # Tri des développeurs et éditeurs
+        devs = []
+        pubs = []
+        for company in game.get("involved_companies", []):
+            comp_name = company.get("company", {}).get("name")
+            if comp_name:
+                if company.get("developer"):
+                    devs.append(comp_name)
+                if company.get("publisher"):
+                    pubs.append(comp_name)
+        
+        clean_game["developers"] = devs
+        clean_game["publishers"] = pubs
+
+        # Extraction des langues (Utilisation de 'set' pour éviter les doublons si une langue a audio + sous-titres)
+        langs = set()
+        for lang in game.get("language_supports", []):
+            lang_name = lang.get("language", {}).get("name")
+            if lang_name:
+                langs.add(lang_name)
+        clean_game["languages"] = list(langs)
+
+        # Ajout du jeu nettoyé à notre liste finale
+        games.append(clean_game)
         
     offset += 500
     print(f"📊 Total des jeux récents validés : {len(games)}/50")
 
 # 4. Tri et Nettoyage final
-# IGDB ne renvoie pas les jeux dans l'ordre demandé lors de la 2ème requête, 
-# donc on les trie nous-mêmes par PopScore décroissant.
 games = sorted(games, key=lambda x: x.get("pop_score", 0), reverse=True)
-
-# On coupe la liste pour n'en garder que 50 exactement
 games = games[:50]
 
 # 5. Sauvegarde
