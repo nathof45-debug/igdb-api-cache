@@ -183,7 +183,7 @@ query_bb_games = (
     f"{COMMON_FIELDS} "
     f"where release_dates.y >= {current_year} "
     f"& (first_release_date > {today} | first_release_date = null) "
-    f"& hypes != null "
+    f"& hypes > 10 "
     f"& cover != null; "
     f"sort hypes desc; "
     f"limit 500;"
