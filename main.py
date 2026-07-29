@@ -41,6 +41,8 @@ seven_days_ago = today - (7 * 24 * 60 * 60)
 fourteen_days_ago = today - (14 * 24 * 60 * 60)
 three_months_ago = today - (90 * 24 * 60 * 60)
 
+current_year = datetime.datetime.now().year #Renvoit l'année en cours
+
 # Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, first_release_date, "
@@ -123,7 +125,7 @@ query_latest = (
 
 res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
-    cleaned = clean_games_data(res.json())[:50]
+    cleaned = clean_games_data(res.json())[:100]
     save_json(cleaned, "latest.json")
 else:
     print(f"❌ Erreur Latest : {res.text}")
@@ -146,7 +148,7 @@ if res_prims.status_code == 200:
         if res_games.status_code == 200:
             cleaned = clean_games_data(res_games.json(), scores_dict)
             # Tri local par pop_score décroissant et limitation à 50
-            cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)[:50]
+            cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)[:100]
             save_json(cleaned, "popular.json")
         else:
             print(f"❌ Erreur Popular (Games) : {res_games.text}")
@@ -167,7 +169,7 @@ query_upcoming = (
 
 res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
 if res.status_code == 200:
-    cleaned = clean_games_data(res.json())[:50]
+    cleaned = clean_games_data(res.json())[:100]
     save_json(cleaned, "upcoming.json")
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
@@ -182,9 +184,16 @@ if res_prims_bb.status_code == 200:
     scores_dict_bb = {str(item["game_id"]): item["value"] for item in res_prims_bb.json() if "game_id" in item}
     ids_str_bb = ",".join(scores_dict_bb.keys())
     
-    # Étape B : Détails filtrés sur les dates futures
+   # Étape B : Détails filtrés sur les dates futures ou les années à venir
     if ids_str_bb:
-        query_bb_games = f"{COMMON_FIELDS} where id = ({ids_str_bb}) & first_release_date > {today}; limit 500;"
+        # ⚠️ NOUVELLE REQUÊTE : On combine les IDs avec la vérification de l'année et de la date
+        query_bb_games = (
+            f"{COMMON_FIELDS} "
+            f"where id = ({ids_str_bb}) "
+            f"& release_dates.y >= {current_year} "
+            f"& (first_release_date > {today} | first_release_date = null); "
+            f"limit 500;"
+        )
         res_bb_games = requests.post(BASE_URL, headers=headers, data=query_bb_games)
         
         if res_bb_games.status_code == 200:
@@ -192,7 +201,7 @@ if res_prims_bb.status_code == 200:
             
             # Tri local par date de sortie croissante (du plus proche au plus lointain)
             # avec la protection contre les dates vides (null), et limitation à 50 jeux
-            cleaned_bb = sorted(cleaned_bb, key=lambda x: x.get("first_release_date") or 9999999999)[:50]
+            cleaned_bb = sorted(cleaned_bb, key=lambda x: x.get("first_release_date") or 9999999999)[:100]
             
             save_json(cleaned_bb, "blockbusters.json")
         else:
@@ -209,7 +218,7 @@ query_tbd = (
     f"& cover != null "
     f"& hypes > 10; "
     f"sort hypes desc; "
-    f"limit 50;"
+    f"limit 100;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_tbd)
