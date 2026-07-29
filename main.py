@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import time
+import datetime
 
 print("🔄 Démarrage du script de génération du BFF IGDB...")
 
