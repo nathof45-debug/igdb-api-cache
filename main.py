@@ -175,33 +175,65 @@ if res.status_code == 200:
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
     
-# --- CATÉGORIE 4 : Futurs blockbusters (Les plus attendus) ---
-print("\n📡 Génération : Futurs blockbusters...")
+# --- CATÉGORIE 4 : Futurs blockbusters (Les plus attendus via Popscore Type 2) ---
+print("\n📡 Génération : Futurs blockbusters (Popscore - Multi-pages)...")
 
-# Requête directe sur l'endpoint 'games' : on filtre sur les dates d'abord, puis on trie par attente
-query_bb_games = (
-    f"{COMMON_FIELDS} "
-    f"where release_dates.y >= {current_year} "
-    f"& (first_release_date > {today} | first_release_date = null) "
-    f"& hypes > 10 "
-    f"& cover != null; "
-    f"sort hypes desc; "
-    f"limit 500;"
-)
-
-res_bb_games = requests.post(BASE_URL, headers=headers, data=query_bb_games)
-
-if res_bb_games.status_code == 200:
-    # Plus besoin de passer scores_dict_bb en deuxième paramètre car on ne fait plus l'Étape A
-    cleaned_bb = clean_games_data(res_bb_games.json()) 
+# Étape A : Parcourir le Top 2500 de Popscore (par pages de 500 via offset)
+scores_dict_bb = {}
+# On fait 5 appels pour récupérer le top 2500 historique
+for offset in [0, 500, 1000, 1500, 2000]:
+    query_prims = f"fields game_id, value; where popularity_type = 2; sort value desc; limit 500; offset {offset};"
+    res_prims = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query_prims)
     
-    # Tri local par date de sortie croissante (du plus proche au plus lointain)
-    cleaned_bb = sorted(cleaned_bb, key=lambda x: x.get("first_release_date") or 9999999999)[:100]
+    if res_prims.status_code == 200:
+        for item in res_prims.json():
+            if "game_id" in item:
+                scores_dict_bb[str(item["game_id"])] = item["value"]
+    else:
+        print(f"❌ Erreur Popscore offset {offset}")
+
+all_ids = list(scores_dict_bb.keys())
+future_blockbusters = []
+
+# Étape B : Interroger l'endpoint Games par lots (chunks) de 500 IDs
+# On parcourt nos 2500 IDs en coupant par paquets de 500
+for i in range(0, len(all_ids), 500):
+    chunk_ids = ",".join(all_ids[i:i+500])
     
-    save_json(cleaned_bb, "blockbusters.json")
-    print("✅ Fichier blockbusters.json généré avec 100 jeux.")
-else:
-    print(f"❌ Erreur Blockbusters : {res_bb_games.text}")
+    # On applique ta condition exigeante : Date future OU Année future
+    query_bb_games = (
+        f"{COMMON_FIELDS} "
+        f"where id = ({chunk_ids}) "
+        f"& release_dates.y >= {current_year} "
+        f"& (first_release_date > {today} | first_release_date = null); "
+        f"limit 500;"
+    )
+    
+    res_bb_games = requests.post(BASE_URL, headers=headers, data=query_bb_games)
+    
+    if res_bb_games.status_code == 200:
+        future_blockbusters.extend(res_bb_games.json())
+        
+        # ⚡ OPTIMISATION BFF : Les IDs étant classés par Popscore décroissant,
+        # dès qu'on a trouvé nos 50 futurs hits, on arrête de spammer l'API !
+        if len(future_blockbusters) >= 50:
+            break
+    else:
+        print(f"❌ Erreur Games chunk {i} : {res_bb_games.text}")
+
+# Étape C : Nettoyage et tri final
+cleaned_bb = clean_games_data(future_blockbusters, scores_dict_bb)
+
+# 1. On coupe d'abord pour s'assurer de ne garder strictement que les 50 plus gros blockbusters.
+# (Ils sont déjà dans l'ordre d'attente car on a parcouru les IDs par Popscore décroissant à l'Étape B)
+top_50_blockbusters = cleaned_bb[:50]
+
+# 2. On trie ces 50 mastodontes par ordre chronologique (du plus proche au plus lointain),
+# en repoussant les jeux sans date exacte (first_release_date = null) à la fin grâce au timestamp géant.
+cleaned_bb_sorted = sorted(top_50_blockbusters, key=lambda x: x.get("first_release_date") or 9999999999)
+
+save_json(cleaned_bb_sorted, "blockbusters.json")
+print(f"✅ Fichier blockbusters.json généré avec {len(cleaned_bb_sorted)} hits majeurs, triés chronologiquement.")
 
 # --- CATÉGORIE 5 : Les plus attendus sans date (TBD) ---
 print("\n📡 Génération : Les plus attendus sans date...")
