@@ -44,6 +44,9 @@ three_months_ago = today - (90 * 24 * 60 * 60)
 
 current_year = datetime.datetime.now().year #Renvoit l'année en cours
 
+next_week = today + 604800 # Calcul de la limite dans 7 jours
+
+
 # Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, first_release_date, "
@@ -156,14 +159,14 @@ if res_prims.status_code == 200:
 else:
     print(f"❌ Erreur Popular (Primitives) : {res_prims.text}")
 
-# --- CATÉGORIE 3 : Sorties à venir (Attendus mais pas forcément blockbusters) ---
+# --- CATÉGORIE 3 : Sorties de la semaine (Attendus mais pas forcément blockbusters) ---
 print("\n📡 Génération : Sorties à venir...")
 
 # Filtres ajoutés :
 # - hypes > 5 : Il faut qu'ils soient un peu demandés.
 query_upcoming = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date > {today} & hypes > 10; "
+    f"where first_release_date > {today} & first_release_date <= {next_week} & hypes > 10; "
     f"sort first_release_date asc; "
     f"limit 500;"
 )
