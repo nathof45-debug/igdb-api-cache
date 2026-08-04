@@ -115,7 +115,7 @@ def save_json(data, filename):
 # ==========================================
 
 # --- CATÉGORIE 1 : Les dernières sorties (Les 50 meilleurs jeux des 14 derniers jours) ---
-print("\n📡 Génération : Les dernières sorties (Tri par popularité)...")
+print("\n📡 Génération : Les dernières sorties (Les 50 meilleurs jeux des 14 derniers jours, trié par popularité)...")
 
 # Filtres :
 # - Fenêtre de 7 jours (entre seven_days_ago et today)
@@ -133,11 +133,12 @@ res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
     save_json(cleaned, "latest.json")
+    print("✅ Fichier latest.json généré avec succès.")
 else:
     print(f"❌ Erreur Latest : {res.text}")
 
-# --- CATÉGORIE 2 : Populaires récemment (1 mois) ---
-print("\n📡 Génération : Populaires récemment...")
+# --- CATÉGORIE 2 : Populaires actuellement (1 mois) ---
+print("\n📡 Génération : Populaires actuellement...")
 # Étape A : Top Primitives
 query_prims = "fields game_id, value; where popularity_type = 1; sort value desc; limit 500;"
 res_prims = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query_prims)
@@ -156,13 +157,14 @@ if res_prims.status_code == 200:
             # Tri local par pop_score décroissant et limitation à 50
             cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)[:100]
             save_json(cleaned, "popular.json")
+            print("✅ Fichier popular.json généré avec succès.")
         else:
             print(f"❌ Erreur Popular (Games) : {res_games.text}")
 else:
     print(f"❌ Erreur Popular (Primitives) : {res_prims.text}")
 
 # --- CATÉGORIE 3 : Sorties populaires de la semaine (Attendus mais pas forcément blockbusters) ---
-print("\n📡 Génération : Sorties à venir...")
+print("\n📡 Génération : Sorties populaires de la semaine...")
 
 # Filtres ajoutés :
 # - hypes > 5 : Il faut qu'ils soient un peu demandés.
@@ -177,6 +179,7 @@ res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
     save_json(cleaned, "upcoming.json")
+    print("✅ Fichier upcoming.json généré avec succès.")
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
     
@@ -241,7 +244,7 @@ save_json(cleaned_bb_sorted, "blockbusters.json")
 print(f"✅ Fichier blockbusters.json généré avec {len(cleaned_bb_sorted)} hits majeurs, triés chronologiquement.")
 
 # --- CATÉGORIE 5 : Les plus attendus sans date (TBD) ---
-print("\n📡 Génération : Les plus attendus sans date...")
+print("\n📡 Génération : Jeux annoncés (Les plus attendus sans date...)")
 
 query_tbd = (
     f"{COMMON_FIELDS} "
