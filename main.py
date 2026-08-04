@@ -37,15 +37,17 @@ print("✅ Authentification réussie.")
 # 2. CONFIGURATION DES DATES ET CHAMPS
 # ==========================================
 today = int(time.time())
+
 three_days_ago = today - (3 * 24 * 60 * 60)
 seven_days_ago = today - (7 * 24 * 60 * 60)
 fourteen_days_ago = today - (14 * 24 * 60 * 60)
-three_months_ago = today - (90 * 24 * 60 * 60)
 
-current_year = datetime.datetime.now().year #Renvoit l'année en cours
+one_month_ago = today - (30 * 24 * 60 *60)
+three_months_ago = today - (90 * 24 * 60 * 60)
 
 next_week = today + 604800 # Calcul de la limite dans 7 jours
 
+current_year = datetime.datetime.now().year #Renvoit l'année en cours
 
 # Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
 COMMON_FIELDS = (
@@ -134,7 +136,7 @@ if res.status_code == 200:
 else:
     print(f"❌ Erreur Latest : {res.text}")
 
-# --- CATÉGORIE 2 : Populaires récemment (3 mois) ---
+# --- CATÉGORIE 2 : Populaires récemment (1 mois) ---
 print("\n📡 Génération : Populaires récemment...")
 # Étape A : Top Primitives
 query_prims = "fields game_id, value; where popularity_type = 1; sort value desc; limit 500;"
@@ -144,9 +146,9 @@ if res_prims.status_code == 200:
     scores_dict = {str(item["game_id"]): item["value"] for item in res_prims.json() if "game_id" in item}
     ids_str = ",".join(scores_dict.keys())
     
-    # Étape B : Détails filtrés sur les 3 derniers mois
+    # Étape B : Détails filtrés sur le dernier mois
     if ids_str:
-        query_popular = f"{COMMON_FIELDS} where id = ({ids_str}) & first_release_date >= {three_months_ago} & first_release_date <= {today}; limit 500;"
+        query_popular = f"{COMMON_FIELDS} where id = ({ids_str}) & first_release_date >= {one_month_ago} & first_release_date <= {today}; limit 500;"
         res_games = requests.post(BASE_URL, headers=headers, data=query_popular)
         
         if res_games.status_code == 200:
@@ -159,14 +161,14 @@ if res_prims.status_code == 200:
 else:
     print(f"❌ Erreur Popular (Primitives) : {res_prims.text}")
 
-# --- CATÉGORIE 3 : Sorties de la semaine (Attendus mais pas forcément blockbusters) ---
+# --- CATÉGORIE 3 : Sorties populaires de la semaine (Attendus mais pas forcément blockbusters) ---
 print("\n📡 Génération : Sorties à venir...")
 
 # Filtres ajoutés :
 # - hypes > 5 : Il faut qu'ils soient un peu demandés.
 query_upcoming = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date > {today} & first_release_date <= {next_week} & hypes > 10; "
+    f"where first_release_date > {today} & first_release_date <= {next_week} & hypes > 7; "
     f"sort first_release_date asc; "
     f"limit 500;"
 )
