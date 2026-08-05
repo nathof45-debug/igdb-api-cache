@@ -8,7 +8,7 @@
     },
     "rating": null,
     "first_release_date": 1785283200,
-    "pop_score": 0.00413378947562,
+    "pop_score": 0.004465311603051,
     "platforms": [
       "Xbox Series X|S",
       "PC (Microsoft Windows)",
@@ -25,16 +25,16 @@
       "Skystone Games"
     ],
     "languages": [
+      "Chinese (Simplified)",
+      "English",
+      "German",
+      "Russian",
+      "Spanish (Spain)",
       "Korean",
       "Portuguese (Brazil)",
-      "Russian",
-      "Chinese (Traditional)",
-      "German",
-      "Chinese (Simplified)",
       "French",
       "Japanese",
-      "Spanish (Spain)",
-      "English"
+      "Chinese (Traditional)"
     ]
   },
   {
@@ -46,7 +46,7 @@
     },
     "rating": 73.81171151154805,
     "first_release_date": 1783641600,
-    "pop_score": 0.003319906564403,
+    "pop_score": 0.004059783808627,
     "platforms": [
       "Xbox Series X|S",
       "PC (Microsoft Windows)",
@@ -68,21 +68,21 @@
       "PocketPair"
     ],
     "languages": [
+      "Chinese (Simplified)",
+      "German",
+      "Turkish",
+      "Russian",
       "Portuguese (Brazil)",
       "Korean",
-      "Polish",
-      "Italian",
-      "Chinese (Traditional)",
-      "Russian",
-      "German",
-      "Chinese (Simplified)",
-      "French",
-      "Japanese",
       "Spanish (Spain)",
+      "French",
+      "Polish",
+      "Vietnamese",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Italian",
       "English",
-      "Turkish",
-      "Thai",
-      "Vietnamese"
+      "Thai"
     ]
   },
   {
@@ -94,7 +94,7 @@
     },
     "rating": 63.08840140300815,
     "first_release_date": 1785196800,
-    "pop_score": 0.00258419319833,
+    "pop_score": 0.002311508428219,
     "platforms": [
       "Xbox Series X|S",
       "PC (Microsoft Windows)",
@@ -111,18 +111,18 @@
       "Xbox Game Studios"
     ],
     "languages": [
-      "Korean",
-      "Polish",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Chinese (Traditional)",
-      "Russian",
       "German",
-      "French",
       "Chinese (Simplified)",
+      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "French",
+      "Polish",
       "Spanish (Mexico)",
       "Japanese",
-      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Italian",
       "English"
     ]
   },
@@ -135,7 +135,7 @@
     },
     "rating": null,
     "first_release_date": 1785542400,
-    "pop_score": 0.001816292372492,
+    "pop_score": 0.002009615514592,
     "platforms": [
       "Web browser"
     ],
@@ -151,80 +151,6 @@
     ]
   },
   {
-    "id": 337738,
-    "name": "Assassin's Creed Black Flag Resynced",
-    "cover": {
-      "id": 558374,
-      "image_id": "cobyue"
-    },
-    "rating": 85.2589958173788,
-    "first_release_date": 1783555200,
-    "pop_score": 0.001085177214957,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "developers": [
-      "Ubisoft Singapore"
-    ],
-    "publishers": [
-      "Ubisoft Entertainment"
-    ],
-    "languages": [
-      "Korean",
-      "Portuguese (Brazil)",
-      "Arabic",
-      "Polish",
-      "Italian",
-      "Chinese (Traditional)",
-      "Russian",
-      "German",
-      "French",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Spanish (Spain)",
-      "English"
-    ]
-  },
-  {
-    "id": 352789,
-    "name": "Shift at Midnight",
-    "cover": {
-      "id": 470274,
-      "image_id": "coa2v6"
-    },
-    "rating": null,
-    "first_release_date": 1784678400,
-    "pop_score": 0.000924239916129,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Simulator",
-      "Indie"
-    ],
-    "developers": [],
-    "publishers": [
-      "Kwalee"
-    ],
-    "languages": [
-      "Portuguese (Brazil)",
-      "Russian",
-      "Chinese (Traditional)",
-      "German",
-      "French",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Spanish (Spain)",
-      "English"
-    ]
-  },
-  {
     "id": 348180,
     "name": "Beast of Reincarnation",
     "cover": {
@@ -233,7 +159,7 @@
     },
     "rating": null,
     "first_release_date": 1785801600,
-    "pop_score": 0.00078629365999,
+    "pop_score": 0.00171673432973,
     "platforms": [
       "Xbox Series X|S",
       "PC (Microsoft Windows)",
@@ -250,130 +176,91 @@
       "Fictions"
     ],
     "languages": [
-      "Korean",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Chinese (Traditional)",
       "German",
-      "French",
       "Chinese (Simplified)",
-      "Japanese",
+      "Korean",
       "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "French",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Italian",
       "English"
     ]
   },
   {
-    "id": 348977,
-    "name": "Splatoon Raiders",
+    "id": 337738,
+    "name": "Assassin's Creed Black Flag Resynced",
     "cover": {
-      "id": 557916,
-      "image_id": "cobyho"
+      "id": 558374,
+      "image_id": "cobyue"
     },
-    "rating": 94.0,
-    "first_release_date": 1784764800,
-    "pop_score": 0.000639150986776,
-    "platforms": [
-      "Nintendo Switch 2"
-    ],
-    "genres": [
-      "Shooter",
-      "Adventure"
-    ],
-    "developers": [
-      "Nintendo EPD Production Group No. 5"
-    ],
-    "publishers": [
-      "Nintendo"
-    ],
-    "languages": [
-      "Korean",
-      "Italian",
-      "Chinese (Traditional)",
-      "Dutch",
-      "German",
-      "Chinese (Simplified)",
-      "French",
-      "English (UK)",
-      "Spanish (Mexico)",
-      "Spanish (Spain)",
-      "English",
-      "Japanese"
-    ]
-  },
-  {
-    "id": 393932,
-    "name": "Echoes of Aincrad",
-    "cover": {
-      "id": 546821,
-      "image_id": "cobpxh"
-    },
-    "rating": null,
+    "rating": 85.2589958173788,
     "first_release_date": 1783555200,
-    "pop_score": 0.000570177858706,
+    "pop_score": 0.000977772571001,
     "platforms": [
       "Xbox Series X|S",
       "PC (Microsoft Windows)",
       "PlayStation 5"
     ],
     "genres": [
-      "Role-playing (RPG)",
+      "Platform",
+      "Hack and slash/Beat 'em up",
       "Adventure"
     ],
     "developers": [
-      "Game Studio Inc."
+      "Ubisoft Singapore"
     ],
     "publishers": [
-      "Bandai Namco Entertainment Inc."
+      "Ubisoft Entertainment"
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Korean",
-      "Italian",
-      "Chinese (Traditional)",
-      "Russian",
       "German",
-      "French",
       "Chinese (Simplified)",
-      "Spanish (Mexico)",
-      "Japanese",
+      "Arabic",
+      "Korean",
       "Spanish (Spain)",
-      "English",
-      "Thai"
+      "Portuguese (Brazil)",
+      "Russian",
+      "French",
+      "Polish",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Italian",
+      "English"
     ]
   },
   {
-    "id": 400094,
-    "name": "Sir, We Have an Orc Problem",
+    "id": 352789,
+    "name": "Shift at Midnight",
     "cover": {
-      "id": 559962,
-      "image_id": "coc02i"
+      "id": 470274,
+      "image_id": "coa2v6"
     },
     "rating": null,
-    "first_release_date": 1785196800,
-    "pop_score": 0.000565579650168,
+    "first_release_date": 1784678400,
+    "pop_score": 0.000833584910761,
     "platforms": [
-      "Linux",
+      "Xbox Series X|S",
       "PC (Microsoft Windows)"
     ],
     "genres": [
       "Simulator",
-      "Strategy",
       "Indie"
     ],
-    "developers": [
-      "Mumpitz Games"
+    "developers": [],
+    "publishers": [
+      "Kwalee"
     ],
-    "publishers": [],
     "languages": [
-      "Korean",
-      "Polish",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Dutch",
-      "Chinese (Traditional)",
+      "German",
       "Chinese (Simplified)",
-      "Japanese",
+      "Russian",
       "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "French",
+      "Japanese",
+      "Chinese (Traditional)",
       "English"
     ]
   },
@@ -386,7 +273,7 @@
     },
     "rating": null,
     "first_release_date": 1785801600,
-    "pop_score": 0.000409240559878,
+    "pop_score": 0.000711926572434,
     "platforms": [
       "Nintendo Switch 2",
       "PC (Microsoft Windows)",
@@ -406,19 +293,134 @@
       "Panic"
     ],
     "languages": [
-      "Korean",
-      "Polish",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
-      "Chinese (Traditional)",
       "German",
-      "French",
       "Chinese (Simplified)",
-      "Japanese",
+      "Turkish",
+      "Korean",
       "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "French",
+      "Polish",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Italian",
+      "English"
+    ]
+  },
+  {
+    "id": 393932,
+    "name": "Echoes of Aincrad",
+    "cover": {
+      "id": 546821,
+      "image_id": "cobpxh"
+    },
+    "rating": null,
+    "first_release_date": 1783555200,
+    "pop_score": 0.000639832742314,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "developers": [
+      "Game Studio Inc."
+    ],
+    "publishers": [
+      "Bandai Namco Entertainment Inc."
+    ],
+    "languages": [
+      "Chinese (Simplified)",
+      "German",
+      "Russian",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Korean",
+      "French",
+      "Spanish (Mexico)",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Italian",
       "English",
-      "Turkish"
+      "Thai"
+    ]
+  },
+  {
+    "id": 348977,
+    "name": "Splatoon Raiders",
+    "cover": {
+      "id": 557916,
+      "image_id": "cobyho"
+    },
+    "rating": 94.0,
+    "first_release_date": 1784764800,
+    "pop_score": 0.000626315149167,
+    "platforms": [
+      "Nintendo Switch 2"
+    ],
+    "genres": [
+      "Shooter",
+      "Adventure"
+    ],
+    "developers": [
+      "Nintendo EPD Production Group No. 5"
+    ],
+    "publishers": [
+      "Nintendo"
+    ],
+    "languages": [
+      "Chinese (Simplified)",
+      "German",
+      "Korean",
+      "Spanish (Spain)",
+      "French",
+      "Spanish (Mexico)",
+      "Japanese",
+      "Dutch",
+      "Chinese (Traditional)",
+      "Italian",
+      "English (UK)",
+      "English"
+    ]
+  },
+  {
+    "id": 400094,
+    "name": "Sir, We Have an Orc Problem",
+    "cover": {
+      "id": 559962,
+      "image_id": "coc02i"
+    },
+    "rating": null,
+    "first_release_date": 1785196800,
+    "pop_score": 0.000554221319047,
+    "platforms": [
+      "Linux",
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Simulator",
+      "Strategy",
+      "Indie"
+    ],
+    "developers": [
+      "Mumpitz Games"
+    ],
+    "publishers": [],
+    "languages": [
+      "Chinese (Simplified)",
+      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "Polish",
+      "Japanese",
+      "Dutch",
+      "Chinese (Traditional)",
+      "English"
     ]
   },
   {
@@ -430,7 +432,7 @@
     },
     "rating": null,
     "first_release_date": 1785542400,
-    "pop_score": 0.000400044142802,
+    "pop_score": 0.000450586438249,
     "platforms": [
       "Linux",
       "PC (Microsoft Windows)",
@@ -444,27 +446,27 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "Korean",
-      "Polish",
-      "Arabic",
-      "Chinese (Traditional)",
-      "Thai",
-      "Danish",
-      "Portuguese (Portugal)",
-      "Finnish",
-      "German",
+      "Chinese (Simplified)",
       "Turkish",
+      "Russian",
+      "French",
+      "Japanese",
+      "Portuguese (Portugal)",
+      "Dutch",
+      "Italian",
+      "Finnish",
       "English",
       "Swedish",
+      "Danish",
+      "Chinese (Traditional)",
+      "Thai",
+      "German",
+      "Arabic",
       "Norwegian",
+      "Korean",
       "Spanish (Spain)",
-      "Italian",
-      "Russian",
-      "Dutch",
-      "French",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Ukrainian"
+      "Ukrainian",
+      "Polish"
     ]
   },
   {
@@ -476,7 +478,7 @@
     },
     "rating": null,
     "first_release_date": 1785456000,
-    "pop_score": 0.000395445934264,
+    "pop_score": 0.000405527794424,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
@@ -489,45 +491,176 @@
       "TopHouse Publishing"
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Polish",
-      "Italian",
-      "Russian",
-      "Chinese (Traditional)",
-      "German",
-      "French",
       "Chinese (Simplified)",
-      "Japanese",
+      "German",
       "Turkish",
+      "Russian",
+      "Portuguese (Brazil)",
+      "French",
+      "Polish",
+      "Japanese",
+      "Portuguese (Portugal)",
+      "Chinese (Traditional)",
+      "Italian",
       "English",
-      "Thai",
-      "Portuguese (Portugal)"
+      "Thai"
     ]
   },
   {
-    "id": 395827,
-    "name": "EverQuest Legends",
+    "id": 397984,
+    "name": "Bills Must Be Paid",
     "cover": {
-      "id": 557733,
-      "image_id": "cobycl"
+      "id": 555671,
+      "image_id": "cobwrb"
     },
     "rating": null,
-    "first_release_date": 1785196800,
-    "pop_score": 0.000395445934264,
+    "first_release_date": 1785283200,
+    "pop_score": 0.000392010201277,
+    "platforms": [
+      "PC (Microsoft Windows)",
+      "Mac"
+    ],
+    "genres": [
+      "Simulator",
+      "Strategy",
+      "Indie",
+      "Arcade"
+    ],
+    "developers": [
+      "Rike Games"
+    ],
+    "publishers": [
+      "Rike Games"
+    ],
+    "languages": [
+      "German",
+      "Chinese (Simplified)",
+      "Turkish",
+      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "French",
+      "Polish",
+      "Ukrainian",
+      "Vietnamese",
+      "Japanese",
+      "Portuguese (Portugal)",
+      "Italian",
+      "English",
+      "Thai"
+    ]
+  },
+  {
+    "id": 398638,
+    "name": "Corsair Cove",
+    "cover": {
+      "id": 557149,
+      "image_id": "cobxwd"
+    },
+    "rating": null,
+    "first_release_date": 1785456000,
+    "pop_score": 0.000369480879364,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
     "genres": [
-      "Role-playing (RPG)",
-      "Adventure"
+      "Simulator",
+      "Strategy",
+      "Turn-based strategy (TBS)"
     ],
     "developers": [
-      "Game Jawn"
+      "Limbic Entertainment"
     ],
     "publishers": [
-      "Daybreak Game Company"
+      "Hooded Horse"
     ],
-    "languages": []
+    "languages": [
+      "German",
+      "Chinese (Simplified)",
+      "Korean",
+      "Spanish (Spain)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "French",
+      "Polish",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Italian",
+      "English"
+    ]
+  },
+  {
+    "id": 397811,
+    "name": "Machine Party",
+    "cover": {
+      "id": 555328,
+      "image_id": "cobwhs"
+    },
+    "rating": null,
+    "first_release_date": 1785369600,
+    "pop_score": 0.000364975014982,
+    "platforms": [
+      "Linux",
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Indie"
+    ],
+    "developers": [
+      "Mike Klubnika",
+      "GDeavid"
+    ],
+    "publishers": [
+      "Oro Interactive"
+    ],
+    "languages": [
+      "German",
+      "Chinese (Simplified)",
+      "Swedish",
+      "Turkish",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Spanish (Spain)",
+      "Korean",
+      "French",
+      "Polish",
+      "Spanish (Mexico)",
+      "Ukrainian",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Finnish",
+      "English"
+    ]
+  },
+  {
+    "id": 409227,
+    "name": "Spanking Exorcist",
+    "cover": {
+      "id": 587869,
+      "image_id": "cocllp"
+    },
+    "rating": null,
+    "first_release_date": 1785369600,
+    "pop_score": 0.000355963286217,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Simulator",
+      "Indie"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": [
+      "Chinese (Simplified)",
+      "Korean",
+      "Russian",
+      "Japanese",
+      "Chinese (Traditional)",
+      "English",
+      "Thai"
+    ]
   },
   {
     "id": 373021,
@@ -538,7 +671,7 @@
     },
     "rating": null,
     "first_release_date": 1784764800,
-    "pop_score": 0.000386249517188,
+    "pop_score": 0.000351457421835,
     "platforms": [
       "Xbox Series X|S",
       "Nintendo Switch 2",
@@ -556,41 +689,157 @@
       "PM Studios"
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Italian",
       "German",
-      "French",
       "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "French",
+      "Italian",
       "English"
     ]
   },
   {
-    "id": 409227,
-    "name": "Spanking Exorcist",
+    "id": 395827,
+    "name": "EverQuest Legends",
     "cover": {
-      "id": 587869,
-      "image_id": "cocllp"
+      "id": 557733,
+      "image_id": "cobycl"
     },
     "rating": null,
-    "first_release_date": 1785369600,
-    "pop_score": 0.000354062057422,
+    "first_release_date": 1785196800,
+    "pop_score": 0.000337939828687,
     "platforms": [
       "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "developers": [
+      "Game Jawn"
+    ],
+    "publishers": [
+      "Daybreak Game Company"
+    ],
+    "languages": []
+  },
+  {
+    "id": 348648,
+    "name": "Waterpark Simulator",
+    "cover": {
+      "id": 588602,
+      "image_id": "cocm62"
+    },
+    "rating": 78.33333333333333,
+    "first_release_date": 1785456000,
+    "pop_score": 0.000333433964305,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
     ],
     "genres": [
       "Simulator",
       "Indie"
     ],
-    "developers": [],
-    "publishers": [],
+    "developers": [
+      "CayPlay"
+    ],
+    "publishers": [
+      "CayPlay"
+    ],
     "languages": [
+      "Chinese (Simplified)",
+      "English",
+      "German",
+      "Russian",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Korean",
+      "French",
+      "Polish",
+      "Ukrainian",
+      "Vietnamese",
+      "Japanese",
+      "Czech",
+      "Italian",
+      "Chinese (Traditional)"
+    ]
+  },
+  {
+    "id": 167419,
+    "name": "Kusan: City of Wolves",
+    "cover": {
+      "id": 587310,
+      "image_id": "cocl66"
+    },
+    "rating": null,
+    "first_release_date": 1785369600,
+    "pop_score": 0.00032442223554,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Nintendo Switch"
+    ],
+    "genres": [
+      "Shooter",
+      "Indie",
+      "Arcade"
+    ],
+    "developers": [
+      "CIRCLEfromDOT"
+    ],
+    "publishers": [
+      "PQube"
+    ],
+    "languages": [
+      "Chinese (Simplified)",
+      "German",
       "Korean",
       "Russian",
-      "Chinese (Traditional)",
-      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "French",
+      "Ukrainian",
       "Japanese",
-      "English",
-      "Thai"
+      "Chinese (Traditional)",
+      "Italian",
+      "Finnish",
+      "English"
+    ]
+  },
+  {
+    "id": 262659,
+    "name": "ZeroSpace",
+    "cover": {
+      "id": 585063,
+      "image_id": "cocjfr"
+    },
+    "rating": null,
+    "first_release_date": 1784505600,
+    "pop_score": 0.000297387049245,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Real Time Strategy (RTS)",
+      "Role-playing (RPG)",
+      "Strategy",
+      "Tactical",
+      "Indie"
+    ],
+    "developers": [
+      "Starlance Studios"
+    ],
+    "publishers": [],
+    "languages": [
+      "Chinese (Simplified)",
+      "Turkish",
+      "Korean",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Italian",
+      "English"
     ]
   },
   {
@@ -602,7 +851,7 @@
     },
     "rating": null,
     "first_release_date": 1785110400,
-    "pop_score": 0.000340267431809,
+    "pop_score": 0.000292881184862,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
@@ -622,237 +871,37 @@
     ]
   },
   {
-    "id": 398638,
-    "name": "Corsair Cove",
+    "id": 369765,
+    "name": "How Many Dudes?",
     "cover": {
-      "id": 557149,
-      "image_id": "cobxwd"
-    },
-    "rating": null,
-    "first_release_date": 1785456000,
-    "pop_score": 0.000335669223271,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Simulator",
-      "Strategy",
-      "Turn-based strategy (TBS)"
-    ],
-    "developers": [
-      "Limbic Entertainment"
-    ],
-    "publishers": [
-      "Hooded Horse"
-    ],
-    "languages": [
-      "Korean",
-      "Polish",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
-      "Chinese (Traditional)",
-      "German",
-      "French",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Spanish (Spain)",
-      "English"
-    ]
-  },
-  {
-    "id": 348648,
-    "name": "Waterpark Simulator",
-    "cover": {
-      "id": 588602,
-      "image_id": "cocm62"
-    },
-    "rating": 78.33333333333333,
-    "first_release_date": 1785456000,
-    "pop_score": 0.000331071014733,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "genres": [
-      "Simulator",
-      "Indie"
-    ],
-    "developers": [
-      "CayPlay"
-    ],
-    "publishers": [
-      "CayPlay"
-    ],
-    "languages": [
-      "Korean",
-      "Portuguese (Brazil)",
-      "Polish",
-      "Italian",
-      "Russian",
-      "Chinese (Traditional)",
-      "German",
-      "Chinese (Simplified)",
-      "French",
-      "Japanese",
-      "Spanish (Spain)",
-      "English",
-      "Ukrainian",
-      "Vietnamese",
-      "Czech"
-    ]
-  },
-  {
-    "id": 262659,
-    "name": "ZeroSpace",
-    "cover": {
-      "id": 585063,
-      "image_id": "cocjfr"
-    },
-    "rating": null,
-    "first_release_date": 1784505600,
-    "pop_score": 0.000326472806195,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Real Time Strategy (RTS)",
-      "Role-playing (RPG)",
-      "Strategy",
-      "Tactical",
-      "Indie"
-    ],
-    "developers": [
-      "Starlance Studios"
-    ],
-    "publishers": [],
-    "languages": [
-      "Korean",
-      "Italian",
-      "Chinese (Traditional)",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "English",
-      "Turkish"
-    ]
-  },
-  {
-    "id": 397984,
-    "name": "Bills Must Be Paid",
-    "cover": {
-      "id": 555671,
-      "image_id": "cobwrb"
-    },
-    "rating": null,
-    "first_release_date": 1785283200,
-    "pop_score": 0.000321874597657,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
-    "genres": [
-      "Simulator",
-      "Strategy",
-      "Indie",
-      "Arcade"
-    ],
-    "developers": [
-      "Rike Games"
-    ],
-    "publishers": [
-      "Rike Games"
-    ],
-    "languages": [
-      "Korean",
-      "Polish",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
-      "German",
-      "French",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Spanish (Spain)",
-      "English",
-      "Turkish",
-      "Ukrainian",
-      "Thai",
-      "Vietnamese",
-      "Portuguese (Portugal)"
-    ]
-  },
-  {
-    "id": 167419,
-    "name": "Kusan: City of Wolves",
-    "cover": {
-      "id": 587310,
-      "image_id": "cocl66"
+      "id": 562146,
+      "image_id": "coc1r6"
     },
     "rating": null,
     "first_release_date": 1785369600,
-    "pop_score": 0.000303481763505,
+    "pop_score": 0.00028837532048,
     "platforms": [
-      "Xbox Series X|S",
+      "Android",
       "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Nintendo Switch"
+      "iOS"
     ],
     "genres": [
-      "Shooter",
-      "Indie",
-      "Arcade"
+      "Simulator",
+      "Strategy",
+      "Indie"
     ],
     "developers": [
-      "CIRCLEfromDOT"
+      "Butterscotch Shenanigans"
     ],
     "publishers": [
-      "PQube"
+      "Butterscotch Shenanigans"
     ],
     "languages": [
-      "Korean",
-      "Portuguese (Brazil)",
-      "Finnish",
-      "Italian",
-      "Russian",
-      "Chinese (Traditional)",
       "German",
       "Chinese (Simplified)",
-      "French",
-      "Japanese",
-      "Ukrainian",
-      "English",
-      "Spanish (Spain)"
-    ]
-  },
-  {
-    "id": 398217,
-    "name": "DragonSword: Awakening",
-    "cover": {
-      "id": 556134,
-      "image_id": "cobx46"
-    },
-    "rating": null,
-    "first_release_date": 1784764800,
-    "pop_score": 0.000303481763505,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Adventure"
-    ],
-    "developers": [
-      "Hound13"
-    ],
-    "publishers": [
-      "Hound13"
-    ],
-    "languages": [
       "Korean",
       "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Chinese (Simplified)",
+      "Russian",
       "Japanese",
       "English"
     ]
@@ -866,7 +915,7 @@
     },
     "rating": null,
     "first_release_date": 1785456000,
-    "pop_score": 0.000285088929353,
+    "pop_score": 0.000283869456097,
     "platforms": [
       "Xbox Series X|S",
       "Nintendo Switch 2",
@@ -885,164 +934,50 @@
       "Perp Games"
     ],
     "languages": [
-      "Korean",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
-      "Chinese (Traditional)",
       "German",
-      "French",
       "Chinese (Simplified)",
+      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "French",
       "Spanish (Mexico)",
       "Japanese",
-      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Italian",
       "English"
     ]
   },
   {
-    "id": 397811,
-    "name": "Machine Party",
+    "id": 398217,
+    "name": "DragonSword: Awakening",
     "cover": {
-      "id": 555328,
-      "image_id": "cobwhs"
+      "id": 556134,
+      "image_id": "cobx46"
     },
     "rating": null,
-    "first_release_date": 1785369600,
-    "pop_score": 0.000280490720815,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Indie"
-    ],
-    "developers": [
-      "Mike Klubnika",
-      "GDeavid"
-    ],
-    "publishers": [
-      "Oro Interactive"
-    ],
-    "languages": [
-      "Polish",
-      "Portuguese (Brazil)",
-      "Korean",
-      "Finnish",
-      "Russian",
-      "Chinese (Traditional)",
-      "German",
-      "French",
-      "Chinese (Simplified)",
-      "Spanish (Mexico)",
-      "Japanese",
-      "Turkish",
-      "English",
-      "Spanish (Spain)",
-      "Ukrainian",
-      "Swedish"
-    ]
-  },
-  {
-    "id": 410494,
-    "name": "Relive the Fear: Perfect Neighbor",
-    "cover": {
-      "id": 585234,
-      "image_id": "cocjki"
-    },
-    "rating": null,
-    "first_release_date": 1784592000,
-    "pop_score": 0.000275892512277,
+    "first_release_date": 1784764800,
+    "pop_score": 0.000283869456097,
     "platforms": [
       "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [],
-    "publishers": [],
-    "languages": [
-      "Portuguese (Brazil)",
-      "Korean",
-      "Finnish",
-      "Italian",
-      "Russian",
-      "German",
-      "French",
-      "Chinese (Simplified)",
-      "Ukrainian",
-      "Turkish",
-      "English",
-      "Japanese",
-      "Spanish (Spain)"
-    ]
-  },
-  {
-    "id": 369765,
-    "name": "How Many Dudes?",
-    "cover": {
-      "id": 562146,
-      "image_id": "coc1r6"
-    },
-    "rating": null,
-    "first_release_date": 1785369600,
-    "pop_score": 0.000266696095201,
-    "platforms": [
-      "Android",
-      "PC (Microsoft Windows)",
-      "iOS"
-    ],
-    "genres": [
-      "Simulator",
-      "Strategy",
-      "Indie"
-    ],
-    "developers": [
-      "Butterscotch Shenanigans"
-    ],
-    "publishers": [
-      "Butterscotch Shenanigans"
-    ],
-    "languages": [
-      "Korean",
-      "Portuguese (Brazil)",
-      "Russian",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "English"
-    ]
-  },
-  {
-    "id": 364821,
-    "name": "Ragnarok: The New World",
-    "cover": {
-      "id": 486687,
-      "image_id": "coafj3"
-    },
-    "rating": null,
-    "first_release_date": 1785110400,
-    "pop_score": 0.000266696095201,
-    "platforms": [
-      "Android",
-      "PC (Microsoft Windows)",
-      "iOS"
     ],
     "genres": [
       "Role-playing (RPG)",
       "Adventure"
     ],
     "developers": [
-      "Gravity"
+      "Hound13"
     ],
     "publishers": [
-      "Gravity"
+      "Hound13"
     ],
     "languages": [
       "Chinese (Simplified)",
-      "English",
-      "Thai",
-      "Chinese (Traditional)"
+      "Korean",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Chinese (Traditional)",
+      "English"
     ]
   },
   {
@@ -1054,7 +989,7 @@
     },
     "rating": null,
     "first_release_date": 1784160000,
-    "pop_score": 0.000262097886663,
+    "pop_score": 0.00027035186295,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
@@ -1081,7 +1016,7 @@
     },
     "rating": null,
     "first_release_date": 1785369600,
-    "pop_score": 0.000257499678125,
+    "pop_score": 0.00025232840542,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
@@ -1095,123 +1030,13 @@
       "Nexon"
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
       "Chinese (Simplified)",
+      "Portuguese (Brazil)",
       "Spanish (Mexico)",
       "Japanese",
+      "Chinese (Traditional)",
       "English",
       "Thai"
-    ]
-  },
-  {
-    "id": 330174,
-    "name": "Dinoblade",
-    "cover": {
-      "id": 585981,
-      "image_id": "cock59"
-    },
-    "rating": null,
-    "first_release_date": 1784764800,
-    "pop_score": 0.000252901469587,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [],
-    "publishers": [],
-    "languages": [
-      "Korean",
-      "Polish",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
-      "Dutch",
-      "German",
-      "Chinese (Traditional)",
-      "French",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Spanish (Spain)",
-      "English",
-      "Turkish",
-      "Ukrainian",
-      "Thai",
-      "Swedish"
-    ]
-  },
-  {
-    "id": 16611,
-    "name": "Scrap Mechanic",
-    "cover": {
-      "id": 502084,
-      "image_id": "coares"
-    },
-    "rating": 69.24360426374471,
-    "first_release_date": 1784851200,
-    "pop_score": 0.000220714009822,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Simulator",
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "Axolot Games"
-    ],
-    "publishers": [
-      "Axolot Games"
-    ],
-    "languages": [
-      "Korean",
-      "Portuguese (Brazil)",
-      "Polish",
-      "Italian",
-      "Russian",
-      "German",
-      "Chinese (Simplified)",
-      "French",
-      "Japanese",
-      "Spanish (Spain)",
-      "English"
-    ]
-  },
-  {
-    "id": 411555,
-    "name": "Abu Batata",
-    "cover": {
-      "id": 587019,
-      "image_id": "cocky3"
-    },
-    "rating": null,
-    "first_release_date": 1784505600,
-    "pop_score": 0.000216115801284,
-    "platforms": [
-      "Android",
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Simulator",
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "YG Studio"
-    ],
-    "publishers": [
-      "YG Studio"
-    ],
-    "languages": [
-      "Spanish (Spain)",
-      "Arabic",
-      "English",
-      "French"
     ]
   },
   {
@@ -1223,7 +1048,7 @@
     },
     "rating": 98.38729189057538,
     "first_release_date": 1783641600,
-    "pop_score": 0.000211517592746,
+    "pop_score": 0.00023430494789,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
@@ -1235,117 +1060,212 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "English",
-      "French"
+      "French",
+      "English"
     ]
   },
   {
-    "id": 304148,
-    "name": "Below, Rusted Gods",
+    "id": 364821,
+    "name": "Ragnarok: The New World",
     "cover": {
-      "id": 586307,
-      "image_id": "cockeb"
+      "id": 486687,
+      "image_id": "coafj3"
     },
     "rating": null,
-    "first_release_date": 1785283200,
-    "pop_score": 0.000211517592746,
+    "first_release_date": 1785110400,
+    "pop_score": 0.000225293219125,
+    "platforms": [
+      "Android",
+      "PC (Microsoft Windows)",
+      "iOS"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "developers": [
+      "Gravity"
+    ],
+    "publishers": [
+      "Gravity"
+    ],
+    "languages": [
+      "Chinese (Simplified)",
+      "English",
+      "Chinese (Traditional)",
+      "Thai"
+    ]
+  },
+  {
+    "id": 394091,
+    "name": "Infinite Ruins",
+    "cover": {
+      "id": 547138,
+      "image_id": "cobq6a"
+    },
+    "rating": null,
+    "first_release_date": 1785110400,
+    "pop_score": 0.000225293219125,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
     "genres": [
-      "Adventure",
-      "Indie"
+      "Strategy"
     ],
-    "developers": [
-      "From South Games"
-    ],
-    "publishers": [
-      "From South Games"
-    ],
+    "developers": [],
+    "publishers": [],
     "languages": [
+      "German",
+      "English",
+      "Chinese (Simplified)",
+      "Korean",
       "Portuguese (Brazil)",
       "Russian",
-      "German",
-      "French",
-      "Chinese (Simplified)",
-      "Spanish (Mexico)",
-      "Japanese",
       "Spanish (Spain)",
-      "English"
+      "French",
+      "Japanese",
+      "Portuguese (Portugal)",
+      "Italian",
+      "Chinese (Traditional)"
     ]
   },
   {
-    "id": 381896,
-    "name": "Pass the Fear",
+    "id": 412053,
+    "name": "N00b.gg",
     "cover": {
-      "id": 515985,
-      "image_id": "cob24x"
+      "id": 588256,
+      "image_id": "coclwg"
     },
     "rating": null,
-    "first_release_date": 1784678400,
-    "pop_score": 0.000197722967132,
+    "first_release_date": 1785542400,
+    "pop_score": 0.000211775625977,
     "platforms": [
-      "PC (Microsoft Windows)"
+      "Web browser"
     ],
     "genres": [
-      "Shooter",
-      "Role-playing (RPG)",
-      "Strategy",
-      "Adventure",
-      "Indie"
+      "Puzzle",
+      "Quiz/Trivia"
     ],
     "developers": [
-      "PlayMud Studio"
+      "Andy Kucera"
     ],
-    "publishers": [
-      "Paras Games"
-    ],
+    "publishers": [],
     "languages": [
-      "Korean",
-      "Russian",
-      "Chinese (Traditional)",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
+      "German",
       "English"
     ]
   },
   {
-    "id": 386035,
-    "name": "Photomaly",
+    "id": 16611,
+    "name": "Scrap Mechanic",
     "cover": {
-      "id": 546236,
-      "image_id": "cobph8"
+      "id": 502084,
+      "image_id": "coares"
     },
-    "rating": null,
-    "first_release_date": 1784592000,
-    "pop_score": 0.000197722967132,
+    "rating": 69.24360426374471,
+    "first_release_date": 1784851200,
+    "pop_score": 0.000202763897212,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
     "genres": [
       "Simulator",
+      "Adventure",
       "Indie"
     ],
     "developers": [
-      "Revira Interactive"
+      "Axolot Games"
     ],
     "publishers": [
-      "Alibi Games"
+      "Axolot Games"
     ],
     "languages": [
-      "Korean",
-      "Polish",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
-      "German",
-      "French",
       "Chinese (Simplified)",
-      "Spanish (Mexico)",
+      "German",
+      "Russian",
+      "Korean",
+      "Portuguese (Brazil)",
+      "Spanish (Spain)",
+      "French",
+      "Polish",
       "Japanese",
+      "Italian",
+      "English"
+    ]
+  },
+  {
+    "id": 330174,
+    "name": "Dinoblade",
+    "cover": {
+      "id": 585981,
+      "image_id": "cock59"
+    },
+    "rating": null,
+    "first_release_date": 1784764800,
+    "pop_score": 0.000202763897212,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Adventure",
+      "Indie"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": [
+      "German",
+      "Chinese (Simplified)",
+      "Swedish",
       "Turkish",
+      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "French",
+      "Polish",
+      "Ukrainian",
+      "Japanese",
+      "Dutch",
+      "Chinese (Traditional)",
+      "Italian",
       "English",
-      "Spanish (Spain)"
+      "Thai"
+    ]
+  },
+  {
+    "id": 410494,
+    "name": "Relive the Fear: Perfect Neighbor",
+    "cover": {
+      "id": 585234,
+      "image_id": "cocjki"
+    },
+    "rating": null,
+    "first_release_date": 1784592000,
+    "pop_score": 0.00019825803283,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": [
+      "German",
+      "Chinese (Simplified)",
+      "Turkish",
+      "Korean",
+      "Portuguese (Brazil)",
+      "Russian",
+      "Spanish (Spain)",
+      "French",
+      "Ukrainian",
+      "Japanese",
+      "Italian",
+      "Finnish",
+      "English"
     ]
   },
   {
@@ -1357,7 +1277,7 @@
     },
     "rating": null,
     "first_release_date": 1783814400,
-    "pop_score": 0.000193124758594,
+    "pop_score": 0.000193752168447,
     "platforms": [
       "Web browser"
     ],
@@ -1377,7 +1297,7 @@
     },
     "rating": null,
     "first_release_date": 1785369600,
-    "pop_score": 0.000193124758594,
+    "pop_score": 0.000193752168447,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
@@ -1394,16 +1314,16 @@
       "Starlight Games"
     ],
     "languages": [
-      "Korean",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
-      "Chinese (Traditional)",
       "German",
-      "French",
       "Chinese (Simplified)",
-      "Japanese",
+      "Korean",
       "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "French",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Italian",
       "English"
     ]
   }
