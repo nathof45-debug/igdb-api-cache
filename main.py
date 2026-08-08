@@ -170,9 +170,9 @@ print("\n📡 Génération : Sorties populaires de la semaine...")
 # - hypes > 7 : Il faut qu'ils soient un peu demandés.
 query_upcoming = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date > {today} & first_release_date <= {next_week}; "
-    f"sort hypes asc; "
-    f"limit 100;"
+    f"where first_release_date > {today} & first_release_date <= {next_week} & hypes >= 7; "
+    f"sort first_release_date asc; "
+    f"limit 500;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
