@@ -167,17 +167,17 @@ else:
 print("\n📡 Génération : Sorties populaires de la semaine...")
 
 # Filtres ajoutés :
-# - hypes > 5 : Il faut qu'ils soient un peu demandés.
+# - hypes > 7 : Il faut qu'ils soient un peu demandés.
 query_upcoming = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date > {today} & first_release_date <= {next_week} & hypes > 7; "
-    f"sort first_release_date asc; "
-    f"limit 500;"
+    f"where first_release_date > {today} & first_release_date <= {next_week}; "
+    f"sort hypes asc; "
+    f"limit 100;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
 if res.status_code == 200:
-    cleaned = clean_games_data(res.json())[:100]
+    cleaned = clean_games_data(res.json())[:50]
     save_json(cleaned, "upcoming.json")
     print("✅ Fichier upcoming.json généré avec succès.")
 else:
