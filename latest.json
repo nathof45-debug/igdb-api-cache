@@ -28,14 +28,14 @@
     ],
     "languages": [
       "Italian",
-      "French",
-      "Chinese (Traditional)",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
-      "Chinese (Simplified)"
+      "German",
+      "Chinese (Simplified)",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -65,18 +65,18 @@
       "Team17"
     ],
     "languages": [
-      "French",
       "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Japanese",
-      "German",
       "English",
+      "Vietnamese",
       "Spanish (Spain)",
       "Russian",
+      "German",
+      "Korean",
       "Polish",
-      "Vietnamese",
       "Chinese (Simplified)",
-      "Korean"
+      "French",
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -107,17 +107,17 @@
     ],
     "languages": [
       "Italian",
-      "French",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Polish",
       "Turkish",
+      "German",
       "Chinese (Simplified)",
-      "Korean"
+      "Korean",
+      "Polish",
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -148,14 +148,14 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "French",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
-      "Spanish (Mexico)",
+      "German",
+      "Korean",
       "Chinese (Simplified)",
-      "Korean"
+      "French",
+      "Japanese",
+      "Spanish (Mexico)"
     ]
   },
   {
@@ -185,23 +185,23 @@
     ],
     "languages": [
       "Italian",
-      "Arabic",
-      "Czech",
-      "French",
+      "Hungarian",
       "Portuguese (Brazil)",
-      "Ukrainian",
-      "Japanese",
-      "German",
+      "Portuguese (Portugal)",
       "English",
+      "Vietnamese",
       "Spanish (Spain)",
       "Russian",
-      "Polish",
       "Turkish",
-      "Hungarian",
+      "Czech",
+      "German",
+      "Polish",
       "Chinese (Simplified)",
-      "Portuguese (Portugal)",
-      "Vietnamese",
-      "Korean"
+      "Japanese",
+      "French",
+      "Korean",
+      "Arabic",
+      "Ukrainian"
     ]
   },
   {
@@ -229,13 +229,13 @@
       "Replicant D6"
     ],
     "languages": [
+      "English",
+      "Korean",
+      "Chinese (Simplified)",
+      "German",
       "French",
       "Chinese (Traditional)",
-      "Japanese",
-      "German",
-      "English",
-      "Chinese (Simplified)",
-      "Korean"
+      "Japanese"
     ]
   },
   {
@@ -265,20 +265,20 @@
     ],
     "languages": [
       "Italian",
-      "Czech",
-      "French",
       "Portuguese (Brazil)",
+      "English",
+      "Spanish (Spain)",
+      "Russian",
+      "Czech",
+      "German",
+      "Korean",
+      "Polish",
+      "Chinese (Simplified)",
+      "French",
       "Chinese (Traditional)",
       "Japanese",
-      "German",
-      "English",
-      "Russian",
-      "Spanish (Mexico)",
-      "Polish",
-      "Spanish (Spain)",
       "Ukrainian",
-      "Chinese (Simplified)",
-      "Korean"
+      "Spanish (Mexico)"
     ]
   },
   {
@@ -309,15 +309,15 @@
     ],
     "languages": [
       "Italian",
-      "French",
       "Portuguese (Brazil)",
-      "Ukrainian",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
+      "German",
       "Polish",
-      "Chinese (Simplified)"
+      "Chinese (Simplified)",
+      "Ukrainian",
+      "French"
     ]
   },
   {
@@ -343,12 +343,12 @@
       "Flatrock Games"
     ],
     "languages": [
-      "French",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
-      "Chinese (Simplified)"
+      "German",
+      "Chinese (Simplified)",
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -380,12 +380,12 @@
     "languages": [
       "Italian",
       "Portuguese (Brazil)",
-      "French",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Chinese (Simplified)"
+      "German",
+      "Chinese (Simplified)",
+      "French"
     ]
   },
   {
@@ -405,6 +405,7 @@
       "Mac"
     ],
     "genres": [
+      "Point-and-click",
       "Puzzle",
       "Adventure",
       "Indie"
@@ -412,30 +413,32 @@
     "developers": [
       "Rusty Lake"
     ],
-    "publishers": [],
+    "publishers": [
+      "Rusty Lake"
+    ],
     "languages": [
-      "Italian",
-      "Czech",
-      "Chinese (Traditional)",
-      "Ukrainian",
-      "Russian",
-      "French",
-      "Portuguese (Brazil)",
-      "German",
-      "English",
-      "Finnish",
-      "Polish",
-      "Portuguese (Portugal)",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Norwegian",
       "Dutch",
-      "Danish",
       "Vietnamese",
+      "Russian",
+      "Czech",
+      "Ukrainian",
+      "Italian",
+      "Norwegian",
+      "Chinese (Simplified)",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Finnish",
       "Spanish (Spain)",
       "Turkish",
+      "Danish",
+      "German",
+      "Korean",
+      "Polish",
       "Swedish",
-      "Korean"
+      "Portuguese (Brazil)",
+      "Portuguese (Portugal)",
+      "English"
     ]
   },
   {
@@ -463,14 +466,67 @@
     ],
     "languages": [
       "Italian",
-      "French",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
       "Russian",
+      "German",
+      "Korean",
       "Chinese (Simplified)",
-      "Korean"
+      "French",
+      "Japanese"
+    ]
+  },
+  {
+    "id": 141273,
+    "name": "Tukoni: Forest Keepers",
+    "cover": {
+      "id": 474777,
+      "image_id": "coa6c9"
+    },
+    "rating": 75.9173605506077,
+    "first_release_date": 1786924800,
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Point-and-click",
+      "Platform",
+      "Puzzle",
+      "Adventure",
+      "Indie"
+    ],
+    "developers": [
+      "Dream Operator"
+    ],
+    "publishers": [
+      "Dream Operator"
+    ],
+    "languages": [
+      "Dutch",
+      "Hungarian",
+      "Vietnamese",
+      "Czech",
+      "Ukrainian",
+      "Italian",
+      "Chinese (Simplified)",
+      "Norwegian",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Finnish",
+      "Turkish",
+      "Spanish (Spain)",
+      "Thai",
+      "Danish",
+      "German",
+      "Polish",
+      "Korean",
+      "Arabic",
+      "Swedish",
+      "Portuguese (Brazil)",
+      "Portuguese (Portugal)",
+      "English"
     ]
   },
   {
@@ -503,21 +559,21 @@
     ],
     "languages": [
       "Italian",
-      "French",
       "Portuguese (Brazil)",
-      "Thai",
-      "Japanese",
-      "German",
-      "English",
-      "Russian",
       "Hungarian",
-      "Polish",
-      "Ukrainian",
+      "English",
       "Turkish",
+      "Russian",
+      "Thai",
+      "Korean",
       "Chinese (Simplified)",
+      "German",
+      "Polish",
+      "French",
+      "Ukrainian",
+      "Japanese",
       "Swedish",
-      "Spanish (Mexico)",
-      "Korean"
+      "Spanish (Mexico)"
     ]
   },
   {
@@ -572,11 +628,11 @@
       "Refractive Entertainment"
     ],
     "languages": [
-      "French",
       "Portuguese (Brazil)",
       "English",
       "Russian",
-      "Chinese (Simplified)"
+      "Chinese (Simplified)",
+      "French"
     ]
   },
   {
@@ -606,13 +662,13 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
+      "German",
+      "Korean",
       "Chinese (Simplified)",
-      "Korean"
+      "Japanese"
     ]
   },
   {
@@ -640,28 +696,65 @@
       "Hooded Horse"
     ],
     "languages": [
-      "Italian",
-      "Czech",
-      "Chinese (Traditional)",
-      "Ukrainian",
+      "Dutch",
+      "Hungarian",
       "Russian",
-      "French",
-      "Portuguese (Brazil)",
-      "German",
-      "English",
-      "Finnish",
-      "Polish",
-      "Portuguese (Portugal)",
-      "Japanese",
+      "Czech",
+      "Ukrainian",
+      "Italian",
       "Chinese (Simplified)",
       "Norwegian",
-      "Dutch",
-      "Danish",
-      "Hungarian",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Finnish",
       "Spanish (Spain)",
       "Turkish",
+      "Danish",
+      "German",
+      "Polish",
+      "Korean",
       "Swedish",
-      "Korean"
+      "Portuguese (Brazil)",
+      "Portuguese (Portugal)",
+      "English"
+    ]
+  },
+  {
+    "id": 403808,
+    "name": "Feed It",
+    "cover": {
+      "id": 566852,
+      "image_id": "coc5dw"
+    },
+    "rating": null,
+    "first_release_date": 1786924800,
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Indie"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": [
+      "Italian",
+      "Portuguese (Brazil)",
+      "English",
+      "Vietnamese",
+      "Spanish (Spain)",
+      "Russian",
+      "Turkish",
+      "Thai",
+      "German",
+      "Korean",
+      "Polish",
+      "Chinese (Simplified)",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Ukrainian"
     ]
   },
   {
@@ -728,15 +821,15 @@
     ],
     "languages": [
       "Italian",
-      "French",
-      "Chinese (Traditional)",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
+      "German",
       "Chinese (Simplified)",
-      "Korean"
+      "Korean",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -767,17 +860,17 @@
       "Alawar"
     ],
     "languages": [
-      "French",
-      "Chinese (Traditional)",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Polish",
+      "German",
       "Chinese (Simplified)",
-      "Korean"
+      "Korean",
+      "Polish",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -802,9 +895,9 @@
     "developers": [],
     "publishers": [],
     "languages": [
+      "Korean",
       "Chinese (Simplified)",
-      "English",
-      "Korean"
+      "English"
     ]
   },
   {
@@ -831,39 +924,12 @@
       "Ovsko"
     ],
     "languages": [
-      "Japanese",
       "English",
       "Spanish (Spain)",
       "Russian",
+      "Chinese (Simplified)",
       "Spanish (Mexico)",
-      "Chinese (Simplified)"
-    ]
-  },
-  {
-    "id": 328103,
-    "name": "Backpack Boy",
-    "cover": {
-      "id": 432786,
-      "image_id": "co99xu"
-    },
-    "rating": null,
-    "first_release_date": 1786320000,
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Indie"
-    ],
-    "developers": [],
-    "publishers": [],
-    "languages": [
-      "Italian",
-      "French",
-      "Japanese",
-      "German",
-      "English",
-      "Spanish (Spain)"
+      "Japanese"
     ]
   },
   {
@@ -893,10 +959,39 @@
     "languages": [
       "Italian",
       "Portuguese (Brazil)",
-      "French",
-      "Japanese",
-      "German",
+      "English",
       "Russian",
+      "German",
+      "French",
+      "Japanese"
+    ]
+  },
+  {
+    "id": 258173,
+    "name": "Nimbit Frontier",
+    "cover": {
+      "id": 484937,
+      "image_id": "coae6h"
+    },
+    "rating": null,
+    "first_release_date": 1786924800,
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Simulator",
+      "Hack and slash/Beat 'em up",
+      "Indie"
+    ],
+    "developers": [
+      "Megasploot"
+    ],
+    "publishers": [
+      "Megasploot"
+    ],
+    "languages": [
       "English"
     ]
   },
@@ -924,16 +1019,16 @@
     "languages": [
       "Arabic",
       "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Thai",
-      "Japanese",
-      "Vietnamese",
       "English",
+      "Vietnamese",
       "Russian",
-      "French",
-      "German",
+      "Thai",
+      "Korean",
       "Chinese (Simplified)",
-      "Korean"
+      "German",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -1049,30 +1144,6 @@
     ]
   },
   {
-    "id": 407597,
-    "name": "Megako Punch!",
-    "cover": {
-      "id": 573902,
-      "image_id": "cocatq"
-    },
-    "rating": null,
-    "first_release_date": 1786320000,
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Strategy",
-      "Card & Board Game"
-    ],
-    "developers": [],
-    "publishers": [],
-    "languages": [
-      "Japanese",
-      "English"
-    ]
-  },
-  {
     "id": 406882,
     "name": "Hariti",
     "cover": {
@@ -1099,18 +1170,18 @@
       "Ghostcase"
     ],
     "languages": [
-      "French",
-      "Chinese (Traditional)",
-      "Thai",
-      "Japanese",
-      "German",
+      "Portuguese (Brazil)",
+      "Portuguese (Portugal)",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Portuguese (Brazil)",
+      "Thai",
+      "German",
       "Chinese (Simplified)",
-      "Portuguese (Portugal)",
-      "Korean"
+      "Korean",
+      "French",
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -1139,11 +1210,11 @@
       "Straight Banana Game Studio"
     ],
     "languages": [
-      "Chinese (Traditional)",
-      "Japanese",
       "English",
+      "Korean",
       "Chinese (Simplified)",
-      "Korean"
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -1167,55 +1238,13 @@
     "publishers": [],
     "languages": [
       "Portuguese (Brazil)",
-      "French",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Chinese (Simplified)"
-    ]
-  },
-  {
-    "id": 399150,
-    "name": "T.W.I.R.L.",
-    "cover": {
-      "id": 558168,
-      "image_id": "cobyoo"
-    },
-    "rating": null,
-    "first_release_date": 1786320000,
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "Genie Boy Games"
-    ],
-    "publishers": [
-      "Genie Boy Games",
-      "Haunted Publishing Syndicate"
-    ],
-    "languages": [
-      "Italian",
-      "French",
-      "Chinese (Traditional)",
-      "Portuguese (Brazil)",
-      "Japanese",
       "German",
-      "English",
-      "Spanish (Spain)",
-      "Russian",
-      "Polish",
       "Chinese (Simplified)",
-      "Portuguese (Portugal)",
-      "Korean"
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -1242,16 +1271,16 @@
       "Morph"
     ],
     "languages": [
-      "Italian",
       "Arabic",
-      "French",
-      "Japanese",
-      "German",
+      "Italian",
       "English",
-      "Russian",
       "Spanish (Spain)",
+      "Russian",
+      "Korean",
       "Chinese (Simplified)",
-      "Korean"
+      "German",
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -1278,46 +1307,17 @@
     "publishers": [],
     "languages": [
       "Italian",
-      "French",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
+      "Turkish",
       "Spanish (Spain)",
       "Russian",
+      "German",
+      "Korean",
       "Polish",
-      "Turkish",
       "Chinese (Simplified)",
-      "Korean"
-    ]
-  },
-  {
-    "id": 392177,
-    "name": "Runt",
-    "cover": {
-      "id": 541755,
-      "image_id": "cobm0r"
-    },
-    "rating": null,
-    "first_release_date": 1786320000,
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Adventure",
-      "Indie",
-      "Visual Novel"
-    ],
-    "developers": [
-      "Grimtaste Studios"
-    ],
-    "publishers": [
-      "DreadXP"
-    ],
-    "languages": [
-      "English"
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -1341,43 +1341,80 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "Portuguese (Brazil)",
-      "Italian",
       "Arabic",
-      "French",
+      "Italian",
       "Dutch",
-      "Ukrainian",
-      "Japanese",
-      "German",
+      "Portuguese (Brazil)",
+      "Portuguese (Portugal)",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Polish",
       "Turkish",
+      "German",
+      "Korean",
+      "Polish",
+      "Ukrainian",
+      "French",
       "Chinese (Simplified)",
-      "Portuguese (Portugal)",
-      "Korean"
+      "Japanese"
     ]
   },
   {
-    "id": 389975,
-    "name": "Ajnabee: The Unknown",
+    "id": 390353,
+    "name": "Submerge",
     "cover": {
-      "id": 538169,
-      "image_id": "cobj95"
+      "id": 538825,
+      "image_id": "cobjrd"
     },
     "rating": null,
-    "first_release_date": 1786320000,
+    "first_release_date": 1786924800,
     "pop_score": null,
     "platforms": [
       "PC (Microsoft Windows)"
     ],
     "genres": [
+      "Puzzle",
       "Adventure",
       "Indie"
     ],
     "developers": [],
     "publishers": [],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Portuguese (Portugal)",
+      "English",
+      "Turkish",
+      "Russian",
+      "German",
+      "Chinese (Simplified)",
+      "Korean",
+      "French",
+      "Japanese"
+    ]
+  },
+  {
+    "id": 387817,
+    "name": "The Lantern of the Laughless Saint",
+    "cover": {
+      "id": 531672,
+      "image_id": "cobe8o"
+    },
+    "rating": null,
+    "first_release_date": 1786924800,
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "developers": [
+      "NerveLabs"
+    ],
+    "publishers": [
+      "NerveLabs"
+    ],
     "languages": [
       "English"
     ]
@@ -1412,13 +1449,54 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "French",
-      "Ukrainian",
-      "Thai",
-      "German",
       "English",
       "Spanish (Spain)",
-      "Russian"
+      "Russian",
+      "Thai",
+      "German",
+      "Ukrainian",
+      "French"
+    ]
+  },
+  {
+    "id": 385757,
+    "name": "Excremental Game",
+    "cover": {
+      "id": 586456,
+      "image_id": "cockig"
+    },
+    "rating": null,
+    "first_release_date": 1786924800,
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Shooter",
+      "Simulator",
+      "Strategy",
+      "Tactical",
+      "Indie"
+    ],
+    "developers": [
+      "Hooded Traveler Games"
+    ],
+    "publishers": [
+      "Hooded Traveler Games"
+    ],
+    "languages": [
+      "Italian",
+      "Portuguese (Brazil)",
+      "English",
+      "Spanish (Spain)",
+      "Russian",
+      "Turkish",
+      "German",
+      "Korean",
+      "Polish",
+      "Chinese (Simplified)",
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -1441,17 +1519,54 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "French",
       "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
+      "German",
+      "Korean",
       "Polish",
       "Chinese (Simplified)",
-      "Korean"
+      "French",
+      "Chinese (Traditional)",
+      "Japanese"
+    ]
+  },
+  {
+    "id": 384212,
+    "name": "Void Pachinko",
+    "cover": {
+      "id": 536859,
+      "image_id": "cobi8r"
+    },
+    "rating": null,
+    "first_release_date": 1786924800,
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Simulator",
+      "Strategy",
+      "Pinball",
+      "Indie",
+      "Arcade"
+    ],
+    "developers": [
+      "Void Shaft Games"
+    ],
+    "publishers": [
+      "2 Left Thumbs"
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "English",
+      "Spanish (Spain)",
+      "Russian",
+      "German",
+      "Chinese (Simplified)",
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -1479,55 +1594,23 @@
     ],
     "languages": [
       "Italian",
-      "French",
-      "Chinese (Traditional)",
-      "Thai",
-      "Vietnamese",
-      "German",
-      "Russian",
-      "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "English",
       "Portuguese (Brazil)",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Polish",
       "Portuguese (Portugal)",
-      "Turkish",
-      "Ukrainian",
-      "Korean"
-    ]
-  },
-  {
-    "id": 378382,
-    "name": "The Dungeon Of Horror",
-    "cover": {
-      "id": 507451,
-      "image_id": "coavjv"
-    },
-    "rating": null,
-    "first_release_date": 1786320000,
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Strategy",
-      "Turn-based strategy (TBS)",
-      "Tactical",
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "KiberKreker"
-    ],
-    "publishers": [
-      "KiberKreker"
-    ],
-    "languages": [
       "English",
-      "Russian"
+      "French",
+      "Vietnamese",
+      "Spanish (Spain)",
+      "Russian",
+      "Turkish",
+      "Thai",
+      "German",
+      "Chinese (Simplified)",
+      "Korean",
+      "Polish",
+      "Spanish (Mexico)",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Ukrainian"
     ]
   },
   {
@@ -1556,13 +1639,13 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "French",
-      "Japanese",
-      "German",
       "English",
-      "Russian",
       "Spanish (Spain)",
-      "Chinese (Simplified)"
+      "Russian",
+      "German",
+      "Chinese (Simplified)",
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -1596,10 +1679,53 @@
     ],
     "languages": [
       "Italian",
-      "French",
-      "German",
       "English",
-      "Spanish (Spain)"
+      "Spanish (Spain)",
+      "German",
+      "French"
+    ]
+  },
+  {
+    "id": 374549,
+    "name": "Lugal: Bronze Age Survival Game",
+    "cover": {
+      "id": 500070,
+      "image_id": "coapuu"
+    },
+    "rating": null,
+    "first_release_date": 1786924800,
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Real Time Strategy (RTS)",
+      "Role-playing (RPG)",
+      "Simulator",
+      "Adventure",
+      "Indie"
+    ],
+    "developers": [
+      "Tea & Cake Games"
+    ],
+    "publishers": [
+      "Tea & Cake Games"
+    ],
+    "languages": [
+      "Italian",
+      "Portuguese (Brazil)",
+      "English",
+      "Spanish (Spain)",
+      "Turkish",
+      "Chinese (Traditional)",
+      "German",
+      "Ukrainian",
+      "Japanese",
+      "Korean",
+      "French",
+      "Polish",
+      "Arabic",
+      "Chinese (Simplified)"
     ]
   },
   {
@@ -1626,17 +1752,17 @@
       "[HERROR]"
     ],
     "languages": [
-      "French",
       "Portuguese (Brazil)",
-      "Thai",
-      "Japanese",
-      "German",
+      "Portuguese (Portugal)",
       "English",
       "Spanish (Spain)",
       "Russian",
       "Turkish",
+      "Thai",
+      "German",
       "Chinese (Simplified)",
-      "Portuguese (Portugal)"
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -1665,10 +1791,39 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Japanese",
       "English",
+      "Korean",
       "Chinese (Simplified)",
-      "Korean"
+      "Japanese"
+    ]
+  },
+  {
+    "id": 360832,
+    "name": "Ploink",
+    "cover": {
+      "id": 479257,
+      "image_id": "coa9sp"
+    },
+    "rating": null,
+    "first_release_date": 1786924800,
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Simulator",
+      "Strategy",
+      "Indie",
+      "Arcade"
+    ],
+    "developers": [
+      "Pyrocreep"
+    ],
+    "publishers": [
+      "Pyrocreep"
+    ],
+    "languages": [
+      "English"
     ]
   },
   {
@@ -1691,9 +1846,9 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "English",
       "Portuguese (Brazil)",
-      "Russian"
+      "Russian",
+      "English"
     ]
   },
   {
@@ -1727,35 +1882,6 @@
     ]
   },
   {
-    "id": 358217,
-    "name": "Pax Autocratica",
-    "cover": {
-      "id": 503449,
-      "image_id": "coasgp"
-    },
-    "rating": null,
-    "first_release_date": 1786320000,
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Shooter",
-      "Simulator",
-      "Indie"
-    ],
-    "developers": [
-      "Multiverse"
-    ],
-    "publishers": [],
-    "languages": [
-      "Chinese (Simplified)",
-      "German",
-      "English",
-      "French"
-    ]
-  },
-  {
     "id": 357860,
     "name": "Storm Horse Simulator",
     "cover": {
@@ -1782,17 +1908,17 @@
     ],
     "languages": [
       "Italian",
-      "French",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Polish",
       "Turkish",
+      "German",
+      "Korean",
+      "Polish",
       "Chinese (Simplified)",
-      "Korean"
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -1839,6 +1965,7 @@
       "Role-playing (RPG)",
       "Strategy",
       "Turn-based strategy (TBS)",
+      "Tactical",
       "Visual Novel"
     ],
     "developers": [
@@ -1848,47 +1975,9 @@
       "OmniMegaSuperCorp"
     ],
     "languages": [
+      "Chinese (Traditional)",
       "Japanese",
-      "English",
-      "Chinese (Traditional)"
-    ]
-  },
-  {
-    "id": 346487,
-    "name": "A Game About Penguins",
-    "cover": {
-      "id": 539824,
-      "image_id": "cobkj4"
-    },
-    "rating": null,
-    "first_release_date": 1786320000,
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "CO's Entertainment"
-    ],
-    "publishers": [
-      "Ultimate Publishing"
-    ],
-    "languages": [
-      "Italian",
-      "French",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "German",
-      "English",
-      "Spanish (Spain)",
-      "Russian",
-      "Polish",
-      "Turkish",
-      "Chinese (Simplified)",
-      "Korean"
+      "English"
     ]
   },
   {
@@ -1916,10 +2005,10 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
-      "Chinese (Simplified)"
+      "German",
+      "Chinese (Simplified)",
+      "Japanese"
     ]
   },
   {
@@ -1947,12 +2036,12 @@
       "Pinguin Games"
     ],
     "languages": [
-      "French",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Chinese (Simplified)"
+      "German",
+      "Chinese (Simplified)",
+      "French"
     ]
   },
   {
@@ -1978,14 +2067,14 @@
     "publishers": [],
     "languages": [
       "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Thai",
-      "Japanese",
+      "Portuguese (Portugal)",
       "English",
       "Russian",
+      "Thai",
+      "Korean",
       "Chinese (Simplified)",
-      "Portuguese (Portugal)",
-      "Korean"
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -2016,24 +2105,24 @@
       "Chaomoon"
     ],
     "languages": [
-      "Italian",
-      "English (UK)",
-      "French",
       "Dutch",
+      "Italian",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
+      "French",
       "English",
-      "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "Polish",
-      "Russian",
-      "Thai",
-      "Chinese (Simplified)",
-      "Chinese (Traditional)",
-      "Turkish",
       "Vietnamese",
-      "Korean"
+      "Spanish (Spain)",
+      "Russian",
+      "Chinese (Traditional)",
+      "Thai",
+      "Turkish",
+      "German",
+      "Japanese",
+      "Korean",
+      "Polish",
+      "Spanish (Mexico)",
+      "Chinese (Simplified)",
+      "English (UK)"
     ]
   },
   {
@@ -2057,16 +2146,16 @@
     "languages": [
       "Italian",
       "Portuguese (Brazil)",
-      "French",
-      "Ukrainian",
-      "Japanese",
-      "German",
       "English",
+      "French",
       "Russian",
-      "Spanish (Mexico)",
+      "German",
+      "Ukrainian",
+      "Korean",
       "Polish",
       "Chinese (Simplified)",
-      "Korean"
+      "Japanese",
+      "Spanish (Mexico)"
     ]
   },
   {
@@ -2125,17 +2214,17 @@
     ],
     "languages": [
       "Italian",
-      "French",
       "Portuguese (Brazil)",
-      "Japanese",
-      "German",
       "English",
       "Spanish (Spain)",
       "Russian",
-      "Polish",
       "Turkish",
+      "German",
+      "Korean",
+      "Polish",
       "Chinese (Simplified)",
-      "Korean"
+      "French",
+      "Japanese"
     ]
   },
   {
@@ -2165,13 +2254,13 @@
     "publishers": [],
     "languages": [
       "Portuguese (Brazil)",
-      "French",
-      "Japanese",
       "English",
       "Spanish (Spain)",
-      "Spanish (Mexico)",
+      "Korean",
       "Chinese (Simplified)",
-      "Korean"
+      "French",
+      "Japanese",
+      "Spanish (Mexico)"
     ]
   }
 ]
