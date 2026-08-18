@@ -79,7 +79,8 @@ def clean_games_data(games_data, scores_dict=None):
             "release_dates": [
                 {
                     "category": rd.get("category"), # Récupère 0 (Jour), 1 (Mois) ou 2 (Année)
-                    "y": rd.get("y")                # Récupère l'année (ex: 2027)
+                    "y": rd.get("y"),                # Récupère l'année (ex: 2027)
+                    "date": rd.get("date")
                 } 
                 for rd in game.get("release_dates", [])
             ]
