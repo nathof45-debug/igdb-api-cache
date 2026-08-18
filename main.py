@@ -51,7 +51,8 @@ current_year = datetime.datetime.now().year #Renvoit l'année en cours
 
 # Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
 COMMON_FIELDS = (
-    "fields name, cover.image_id, rating, first_release_date, "
+    "fields name, cover.image_id, rating, rating_count, total_rating_count, "
+    "hypes, status, first_release_date, release_dates.category, "
     "platforms.name, genres.name, "
     "involved_companies.developer, involved_companies.publisher, involved_companies.company.name, "
     "language_supports.language.name; "
