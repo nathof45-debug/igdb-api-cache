@@ -161,17 +161,26 @@ print("\n📡 Génération : Les dernières sorties (Les 50 meilleurs jeux des 1
 # - NOUVEAU TRI : sort follows desc (Les jeux les plus suivis en premier)
 query_latest = (
     f"{COMMON_FIELDS} "
-    f"where (first_release_date >= {seven_days_ago} & first_release_date <= {today}) "
-    f"| (release_dates.date >= {seven_days_ago} & release_dates.date <= {today}) "
-    f"& cover != null & (status = null | status != (6, 7)); "
-    f"sort hypes desc; limit 100;"
+    # 1. On groupe les deux conditions de date dans un grand bloc
+    f"where ((first_release_date >= {seven_days_ago} & first_release_date <= {today}) "
+    f"| (release_dates.date >= {seven_days_ago} & release_dates.date <= {today})) "
+    # 2. On impose la cover et le statut à TOUS les jeux qui sortent de ce bloc
+    f"& cover != null & cover.image_id != null " 
+    f"& (status = null | status != (6, 7)); "
+    f"sort hypes desc; "
+    f"limit 100;"
 )
-
 res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
-    # On ne garde que les jeux dont la date calculée est entre (today - 7j) et AUJOURD'HUI
-    cleaned = [g for g in cleaned if get_best_date(g) and seven_days_ago <= get_best_date(g) <= today]
+    # On ne garde que si : 
+    # - La date est entre (today - 7j) et AUJOURD'HUI
+    # - ET le jeu possède une jaquette (cover) avec un image_id
+    cleaned = [
+        g for g in cleaned_raw 
+        if get_best_date(g) and seven_days_ago <= get_best_date(g) <= today
+        and g.get("cover") and g.get("cover").get("image_id")
+            ]
     # On trie quand même par date pour la cohérence visuelle
     cleaned.sort(key=get_hybrid_sort_date, reverse=True)
     save_json(cleaned[:50], "latest.json")
