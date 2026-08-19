@@ -184,7 +184,7 @@ print("\n📡 Génération : Sorties populaires de la semaine...")
 # Ajout du filtre status != 7 (Rumored) et status != 6 (Canceled)
 query_upcoming = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date > {today} & first_release_date <= {next_week} "
+    f"where first_release_date > {today} & first_release_date <= {next_week} & hypes >= 7"
     # ET on applique le filtre de statut (en gérant le cas null)
     f"& (status = null | status != (6, 7)); " 
     f"sort first_release_date asc; "
