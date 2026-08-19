@@ -159,6 +159,7 @@ query_latest = (
 
 res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
+    cleaned = clean_games_data(res.json())[:100]
     # On trie quand même par date pour la cohérence visuelle
     cleaned.sort(key=get_hybrid_sort_date, reverse=True)
     save_json(cleaned[:100], "latest.json")
