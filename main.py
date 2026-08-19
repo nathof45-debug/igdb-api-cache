@@ -320,10 +320,21 @@ print("\n📡 Génération : Jeux annoncés (Les plus attendus sans date...)")
 
 query_tbd = (
     f"{COMMON_FIELDS} "
-    f"where ((first_release_date = null | first_release_date > {one_year_from_now}) "
-    f"| (release_dates.y > {current_year + 1})) "
-    f"& cover != null & hypes > 10 & status != (6, 7); "
-    f"sort hypes desc; limit 100;"
+    # 1. LOGIQUE DE DATE : On se concentre sur l'absence de date précise
+    # On accepte si : pas de date globale OU date globale très lointaine
+    f"where (first_release_date = null | first_release_date > {one_year_from_now}) "
+    
+    # 2. QUALITÉ : Jaquette obligatoire
+    f"& cover != null "
+    
+    # 3. NOTORIÉTÉ
+    f"& hypes >= 10 " 
+    
+    # 4. SÉCURITÉ STATUT : On accepte les statuts inconnus (null)
+    f"& (status = null | status != (6, 7)); "
+    
+    f"sort hypes desc; "
+    f"limit 100;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_tbd)
