@@ -276,7 +276,7 @@ top_50_blockbusters = cleaned_bb[:50]
 # cleaned_bb_sorted = sorted(top_50_blockbusters, key=lambda x: x.get("first_release_date") or 9999999999)
 
 #nouvelle méthode
- cleaned_bb_sorted = top_50_blockbusters.sort(key=get_hybrid_sort_date)
+cleaned_bb_sorted = top_50_blockbusters.sort(key=get_hybrid_sort_date)
 
 save_json(cleaned_bb_sorted, "blockbusters.json")
 print(f"✅ Fichier blockbusters.json généré avec {len(cleaned_bb_sorted)} hits majeurs, triés chronologiquement.")
