@@ -177,7 +177,7 @@ if res.status_code == 200:
     # - La date est entre (today - 7j) et AUJOURD'HUI
     # - ET le jeu possède une jaquette (cover) avec un image_id
     cleaned = [
-        g for g in cleaned_raw 
+        g for g in cleaned 
         if get_best_date(g) and seven_days_ago <= get_best_date(g) <= today
         and g.get("cover") and g.get("cover").get("image_id")
             ]
