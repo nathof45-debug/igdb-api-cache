@@ -331,16 +331,13 @@ query_tbd = (
     
     # 3. FILTRE DE NOTORIÉTÉ (Exclut les petits projets)
     # On demande au moins 30 "Hypes" OU 30 "Follows"
-    f"& (hypes >= 30 | follows >= 30) "
+    f"& (hypes >= 50 | follows >= 50) "
     
-    # 4. EXCLUSION DU THÈME INDÉPENDANT
-    f"& themes != (32) "
-    
-    # 5. SÉCURITÉ STATUT
+    # 4. SÉCURITÉ STATUT
     f"& (status = null | status != (6, 7)); "
     
     f"sort hypes desc; "
-    f"limit 100;"
+    f"limit 150;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_tbd)
