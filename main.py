@@ -54,7 +54,8 @@ one_year_from_now = today + (365 * 24 * 60 * 60)
 # Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
-    "hypes, status, first_release_date, release_dates.*, "
+    "hypes, follows, status, themes, " 
+    "first_release_date, release_dates.*, "
     "platforms.name, genres.name, "
     "involved_companies.developer, involved_companies.publisher, involved_companies.company.name, "
     "language_supports.language.name; "
@@ -78,6 +79,8 @@ def clean_games_data(games_data, scores_dict=None):
             "first_release_date": game.get("first_release_date"),
             "hypes": game.get("hypes"),
             "status": game.get("status"), # Récupère l'ID du statut (ex: 0, 4, 7...)
+            "follows": game.get("follows"), # Nombre de followers sur IGDB
+            "themes": game.get("themes", []), # Liste d'IDs de thèmes (ex: [32, 1, 2...])
             "release_dates": [
                 {
                     "category": rd.get("category"), # Récupère 0 (Jour), 1 (Mois) ou 2 (Année)
@@ -320,13 +323,24 @@ print("\n📡 Génération : Jeux annoncés (Les plus attendus sans date...)")
 
 query_tbd = (
     f"{COMMON_FIELDS} "
-    # On ne veut QUE les jeux qui n'ont aucune date globale
+    # 1. On ne veut QUE les jeux sans aucune date
     f"where first_release_date = null "
+    
+    # 2. On impose une jaquette
     f"& cover != null "
-    f"& hypes >= 5 " # Seuil de notoriété
-    f"& (status = null | status != (6, 7)); " # Exclure les annulés/rumeurs
+    
+    # 3. FILTRE DE NOTORIÉTÉ (Exclut les petits projets)
+    # On demande au moins 30 "Hypes" OU 30 "Follows"
+    f"& (hypes >= 30 | follows >= 30) "
+    
+    # 4. EXCLUSION DU THÈME INDÉPENDANT
+    f"& themes != (32) "
+    
+    # 5. SÉCURITÉ STATUT
+    f"& (status = null | status != (6, 7)); "
+    
     f"sort hypes desc; "
-    f"limit 150;"
+    f"limit 100;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_tbd)

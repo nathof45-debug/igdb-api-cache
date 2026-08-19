@@ -10,6 +10,10 @@
     "first_release_date": 1787184000,
     "hypes": 9,
     "status": null,
+    "follows": null,
+    "themes": [
+      18
+    ],
     "release_dates": [
       {
         "category": null,
@@ -85,9 +89,9 @@
       "Spike Chunsoft"
     ],
     "languages": [
-      "Chinese (Traditional)",
-      "English",
       "Chinese (Simplified)",
+      "English",
+      "Chinese (Traditional)",
       "Japanese"
     ]
   },
@@ -102,6 +106,11 @@
     "first_release_date": 1787184000,
     "hypes": 7,
     "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17
+    ],
     "release_dates": [
       {
         "category": null,
@@ -150,17 +159,17 @@
       "Amber"
     ],
     "languages": [
-      "Spanish (Mexico)",
-      "Portuguese (Brazil)",
-      "Turkish",
-      "Ukrainian",
-      "Spanish (Spain)",
-      "Chinese (Traditional)",
-      "Chinese (Simplified)",
       "Portuguese (Portugal)",
+      "Chinese (Simplified)",
       "English",
+      "Spanish (Spain)",
       "German",
-      "Japanese"
+      "Turkish",
+      "Portuguese (Brazil)",
+      "Ukrainian",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Spanish (Mexico)"
     ]
   },
   {
@@ -174,6 +183,13 @@
     "first_release_date": 1787184000,
     "hypes": 84,
     "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17,
+      19,
+      38
+    ],
     "release_dates": [
       {
         "category": null,
@@ -238,20 +254,88 @@
       "Playstack"
     ],
     "languages": [
+      "Portuguese (Portugal)",
+      "Chinese (Simplified)",
+      "English",
+      "Spanish (Spain)",
       "French",
-      "Spanish (Mexico)",
+      "Russian",
+      "German",
+      "Polish",
+      "Portuguese (Brazil)",
+      "Korean",
+      "Ukrainian",
+      "Italian",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Spanish (Mexico)"
+    ]
+  },
+  {
+    "id": 396025,
+    "name": "S.T.A.L.K.E.R. 2: Cost of Hope",
+    "cover": {
+      "id": 551988,
+      "image_id": "cobtx0"
+    },
+    "rating": null,
+    "first_release_date": 1787184000,
+    "hypes": 7,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787184000
+      },
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787184000
+      },
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787184000
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "genres": [
+      "Shooter",
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "developers": [
+      "GSC Game World"
+    ],
+    "publishers": [
+      "GSC Game World"
+    ],
+    "languages": [
+      "Czech",
+      "Arabic",
+      "Chinese (Simplified)",
+      "English",
+      "Spanish (Spain)",
+      "French",
+      "Korean",
+      "German",
+      "Polish",
       "Portuguese (Brazil)",
       "Ukrainian",
-      "Spanish (Spain)",
-      "Chinese (Traditional)",
-      "Chinese (Simplified)",
-      "Portuguese (Portugal)",
-      "English",
-      "Polish",
-      "Russian",
-      "Korean",
+      "Turkish",
       "Italian",
-      "German",
+      "Russian",
+      "Chinese (Traditional)",
       "Japanese"
     ]
   },
@@ -266,6 +350,12 @@
     "first_release_date": 1787270400,
     "hypes": 15,
     "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17,
+      43
+    ],
     "release_dates": [
       {
         "category": null,
@@ -311,6 +401,8 @@
     "first_release_date": null,
     "hypes": 59,
     "status": null,
+    "follows": null,
+    "themes": [],
     "release_dates": [
       {
         "category": null,
@@ -332,16 +424,16 @@
       "Panache Digital Games"
     ],
     "languages": [
-      "French",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
       "Chinese (Simplified)",
-      "Dutch",
       "English",
-      "Russian",
       "Korean",
-      "Italian",
+      "French",
+      "Russian",
       "German",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Dutch",
+      "Italian",
       "Japanese"
     ]
   }
