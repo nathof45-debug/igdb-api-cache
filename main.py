@@ -320,28 +320,20 @@ print("\n📡 Génération : Jeux annoncés (Les plus attendus sans date...)")
 
 query_tbd = (
     f"{COMMON_FIELDS} "
-    # 1. LOGIQUE DE DATE : On se concentre sur l'absence de date précise
-    # On accepte si : pas de date globale OU date globale très lointaine
-    f"where (first_release_date = null | first_release_date > {one_year_from_now}) "
-    
-    # 2. QUALITÉ : Jaquette obligatoire
+    # On ne veut QUE les jeux qui n'ont aucune date globale
+    f"where first_release_date = null "
     f"& cover != null "
-    
-    # 3. NOTORIÉTÉ
-    f"& hypes >= 10 " 
-    
-    # 4. SÉCURITÉ STATUT : On accepte les statuts inconnus (null)
-    f"& (status = null | status != (6, 7)); "
-    
+    f"& hypes >= 5 " # Seuil de notoriété
+    f"& (status = null | status != (6, 7)); " # Exclure les annulés/rumeurs
     f"sort hypes desc; "
-    f"limit 100;"
+    f"limit 150;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_tbd)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())
-    # On ne garde que si : pas de date DU TOUT ou date > 1 an
-    cleaned = [g for g in cleaned if get_best_date(g) is None or get_best_date(g) > one_year_from_now]
+    # On ne garde que si : pas de date DU TOUT
+    cleaned = [g for g in cleaned if get_best_date(g) is None]
     # Pour le TBD, on trie par Hype (attente) plutôt que par date
     cleaned.sort(key=lambda x: x.get("hypes") or 0, reverse=True)
     save_json(cleaned, "tbd.json")
