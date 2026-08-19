@@ -331,7 +331,7 @@ query_tbd = (
     
     # 3. FILTRE DE NOTORIÉTÉ (Exclut les petits projets)
     # On demande au moins 30 "Hypes" OU 30 "Follows"
-    f"& (hypes >= 50 | follows >= 50) "
+    f"& (hypes >= 20 | follows >= 20) "
     
     # 4. SÉCURITÉ STATUT
     f"& (status = null | status != (6, 7)); "
