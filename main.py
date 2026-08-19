@@ -162,7 +162,7 @@ if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
     # On trie quand même par date pour la cohérence visuelle
     cleaned.sort(key=get_hybrid_sort_date, reverse=True)
-    save_json(cleaned[:100], "latest.json")
+    save_json(cleaned[:50], "latest.json")
     print("✅ Fichier latest.json généré avec succès.")
 else:
     print(f"❌ Erreur Latest : {res.text}")
@@ -185,7 +185,7 @@ if res_prims.status_code == 200:
         if res_games.status_code == 200:
             cleaned = clean_games_data(res_games.json(), scores_dict)
             # Tri local par pop_score décroissant et limitation à 50
-            cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)[:100]
+            cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)[:50]
             save_json(cleaned, "popular.json")
             print("✅ Fichier popular.json généré avec succès.")
         else:
@@ -276,7 +276,7 @@ top_50_blockbusters = cleaned_bb[:50]
 # cleaned_bb_sorted = sorted(top_50_blockbusters, key=lambda x: x.get("first_release_date") or 9999999999)
 
 #nouvelle méthode
-top_50_blockbusters.sort(key=get_hybrid_sort_date)
+ cleaned_bb_sorted = top_50_blockbusters.sort(key=get_hybrid_sort_date)
 
 save_json(cleaned_bb_sorted, "blockbusters.json")
 print(f"✅ Fichier blockbusters.json généré avec {len(cleaned_bb_sorted)} hits majeurs, triés chronologiquement.")
