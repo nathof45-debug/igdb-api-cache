@@ -132,6 +132,16 @@ def get_hybrid_sort_date(game):
     
     return d if d is not None else 9999999999 # Repousse les 'sans date' à la fin
 
+def get_best_date(game):
+    """Calcule la date 'réelle' utilisée pour l'affichage et le filtrage."""
+    # 1. Priorité au timestamp global
+    d = game.get("first_release_date")
+    # 2. Fallback sur la date détaillée la plus ancienne
+    if d is None and game.get("release_dates"):
+        dates = [rd.get("date") for rd in game["release_dates"] if rd.get("date")]
+        if dates: d = min(dates)
+    return d # Peut retourner None
+
 def save_json(data, filename):
     """Sauvegarde la liste dans un fichier JSON."""
     with open(filename, "w", encoding="utf-8") as f:
@@ -160,6 +170,8 @@ query_latest = (
 res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
+    # On ne garde que les jeux dont la date calculée est entre (today - 7j) et AUJOURD'HUI
+    cleaned = [g for g in cleaned if get_best_date(g) and seven_days_ago <= get_best_date(g) <= today]
     # On trie quand même par date pour la cohérence visuelle
     cleaned.sort(key=get_hybrid_sort_date, reverse=True)
     save_json(cleaned[:50], "latest.json")
@@ -179,7 +191,8 @@ if res_prims.status_code == 200:
     
     # Étape B : Détails filtrés sur le dernier mois
     if ids_str:
-        query_popular = f"{COMMON_FIELDS} where id = ({ids_str}) & (first_release_date >= {one_month_ago} | release_dates.date >= {one_month_ago}); limit 500;"
+        #query_popular = f"{COMMON_FIELDS} where id = ({ids_str}) & (first_release_date >= {one_month_ago} | release_dates.date >= {one_month_ago}); limit 500;"
+        query_popular = f"{COMMON_FIELDS} where id = ({ids_str}) & first_release_date >= {one_month_ago} & first_release_date <= {today}; limit 500;"
         res_games = requests.post(BASE_URL, headers=headers, data=query_popular)
         
         if res_games.status_code == 200:
@@ -210,6 +223,8 @@ query_upcoming = (
 res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:50]
+    # On ne garde que si la date de référence est dans le futur (semaine prochaine)
+    cleaned = [g for g in cleaned if get_best_date(g) and today < get_best_date(g) <= next_week]
     cleaned.sort(key=get_hybrid_sort_date) # Tri chronologique ascendant
     save_json(cleaned, "upcoming.json")
     print("✅ Fichier upcoming.json généré avec succès.")
@@ -265,6 +280,16 @@ for i in range(0, len(all_ids), 500):
 # Étape C : Nettoyage et tri final
 cleaned_bb = clean_games_data(future_blockbusters, scores_dict_bb)
 
+
+# --- CORRECTION FILTRAGE STRICT PYTHON ---
+# On ne garde que les jeux qui sont VRAIMENT dans le futur.
+# On utilise get_best_date (ou get_hybrid_sort_date) pour vérifier la date réelle.
+cleaned_bb = [
+    g for g in cleaned_bb
+    if get_hybrid_sort_date(g) > today
+]
+# ------------------------------------------
+
 # 1. On coupe d'abord pour s'assurer de ne garder strictement que les 50 plus gros blockbusters.
 # (Ils sont déjà dans l'ordre d'attente car on a parcouru les IDs par Popscore décroissant à l'Étape B)
 top_50_blockbusters = cleaned_bb[:50]
@@ -295,6 +320,8 @@ query_tbd = (
 res = requests.post(BASE_URL, headers=headers, data=query_tbd)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())
+    # On ne garde que si : pas de date DU TOUT ou date > 1 an
+    cleaned = [g for g in cleaned if get_best_date(g) is None or get_best_date(g) > one_year_from_now]
     # Pour le TBD, on trie par Hype (attente) plutôt que par date
     cleaned.sort(key=lambda x: x.get("hypes") or 0, reverse=True)
     save_json(cleaned, "tbd.json")
