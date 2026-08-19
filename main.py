@@ -185,7 +185,7 @@ print("\n📡 Génération : Sorties populaires de la semaine...")
 query_upcoming = (
     f"{COMMON_FIELDS} "
     f"where first_release_date > {today} & first_release_date <= {next_week} "
-    f"& hypes >= 7 & status != (6, 7); " # Filtre les jeux annulés ou simples rumeurs
+    f"& hypes >= 7 | status != (6, 7); " # Filtre les jeux annulés ou simples rumeurs
     f"sort first_release_date asc; "
     f"limit 500;"
 )
