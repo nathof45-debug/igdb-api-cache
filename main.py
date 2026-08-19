@@ -49,6 +49,8 @@ next_week = today + 604800 # Calcul de la limite dans 7 jours
 
 current_year = datetime.datetime.now().year #Renvoit l'année en cours
 
+one_year_from_now = today + (365 * 24 * 60 * 60)
+
 # Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
@@ -261,7 +263,7 @@ print("\n📡 Génération : Jeux annoncés (Les plus attendus sans date...)")
 
 query_tbd = (
     f"{COMMON_FIELDS} "
-    f"where first_release_date = null "
+    f"where (first_release_date = null | first_release_date > {one_year_from_now}) "
     f"& cover != null "
     f"& hypes > 10; "
     f"sort hypes desc; "
