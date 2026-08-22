@@ -1,5 +1,41 @@
 [
   {
+    "id": 414401,
+    "name": "Superposition",
+    "cover": {
+      "id": 594136,
+      "image_id": "cocqfs"
+    },
+    "rating": null,
+    "first_release_date": 1787356800,
+    "hypes": null,
+    "status": null,
+    "follows": null,
+    "themes": [
+      19
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787356800
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Simulator",
+      "Indie"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": [
+      "English"
+    ]
+  },
+  {
     "id": 373593,
     "name": "Lord of Mysteries",
     "cover": {
@@ -87,15 +123,15 @@
       "IronEqual"
     ],
     "languages": [
-      "Polish",
-      "Japanese",
-      "French",
-      "English",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
       "Russian",
-      "Korean"
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
+      "Japanese",
+      "Polish",
+      "Korean",
+      "English",
+      "French",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -140,19 +176,19 @@
       "Sam Stubbings"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
-      "German",
-      "Chinese (Simplified)",
-      "Thai",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Turkish",
       "Russian",
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
+      "German",
+      "Japanese",
+      "Ukrainian",
       "Korean",
-      "Ukrainian"
+      "English",
+      "Italian",
+      "Thai",
+      "French",
+      "Turkish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -203,26 +239,26 @@
       "J6 Games"
     ],
     "languages": [
-      "English",
-      "Chinese (Simplified)",
-      "Danish",
-      "Dutch",
-      "Ukrainian",
-      "Polish",
-      "Norwegian",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Vietnamese",
-      "Turkish",
       "Russian",
-      "Korean",
-      "Portuguese (Portugal)",
-      "German",
-      "Czech",
-      "Hungarian",
-      "Chinese (Traditional)",
-      "Japanese",
       "Spanish (Spain)",
+      "German",
+      "Chinese (Simplified)",
+      "Ukrainian",
+      "Korean",
+      "English",
+      "Chinese (Traditional)",
+      "Norwegian",
+      "Hungarian",
+      "Vietnamese",
+      "Dutch",
+      "Czech",
+      "Turkish",
+      "Portuguese (Portugal)",
+      "Polish",
+      "Danish",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Italian",
       "Thai"
     ]
   },
@@ -263,18 +299,18 @@
       "Future Friends Games"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Thai",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Turkish",
       "Russian",
-      "Korean"
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
+      "German",
+      "Japanese",
+      "Korean",
+      "English",
+      "Italian",
+      "Thai",
+      "French",
+      "Turkish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -360,8 +396,8 @@
     "publishers": [],
     "languages": [
       "Japanese",
-      "English",
-      "Chinese (Simplified)"
+      "Chinese (Simplified)",
+      "English"
     ]
   },
   {
@@ -402,21 +438,21 @@
       "Kiki Games"
     ],
     "languages": [
-      "Polish",
-      "Japanese",
-      "English",
-      "Portuguese (Portugal)",
-      "Arabic",
+      "Russian",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
+      "Japanese",
+      "Polish",
+      "Korean",
+      "Portuguese (Portugal)",
+      "Ukrainian",
+      "English",
+      "Chinese (Traditional)",
+      "Arabic",
       "Dutch",
       "Turkish",
-      "Russian",
-      "Korean",
-      "Chinese (Traditional)",
-      "Ukrainian"
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -464,21 +500,21 @@
       "Apelsinka Games"
     ],
     "languages": [
-      "Polish",
-      "Japanese",
-      "French",
-      "English",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Czech",
-      "Turkish",
       "Russian",
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
+      "German",
+      "Japanese",
+      "Polish",
       "Korean",
+      "Czech",
+      "Ukrainian",
+      "English",
+      "Italian",
       "Chinese (Traditional)",
-      "Ukrainian"
+      "French",
+      "Turkish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -520,17 +556,17 @@
       "Mithra Interactive"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
+      "Russian",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
+      "Japanese",
+      "Korean",
+      "English",
       "Italian",
+      "French",
       "Turkish",
-      "Russian",
-      "Korean"
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -572,6 +608,47 @@
       "rick"
     ],
     "languages": [
+      "English"
+    ]
+  },
+  {
+    "id": 309731,
+    "name": "Zodiac Mountain",
+    "cover": {
+      "id": 501287,
+      "image_id": "coaqsn"
+    },
+    "rating": null,
+    "first_release_date": 1787270400,
+    "hypes": 1,
+    "status": 4,
+    "follows": null,
+    "themes": [
+      17
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787270400
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Strategy",
+      "Indie"
+    ],
+    "developers": [
+      "Mystic Road"
+    ],
+    "publishers": [
+      "Mystic Road"
+    ],
+    "languages": [
+      "Chinese (Simplified)",
       "English"
     ]
   },
@@ -636,7 +713,9 @@
     "hypes": null,
     "status": null,
     "follows": null,
-    "themes": [],
+    "themes": [
+      1
+    ],
     "release_dates": [
       {
         "category": null,
@@ -656,97 +735,9 @@
     "publishers": [],
     "languages": [
       "French",
-      "Italian",
+      "Chinese (Simplified)",
       "English",
-      "Chinese (Simplified)"
-    ]
-  },
-  {
-    "id": 414188,
-    "name": "Samba del Tuerto",
-    "cover": {
-      "id": 593486,
-      "image_id": "cocpxq"
-    },
-    "rating": null,
-    "first_release_date": 1787270400,
-    "hypes": null,
-    "status": null,
-    "follows": null,
-    "themes": [
-      17,
-      19,
-      31
-    ],
-    "release_dates": [
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787270400
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787270400
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "Agrupación Creativa Perenquén"
-    ],
-    "publishers": [],
-    "languages": [
-      "Spanish (Spain)"
-    ]
-  },
-  {
-    "id": 414114,
-    "name": "The Last Disease Z",
-    "cover": {
-      "id": 593232,
-      "image_id": "cocpqo"
-    },
-    "rating": null,
-    "first_release_date": 1787270400,
-    "hypes": null,
-    "status": 4,
-    "follows": null,
-    "themes": [
-      1,
-      21,
-      33,
-      38
-    ],
-    "release_dates": [
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787270400
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "Bublig"
-    ],
-    "publishers": [],
-    "languages": [
-      "Russian",
-      "English"
+      "Italian"
     ]
   },
   {
@@ -831,21 +822,21 @@
       "Playstack"
     ],
     "languages": [
-      "Polish",
-      "Japanese",
-      "French",
-      "English",
-      "Portuguese (Portugal)",
+      "Russian",
+      "Spanish (Mexico)",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Spanish (Mexico)",
-      "Russian",
+      "Japanese",
+      "Polish",
+      "Portuguese (Portugal)",
       "Korean",
+      "Ukrainian",
+      "English",
+      "Italian",
       "Chinese (Traditional)",
-      "Ukrainian"
+      "French",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -898,22 +889,22 @@
       "GSC Game World"
     ],
     "languages": [
+      "Russian",
+      "Spanish (Spain)",
+      "German",
+      "Ukrainian",
+      "Czech",
       "Polish",
       "Japanese",
-      "French",
-      "English",
-      "Arabic",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Czech",
-      "Turkish",
-      "Russian",
       "Korean",
+      "Chinese (Simplified)",
+      "English",
+      "Italian",
       "Chinese (Traditional)",
-      "Ukrainian"
+      "Arabic",
+      "French",
+      "Turkish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -980,17 +971,17 @@
       "Amber"
     ],
     "languages": [
-      "Japanese",
-      "English",
-      "Portuguese (Portugal)",
+      "Spanish (Mexico)",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Spanish (Mexico)",
-      "Turkish",
+      "Japanese",
+      "Portuguese (Portugal)",
+      "Ukrainian",
+      "English",
       "Chinese (Traditional)",
-      "Ukrainian"
+      "Turkish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1042,13 +1033,13 @@
       "Serenity Forge"
     ],
     "languages": [
-      "Japanese",
-      "English",
-      "German",
-      "Chinese (Simplified)",
-      "Portuguese (Brazil)",
       "Russian",
-      "Korean"
+      "Chinese (Simplified)",
+      "German",
+      "Japanese",
+      "Korean",
+      "English",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1088,18 +1079,18 @@
       "Alice Games"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
-      "Portuguese (Portugal)",
+      "Russian",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
+      "Japanese",
+      "Portuguese (Portugal)",
       "Korean",
-      "Chinese (Traditional)"
+      "English",
+      "Italian",
+      "Chinese (Traditional)",
+      "French",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1140,12 +1131,12 @@
       "Stellar Jockeys"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
-      "German",
       "Russian",
-      "Korean"
+      "German",
+      "Japanese",
+      "Korean",
+      "English",
+      "French"
     ]
   },
   {
@@ -1201,19 +1192,19 @@
       "Blackmill Games"
     ],
     "languages": [
-      "Polish",
-      "Japanese",
-      "French",
-      "English",
-      "Portuguese (Portugal)",
+      "Russian",
+      "Spanish (Mexico)",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
+      "Japanese",
+      "Portuguese (Portugal)",
+      "Polish",
+      "English",
       "Italian",
-      "Spanish (Mexico)",
+      "French",
       "Turkish",
-      "Russian"
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1356,19 +1347,19 @@
       "Soft Source"
     ],
     "languages": [
+      "Chinese (Simplified)",
       "Japanese",
       "English",
-      "Chinese (Simplified)",
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)"
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)"
     ]
   },
   {
     "id": 378170,
     "name": "How to Fish",
     "cover": {
-      "id": 594093,
-      "image_id": "cocqel"
+      "id": 594339,
+      "image_id": "cocqlf"
     },
     "rating": null,
     "first_release_date": 1787184000,
@@ -1395,24 +1386,28 @@
       "Simulator",
       "Indie"
     ],
-    "developers": [],
-    "publishers": [],
+    "developers": [
+      "Dazed Games"
+    ],
+    "publishers": [
+      "Dazed Games"
+    ],
     "languages": [
-      "Polish",
-      "Japanese",
-      "French",
-      "English",
-      "Swedish",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Turkish",
       "Russian",
+      "Swedish",
+      "Spanish (Spain)",
+      "Ukrainian",
+      "Chinese (Simplified)",
+      "Japanese",
+      "Polish",
       "Korean",
+      "German",
+      "English",
+      "Italian",
       "Chinese (Traditional)",
-      "Ukrainian"
+      "French",
+      "Turkish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1453,17 +1448,17 @@
       "Mythwright"
     ],
     "languages": [
-      "Polish",
-      "Japanese",
-      "French",
-      "English",
+      "Russian",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
+      "Japanese",
+      "Polish",
+      "Korean",
+      "English",
+      "French",
       "Turkish",
-      "Russian",
-      "Korean"
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1563,29 +1558,29 @@
       "Dionous Games"
     ],
     "languages": [
-      "English",
-      "Arabic",
-      "Swedish",
-      "Danish",
-      "Dutch",
+      "Russian",
+      "Spanish (Spain)",
+      "German",
       "Ukrainian",
-      "Polish",
+      "English",
+      "Chinese (Traditional)",
+      "Finnish",
       "Norwegian",
+      "Hungarian",
+      "Vietnamese",
+      "Czech",
+      "Dutch",
+      "Turkish",
+      "Swedish",
+      "Portuguese (Portugal)",
+      "Polish",
+      "Danish",
+      "Arabic",
+      "French",
       "Portuguese (Brazil)",
       "Italian",
-      "Vietnamese",
-      "Turkish",
-      "Russian",
-      "Portuguese (Portugal)",
-      "Hebrew",
-      "German",
-      "Czech",
-      "Hungarian",
-      "Chinese (Traditional)",
-      "French",
-      "Finnish",
-      "Spanish (Spain)",
-      "Thai"
+      "Thai",
+      "Hebrew"
     ]
   },
   {
@@ -1674,16 +1669,16 @@
       "Henry's House"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
+      "Spanish (Mexico)",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
+      "Japanese",
+      "English",
       "Italian",
-      "Spanish (Mexico)",
-      "Chinese (Traditional)"
+      "Chinese (Traditional)",
+      "French",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1722,16 +1717,16 @@
       "Faceless Smile Corp."
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
-      "Portuguese (Portugal)",
+      "Russian",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Russian",
+      "Portuguese (Portugal)",
+      "Ukrainian",
+      "Japanese",
       "Korean",
-      "Ukrainian"
+      "English",
+      "French"
     ]
   },
   {
@@ -1766,22 +1761,22 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "Polish",
+      "Russian",
+      "Swedish",
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
+      "German",
       "Japanese",
-      "French",
-      "English",
+      "Polish",
+      "Korean",
+      "Dutch",
       "Finnish",
       "Portuguese (Portugal)",
-      "Swedish",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Thai",
-      "Portuguese (Brazil)",
       "Italian",
-      "Dutch",
-      "Russian",
-      "Korean"
+      "English",
+      "Thai",
+      "French",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1820,14 +1815,14 @@
       "Mitchy Studios"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Turkish"
+      "Japanese",
+      "English",
+      "French",
+      "Turkish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1910,17 +1905,17 @@
       "SANDY FLOOR"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
-      "Portuguese (Portugal)",
+      "Russian",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Russian",
+      "Japanese",
+      "Portuguese (Portugal)",
       "Korean",
-      "Chinese (Traditional)"
+      "English",
+      "Chinese (Traditional)",
+      "French",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1960,27 +1955,27 @@
       "Renderise"
     ],
     "languages": [
-      "English",
-      "Swedish",
-      "Chinese (Simplified)",
-      "Danish",
-      "Dutch",
-      "Ukrainian",
-      "Polish",
-      "Norwegian",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Turkish",
       "Russian",
-      "Korean",
-      "Portuguese (Portugal)",
-      "German",
-      "Czech",
-      "Chinese (Traditional)",
-      "Japanese",
-      "French",
-      "Finnish",
       "Spanish (Spain)",
+      "Ukrainian",
+      "German",
+      "Chinese (Simplified)",
+      "Korean",
+      "English",
+      "Chinese (Traditional)",
+      "Finnish",
+      "Norwegian",
+      "Dutch",
+      "Czech",
+      "Turkish",
+      "Swedish",
+      "Portuguese (Portugal)",
+      "Polish",
+      "Danish",
+      "French",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Italian",
       "Thai"
     ]
   },
@@ -2037,14 +2032,14 @@
       "MicroProse"
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian"
+      "Japanese",
+      "English",
+      "Italian",
+      "French",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -2115,13 +2110,148 @@
       "Acclaim"
     ],
     "languages": [
-      "Japanese",
-      "English",
+      "Russian",
       "German",
       "Chinese (Simplified)",
-      "Russian",
+      "Japanese",
       "Korean",
+      "English",
       "Chinese (Traditional)"
+    ]
+  },
+  {
+    "id": 414461,
+    "name": "Meikyu",
+    "cover": {
+      "id": 594258,
+      "image_id": "cocqj6"
+    },
+    "rating": null,
+    "first_release_date": 1787184000,
+    "hypes": null,
+    "status": null,
+    "follows": null,
+    "themes": [
+      17
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787184000
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "iOS"
+    ],
+    "genres": [
+      "Puzzle",
+      "Strategy"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": []
+  },
+  {
+    "id": 414441,
+    "name": "WordHive 2",
+    "cover": {
+      "id": 594228,
+      "image_id": "cocqic"
+    },
+    "rating": null,
+    "first_release_date": 1787184000,
+    "hypes": null,
+    "status": null,
+    "follows": null,
+    "themes": [
+      34
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787184000
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": [
+      "Japanese"
+    ]
+  },
+  {
+    "id": 414439,
+    "name": "Awaken in Fear",
+    "cover": {
+      "id": 594224,
+      "image_id": "cocqi8"
+    },
+    "rating": null,
+    "first_release_date": 1787184000,
+    "hypes": null,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787184000
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "genres": [
+      "Adventure"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": [
+      "English"
+    ]
+  },
+  {
+    "id": 414435,
+    "name": "Dice Nights",
+    "cover": {
+      "id": 594222,
+      "image_id": "cocqi6"
+    },
+    "rating": null,
+    "first_release_date": 1787184000,
+    "hypes": null,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1787184000
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "genres": [
+      "Card & Board Game"
+    ],
+    "developers": [],
+    "publishers": [],
+    "languages": [
+      "English"
     ]
   },
   {
@@ -2157,28 +2287,28 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "English",
-      "Swedish",
-      "Chinese (Simplified)",
-      "Danish",
-      "Dutch",
-      "Ukrainian",
-      "Polish",
-      "Norwegian",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Turkish",
       "Russian",
-      "Korean",
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
       "German",
-      "Czech",
-      "Hungarian",
+      "Ukrainian",
+      "Korean",
+      "English",
       "Chinese (Traditional)",
-      "Japanese",
-      "French",
       "Finnish",
-      "Thai",
-      "Spanish (Spain)"
+      "Norwegian",
+      "Hungarian",
+      "Dutch",
+      "Turkish",
+      "Czech",
+      "Swedish",
+      "Polish",
+      "Danish",
+      "French",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Italian",
+      "Thai"
     ]
   },
   {
@@ -2373,87 +2503,6 @@
     ]
   },
   {
-    "id": 414179,
-    "name": "Fortnite: Chapter 7 - Season 4: Override",
-    "cover": {
-      "id": 593461,
-      "image_id": "cocpx1"
-    },
-    "rating": null,
-    "first_release_date": 1787184000,
-    "hypes": null,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "release_dates": [
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787184000
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PlayStation 4",
-      "Nintendo Switch 2",
-      "Android",
-      "PC (Microsoft Windows)",
-      "iOS",
-      "PlayStation 5",
-      "Xbox One",
-      "Nintendo Switch"
-    ],
-    "genres": [],
-    "developers": [
-      "Epic Games"
-    ],
-    "publishers": [
-      "Epic Games"
-    ],
-    "languages": []
-  },
-  {
     "id": 320972,
     "name": "Steins;Gate Re:Boot",
     "cover": {
@@ -2543,10 +2592,10 @@
       "Spike Chunsoft"
     ],
     "languages": [
-      "Japanese",
-      "English",
       "Chinese (Simplified)",
-      "Chinese (Traditional)"
+      "Chinese (Traditional)",
+      "Japanese",
+      "English"
     ]
   },
   {
@@ -2595,225 +2644,15 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "Polish",
-      "Japanese",
-      "English",
+      "Russian",
+      "Spanish (Spain)",
       "German",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Korean"
-    ]
-  },
-  {
-    "id": 157093,
-    "name": "Tic-Tac: Twelve O’Clock",
-    "cover": {
-      "id": 497365,
-      "image_id": "coanrp"
-    },
-    "rating": null,
-    "first_release_date": 1787097600,
-    "hypes": 3,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      19
-    ],
-    "release_dates": [
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1798675200
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1798675200
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1798675200
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1798675200
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1798675200
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787097600
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PlayStation 4",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Xbox One",
-      "Nintendo Switch"
-    ],
-    "genres": [
-      "Simulator",
-      "Strategy",
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "ARMAG"
-    ],
-    "publishers": [
-      "Two Cakes Studio"
-    ],
-    "languages": [
-      "Polish",
       "Japanese",
-      "French",
-      "English",
-      "Portuguese (Portugal)",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Turkish",
-      "Russian",
+      "Polish",
       "Korean",
-      "Chinese (Traditional)",
-      "Ukrainian"
-    ]
-  },
-  {
-    "id": 240598,
-    "name": "Deadlock Station",
-    "cover": {
-      "id": 459720,
-      "image_id": "co9uq0"
-    },
-    "rating": null,
-    "first_release_date": 1787097600,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      18
-    ],
-    "release_dates": [
-      {
-        "category": null,
-        "y": 2024,
-        "date": 1722211200
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787097600
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Strategy",
-      "Tactical",
-      "Adventure"
-    ],
-    "developers": [
-      "Luxorix Games"
-    ],
-    "publishers": [
-      "Luxorix Games"
-    ],
-    "languages": [
-      "Polish",
-      "Japanese",
       "English",
-      "Portuguese (Portugal)",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Korean",
-      "Chinese (Traditional)"
-    ]
-  },
-  {
-    "id": 399150,
-    "name": "T.W.I.R.L.",
-    "cover": {
-      "id": 558168,
-      "image_id": "cobyoo"
-    },
-    "rating": null,
-    "first_release_date": 1787097600,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      19
-    ],
-    "release_dates": [
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787097600
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787097600
-      },
-      {
-        "category": null,
-        "y": 2026,
-        "date": 1787097600
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "developers": [
-      "Genie Boy Games"
-    ],
-    "publishers": [
-      "Genie Boy Games",
-      "Haunted Publishing Syndicate"
-    ],
-    "languages": [
-      "Polish",
-      "Japanese",
-      "French",
-      "English",
-      "Portuguese (Portugal)",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Russian",
-      "Korean",
-      "Chinese (Traditional)"
+      "Portuguese (Brazil)"
     ]
   }
 ]
