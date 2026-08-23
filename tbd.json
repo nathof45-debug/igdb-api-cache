@@ -82,10 +82,10 @@
       "Krafton"
     ],
     "languages": [
-      "Korean",
-      "Russian",
+      "English",
       "Chinese (Simplified)",
-      "English"
+      "Korean",
+      "Russian"
     ]
   },
   {
@@ -225,8 +225,8 @@
       "Fateless"
     ],
     "languages": [
-      "English (UK)",
-      "English"
+      "English",
+      "English (UK)"
     ]
   },
   {
@@ -286,10 +286,10 @@
     ],
     "languages": [
       "Chinese (Simplified)",
-      "Japanese",
-      "Korean",
       "English",
-      "Chinese (Traditional)"
+      "Chinese (Traditional)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -318,8 +318,8 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "Chinese (Simplified)",
-      "English"
+      "English",
+      "Chinese (Simplified)"
     ]
   },
   {
@@ -426,15 +426,15 @@
       "Eclipse Glow Games"
     ],
     "languages": [
-      "Spanish (Spain)",
+      "Italian",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "Japanese",
-      "Korean",
+      "Spanish (Spain)",
       "English",
-      "Italian",
       "Chinese (Traditional)",
-      "French"
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -488,18 +488,18 @@
       "Raw Fury"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "German",
-      "Japanese",
-      "Portuguese (Portugal)",
-      "Korean",
-      "English",
       "Italian",
-      "Chinese (Traditional)",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Chinese (Traditional)",
+      "Portuguese (Portugal)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -647,14 +647,14 @@
       "Krafton"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "Italian",
       "German",
       "Chinese (Simplified)",
-      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "English",
-      "Italian",
-      "Portuguese (Brazil)"
+      "Russian",
+      "Korean"
     ]
   },
   {
@@ -828,20 +828,20 @@
       "Mundfish"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Mexico)",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Polish",
-      "Korean",
-      "English",
       "Italian",
-      "Chinese (Traditional)",
       "French",
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Chinese (Traditional)",
+      "Spanish (Mexico)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -904,10 +904,10 @@
     ],
     "languages": [
       "Chinese (Simplified)",
-      "Japanese",
-      "Korean",
       "English",
-      "Chinese (Traditional)"
+      "Chinese (Traditional)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -1001,21 +1001,81 @@
       "Sega"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Italian",
+      "French",
       "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Chinese (Traditional)",
       "Czech",
+      "Thai",
       "Japanese",
       "Korean",
-      "Polish",
-      "English",
+      "Arabic"
+    ]
+  },
+  {
+    "id": 389419,
+    "name": "Kena: Scars of Kosmora",
+    "cover": {
+      "id": 544253,
+      "image_id": "cobny5"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 66,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": null,
+        "date": null
+      },
+      {
+        "category": null,
+        "y": null,
+        "date": null
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "developers": [
+      "Ember Lab"
+    ],
+    "publishers": [
+      "Sony Interactive Entertainment"
+    ],
+    "languages": [
       "Italian",
-      "Chinese (Traditional)",
-      "Thai",
-      "Arabic",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Chinese (Traditional)",
+      "Portuguese (Portugal)",
+      "Japanese",
+      "Korean",
+      "Arabic"
     ]
   },
   {
@@ -1070,66 +1130,6 @@
     ]
   },
   {
-    "id": 389419,
-    "name": "Kena: Scars of Kosmora",
-    "cover": {
-      "id": 544253,
-      "image_id": "cobny5"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 65,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      17
-    ],
-    "release_dates": [
-      {
-        "category": null,
-        "y": null,
-        "date": null
-      },
-      {
-        "category": null,
-        "y": null,
-        "date": null
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Adventure"
-    ],
-    "developers": [
-      "Ember Lab"
-    ],
-    "publishers": [
-      "Sony Interactive Entertainment"
-    ],
-    "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Polish",
-      "Korean",
-      "Portuguese (Portugal)",
-      "English",
-      "Italian",
-      "Chinese (Traditional)",
-      "Arabic",
-      "French",
-      "Portuguese (Brazil)"
-    ]
-  },
-  {
     "id": 141444,
     "name": "Chrono Odyssey",
     "cover": {
@@ -1181,15 +1181,15 @@
       "Kakao Games"
     ],
     "languages": [
-      "Spanish (Spain)",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "Japanese",
-      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "English",
       "Chinese (Traditional)",
-      "French",
-      "Portuguese (Brazil)"
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -1233,7 +1233,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 61,
+    "hypes": 62,
     "status": null,
     "follows": null,
     "themes": [
@@ -1308,19 +1308,19 @@
       "THQ Nordic"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
       "Polish",
-      "Korean",
-      "Ukrainian",
-      "English",
-      "Italian",
-      "Chinese (Traditional)",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Italian",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Chinese (Traditional)",
+      "Ukrainian",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -1371,11 +1371,11 @@
       "2K"
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "English",
       "Italian",
-      "French"
+      "French",
+      "German",
+      "Spanish (Spain)",
+      "English"
     ]
   },
   {
@@ -1429,17 +1429,17 @@
       "Aurogon"
     ],
     "languages": [
-      "Spanish (Mexico)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "German",
-      "Japanese",
-      "Korean",
-      "English",
       "Italian",
-      "Chinese (Traditional)",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Chinese (Traditional)",
+      "Spanish (Mexico)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -1481,10 +1481,10 @@
       "Hello Games"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
       "German",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
       "English",
       "Chinese (Traditional)"
     ]
@@ -1582,18 +1582,18 @@
       "Team K1"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Mexico)",
-      "Spanish (Spain)",
+      "Italian",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "Japanese",
-      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "English",
-      "Italian",
+      "Russian",
       "Chinese (Traditional)",
-      "French",
-      "Portuguese (Brazil)"
+      "Spanish (Mexico)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -1719,18 +1719,18 @@
       "HypeTrain Digital"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Polish",
-      "Korean",
-      "Ukrainian",
-      "English",
       "Italian",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Portuguese (Brazil)",
+      "Ukrainian",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -1789,19 +1789,19 @@
       "Nekki"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "Italian",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "Japanese",
-      "Portuguese (Portugal)",
-      "Korean",
-      "Italian",
+      "Spanish (Spain)",
+      "Russian",
+      "Portuguese (Brazil)",
       "English",
-      "Chinese (Traditional)",
-      "French",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Chinese (Traditional)",
+      "Portuguese (Portugal)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -1973,90 +1973,6 @@
     ]
   },
   {
-    "id": 229035,
-    "name": "Holstin",
-    "cover": {
-      "id": 351764,
-      "image_id": "co7jf8"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 42,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      19,
-      21
-    ],
-    "release_dates": [
-      {
-        "category": null,
-        "y": null,
-        "date": null
-      },
-      {
-        "category": null,
-        "y": null,
-        "date": null
-      },
-      {
-        "category": null,
-        "y": null,
-        "date": null
-      },
-      {
-        "category": null,
-        "y": null,
-        "date": null
-      },
-      {
-        "category": null,
-        "y": null,
-        "date": null
-      },
-      {
-        "category": null,
-        "y": null,
-        "date": null
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PlayStation 4",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Xbox One",
-      "Nintendo Switch"
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "developers": [
-      "SONKA"
-    ],
-    "publishers": [
-      "Team17"
-    ],
-    "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Portuguese (Portugal)",
-      "Polish",
-      "Japanese",
-      "Ukrainian",
-      "Finnish",
-      "Italian",
-      "English",
-      "French",
-      "Turkish",
-      "Portuguese (Brazil)"
-    ]
-  },
-  {
     "id": 216321,
     "name": "Assassin's Creed: Codename Hexe",
     "cover": {
@@ -2140,6 +2056,90 @@
     "languages": []
   },
   {
+    "id": 229035,
+    "name": "Holstin",
+    "cover": {
+      "id": 351764,
+      "image_id": "co7jf8"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 41,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      19,
+      21
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": null,
+        "date": null
+      },
+      {
+        "category": null,
+        "y": null,
+        "date": null
+      },
+      {
+        "category": null,
+        "y": null,
+        "date": null
+      },
+      {
+        "category": null,
+        "y": null,
+        "date": null
+      },
+      {
+        "category": null,
+        "y": null,
+        "date": null
+      },
+      {
+        "category": null,
+        "y": null,
+        "date": null
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PlayStation 4",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "genres": [
+      "Adventure"
+    ],
+    "developers": [
+      "SONKA"
+    ],
+    "publishers": [
+      "Team17"
+    ],
+    "languages": [
+      "Italian",
+      "French",
+      "German",
+      "Polish",
+      "Finnish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Turkish",
+      "Portuguese (Portugal)",
+      "Ukrainian",
+      "Japanese"
+    ]
+  },
+  {
     "id": 381211,
     "name": "Bradley the Badger",
     "cover": {
@@ -2175,18 +2175,18 @@
       "Day 4 Night Studios"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "Italian",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "Japanese",
-      "Portuguese (Portugal)",
-      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "English",
-      "Italian",
+      "Russian",
       "Chinese (Traditional)",
-      "French",
-      "Portuguese (Brazil)"
+      "Portuguese (Portugal)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -2264,19 +2264,19 @@
       "Mundfish"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Mexico)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "German",
-      "Japanese",
-      "Korean",
-      "English",
       "Italian",
-      "Chinese (Traditional)",
       "French",
+      "German",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "English",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Chinese (Traditional)",
+      "Spanish (Mexico)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -2329,20 +2329,20 @@
       "Behaviour Interactive"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
       "Polish",
-      "Korean",
-      "Ukrainian",
-      "English",
-      "Italian",
-      "Chinese (Traditional)",
       "French",
+      "German",
+      "Italian",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Portuguese (Brazil)",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Chinese (Traditional)",
+      "Ukrainian",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -2407,31 +2407,31 @@
       "Klei Entertainment"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
       "German",
-      "Chinese (Simplified)",
-      "Ukrainian",
-      "Korean",
-      "English",
-      "Chinese (Traditional)",
-      "Finnish",
-      "Norwegian",
-      "Hungarian",
-      "Vietnamese",
-      "Czech",
-      "Dutch",
-      "Turkish",
-      "Swedish",
-      "Portuguese (Portugal)",
-      "Polish",
-      "Danish",
-      "Arabic",
-      "French",
+      "Spanish (Spain)",
       "Portuguese (Brazil)",
+      "Norwegian",
+      "Korean",
+      "Arabic",
+      "Swedish",
+      "French",
+      "Hungarian",
+      "Chinese (Simplified)",
+      "Turkish",
+      "Chinese (Traditional)",
+      "Thai",
+      "Finnish",
+      "Russian",
+      "Portuguese (Portugal)",
+      "Vietnamese",
       "Japanese",
       "Italian",
-      "Thai"
+      "Danish",
+      "Polish",
+      "Dutch",
+      "English",
+      "Czech",
+      "Ukrainian"
     ]
   },
   {
@@ -2474,17 +2474,17 @@
       "Paradark Studio"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
       "Polish",
-      "Korean",
-      "English",
-      "Italian",
       "French",
-      "Turkish"
+      "German",
+      "Italian",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Turkish",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -2537,15 +2537,15 @@
       "THQ Nordic"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Polish",
-      "English",
       "Italian",
-      "French"
+      "French",
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Japanese"
     ]
   },
   {
@@ -2639,15 +2639,15 @@
       "tinyBuild"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "Japanese",
-      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "English",
-      "French",
-      "Portuguese (Brazil)"
+      "Russian",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -2835,17 +2835,17 @@
       "Balor Games"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "German",
-      "Japanese",
-      "Korean",
-      "English",
       "Italian",
-      "Chinese (Traditional)",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Portuguese (Brazil)",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -2899,15 +2899,15 @@
       "Crescent Moon Games"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "English",
       "Italian",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Portuguese (Brazil)",
+      "Japanese"
     ]
   },
   {
@@ -2960,18 +2960,18 @@
       "Saber Interactive"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "German",
-      "Japanese",
-      "Polish",
-      "Korean",
-      "English",
       "Italian",
       "French",
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "English",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -3120,21 +3120,21 @@
       "Sega"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Mexico)",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Polish",
-      "Korean",
-      "English",
       "Italian",
-      "Chinese (Traditional)",
-      "Thai",
       "French",
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Thai",
+      "Chinese (Traditional)",
+      "Spanish (Mexico)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -3177,17 +3177,17 @@
       "Dead Astronauts"
     ],
     "languages": [
-      "Russian",
-      "Swedish",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Korean",
-      "English",
       "Italian",
+      "French",
+      "German",
+      "Swedish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
       "Chinese (Traditional)",
-      "French"
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -3228,22 +3228,22 @@
       "Motion Blur"
     ],
     "languages": [
-      "Russian",
-      "Swedish",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Italian",
+      "French",
       "German",
+      "Swedish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Portuguese (Brazil)",
+      "Turkish",
+      "Chinese (Traditional)",
+      "Thai",
+      "Vietnamese",
       "Japanese",
       "Korean",
-      "English",
-      "Italian",
-      "Chinese (Traditional)",
-      "Vietnamese",
-      "Thai",
-      "Arabic",
-      "French",
-      "Turkish",
-      "Portuguese (Brazil)"
+      "Arabic"
     ]
   },
   {
@@ -3419,17 +3419,17 @@
       "Critical Reflex"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
       "German",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Chinese (Traditional)",
+      "Portuguese (Portugal)",
       "Ukrainian",
       "Japanese",
-      "Portuguese (Portugal)",
-      "Korean",
-      "Chinese (Simplified)",
-      "English",
-      "Chinese (Traditional)",
-      "Portuguese (Brazil)"
+      "Korean"
     ]
   },
   {
@@ -3478,19 +3478,19 @@
       "Sega"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "Italian",
+      "French",
       "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Chinese (Traditional)",
       "Czech",
       "Japanese",
-      "Polish",
-      "Korean",
-      "Chinese (Simplified)",
-      "English",
-      "Italian",
-      "Chinese (Traditional)",
-      "French",
-      "Portuguese (Brazil)"
+      "Korean"
     ]
   },
   {
@@ -3532,18 +3532,18 @@
       "Jyamma Games"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "Italian",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "Japanese",
-      "Portuguese (Portugal)",
-      "Korean",
+      "Spanish (Spain)",
+      "Russian",
       "English",
-      "Italian",
+      "Portuguese (Brazil)",
       "Chinese (Traditional)",
-      "French",
-      "Portuguese (Brazil)"
+      "Portuguese (Portugal)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -3587,17 +3587,17 @@
       "Lightning Games"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "German",
-      "Japanese",
-      "Korean",
-      "English",
       "Italian",
+      "French",
+      "German",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
       "Chinese (Traditional)",
       "Thai",
-      "French"
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -3730,8 +3730,8 @@
       "Ocean Drive Studio"
     ],
     "languages": [
-      "Korean",
-      "English"
+      "English",
+      "Korean"
     ]
   },
   {
@@ -3817,15 +3817,15 @@
       "Proxima Beta"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Japanese",
-      "Polish",
-      "English",
       "Italian",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Polish",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Japanese"
     ]
   },
   {
@@ -4011,14 +4011,14 @@
       "Hello Games"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "Italian",
+      "French",
       "German",
       "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
       "English",
-      "Italian",
-      "Chinese (Traditional)",
-      "French"
+      "Chinese (Traditional)"
     ]
   },
   {
@@ -4149,11 +4149,11 @@
       "Saber Interactive"
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "English",
       "Italian",
-      "French"
+      "French",
+      "German",
+      "Spanish (Spain)",
+      "English"
     ]
   },
   {
@@ -4255,17 +4255,17 @@
       "Nacon"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "German",
-      "Japanese",
-      "Polish",
-      "English",
       "Italian",
-      "Chinese (Traditional)",
       "French",
-      "Portuguese (Brazil)"
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Chinese (Traditional)",
+      "Japanese"
     ]
   },
   {
@@ -4417,12 +4417,12 @@
       "Owlcat Games"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "English",
-      "French"
+      "Spanish (Spain)",
+      "Russian",
+      "English"
     ]
   },
   {
@@ -4463,11 +4463,11 @@
       "GOOD FUN CORPORATION"
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "English",
       "Italian",
-      "French"
+      "French",
+      "German",
+      "Spanish (Spain)",
+      "English"
     ]
   },
   {
@@ -4508,10 +4508,10 @@
       "Nexon"
     ],
     "languages": [
+      "English",
       "Korean",
       "Chinese (Simplified)",
-      "Chinese (Traditional)",
-      "English"
+      "Chinese (Traditional)"
     ]
   },
   {
@@ -4653,21 +4653,21 @@
       "Hooded Horse"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "German",
-      "Japanese",
       "Polish",
-      "Korean",
       "French",
-      "English",
+      "German",
       "Italian",
-      "Chinese (Traditional)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
+      "Turkish",
       "Thai",
       "Czech",
-      "Turkish",
-      "Portuguese (Brazil)"
+      "Chinese (Traditional)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -4764,19 +4764,19 @@
       "David Wehle"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Polish",
-      "Korean",
-      "English",
       "Italian",
-      "Chinese (Traditional)",
       "French",
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "English",
+      "Russian",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Chinese (Traditional)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -4823,18 +4823,18 @@
       "emptyvessel"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Polish",
-      "Korean",
-      "Portuguese (Portugal)",
-      "English",
       "Italian",
       "French",
-      "Turkish"
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Turkish",
+      "Portuguese (Portugal)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -4992,18 +4992,18 @@
       "WashBear Studio"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
       "Polish",
-      "Korean",
-      "English",
-      "Italian",
       "French",
+      "German",
+      "Italian",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Russian",
+      "English",
+      "Portuguese (Brazil)",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -5050,19 +5050,19 @@
       "RiffRaff Games"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
+      "Italian",
+      "French",
       "German",
       "Chinese (Simplified)",
-      "Japanese",
-      "Portuguese (Portugal)",
-      "Korean",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "English",
-      "Italian",
-      "Chinese (Traditional)",
-      "French",
+      "Russian",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Chinese (Traditional)",
+      "Portuguese (Portugal)",
+      "Japanese",
+      "Korean"
     ]
   },
   {
@@ -5198,18 +5198,18 @@
       "Dane Design"
     ],
     "languages": [
-      "Russian",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Polish",
-      "Dutch",
-      "English",
       "Italian",
       "French",
+      "German",
+      "Polish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Dutch",
+      "English",
+      "Portuguese (Brazil)",
+      "Russian",
       "Turkish",
-      "Portuguese (Brazil)"
+      "Japanese"
     ]
   }
 ]
