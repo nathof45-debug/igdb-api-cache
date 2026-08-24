@@ -33,17 +33,17 @@
       "Panache Digital Games"
     ],
     "languages": [
-      "Italian",
-      "French",
-      "German",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Dutch",
-      "English",
       "Portuguese (Brazil)",
-      "Russian",
+      "Chinese (Simplified)",
       "Japanese",
-      "Korean"
+      "Spanish (Spain)",
+      "French",
+      "Italian",
+      "Korean",
+      "German",
+      "English",
+      "Russian",
+      "Dutch"
     ]
   },
   {
@@ -110,17 +110,17 @@
       "rokaplay"
     ],
     "languages": [
-      "Italian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Spanish (Spain)",
       "French",
+      "Italian",
       "German",
       "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
       "English",
-      "Russian",
-      "Chinese (Traditional)",
-      "Japanese"
+      "Russian"
     ]
   },
   {
@@ -173,17 +173,17 @@
       "Electronic Arts"
     ],
     "languages": [
-      "Italian",
-      "French",
-      "German",
-      "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
       "Portuguese (Brazil)",
-      "English",
+      "Chinese (Simplified)",
       "Chinese (Traditional)",
       "Japanese",
-      "Korean"
+      "Spanish (Spain)",
+      "French",
+      "Italian",
+      "Korean",
+      "German",
+      "Polish",
+      "English"
     ]
   },
   {
@@ -195,7 +195,7 @@
     },
     "rating": null,
     "first_release_date": 1787788800,
-    "hypes": 126,
+    "hypes": 127,
     "status": null,
     "follows": null,
     "themes": [
@@ -236,20 +236,20 @@
       "Focus Entertainment"
     ],
     "languages": [
-      "Italian",
-      "French",
-      "German",
-      "Polish",
       "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Russian",
-      "English",
       "Chinese (Traditional)",
-      "Czech",
+      "Arabic",
       "Ukrainian",
-      "Portuguese (Portugal)",
+      "Spanish (Spain)",
+      "French",
+      "Italian",
       "Korean",
-      "Arabic"
+      "German",
+      "Portuguese (Portugal)",
+      "Polish",
+      "English",
+      "Czech",
+      "Russian"
     ]
   },
   {
@@ -312,12 +312,12 @@
       "Konami"
     ],
     "languages": [
-      "Italian",
-      "French",
-      "German",
+      "Japanese",
       "Spanish (Spain)",
-      "English",
-      "Japanese"
+      "French",
+      "Italian",
+      "German",
+      "English"
     ]
   },
   {
@@ -384,12 +384,145 @@
       "Konami"
     ],
     "languages": [
-      "Italian",
-      "French",
-      "German",
+      "Japanese",
       "Spanish (Spain)",
+      "French",
+      "Italian",
+      "German",
+      "English"
+    ]
+  },
+  {
+    "id": 252870,
+    "name": "Breathedge 2",
+    "cover": {
+      "id": 308486,
+      "image_id": "co6m12"
+    },
+    "rating": null,
+    "first_release_date": 1788134400,
+    "hypes": 15,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      21
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1788134400
+      },
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1798675200
+      },
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1798675200
+      },
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1798675200
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Xbox One"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Simulator"
+    ],
+    "developers": [
+      "RedRuins Softworks"
+    ],
+    "publishers": [
+      "HypeTrain Digital"
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Japanese",
+      "Ukrainian",
+      "Spanish (Spain)",
+      "French",
+      "Korean",
+      "German",
+      "Polish",
+      "Turkish",
       "English",
-      "Japanese"
+      "Russian"
+    ]
+  },
+  {
+    "id": 396022,
+    "name": "Serious Sam: Shatterverse",
+    "cover": {
+      "id": 554900,
+      "image_id": "cobw5w"
+    },
+    "rating": null,
+    "first_release_date": 1788134400,
+    "hypes": 13,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "release_dates": [
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1788134400
+      },
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1788134400
+      },
+      {
+        "category": null,
+        "y": 2026,
+        "date": 1788134400
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "genres": [
+      "Shooter",
+      "Adventure"
+    ],
+    "developers": [
+      "Behaviour Interactive"
+    ],
+    "publishers": [
+      "Devolver Digital"
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Ukrainian",
+      "Spanish (Spain)",
+      "French",
+      "Korean",
+      "German",
+      "Polish",
+      "English",
+      "Russian"
     ]
   }
 ]
