@@ -222,28 +222,31 @@ if res_prims.status_code == 200:
 else:
     print(f"❌ Erreur Popular (Primitives) : {res_prims.text}")
 
-# --- CATÉGORIE 3 : Sorties populaires de la semaine (Attendus mais pas forcément blockbusters) ---
+# --- CATÉGORIE 3 : Sorties populaires de la semaine ---
 print("\n📡 Génération : Sorties populaires de la semaine...")
 
-# Filtres ajoutés :
-# - hypes > 7 : Il faut qu'ils soient un peu demandés.
-# Ajout du filtre status != 7 (Rumored) et status != 6 (Canceled)
 query_upcoming = (
     f"{COMMON_FIELDS} "
     f"where ((first_release_date > {today} & first_release_date <= {next_week}) "
     f"| (release_dates.date > {today} & release_dates.date <= {next_week})) "
+    f"& release_dates.date_format = 0 " # On ne veut que des jeux avec AU MOINS une date précise
     f"& (status = null | status != (6, 7)) & hypes >= 7; "
     f"limit 500;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
 if res.status_code == 200:
-    cleaned = clean_games_data(res.json())[:50]
-    # On ne garde que si la date de référence est dans le futur (semaine prochaine)
-    cleaned = [g for g in cleaned if get_best_date(g) and today < get_best_date(g) <= next_week]
-    cleaned.sort(key=get_hybrid_sort_date) # Tri chronologique ascendant
-    save_json(cleaned, "upcoming.json")
-    print("✅ Fichier upcoming.json généré avec succès.")
+    cleaned = clean_games_data(res.json())
+    # FILTRE DE SÉCURITÉ : On vérifie que la date de cette semaine est bien précise
+    final_upcoming = []
+    for g in cleaned:
+        # On cherche s'il existe une date précise (category/date_format 0) dans la fenêtre de 7 jours
+        if any(rd.get("category") == 0 and rd.get("date") and today < rd.get("date") <= next_week 
+               for rd in g.get("release_dates", [])):
+            final_upcoming.append(g)
+            
+    final_upcoming.sort(key=get_hybrid_sort_date)
+    save_json(final_upcoming[:50], "upcoming.json")
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
     
