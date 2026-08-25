@@ -86,7 +86,7 @@ def clean_games_data(games_data, scores_dict=None):
                     "category": rd.get("category"), # Récupère 0 (Jour), 1 (Mois) ou 2 (Année)
                     "y": rd.get("y"),                # Récupère l'année (ex: 2027)
                     "m": rd.get("m"),                # Récupère le mois
-                    "d": rd.get("d"),
+                    "d": datetime.datetime.fromtimestamp(rd.get("date")).day if rd.get("date") else None,
                     "date": rd.get("date")
                 } 
                 for rd in game.get("release_dates", [])
