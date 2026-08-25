@@ -123,24 +123,26 @@ def clean_games_data(games_data, scores_dict=None):
     return cleaned_list
 
 def get_hybrid_sort_date(game):
-    """Calcule la date de tri en ignorant les versions annulées et en priorisant les vraies sorties."""
-    all_dates = []
+    """Calcule la date de tri en privilégiant l'accès le plus tôt pour le joueur."""
+    playable_dates = []
     
-    # 1. On récupère les dates valides (pas annulées)
-    valid_rds = [rd for rd in game.get("release_dates", []) if rd.get("status") not in (4, 5)]
+    # Statuts qui comptent comme une "sortie" pour un joueur
+    PLAYABLE_STATUSES = {6, 34, 3} 
     
-    # 2. On collecte les timestamps
-    if game.get("first_release_date"):
-        all_dates.append(game.get("first_release_date"))
+    for rd in game.get("release_dates", []):
+        # On ignore les déchets (annulés/offline)
+        if rd.get("status") in (4, 5): continue
         
-    for rd in valid_rds:
-        if rd.get("date"):
-            all_dates.append(rd.get("date"))
+        # On collecte les dates des versions jouables
+        if rd.get("status") in PLAYABLE_STATUSES and rd.get("date"):
+            playable_dates.append(rd.get("date"))
             
-    # 3. Si on a des dates de "vraie" sortie (Full Release ou Advanced Access), 
-    # on peut même forcer le tri sur elles si elles sont proches.
-    
-    return min(all_dates) if all_dates else 9999999999
+    # Si on a trouvé des dates jouables, on prend la plus ancienne (souvent l'Advanced Access)
+    if playable_dates:
+        return min(playable_dates)
+        
+    # Sinon, fallback classique sur la date globale
+    return game.get("first_release_date") or 9999999999
 
 def get_best_date(game):
     """Renvoie la date de sortie réelle (la plus ancienne) pour le filtrage."""
