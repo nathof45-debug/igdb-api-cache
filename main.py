@@ -304,24 +304,17 @@ cleaned_bb = clean_games_data(future_blockbusters, scores_dict_bb)
 # --- CORRECTION FILTRAGE STRICT PYTHON ---
 # On ne garde que les jeux qui sont VRAIMENT dans le futur.
 # On utilise get_best_date (ou get_hybrid_sort_date) pour vérifier la date réelle.
-cleaned_bb = [
-    g for g in cleaned_bb
-    if get_hybrid_sort_date(g) > today
-]
+future_games_with_date = []
+for g in cleaned_bb:
+    sort_ts = get_hybrid_sort_date(g)
+    if sort_ts > today and sort_ts < 9999999999:
+        g["_tmp_sort_ts"] = sort_ts # On stocke le timestamp pour le tri
+        future_games_with_date.append(g)
 # ------------------------------------------
 
-# 1. On coupe d'abord pour s'assurer de ne garder strictement que les 50 plus gros blockbusters.
-# (Ils sont déjà dans l'ordre d'attente car on a parcouru les IDs par Popscore décroissant à l'Étape B)
-top_50_blockbusters = cleaned_bb[:50]
+all_sorted_chronologically = sorted(future_games_with_date, key=lambda x: x["_tmp_sort_ts"])
 
-# 2. On trie ces 50 mastodontes par ordre chronologique (du plus proche au plus lointain),
-
-#ancienne méthode
-# en repoussant les jeux sans date exacte (first_release_date = null) à la fin grâce au timestamp géant.
-# cleaned_bb_sorted = sorted(top_50_blockbusters, key=lambda x: x.get("first_release_date") or 9999999999)
-
-#nouvelle méthode
-cleaned_bb_sorted = sorted(top_50_blockbusters, key=get_hybrid_sort_date)
+cleaned_bb_sorted = all_sorted_chronologically[:50]
 
 save_json(cleaned_bb_sorted, "blockbusters.json")
 print(f"✅ Fichier blockbusters.json généré avec {len(cleaned_bb_sorted)} hits majeurs, triés chronologiquement.")
