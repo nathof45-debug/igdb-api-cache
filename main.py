@@ -83,7 +83,7 @@ def clean_games_data(games_data, scores_dict=None):
             "themes": game.get("themes", []), # Liste d'IDs de thèmes (ex: [32, 1, 2...])
             "release_dates": [
                 {
-                    "category": rd.get("category"), # Récupère 0 (Jour), 1 (Mois) ou 2 (Année)
+                    "category": rd.get("date_format", rd.get("category")), # Récupère 0 (Jour), 1 (Mois) ou 2 (Année)
                     "y": rd.get("y"),                # Récupère l'année (ex: 2027)
                     "m": rd.get("m"),                # Récupère le mois
                     "d": datetime.datetime.fromtimestamp(rd.get("date")).day if rd.get("date") else None,
