@@ -123,30 +123,23 @@ def clean_games_data(games_data, scores_dict=None):
     return cleaned_list
 
 def get_hybrid_sort_date(game):
-    """Calcule la date la plus ancienne de TOUTES (Timestamp, release_dates, etc.) pour le tri."""
+    """Calcule la date de tri en ignorant les versions annulées et en priorisant les vraies sorties."""
     all_dates = []
     
-    # 1. On ajoute le first_release_date global
+    # 1. On récupère les dates valides (pas annulées)
+    valid_rds = [rd for rd in game.get("release_dates", []) if rd.get("status") not in (4, 5)]
+    
+    # 2. On collecte les timestamps
     if game.get("first_release_date"):
         all_dates.append(game.get("first_release_date"))
+        
+    for rd in valid_rds:
+        if rd.get("date"):
+            all_dates.append(rd.get("date"))
+            
+    # 3. Si on a des dates de "vraie" sortie (Full Release ou Advanced Access), 
+    # on peut même forcer le tri sur elles si elles sont proches.
     
-    # 2. On ajoute tous les timestamps des entrées détaillées
-    if game.get("release_dates"):
-        for rd in game["release_dates"]:
-            if rd.get("date"):
-                all_dates.append(rd.get("date"))
-            elif rd.get("y"):
-                # Si pas de timestamp mais des champs m/y, on génère un timestamp de début de période
-                year = rd.get("y")
-                month = rd.get("m") or 1
-                day = rd.get("d") or 1
-                try:
-                    ts = int(datetime.datetime(year, month, day).timestamp())
-                    all_dates.append(ts)
-                except:
-                    pass
-    
-    # On renvoie la date la plus petite (la plus ancienne) trouvée
     return min(all_dates) if all_dates else 9999999999
 
 def get_best_date(game):
