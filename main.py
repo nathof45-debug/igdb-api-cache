@@ -55,7 +55,7 @@ one_year_from_now = today + (365 * 24 * 60 * 60)
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
     "hypes, follows, status, themes, " 
-    "first_release_date, release_dates.*, "
+    "first_release_date, release_dates.*, release_dates.platform.name,"
     "platforms.name, genres.name, "
     "involved_companies.developer, involved_companies.publisher, involved_companies.company.name, "
     "language_supports.language.name; "
@@ -89,7 +89,7 @@ def clean_games_data(games_data, scores_dict=None):
                     "d": datetime.datetime.fromtimestamp(rd.get("date")).day if rd.get("date") else None,
                     "date": rd.get("date"),
                     "status": rd.get("status"),
-                    "platform_name": rd.get("platform")
+                    "platform_name": rd.get("platform", {}).get("name") if isinstance(rd.get("platform"), dict) else None
                 } 
                 for rd in game.get("release_dates", [])
             ]
