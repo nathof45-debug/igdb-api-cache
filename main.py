@@ -123,35 +123,35 @@ def clean_games_data(games_data, scores_dict=None):
     return cleaned_list
 
 def get_hybrid_sort_date(game):
-    """Calcule la date la plus précise pour le tri (Timestamp > Date détaillée > Année)."""
-    d_val = game.get("first_release_date")
+    """Calcule la date la plus ancienne de TOUTES (Timestamp, release_dates, etc.) pour le tri."""
+    all_dates = []
     
-    if d_val is None and game.get("release_dates"):
-        # On cherche la date la plus précise disponible
-        best_rd = min(game["release_dates"], key=lambda x: x.get("category") if x.get("category") is not None else 7)
-        
-        if best_rd.get("date"):
-            d_val = best_rd.get("date")
-        elif best_rd.get("y"):
-            year = best_rd.get("y")
-            month = best_rd.get("m") or 1
-            day = best_rd.get("d") or 1
-            try:
-                d_val = int(datetime.datetime(year, month, day).timestamp())
-            except:
-                d_val = int(datetime.datetime(year, 1, 1).timestamp())
+    # 1. On ajoute le first_release_date global
+    if game.get("first_release_date"):
+        all_dates.append(game.get("first_release_date"))
     
-    return d_val if d_val is not None else 9999999999
+    # 2. On ajoute tous les timestamps des entrées détaillées
+    if game.get("release_dates"):
+        for rd in game["release_dates"]:
+            if rd.get("date"):
+                all_dates.append(rd.get("date"))
+            elif rd.get("y"):
+                # Si pas de timestamp mais des champs m/y, on génère un timestamp de début de période
+                year = rd.get("y")
+                month = rd.get("m") or 1
+                day = rd.get("d") or 1
+                try:
+                    ts = int(datetime.datetime(year, month, day).timestamp())
+                    all_dates.append(ts)
+                except:
+                    pass
+    
+    # On renvoie la date la plus petite (la plus ancienne) trouvée
+    return min(all_dates) if all_dates else 9999999999
 
 def get_best_date(game):
-    """Calcule la date 'réelle' utilisée pour l'affichage et le filtrage."""
-    # 1. Priorité au timestamp global
-    d = game.get("first_release_date")
-    # 2. Fallback sur la date détaillée la plus ancienne
-    if d is None and game.get("release_dates"):
-        dates = [rd.get("date") for rd in game["release_dates"] if rd.get("date")]
-        if dates: d = min(dates)
-    return d # Peut retourner None
+    """Renvoie la date de sortie réelle (la plus ancienne) pour le filtrage."""
+    return get_hybrid_sort_date(game) if get_hybrid_sort_date(game) != 9999999999 else None
 
 def save_json(data, filename):
     """Sauvegarde la liste dans un fichier JSON."""
