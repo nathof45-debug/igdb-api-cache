@@ -85,6 +85,7 @@ def clean_games_data(games_data, scores_dict=None):
                 {
                     "category": rd.get("category"), # Récupère 0 (Jour), 1 (Mois) ou 2 (Année)
                     "y": rd.get("y"),                # Récupère l'année (ex: 2027)
+                    "m": rd.get("m"),                # Récupère le mois
                     "date": rd.get("date")
                 } 
                 for rd in game.get("release_dates", [])
@@ -124,16 +125,22 @@ def get_hybrid_sort_date(game):
     """Calcule la date la plus précise pour le tri (Timestamp > Date détaillée > Année)."""
     # 1. Priorité au timestamp global
     d = game.get("first_release_date")
-    # 2. Sinon, on cherche le plus petit timestamp dans les dates détaillées
     if d is None and game.get("release_dates"):
         dates = [rd.get("date") for rd in game["release_dates"] if rd.get("date")]
         if dates: d = min(dates)
-    # 3. Sinon, on se rabat sur l'année (début d'année par défaut pour le tri)
-    if d is None and game.get("release_dates"):
-        years = [rd.get("y") for rd in game["release_dates"] if rd.get("y")]
-        if years: d = int(datetime.datetime(min(years), 1, 1).timestamp())
     
-    return d if d is not None else 9999999999 # Repousse les 'sans date' à la fin
+    if d is None and game.get("release_dates"):
+        # Chercher l'entrée la plus précise (année + mois)
+        rds = game["release_dates"]
+        years = [rd.get("y") for rd in rds if rd.get("y")]
+        if years:
+            best_y = min(years)
+            # Chercher le mois correspondant à cette année
+            months = [rd.get("m") for rd in rds if rd.get("y") == best_y and rd.get("m")]
+            best_m = min(months) if months else 1
+            d = int(datetime.datetime(best_y, best_m, 1).timestamp()) # Tri au 1er du mois
+            
+    return d if d is not None else 9999999999
 
 def get_best_date(game):
     """Calcule la date 'réelle' utilisée pour l'affichage et le filtrage."""
