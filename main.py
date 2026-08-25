@@ -289,11 +289,6 @@ for i in range(0, len(all_ids), 500):
     
     if res_bb_games.status_code == 200:
         future_blockbusters.extend(res_bb_games.json())
-        
-        # ⚡ OPTIMISATION BFF : Les IDs étant classés par Popscore décroissant,
-        # dès qu'on a trouvé nos 50 futurs hits, on arrête de spammer l'API !
-        if len(future_blockbusters) >= 50:
-            break
     else:
         print(f"❌ Erreur Games chunk {i} : {res_bb_games.text}")
 
@@ -315,6 +310,9 @@ for g in cleaned_bb:
 all_sorted_chronologically = sorted(future_games_with_date, key=lambda x: x["_tmp_sort_ts"])
 
 cleaned_bb_sorted = all_sorted_chronologically[:50]
+
+for g in cleaned_bb_sorted:
+    if "_tmp_sort_ts" in g: del g["_tmp_sort_ts"]
 
 save_json(cleaned_bb_sorted, "blockbusters.json")
 print(f"✅ Fichier blockbusters.json généré avec {len(cleaned_bb_sorted)} hits majeurs, triés chronologiquement.")
