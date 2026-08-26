@@ -185,8 +185,8 @@ print("\n📡 Génération : Les dernières sorties (Les 50 meilleurs jeux des 1
 query_latest = (
     f"{COMMON_FIELDS} "
     # 1. On groupe les deux conditions de date dans un grand bloc
-    f"where ((first_release_date >= {seven_days_ago} & first_release_date <= {today}) "
-    f"| (release_dates.date >= {seven_days_ago} & release_dates.date <= {today})) "
+    f"where ((first_release_date >= {seven_days_ago} & first_release_date <= {today} & release_dates.date_format = 0) "
+    f"| (release_dates.date >= {seven_days_ago} & release_dates.date <= {today} & release_dates.date_format = 0) "
     # 2. On impose la cover et le statut à TOUS les jeux qui sortent de ce bloc
     f"& cover != null & cover.image_id != null " 
     f"& (status = null | status != (6, 7)); "
@@ -198,20 +198,21 @@ if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
     final_latest = []
     for g in cleaned:
-        # On vérifie si AU MOINS UNE date du jeu tombe dans la fenêtre des 7 derniers jours
-        has_recent_release = any(
-            rd.get("date") and seven_days_ago <= rd.get("date") <= today 
+        # On cherche si AU MOINS UNE date précise (category 0) est tombée dans les 7 derniers jours
+        has_precise_recent_release = any(
+            rd.get("category") == 0 and # Précision au JOUR près
+            rd.get("date") and 
+            seven_days_ago <= rd.get("date") <= today 
             for rd in g.get("release_dates", [])
         )
-        # Fallback sur la date principale si pas de release_dates détaillées
-        if not has_recent_release and g.get("first_release_date"):
-            has_recent_release = seven_days_ago <= g.get("first_release_date") <= today
 
-        if has_recent_release and g.get("cover") and g.get("cover").get("image_id"):
+        if has_precise_recent_release and g.get("cover") and g.get("cover").get("image_id"):
             final_latest.append(g)
 
-    # Tri par date décroissante (le plus récent en premier)
-    final_latest.sort(key=lambda g: get_hybrid_sort_date(g, today), reverse=True)
+    # On trie par date décroissante (le plus récent en premier)
+    # Ici on utilise future_only=False car ce sont des sorties PASSÉES
+    final_latest.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=False), reverse=True)
+    
     save_json(final_latest[:50], "latest.json")
 else:
     print(f"❌ Erreur Latest : {res.text}")
