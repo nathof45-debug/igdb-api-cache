@@ -124,7 +124,7 @@ def clean_games_data(games_data, scores_dict=None):
         
     return cleaned_list
 
-def get_hybrid_sort_date(game, today_ts=None):
+def get_hybrid_sort_date(game, today_ts=None, future_only=False):
     if today_ts is None:
         today_ts = int(time.time())
     
@@ -137,11 +137,12 @@ def get_hybrid_sort_date(game, today_ts=None):
     for rd in game.get("release_dates", []):
         # On ignore les déchets (annulés/offline)
         if rd.get("status") in (4, 5): continue
-        
+
+        d = rd.get("date")
         # On collecte les dates des versions jouables
-        if rd.get("status") in PLAYABLE_STATUSES and rd.get("date"):
-             if rd.get("date") >= today_ts:
-                playable_dates.append(rd.get("date"))
+        if rd.get("status") in PLAYABLE_STATUSES and d:
+             if  not future_only or d >= today_ts:
+                playable_dates.append(d)
             
     # Si on a trouvé des dates jouables, on prend la plus ancienne (souvent l'Advanced Access)
     if playable_dates:
@@ -150,17 +151,18 @@ def get_hybrid_sort_date(game, today_ts=None):
     # Si aucune date future n'est trouvée dans release_dates, 
     # on vérifie si first_release_date est dans le futur
     first_date = game.get("first_release_date")
-    if first_date and first_date >= today_ts:
-        return first_date
+    if first_date:
+        if not future_only or first_date >= today_ts:
+            return first_date
         
     return 9999999999
 
-def get_best_date(game, today_ts=None):
+def get_best_date(game, today_ts=None, future_only=False):
     if today_ts is None:
         import time
         today_ts = int(time.time())
     
-    res = get_hybrid_sort_date(game, today_ts)
+    res = get_hybrid_sort_date(game, today_ts, future_only)
     return res if res != 9999999999 else None
 
 def save_json(data, filename):
@@ -194,18 +196,23 @@ query_latest = (
 res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
-    # On ne garde que si : 
-    # - La date est entre (today - 7j) et AUJOURD'HUI
-    # - ET le jeu possède une jaquette (cover) avec un image_id
-    cleaned = [
-        g for g in cleaned 
-        if get_best_date(g) and seven_days_ago <= get_best_date(g, today) <= today
-        and g.get("cover") and g.get("cover").get("image_id")
-            ]
-    # On trie quand même par date pour la cohérence visuelle
-    cleaned.sort(key=lambda g: get_hybrid_sort_date(g, today), reverse=True)
-    save_json(cleaned[:50], "latest.json")
-    print("✅ Fichier latest.json généré avec succès.")
+    final_latest = []
+    for g in cleaned:
+        # On vérifie si AU MOINS UNE date du jeu tombe dans la fenêtre des 7 derniers jours
+        has_recent_release = any(
+            rd.get("date") and seven_days_ago <= rd.get("date") <= today 
+            for rd in g.get("release_dates", [])
+        )
+        # Fallback sur la date principale si pas de release_dates détaillées
+        if not has_recent_release and g.get("first_release_date"):
+            has_recent_release = seven_days_ago <= g.get("first_release_date") <= today
+
+        if has_recent_release and g.get("cover") and g.get("cover").get("image_id"):
+            final_latest.append(g)
+
+    # Tri par date décroissante (le plus récent en premier)
+    final_latest.sort(key=lambda g: get_hybrid_sort_date(g, today), reverse=True)
+    save_json(final_latest[:50], "latest.json")
 else:
     print(f"❌ Erreur Latest : {res.text}")
 
@@ -259,7 +266,7 @@ if res.status_code == 200:
                for rd in g.get("release_dates", [])):
             final_upcoming.append(g)
             
-    final_upcoming.sort(key=lambda g: get_hybrid_sort_date(g, today))
+    final_upcoming.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=True))
     save_json(final_upcoming[:50], "upcoming.json")
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
@@ -314,7 +321,7 @@ cleaned_bb = clean_games_data(future_blockbusters, scores_dict_bb)
 # On utilise get_best_date (ou get_hybrid_sort_date) pour vérifier la date réelle.
 future_games_with_date = []
 for g in cleaned_bb:
-    sort_ts = get_hybrid_sort_date(g, today)
+    sort_ts = get_hybrid_sort_date(g, today, future_only=True)
     if sort_ts > today and sort_ts < 9999999999:
         g["_tmp_sort_ts"] = sort_ts # On stocke le timestamp pour le tri
         future_games_with_date.append(g)
