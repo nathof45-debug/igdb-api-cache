@@ -117,7 +117,7 @@ def clean_games_data(games_data, scores_dict=None):
         clean_game["developers"] = devs
         clean_game["publishers"] = pubs
         clean_game["languages"] = list(set(lang.get("language", {}).get("name") for lang in game.get("language_supports", []) if lang.get("language", {}).get("name")))
-         cleaned_list.append(clean_game)
+        cleaned_list.append(clean_game)
         
     return cleaned_list
 
