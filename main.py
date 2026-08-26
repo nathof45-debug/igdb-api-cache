@@ -148,7 +148,7 @@ def get_hybrid_sort_date(game, today_ts=None, future_only=False):
          st = rd.get("status")
          dt = rd.get("date")
         
-       if st in EXCLUDED_STATUSES or not dt:
+        if st in EXCLUDED_STATUSES or not dt:
             continue
         
         # On ne prend que les versions qui sont considérées comme une "sortie"
