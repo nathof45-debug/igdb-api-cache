@@ -137,18 +137,28 @@ def get_hybrid_sort_date(game):
         
         # On collecte les dates des versions jouables
         if rd.get("status") in PLAYABLE_STATUSES and rd.get("date"):
-            playable_dates.append(rd.get("date"))
+             if rd.get("date") >= today_ts:
+                playable_dates.append(rd.get("date"))
             
     # Si on a trouvé des dates jouables, on prend la plus ancienne (souvent l'Advanced Access)
     if playable_dates:
         return min(playable_dates)
         
-    # Sinon, fallback classique sur la date globale
-    return game.get("first_release_date") or 9999999999
+    # Si aucune date future n'est trouvée dans release_dates, 
+    # on vérifie si first_release_date est dans le futur
+    first_date = game.get("first_release_date")
+    if first_date and first_date >= today_ts:
+        return first_date
+        
+    return 9999999999
 
-def get_best_date(game):
-    """Renvoie la date de sortie réelle (la plus ancienne) pour le filtrage."""
-    return get_hybrid_sort_date(game) if get_hybrid_sort_date(game) != 9999999999 else None
+def get_best_date(game, today_ts=None):
+    if today_ts is None:
+        import time
+        today_ts = int(time.time())
+    
+    res = get_hybrid_sort_date(game, today_ts)
+    return res if res != 9999999999 else None
 
 def save_json(data, filename):
     """Sauvegarde la liste dans un fichier JSON."""
@@ -246,7 +256,7 @@ if res.status_code == 200:
                for rd in g.get("release_dates", [])):
             final_upcoming.append(g)
             
-    final_upcoming.sort(key=get_hybrid_sort_date)
+    final_upcoming.sort(key=lambda g: get_hybrid_sort_date(g, today))
     save_json(final_upcoming[:50], "upcoming.json")
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
