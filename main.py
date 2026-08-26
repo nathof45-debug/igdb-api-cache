@@ -145,8 +145,8 @@ def get_hybrid_sort_date(game, today_ts=None, future_only=False):
     EXCLUDED_STATUSES = {4, 5}
     
     for rd in game.get("release_dates", []):
-         st = rd.get("status")
-         dt = rd.get("date")
+        st = rd.get("status")
+        dt = rd.get("date")
         
         if st in EXCLUDED_STATUSES or not dt:
             continue
