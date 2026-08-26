@@ -187,8 +187,9 @@ res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
     final_latest = []
-    
+
     for g in cleaned:
+        # 1. On cherche une date précise ET jouable dans les 7 derniers jours
         has_precise_recent_release = any(
             rd.get("category") == 0 and 
             rd.get("status") in VALID_PLAYABLE and
@@ -197,19 +198,22 @@ if res.status_code == 200:
             for rd in g.get("release_dates", [])
         )
         
-        # Fallback sur first_release_date
-    if not has_precise_recent_release and g.get("first_release_date"):
-        # On vérifie si la date principale tombe dans la fenêtre
-        if seven_days_ago <= g.get("first_release_date") <= today:
-            # On vérifie qu'il n'y a pas de statut "Beta/Alpha" attaché à cette date
-            has_precise_recent_release = True 
+        # 2. Fallback sur la date principale (si aucune release_date détaillée n'a matché)
+        # On vérifie que l'indentation de ce bloc est BIEN à l'intérieur du "for g in cleaned"
+        if not has_precise_recent_release and g.get("first_release_date"):
+            if seven_days_ago <= g.get("first_release_date") <= today:
+                # Sécurité : on s'assure que le statut global du jeu n'est pas Alpha/Beta
+                if g.get("status") not in {1, 2}:
+                    has_precise_recent_release = True 
 
-        if has_precise_recent_release and g.get("cover",{}).get("image_id"):
+        # 3. Ajout final si validé
+        if has_precise_recent_release and g.get("cover") and g.get("cover").get("image_id"):
             final_latest.append(g)
 
-    # Tri par date décroissante
+    # Tri final (indenté au niveau du IF status_code == 200)
     final_latest.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=False), reverse=True)
     save_json(final_latest[:50], "latest.json")
+    print("✅ Fichier latest.json généré avec succès.")
 else:
     print(f"❌ Erreur Latest : {res.text}")
 
