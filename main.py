@@ -124,7 +124,10 @@ def clean_games_data(games_data, scores_dict=None):
         
     return cleaned_list
 
-def get_hybrid_sort_date(game, today_ts):
+def get_hybrid_sort_date(game, today_ts=None):
+    if today_ts is None:
+        today_ts = int(time.time())
+    
     """Calcule la date de tri en privilégiant l'accès le plus tôt pour le joueur."""
     playable_dates = []
     
@@ -200,7 +203,7 @@ if res.status_code == 200:
         and g.get("cover") and g.get("cover").get("image_id")
             ]
     # On trie quand même par date pour la cohérence visuelle
-    cleaned.sort(key=get_hybrid_sort_date, reverse=True)
+    cleaned.sort(key=lambda g: get_hybrid_sort_date(g, today), reverse=True)
     save_json(cleaned[:50], "latest.json")
     print("✅ Fichier latest.json généré avec succès.")
 else:
@@ -311,7 +314,7 @@ cleaned_bb = clean_games_data(future_blockbusters, scores_dict_bb)
 # On utilise get_best_date (ou get_hybrid_sort_date) pour vérifier la date réelle.
 future_games_with_date = []
 for g in cleaned_bb:
-    sort_ts = get_hybrid_sort_date(g)
+    sort_ts = get_hybrid_sort_date(g, today)
     if sort_ts > today and sort_ts < 9999999999:
         g["_tmp_sort_ts"] = sort_ts # On stocke le timestamp pour le tri
         future_games_with_date.append(g)
