@@ -260,7 +260,7 @@ if res.status_code == 200:
     final_upcoming = []
     for g in cleaned:
         # On cherche s'il existe une date précise (category/date_format 0) dans la fenêtre de 7 jours
-        if any(rd.get("category") == 0 and rd.get("status") in {6, 34, 3} and and rd.get("date") and today < rd.get("date") <= next_week 
+        if any(rd.get("category") == 0 and rd.get("status") in {6, 34, 3} and rd.get("date") and today < rd.get("date") <= next_week 
                for rd in g.get("release_dates", [])):
             final_upcoming.append(g)
             
