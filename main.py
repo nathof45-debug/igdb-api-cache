@@ -49,8 +49,9 @@ next_week = today + 604800 # Calcul de la limite dans 7 jours
 
 current_year = datetime.datetime.now().year #Renvoit l'année en cours
 
-one_year_from_now = today + (365 * 24 * 60 * 60)
-
+# Statuts de release_dates valides pour le calendrier (Jouables)
+# 6: Full Release, 34: Advanced Access, 3: Early Access
+VALID_PLAYABLE = {6, 34, 3}
 # Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
@@ -115,51 +116,29 @@ def clean_games_data(games_data, scores_dict=None):
         
         clean_game["developers"] = devs
         clean_game["publishers"] = pubs
-
-        langs = set()
-        for lang in game.get("language_supports", []):
-            lang_name = lang.get("language", {}).get("name")
-            if lang_name: langs.add(lang_name)
-        clean_game["languages"] = list(langs)
-
+        clean_game["languages"] = list(set(lang.get("language", {}).get("name") for lang in game.get("language_supports", []) if lang.get("language", {}).get("name")))
         cleaned_list.append(clean_game)
         
     return cleaned_list
 
 def get_hybrid_sort_date(game, today_ts=None, future_only=False):
-    if today_ts is None:
-        today_ts = int(time.time())
-    
-    """Calcule la date de tri en privilégiant l'accès le plus tôt pour le joueur."""
+    if today_ts is None: today_ts = int(time.time())
     playable_dates = []
     
-    # --- BASÉ SUR TA LISTE MISE À JOUR ---
-    # 6: Full Release (1.0)
-    # 34: Advanced Access (Pre-order)
-    # 3: Early Access
-    PLAYABLE_STATUSES = {6, 34, 3} 
-    
-    # Statuts à ignorer totalement
-    # 4: Offline
-    # 5: Cancelled
-    EXCLUDED_STATUSES = {4, 5}
+    # On ignore Alpha (1), Beta (2), Offline (4), Cancelled (5)
+    EXCLUDED_STATUSES = {1, 2, 4, 5}
     
     for rd in game.get("release_dates", []):
         st = rd.get("status")
         dt = rd.get("date")
+        if st in EXCLUDED_STATUSES or not dt: continue
         
-        if st in EXCLUDED_STATUSES or not dt:
-            continue
-        
-        # On ne prend que les versions qui sont considérées comme une "sortie"
-        if st in PLAYABLE_STATUSES:
+        if st in VALID_PLAYABLE:
             if not future_only or dt >= today_ts:
                 playable_dates.append(dt)
             
-    if playable_dates:
-        return min(playable_dates) # On prend la plus ancienne des dates valides (ex: Advanced Access avant Full Release)
-        
-    # Fallback classique
+    if playable_dates: return min(playable_dates)
+    
     first_date = game.get("first_release_date")
     if first_date:
         if not future_only or first_date >= today_ts:
@@ -210,21 +189,22 @@ if res.status_code == 200:
     final_latest = []
     
     for g in cleaned:
-        # On vérifie qu'une date précise est bien dans la fenêtre des 7 derniers jours
-        # Note : on utilise .get("category") car ton clean_games_data 
-        # mappe "date_format" vers "category" dans le dictionnaire final.
         has_precise_recent_release = any(
             rd.get("category") == 0 and 
+            rd.get("status") in VALID_PLAYABLE and
             rd.get("date") and 
             seven_days_ago <= rd.get("date") <= today 
             for rd in g.get("release_dates", [])
         )
         
         # Fallback sur first_release_date
-        if not has_precise_recent_release and g.get("first_release_date"):
-            has_precise_recent_release = seven_days_ago <= g.get("first_release_date") <= today
+    if not has_precise_recent_release and g.get("first_release_date"):
+        # On vérifie si la date principale tombe dans la fenêtre
+        if seven_days_ago <= g.get("first_release_date") <= today:
+            # On vérifie qu'il n'y a pas de statut "Beta/Alpha" attaché à cette date
+            has_precise_recent_release = True 
 
-        if has_precise_recent_release and g.get("cover") and g.get("cover").get("image_id"):
+        if has_precise_recent_release and g.get("cover",{}).get("image_id"):
             final_latest.append(g)
 
     # Tri par date décroissante
@@ -250,7 +230,8 @@ if res_prims.status_code == 200:
         res_games = requests.post(BASE_URL, headers=headers, data=query_popular)
         
         if res_games.status_code == 200:
-            cleaned = clean_games_data(res_games.json(), scores_dict)
+            cleaned = [g for g in clean_games_data(res_games.json(), scores_dict) if g.get("status") not in {1, 2}]
+
             # Tri local par pop_score décroissant et limitation à 50
             cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)[:50]
             save_json(cleaned, "popular.json")
@@ -279,7 +260,7 @@ if res.status_code == 200:
     final_upcoming = []
     for g in cleaned:
         # On cherche s'il existe une date précise (category/date_format 0) dans la fenêtre de 7 jours
-        if any(rd.get("category") == 0 and rd.get("date") and today < rd.get("date") <= next_week 
+        if any(rd.get("category") == 0 and rd.get("status") in {6, 34, 3} and rd.get("date") and today < rd.get("date") <= next_week 
                for rd in g.get("release_dates", [])):
             final_upcoming.append(g)
             
