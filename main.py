@@ -124,7 +124,7 @@ def clean_games_data(games_data, scores_dict=None):
         
     return cleaned_list
 
-def get_hybrid_sort_date(game):
+def get_hybrid_sort_date(game, today_ts):
     """Calcule la date de tri en privilégiant l'accès le plus tôt pour le joueur."""
     playable_dates = []
     
@@ -196,7 +196,7 @@ if res.status_code == 200:
     # - ET le jeu possède une jaquette (cover) avec un image_id
     cleaned = [
         g for g in cleaned 
-        if get_best_date(g) and seven_days_ago <= get_best_date(g) <= today
+        if get_best_date(g) and seven_days_ago <= get_best_date(g, today) <= today
         and g.get("cover") and g.get("cover").get("image_id")
             ]
     # On trie quand même par date pour la cohérence visuelle
