@@ -198,7 +198,7 @@ if res.status_code == 200:
         )
         
         # Fallback sur first_release_date
-        if not has_precise_recent_release and g.get("first_release_date"):
+    if not has_precise_recent_release and g.get("first_release_date"):
         # On vérifie si la date principale tombe dans la fenêtre
         if seven_days_ago <= g.get("first_release_date") <= today:
             # On vérifie qu'il n'y a pas de statut "Beta/Alpha" attaché à cette date
