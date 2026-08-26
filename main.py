@@ -139,7 +139,7 @@ def get_hybrid_sort_date(game, today_ts=None, future_only=False):
             
     if playable_dates: return min(playable_dates)
     
-     first_date = game.get("first_release_date")
+    first_date = game.get("first_release_date")
     if first_date:
         if not future_only or first_date >= today_ts:
             return first_date
