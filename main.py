@@ -78,7 +78,9 @@ def clean_games_data(games_data, scores_dict=None):
             "rating": game.get("rating"),
             "first_release_date": game.get("first_release_date"),
             "hypes": game.get("hypes"),
-            "status": game.get("status"), # Récupère l'ID du statut (ex: 0, 4, 7...)
+            "status": game.get("status"), # Récupère l'ID du statut
+            #liste des statuts : 1 Alpha, 2 Beta, 3 Early Access, 4 Offline, 5 Cancelled, 6 Full Release,
+            #34 Advanced Access, 35 Digitial Compatibily, 36 Nextgen Patch opti
             "follows": game.get("follows"), # Nombre de followers sur IGDB
             "themes": game.get("themes", []), # Liste d'IDs de thèmes (ex: [32, 1, 2...])
             "release_dates": [
@@ -131,25 +133,33 @@ def get_hybrid_sort_date(game, today_ts=None, future_only=False):
     """Calcule la date de tri en privilégiant l'accès le plus tôt pour le joueur."""
     playable_dates = []
     
-    # Statuts qui comptent comme une "sortie" pour un joueur
+    # --- BASÉ SUR TA LISTE MISE À JOUR ---
+    # 6: Full Release (1.0)
+    # 34: Advanced Access (Pre-order)
+    # 3: Early Access
     PLAYABLE_STATUSES = {6, 34, 3} 
     
+    # Statuts à ignorer totalement
+    # 4: Offline
+    # 5: Cancelled
+    EXCLUDED_STATUSES = {4, 5}
+    
     for rd in game.get("release_dates", []):
-        # On ignore les déchets (annulés/offline)
-        if rd.get("status") in (4, 5): continue
-
-        d = rd.get("date")
-        # On collecte les dates des versions jouables
-        if rd.get("status") in PLAYABLE_STATUSES and d:
-             if  not future_only or d >= today_ts:
-                playable_dates.append(d)
-            
-    # Si on a trouvé des dates jouables, on prend la plus ancienne (souvent l'Advanced Access)
-    if playable_dates:
-        return min(playable_dates)
+         st = rd.get("status")
+         dt = rd.get("date")
         
-    # Si aucune date future n'est trouvée dans release_dates, 
-    # on vérifie si first_release_date est dans le futur
+       if st in EXCLUDED_STATUSES or not dt:
+            continue
+        
+        # On ne prend que les versions qui sont considérées comme une "sortie"
+        if st in PLAYABLE_STATUSES:
+            if not future_only or dt >= today_ts:
+                playable_dates.append(dt)
+            
+    if playable_dates:
+        return min(playable_dates) # On prend la plus ancienne des dates valides (ex: Advanced Access avant Full Release)
+        
+    # Fallback classique
     first_date = game.get("first_release_date")
     if first_date:
         if not future_only or first_date >= today_ts:
@@ -190,7 +200,7 @@ query_latest = (
     # 2. On impose la cover et le statut à TOUS les jeux qui sortent de ce bloc
     f"& release_dates.date_format = 0 "
     f"& cover != null & cover.image_id != null " 
-    f"& (status = null | status != (6, 7)); "
+    f"& (status = null | status != (4, 5)); "
     f"sort hypes desc; "
     f"limit 100;"
 )
