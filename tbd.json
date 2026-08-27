@@ -94,10 +94,10 @@
       "Krafton"
     ],
     "languages": [
-      "English",
-      "Chinese (Simplified)",
       "Russian",
-      "Korean"
+      "Chinese (Simplified)",
+      "Korean",
+      "English"
     ]
   },
   {
@@ -151,20 +151,20 @@
       "Digital Extremes"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Polish",
-      "Thai",
       "Ukrainian",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
+      "Korean",
+      "Russian",
       "English",
-      "Turkish",
+      "Japanese",
+      "Thai",
+      "German",
       "Spanish (Spain)",
+      "Polish",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Turkish",
       "French"
     ]
   },
@@ -219,20 +219,20 @@
       "Valve"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Polish",
-      "Thai",
-      "Ukrainian",
-      "Italian",
       "Czech",
-      "Turkish",
-      "English",
-      "Japanese",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Ukrainian",
       "Russian",
+      "Korean",
+      "Italian",
+      "English",
+      "Thai",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Polish",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Turkish",
       "French"
     ]
   },
@@ -425,7 +425,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 120,
+    "hypes": 125,
     "status": 3,
     "follows": null,
     "themes": [
@@ -489,9 +489,9 @@
     ],
     "languages": [
       "Korean",
-      "Chinese (Traditional)",
-      "Japanese",
       "English",
+      "Japanese",
+      "Chinese (Traditional)",
       "Chinese (Simplified)"
     ]
   },
@@ -521,8 +521,8 @@
     "developers": [],
     "publishers": [],
     "languages": [
-      "English",
-      "Chinese (Simplified)"
+      "Chinese (Simplified)",
+      "English"
     ]
   },
   {
@@ -560,6 +560,83 @@
     "languages": [
       "English (UK)",
       "English"
+    ]
+  },
+  {
+    "id": 331212,
+    "name": "Tides of Annihilation",
+    "cover": {
+      "id": 507256,
+      "image_id": "coaveg"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 105,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17,
+      18
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "Xbox Series X|S"
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Hack and slash/Beat 'em up",
+      "Adventure"
+    ],
+    "developers": [
+      "Eclipse Glow Games"
+    ],
+    "publishers": [
+      "Eclipse Glow Games"
+    ],
+    "languages": [
+      "Italian",
+      "Korean",
+      "Russian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "French"
     ]
   },
   {
@@ -628,83 +705,6 @@
     ]
   },
   {
-    "id": 331212,
-    "name": "Tides of Annihilation",
-    "cover": {
-      "id": 507256,
-      "image_id": "coaveg"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 101,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      17,
-      18
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "Xbox Series X|S"
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Hack and slash/Beat 'em up",
-      "Adventure"
-    ],
-    "developers": [
-      "Eclipse Glow Games"
-    ],
-    "publishers": [
-      "Eclipse Glow Games"
-    ],
-    "languages": [
-      "Korean",
-      "German",
-      "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
-      "Russian",
-      "French"
-    ]
-  },
-  {
     "id": 18285,
     "name": "The Last Night",
     "cover": {
@@ -767,17 +767,17 @@
       "Raw Fury"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
+      "Korean",
+      "Russian",
       "English",
-      "Portuguese (Portugal)",
+      "Japanese",
+      "German",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Portuguese (Portugal)",
       "French"
     ]
   },
@@ -790,7 +790,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 88,
+    "hypes": 89,
     "status": null,
     "follows": null,
     "themes": [
@@ -843,7 +843,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 79,
+    "hypes": 80,
     "status": null,
     "follows": null,
     "themes": [
@@ -1114,19 +1114,19 @@
       "Mundfish"
     ],
     "languages": [
-      "Spanish (Mexico)",
+      "Italian",
       "Korean",
+      "Russian",
+      "English",
+      "Japanese",
       "German",
+      "Spanish (Mexico)",
+      "Spanish (Spain)",
       "Polish",
       "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Turkish",
-      "Spanish (Spain)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Turkish",
       "French"
     ]
   },
@@ -1221,19 +1221,19 @@
       "Sony Interactive Entertainment"
     ],
     "languages": [
+      "Italian",
       "Korean",
+      "Russian",
+      "English",
+      "Japanese",
       "German",
+      "Spanish (Spain)",
+      "Arabic",
       "Polish",
       "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Arabic",
-      "Spanish (Spain)",
       "Portuguese (Brazil)",
-      "Portuguese (Portugal)",
       "Chinese (Simplified)",
-      "Russian",
+      "Portuguese (Portugal)",
       "French"
     ]
   },
@@ -1309,20 +1309,20 @@
       "Sega"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Polish",
-      "Thai",
-      "Chinese (Traditional)",
-      "Italian",
       "Czech",
-      "Japanese",
+      "Italian",
+      "Korean",
+      "Russian",
       "English",
-      "Arabic",
+      "Japanese",
+      "Thai",
+      "German",
       "Spanish (Spain)",
+      "Arabic",
+      "Polish",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
       "French"
     ]
   },
@@ -1390,6 +1390,36 @@
     ]
   },
   {
+    "id": 361900,
+    "name": "Black Myth: Zhong Kui",
+    "cover": {
+      "id": 480796,
+      "image_id": "coaazg"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 65,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17
+    ],
+    "release_dates": [],
+    "pop_score": null,
+    "platforms": [],
+    "genres": [
+      "Role-playing (RPG)"
+    ],
+    "developers": [
+      "Game Science"
+    ],
+    "publishers": [
+      "Game Science"
+    ],
+    "languages": []
+  },
+  {
     "id": 141444,
     "name": "Chrono Odyssey",
     "cover": {
@@ -1454,45 +1484,15 @@
     ],
     "languages": [
       "Korean",
-      "German",
-      "Chinese (Traditional)",
-      "Japanese",
       "English",
+      "Japanese",
+      "German",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
       "French"
     ]
-  },
-  {
-    "id": 361900,
-    "name": "Black Myth: Zhong Kui",
-    "cover": {
-      "id": 480796,
-      "image_id": "coaazg"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 63,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      17
-    ],
-    "release_dates": [],
-    "pop_score": null,
-    "platforms": [],
-    "genres": [
-      "Role-playing (RPG)"
-    ],
-    "developers": [
-      "Game Science"
-    ],
-    "publishers": [
-      "Game Science"
-    ],
-    "languages": []
   },
   {
     "id": 347557,
@@ -1597,18 +1597,18 @@
       "THQ Nordic"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Polish",
       "Ukrainian",
-      "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Korean",
       "Russian",
+      "Italian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Polish",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "French"
     ]
   },
@@ -1672,9 +1672,9 @@
       "2K"
     ],
     "languages": [
-      "German",
       "Italian",
       "English",
+      "German",
       "Spanish (Spain)",
       "French"
     ]
@@ -1724,26 +1724,26 @@
     ],
     "publishers": [],
     "languages": [
-      "Polish",
-      "Czech",
-      "English",
-      "Spanish (Spain)",
+      "Swedish",
       "Chinese (Simplified)",
-      "Dutch",
-      "Ukrainian",
-      "Portuguese (Portugal)",
-      "Finnish",
-      "Turkish",
-      "French",
-      "German",
-      "Danish",
-      "Chinese (Traditional)",
       "Italian",
       "Russian",
+      "Dutch",
+      "Portuguese (Portugal)",
+      "French",
+      "Ukrainian",
+      "Czech",
       "Korean",
+      "Spanish (Spain)",
+      "Danish",
+      "Chinese (Traditional)",
+      "Turkish",
+      "English",
       "Hungarian",
-      "Portuguese (Brazil)",
-      "Swedish"
+      "German",
+      "Polish",
+      "Finnish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -1809,14 +1809,14 @@
       "Aurogon"
     ],
     "languages": [
-      "Spanish (Mexico)",
       "Korean",
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
       "English",
+      "Japanese",
+      "Spanish (Mexico)",
+      "German",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
       "French"
@@ -1865,12 +1865,12 @@
       "Hello Games"
     ],
     "languages": [
-      "German",
-      "Chinese (Traditional)",
+      "Russian",
       "English",
+      "German",
       "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "Russian"
+      "Chinese (Traditional)",
+      "Chinese (Simplified)"
     ]
   },
   {
@@ -1986,17 +1986,17 @@
       "Team K1"
     ],
     "languages": [
-      "Spanish (Mexico)",
-      "Korean",
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
-      "English",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Korean",
       "Russian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Mexico)",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "French"
     ]
   },
@@ -2235,104 +2235,17 @@
       "HypeTrain Digital"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Polish",
       "Ukrainian",
       "Italian",
-      "Japanese",
-      "English",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
-      "Russian",
-      "French"
-    ]
-  },
-  {
-    "id": 165432,
-    "name": "Spine",
-    "cover": {
-      "id": 391955,
-      "image_id": "co8efn"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 46,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "Xbox Series X|S"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "Nintendo Switch 2"
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "Nintendo Switch 2",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "genres": [
-      "Shooter",
-      "Hack and slash/Beat 'em up",
-      "Adventure"
-    ],
-    "developers": [
-      "Nekki"
-    ],
-    "publishers": [
-      "Nekki"
-    ],
-    "languages": [
       "Korean",
-      "German",
-      "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "Portuguese (Portugal)",
-      "Turkish",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "English",
-      "Chinese (Simplified)",
       "Russian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Polish",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "French"
     ]
   },
@@ -2723,19 +2636,19 @@
       "Team17"
     ],
     "languages": [
-      "German",
-      "Polish",
       "Ukrainian",
       "Italian",
-      "Portuguese (Portugal)",
+      "Russian",
       "English",
       "Japanese",
+      "German",
       "Spanish (Spain)",
-      "Portuguese (Brazil)",
+      "Polish",
       "Finnish",
-      "Turkish",
+      "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Turkish",
+      "Portuguese (Portugal)",
       "French"
     ]
   },
@@ -2779,17 +2692,17 @@
       "Day 4 Night Studios"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
+      "Korean",
+      "Russian",
       "English",
-      "Portuguese (Portugal)",
+      "Japanese",
+      "German",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Portuguese (Portugal)",
       "French"
     ]
   },
@@ -2880,18 +2793,18 @@
       "Mundfish"
     ],
     "languages": [
-      "Spanish (Mexico)",
       "Korean",
-      "German",
-      "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Turkish",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
       "Russian",
+      "Italian",
+      "English",
+      "Japanese",
+      "Spanish (Mexico)",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Turkish",
       "French"
     ]
   },
@@ -2957,19 +2870,19 @@
       "Behaviour Interactive"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Polish",
       "Ukrainian",
-      "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Turkish",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Korean",
       "Russian",
+      "Italian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Polish",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Turkish",
       "French"
     ]
   },
@@ -3039,31 +2952,31 @@
       "Klei Entertainment"
     ],
     "languages": [
-      "Polish",
-      "Czech",
-      "English",
-      "Arabic",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "Dutch",
-      "Ukrainian",
-      "Japanese",
-      "Portuguese (Portugal)",
-      "Finnish",
-      "Turkish",
-      "French",
-      "German",
+      "Swedish",
       "Thai",
-      "Danish",
-      "Norwegian",
-      "Chinese (Traditional)",
+      "Chinese (Simplified)",
       "Italian",
       "Russian",
+      "Japanese",
+      "Dutch",
+      "Portuguese (Portugal)",
+      "French",
+      "Czech",
+      "Norwegian",
       "Korean",
+      "Ukrainian",
       "Vietnamese",
+      "Arabic",
+      "Spanish (Spain)",
+      "Danish",
+      "Chinese (Traditional)",
+      "Turkish",
+      "English",
       "Hungarian",
-      "Portuguese (Brazil)",
-      "Swedish"
+      "German",
+      "Polish",
+      "Finnish",
+      "Portuguese (Brazil)"
     ]
   },
   {
@@ -3111,15 +3024,15 @@
     ],
     "languages": [
       "Korean",
-      "German",
-      "Polish",
       "Italian",
-      "Japanese",
-      "English",
-      "Turkish",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
       "Russian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Polish",
+      "Chinese (Simplified)",
+      "Turkish",
       "French"
     ]
   },
@@ -3246,71 +3159,14 @@
       "THQ Nordic"
     ],
     "languages": [
-      "German",
-      "Polish",
       "Italian",
-      "Japanese",
-      "English",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
       "Russian",
-      "French"
-    ]
-  },
-  {
-    "id": 287671,
-    "name": "Kingmakers",
-    "cover": {
-      "id": 363541,
-      "image_id": "co7sid"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 36,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      18,
-      22
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Shooter",
-      "Real Time Strategy (RTS)",
-      "Role-playing (RPG)",
-      "Simulator",
-      "Strategy"
-    ],
-    "developers": [
-      "Redemption Road Games"
-    ],
-    "publishers": [
-      "tinyBuild"
-    ],
-    "languages": [
-      "Korean",
+      "English",
+      "Japanese",
       "German",
-      "Japanese",
-      "English",
       "Spanish (Spain)",
-      "Portuguese (Brazil)",
+      "Polish",
       "Chinese (Simplified)",
-      "Russian",
       "French"
     ]
   },
@@ -3516,15 +3372,15 @@
     ],
     "languages": [
       "Korean",
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
+      "Russian",
       "English",
+      "Japanese",
+      "German",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
       "French"
     ]
   },
@@ -3652,14 +3508,14 @@
       "Crescent Moon Games"
     ],
     "languages": [
-      "German",
-      "Italian",
-      "Japanese",
-      "English",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
       "Russian",
+      "Italian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "French"
     ]
   },
@@ -3725,17 +3581,17 @@
       "Saber Interactive"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Polish",
-      "Italian",
-      "Japanese",
-      "English",
-      "Chinese (Simplified)",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Turkish",
       "Russian",
+      "Korean",
+      "Italian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Polish",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Turkish",
       "French"
     ]
   },
@@ -3913,20 +3769,20 @@
       "Sega"
     ],
     "languages": [
-      "Spanish (Mexico)",
+      "Italian",
       "Korean",
-      "German",
+      "Russian",
+      "English",
+      "Japanese",
       "Thai",
+      "Spanish (Mexico)",
+      "German",
+      "Spanish (Spain)",
       "Polish",
       "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Turkish",
-      "Spanish (Spain)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Turkish",
       "French"
     ]
   },
@@ -3974,16 +3830,89 @@
       "Dead Astronauts"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
-      "English",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Korean",
       "Russian",
+      "English",
       "Swedish",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Chinese (Simplified)",
+      "French"
+    ]
+  },
+  {
+    "id": 381245,
+    "name": "Total War: Warhammer 40,000",
+    "cover": {
+      "id": 513820,
+      "image_id": "cob0gs"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 30,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "Xbox Series X|S"
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "genres": [
+      "Strategy"
+    ],
+    "developers": [
+      "The Creative Assembly"
+    ],
+    "publishers": [
+      "Sega"
+    ],
+    "languages": [
+      "Czech",
+      "Italian",
+      "Korean",
+      "Russian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Polish",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "French"
     ]
   },
@@ -4030,20 +3959,20 @@
     ],
     "languages": [
       "Korean",
-      "German",
+      "Italian",
+      "Russian",
+      "English",
+      "Swedish",
+      "Japanese",
       "Thai",
       "Vietnamese",
-      "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
+      "German",
       "Arabic",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "Turkish",
-      "Russian",
-      "Swedish",
       "French"
     ]
   },
@@ -4191,90 +4120,17 @@
       "Critical Reflex"
     ],
     "languages": [
-      "Korean",
-      "German",
       "Ukrainian",
-      "Chinese (Traditional)",
-      "Japanese",
-      "English",
-      "Portuguese (Portugal)",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "Russian"
-    ]
-  },
-  {
-    "id": 381245,
-    "name": "Total War: Warhammer 40,000",
-    "cover": {
-      "id": 513820,
-      "image_id": "cob0gs"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 28,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "Xbox Series X|S"
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "genres": [
-      "Strategy"
-    ],
-    "developers": [
-      "The Creative Assembly"
-    ],
-    "publishers": [
-      "Sega"
-    ],
-    "languages": [
       "Korean",
-      "German",
-      "Polish",
-      "Chinese (Traditional)",
-      "Italian",
-      "Czech",
-      "Japanese",
-      "English",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
       "Russian",
-      "French"
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Portuguese (Portugal)"
     ]
   },
   {
@@ -4320,17 +4176,17 @@
       "Jyamma Games"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
+      "Korean",
+      "Russian",
       "English",
-      "Portuguese (Portugal)",
+      "Japanese",
+      "German",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Portuguese (Portugal)",
       "French"
     ]
   },
@@ -4380,15 +4236,15 @@
     ],
     "languages": [
       "Korean",
-      "German",
-      "Thai",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
-      "English",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
       "Russian",
+      "English",
+      "Japanese",
+      "Thai",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Chinese (Simplified)",
       "French"
     ]
   },
@@ -4571,8 +4427,8 @@
     ],
     "languages": [
       "Korean",
-      "German",
       "English",
+      "German",
       "Spanish (Spain)",
       "Chinese (Simplified)",
       "French"
@@ -4619,8 +4475,8 @@
       "Ocean Drive Studio"
     ],
     "languages": [
-      "English",
-      "Korean"
+      "Korean",
+      "English"
     ]
   },
   {
@@ -4653,6 +4509,62 @@
       "Battlestate Games"
     ],
     "languages": []
+  },
+  {
+    "id": 361814,
+    "name": "Cinder City",
+    "cover": {
+      "id": 575659,
+      "image_id": "cocc6j"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 26,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      18,
+      38
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "genres": [
+      "Shooter",
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "developers": [
+      "BigFire Games"
+    ],
+    "publishers": [
+      "NCSOFT"
+    ],
+    "languages": [
+      "Korean",
+      "Italian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Chinese (Simplified)",
+      "Portuguese (Portugal)",
+      "French"
+    ]
   },
   {
     "id": 279650,
@@ -4718,14 +4630,14 @@
       "Proxima Beta"
     ],
     "languages": [
-      "German",
-      "Polish",
       "Italian",
-      "Japanese",
-      "English",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
       "Russian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Polish",
+      "Portuguese (Brazil)",
       "French"
     ]
   },
@@ -4974,62 +4886,6 @@
     "languages": []
   },
   {
-    "id": 361814,
-    "name": "Cinder City",
-    "cover": {
-      "id": 575659,
-      "image_id": "cocc6j"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 25,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      18,
-      38
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "genres": [
-      "Shooter",
-      "Role-playing (RPG)",
-      "Adventure"
-    ],
-    "developers": [
-      "BigFire Games"
-    ],
-    "publishers": [
-      "NCSOFT"
-    ],
-    "languages": [
-      "Korean",
-      "German",
-      "Chinese (Traditional)",
-      "Italian",
-      "Portuguese (Portugal)",
-      "English",
-      "Japanese",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "French"
-    ]
-  },
-  {
     "id": 347117,
     "name": "Felt That: Boxing",
     "cover": {
@@ -5111,13 +4967,13 @@
       "Hello Games"
     ],
     "languages": [
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "English",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
       "Russian",
+      "English",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Chinese (Simplified)",
       "French"
     ]
   },
@@ -5269,10 +5125,94 @@
       "Saber Interactive"
     ],
     "languages": [
-      "German",
       "Italian",
       "English",
+      "German",
       "Spanish (Spain)",
+      "French"
+    ]
+  },
+  {
+    "id": 344655,
+    "name": "Warhammer 40,000: Dark Heresy",
+    "cover": {
+      "id": 466692,
+      "image_id": "coa03o"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 24,
+    "status": null,
+    "follows": null,
+    "themes": [
+      17,
+      18,
+      39
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "Xbox Series X|S"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "Mac"
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Mac"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Strategy",
+      "Turn-based strategy (TBS)",
+      "Tactical",
+      "Adventure"
+    ],
+    "developers": [
+      "Owlcat Games"
+    ],
+    "publishers": [
+      "Owlcat Games"
+    ],
+    "languages": [
+      "Russian",
+      "English",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
       "French"
     ]
   },
@@ -5391,8 +5331,8 @@
       "Level Infinite"
     ],
     "languages": [
-      "English",
-      "Chinese (Simplified)"
+      "Chinese (Simplified)",
+      "English"
     ]
   },
   {
@@ -5460,16 +5400,16 @@
       "Nacon"
     ],
     "languages": [
+      "Italian",
+      "Russian",
+      "English",
+      "Japanese",
       "German",
+      "Spanish (Spain)",
       "Polish",
       "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Spanish (Spain)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
       "French"
     ]
   },
@@ -5579,88 +5519,29 @@
     ]
   },
   {
-    "id": 344655,
-    "name": "Warhammer 40,000: Dark Heresy",
+    "id": 414966,
+    "name": "Nodusfall",
     "cover": {
-      "id": 466692,
-      "image_id": "coa03o"
+      "id": 595550,
+      "image_id": "cocrj2"
     },
     "rating": null,
     "first_release_date": null,
     "hypes": 23,
     "status": null,
     "follows": null,
-    "themes": [
-      17,
-      18,
-      39
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "Xbox Series X|S"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "Mac"
-      }
-    ],
+    "themes": [],
+    "release_dates": [],
     "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Mac"
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Strategy",
-      "Turn-based strategy (TBS)",
-      "Tactical",
-      "Adventure"
-    ],
+    "platforms": [],
+    "genres": [],
     "developers": [
-      "Owlcat Games"
+      "HoYoverse"
     ],
     "publishers": [
-      "Owlcat Games"
+      "HoYoverse"
     ],
-    "languages": [
-      "German",
-      "English",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "Russian",
-      "French"
-    ]
+    "languages": []
   },
   {
     "id": 323785,
@@ -5704,9 +5585,9 @@
       "GOOD FUN CORPORATION"
     ],
     "languages": [
-      "German",
       "Italian",
       "English",
+      "German",
       "Spanish (Spain)",
       "French"
     ]
@@ -5753,10 +5634,77 @@
       "Nexon"
     ],
     "languages": [
-      "English",
+      "Chinese (Traditional)",
+      "Chinese (Simplified)",
+      "Korean",
+      "English"
+    ]
+  },
+  {
+    "id": 387656,
+    "name": "Genigods: Nezha",
+    "cover": {
+      "id": 531221,
+      "image_id": "cobdw5"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 22,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "Xbox Series X|S"
+      }
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Hack and slash/Beat 'em up"
+    ],
+    "developers": [
+      "Genigods Lab"
+    ],
+    "publishers": [
+      "Genigods Lab"
+    ],
+    "languages": [
       "Chinese (Simplified)",
       "Chinese (Traditional)",
-      "Korean"
+      "English"
     ]
   },
   {
@@ -5922,20 +5870,20 @@
       "Hooded Horse"
     ],
     "languages": [
+      "Czech",
       "Korean",
-      "German",
+      "Russian",
+      "Italian",
+      "English",
       "Thai",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
       "Polish",
       "Chinese (Traditional)",
-      "Italian",
-      "Czech",
-      "Japanese",
-      "English",
       "Portuguese (Brazil)",
-      "Spanish (Spain)",
       "Chinese (Simplified)",
       "Turkish",
-      "Russian",
       "French"
     ]
   },
@@ -6049,18 +5997,18 @@
       "David Wehle"
     ],
     "languages": [
+      "Italian",
       "Korean",
+      "Russian",
+      "English",
+      "Japanese",
       "German",
+      "Spanish (Spain)",
       "Polish",
       "Chinese (Traditional)",
-      "Italian",
-      "Japanese",
-      "English",
-      "Turkish",
-      "Spanish (Spain)",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Turkish",
       "French"
     ]
   },
@@ -6116,17 +6064,17 @@
       "emptyvessel"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Polish",
+      "Russian",
       "Italian",
-      "Turkish",
+      "Korean",
       "English",
       "Japanese",
+      "German",
       "Spanish (Spain)",
-      "Portuguese (Portugal)",
+      "Polish",
       "Chinese (Simplified)",
-      "Russian",
+      "Turkish",
+      "Portuguese (Portugal)",
       "French"
     ]
   },
@@ -6306,16 +6254,16 @@
     ],
     "languages": [
       "Korean",
-      "German",
-      "Polish",
+      "Russian",
       "Italian",
-      "Japanese",
       "English",
-      "Turkish",
+      "Japanese",
+      "German",
       "Spanish (Spain)",
+      "Polish",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Turkish",
       "French"
     ]
   },
@@ -6371,18 +6319,18 @@
       "RiffRaff Games"
     ],
     "languages": [
-      "Korean",
-      "German",
-      "Chinese (Traditional)",
       "Italian",
-      "Japanese",
-      "English",
-      "Portuguese (Portugal)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Turkish",
-      "Chinese (Simplified)",
+      "Korean",
       "Russian",
+      "English",
+      "Japanese",
+      "German",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Turkish",
+      "Portuguese (Portugal)",
       "French"
     ]
   },
@@ -6539,17 +6487,17 @@
       "Dane Design"
     ],
     "languages": [
-      "German",
-      "Polish",
       "Italian",
-      "Japanese",
+      "Russian",
       "English",
-      "Turkish",
+      "Japanese",
+      "German",
+      "Dutch",
       "Spanish (Spain)",
+      "Polish",
       "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Dutch",
-      "Russian",
+      "Turkish",
       "French"
     ]
   }
