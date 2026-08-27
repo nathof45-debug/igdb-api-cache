@@ -4,7 +4,7 @@ name: Generate IGDB BFF
 on:
   schedule:
     - cron: '17 0 * * *'  # Automatiquement tous les jours à 2h17 (heure fr)
-    - cron: '17 12 * * *'  # 14:17 (FR)
+    - cron: '17 14 * * *'  # 14:17 (FR)
   workflow_dispatch:     # Permet d'afficher le bouton pour le lancer manuellement
   push:
     branches:
