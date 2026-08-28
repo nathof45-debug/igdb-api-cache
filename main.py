@@ -75,6 +75,29 @@ def clean_games_data(games_data, scores_dict=None):
     cleaned_list = []
     
     for game in games_data:
+        # --- Extraction des listes (Aplatissement) ---
+        # Plateformes
+        platforms_raw = game.get("platforms", [])
+        p_names = [p.get("name") for p in platforms_raw if p.get("name")]
+        p_ids = [p.get("id") for p in platforms_raw if p.get("id")]
+
+        # Genres
+        genres_raw = game.get("genres", [])
+        g_names = [g.get("name") for g in genres_raw if g.get("name")]
+        g_ids = [g.get("id") for g in genres_raw if g.get("id")]
+
+        # Sociétés (Développeurs et Éditeurs)
+        involved = game.get("involved_companies", [])
+        dev_names = [i["company"]["name"] for i in involved if i.get("developer") and i.get("company")]
+        dev_ids = [i["company"]["id"] for i in involved if i.get("developer") and i.get("company")]
+        pub_names = [i["company"]["name"] for i in involved if i.get("publisher") and i.get("company")]
+        pub_ids = [i["company"]["id"] for i in involved if i.get("publisher") and i.get("company")]
+
+        # Langues
+        langs_raw = game.get("language_supports", [])
+        l_names = [l["language"]["name"] for l in langs_raw if l.get("language") and l["language"].get("name")]
+
+        # --- Construction du dictionnaire final ---
         clean_game = {
             "id": game.get("id"),
             "name": game.get("name"),
@@ -82,16 +105,26 @@ def clean_games_data(games_data, scores_dict=None):
             "rating": game.get("rating"),
             "first_release_date": game.get("first_release_date"),
             "hypes": game.get("hypes"),
-            "status": game.get("status"), # Récupère l'ID du statut
-            #liste des statuts : 1 Alpha, 2 Beta, 3 Early Access, 4 Offline, 5 Cancelled, 6 Full Release,
-            #34 Advanced Access, 35 Digitial Compatibily, 36 Nextgen Patch opti
-            "follows": game.get("follows"), # Nombre de followers sur IGDB
-            "themes": game.get("themes", []), # Liste d'IDs de thèmes (ex: [32, 1, 2...])
+            "status": game.get("status"),
+            "follows": game.get("follows"),
+            "themes": game.get("themes", []),
+        
+            # Nouveaux champs pour le filtrage Android
+            "platforms": p_names,
+            "platform_ids": p_ids,
+            "genres": g_names,
+            "genre_ids": g_ids,
+            "developers": dev_names,
+            "developer_ids": dev_ids,
+            "publishers": pub_names,
+            "publisher_ids": pub_ids,
+            "languages": l_names,
+
             "release_dates": [
                 {
-                    "category": rd.get("date_format", rd.get("category")), # Récupère 0 (Jour), 1 (Mois) ou 2 (Année)
-                    "y": rd.get("y"),                # Récupère l'année (ex: 2027)
-                    "m": rd.get("m"),                # Récupère le mois
+                    "category": rd.get("date_format", rd.get("category")),
+                    "y": rd.get("y"),
+                    "m": rd.get("m"),
                     "d": datetime.datetime.fromtimestamp(rd.get("date")).day if rd.get("date") else None,
                     "date": rd.get("date"),
                     "status": rd.get("status"),
