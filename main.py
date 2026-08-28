@@ -56,10 +56,13 @@ VALID_PLAYABLE = {6, 34, 3}
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
     "hypes, follows, status, themes, " 
-    "first_release_date, release_dates.*, release_dates.platform.name,"
-    "platforms.name, genres.name, "
-    "involved_companies.developer, involved_companies.publisher, involved_companies.company.name, "
-    "language_supports.language.name; "
+    "first_release_date, release_dates.*, release_dates.platform.name, "
+    "platforms.name, platforms.id, "  # Ajout de platforms.id
+    "genres.name, genres.id, "        # Ajout de genres.id
+    "involved_companies.id, "         # ID de la relation (important pour Android)
+    "involved_companies.developer, involved_companies.publisher, "
+    "involved_companies.company.name, involved_companies.company.id, " # ID du studio
+    "language_supports.language.name, language_supports.language.id; " # ID de la langue
 )
 
 BASE_URL = "https://api.igdb.com/v4/games"
