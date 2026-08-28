@@ -75,31 +75,44 @@ def clean_games_data(games_data, scores_dict=None):
     cleaned_list = []
     
     for game in games_data:
-        # --- Extraction des listes (Aplatissement) ---
-        # Plateformes
-        platforms_raw = game.get("platforms", [])
-        p_names = [p.get("name") for p in platforms_raw if p.get("name")]
-        p_ids = [p.get("id") for p in platforms_raw if p.get("id")]
+        game_id = game.get("id")
+        
+        # --- 1. Extraction des Plateformes ---
+        platforms = game.get("platforms", [])
+        p_names = [p.get("name") for p in platforms if p.get("name")]
+        p_ids = [p.get("id") for p in platforms if p.get("id")]
 
-        # Genres
-        genres_raw = game.get("genres", [])
-        g_names = [g.get("name") for g in genres_raw if g.get("name")]
-        g_ids = [g.get("id") for g in genres_raw if g.get("id")]
+        # --- 2. Extraction des Genres ---
+        genres = game.get("genres", [])
+        g_names = [g.get("name") for g in genres if g.get("name")]
+        g_ids = [g.get("id") for g in genres if g.get("id")]
 
-        # Sociétés (Développeurs et Éditeurs)
-        involved = game.get("involved_companies", [])
-        dev_names = [i["company"]["name"] for i in involved if i.get("developer") and i.get("company")]
-        dev_ids = [i["company"]["id"] for i in involved if i.get("developer") and i.get("company")]
-        pub_names = [i["company"]["name"] for i in involved if i.get("publisher") and i.get("company")]
-        pub_ids = [i["company"]["id"] for i in involved if i.get("publisher") and i.get("company")]
+        # --- 3. Extraction des Studios (Involved Companies) ---
+        dev_names, dev_ids = [], []
+        pub_names, pub_ids = [], []
+        for inv in game.get("involved_companies", []):
+            company = inv.get("company", {})
+            c_name = company.get("name")
+            c_id = company.get("id")
+            if c_name and c_id:
+                if inv.get("developer"):
+                    dev_names.append(c_name)
+                    dev_ids.append(c_id)
+                if inv.get("publisher"):
+                    pub_names.append(c_name)
+                    pub_ids.append(c_id)
 
-        # Langues
-        langs_raw = game.get("language_supports", [])
-        l_names = [l["language"]["name"] for l in langs_raw if l.get("language") and l["language"].get("name")]
+        # --- 4. Extraction des Langues ---
+        # On utilise set() pour éviter les doublons de noms de langues
+        l_names = list(set(
+            ls.get("language", {}).get("name") 
+            for ls in game.get("language_supports", []) 
+            if ls.get("language", {}).get("name")
+        ))
 
-        # --- Construction du dictionnaire final ---
+        # --- 5. Construction du dictionnaire final ---
         clean_game = {
-            "id": game.get("id"),
+            "id": game_id,
             "name": game.get("name"),
             "cover": game.get("cover"),
             "rating": game.get("rating"),
@@ -108,8 +121,9 @@ def clean_games_data(games_data, scores_dict=None):
             "status": game.get("status"),
             "follows": game.get("follows"),
             "themes": game.get("themes", []),
+            "pop_score": scores_dict.get(str(game_id)) if scores_dict else None,
         
-            # Nouveaux champs pour le filtrage Android
+            # Champs de filtrage pour Android
             "platforms": p_names,
             "platform_ids": p_ids,
             "genres": g_names,
@@ -120,6 +134,7 @@ def clean_games_data(games_data, scores_dict=None):
             "publisher_ids": pub_ids,
             "languages": l_names,
 
+            # Dates de sortie formatées
             "release_dates": [
                 {
                     "category": rd.get("date_format", rd.get("category")),
@@ -134,25 +149,6 @@ def clean_games_data(games_data, scores_dict=None):
             ]
         }
 
-        # Ajout du pop_score si fourni (uniquement pour la catégorie Popular)
-        if scores_dict:
-            clean_game["pop_score"] = scores_dict.get(str(game["id"]))
-        else:
-            clean_game["pop_score"] = None
-
-        clean_game["platforms"] = [p.get("name") for p in game.get("platforms", []) if "name" in p]
-        clean_game["genres"] = [g.get("name") for g in game.get("genres", []) if "name" in g]
-
-        devs, pubs = [], []
-        for company in game.get("involved_companies", []):
-            comp_name = company.get("company", {}).get("name")
-            if comp_name:
-                if company.get("developer"): devs.append(comp_name)
-                if company.get("publisher"): pubs.append(comp_name)
-        
-        clean_game["developers"] = devs
-        clean_game["publishers"] = pubs
-        clean_game["languages"] = list(set(lang.get("language", {}).get("name") for lang in game.get("language_supports", []) if lang.get("language", {}).get("name")))
         cleaned_list.append(clean_game)
         
     return cleaned_list
