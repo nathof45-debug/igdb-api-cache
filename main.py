@@ -206,8 +206,8 @@ print("\n📡 Génération : Les dernières sorties (Les 50 meilleurs jeux des 1
 query_latest = (
     f"{COMMON_FIELDS} "
     # 1. On groupe les deux conditions de date dans un grand bloc
-    f"where ((first_release_date >= {seven_days_ago} & first_release_date <= {today}) "
-    f"| (release_dates.date >= {seven_days_ago} & release_dates.date <= {today})) "
+    f"where ((first_release_date >= {fourteen_days_ago} & first_release_date <= {today}) "
+    f"| (release_dates.date >= {fourteen_days_ago} & release_dates.date <= {today})) "
     # 2. On impose la cover et le statut à TOUS les jeux qui sortent de ce bloc
     f"& release_dates.date_format = 0 "
     f"& cover != null & cover.image_id != null " 
