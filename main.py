@@ -211,7 +211,7 @@ query_latest = (
     # 2. On impose la cover et le statut à TOUS les jeux qui sortent de ce bloc
     f"& release_dates.date_format = 0 "
     f"& cover != null & cover.image_id != null " 
-    f"& (status = null | status != (4, 5)) & hypes >= 7; "
+    f"& (status = null | status != (4, 5)) & hypes != null ; "
     f"sort hypes desc; "
     f"limit 100;"
 )
