@@ -400,7 +400,7 @@ if res.status_code == 200:
     cleaned = [g for g in cleaned if get_best_date(g) is None]
     # Pour le TBD, on trie par Hype (attente) plutôt que par date
     cleaned.sort(key=lambda x: x.get("hypes") or 0, reverse=True)
-    save_json(cleaned, "tbd.json")
+    save_json(cleaned[:100], "tbd.json")
     print("✅ Fichier tbd.json généré avec succès.")
 else:
     print(f"❌ Erreur TBD : {res.text}")
