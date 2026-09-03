@@ -3,25 +3,27 @@ name: Generate IGDB BFF
 # QUAND LANCER LE WORKFLOW ?
 on:
   schedule:
-    - cron: '17 0 * * *'  # Automatiquement tous les jours à 2h17 (heure fr)
-    - cron: '17 14 * * *'  # 14:17 (FR)
-  workflow_dispatch:     # Permet d'afficher le bouton pour le lancer manuellement
+    - cron: '17 0 * * *'   # Automatiquement tous les jours à 2h17 (heure FR)
+    - cron: '17 14 * * *'  # 14:17 (heure FR)
+  workflow_dispatch:      # Permet le lancement manuel
   push:
     branches:
-      - main             # (ou 'master' selon le nom de ta branche principale)
+      - main              # Déclenchement sur push sur la branche main
 
 # PERMISSIONS REQUISES
 permissions:
-  contents: write        # Indispensable pour que le bot puisse créer la branche gh-pages
+  contents: write         # Indispensable pour publier sur la branche gh-pages
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      # 1. Mis à jour de @v3 vers @v4 (support Node 24)
+      - uses: actions/checkout@v4
       
+      # 2. Mis à jour de @v4 vers @v5 (support Node 24)
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
           
@@ -34,8 +36,9 @@ jobs:
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: python main.py
 
+      # 3. Mis à jour de @v3 vers @v4
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
