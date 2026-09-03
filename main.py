@@ -55,7 +55,7 @@ VALID_PLAYABLE = {6, 34, 3}
 # Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
-    "hypes, follows, status, themes, " 
+    "hypes, follows, status, themes, created_at," 
     "first_release_date, release_dates.*, release_dates.platform.name, "
     "platforms.name, platforms.id, "  # Ajout de platforms.id
     "genres.name, genres.id, "        # Ajout de genres.id
@@ -371,25 +371,25 @@ for g in cleaned_bb_sorted:
 save_json(cleaned_bb_sorted, "blockbusters.json")
 print(f"✅ Fichier blockbusters.json généré avec {len(cleaned_bb_sorted)} hits majeurs, triés chronologiquement.")
 
-# --- CATÉGORIE 5 : Les plus attendus sans date (TBD) ---
-print("\n📡 Génération : Jeux annoncés (Les plus attendus sans date...)")
+# --- CATÉGORIE 5 : Les plus attendus sans date (TBD) - Récemment ajoutés ---
+print("\n📡 Génération : Jeux annoncés récemment (TBD récents...)")
 
 query_tbd = (
     f"{COMMON_FIELDS} "
-    # 1. On ne veut QUE les jeux sans aucune date
+    # 1. Jeux sans aucune date
     f"where first_release_date = null "
     
-    # 2. On impose une jaquette
+    # 2. Une jaquette obligatoire
     f"& cover != null "
     
-    # 3. FILTRE DE NOTORIÉTÉ (Exclut les petits projets)
-    # On demande au moins 30 "Hypes" OU 30 "Follows"
-    f"& (hypes >= 20 | follows >= 20) "
+    # 3. FILTRE DE NOTORIÉTÉ (Seuil adapté pour inclure les nouveaux jeux)
+    f"& (hypes >= 2 | follows >= 2) "
     
     # 4. SÉCURITÉ STATUT
     f"& (status = null | status != (6, 7)); "
     
-    f"sort hypes desc; "
+    # Tri par date de création sur IGDB (du plus récent au plus ancien)
+    f"sort created_at desc; "
     f"limit 150;"
 )
 
@@ -398,10 +398,12 @@ if res.status_code == 200:
     cleaned = clean_games_data(res.json())
     # On ne garde que si : pas de date DU TOUT
     cleaned = [g for g in cleaned if get_best_date(g) is None]
-    # Pour le TBD, on trie par Hype (attente) plutôt que par date
-    cleaned.sort(key=lambda x: x.get("hypes") or 0, reverse=True)
+    
+    # Tri par date de création récente
+    cleaned.sort(key=lambda x: x.get("created_at") or 0, reverse=True)
+    
     save_json(cleaned[:100], "tbd.json")
-    print("✅ Fichier tbd.json généré avec succès.")
+    print("✅ Fichier tbd.json généré avec succès (trié par ajout récent).")
 else:
     print(f"❌ Erreur TBD : {res.text}")
 
