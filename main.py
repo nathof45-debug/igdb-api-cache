@@ -42,22 +42,25 @@ three_days_ago = today - (3 * 24 * 60 * 60)
 seven_days_ago = today - (7 * 24 * 60 * 60)
 fourteen_days_ago = today - (14 * 24 * 60 * 60)
 
-one_month_ago = today - (30 * 24 * 60 *60)
+one_month_ago = today - (30 * 24 * 60 * 60)
 three_months_ago = today - (90 * 24 * 60 * 60)
 
 one_year_ago = int(time.time()) - (365 * 24 * 3600)
 
 next_week = today + 604800 # Calcul de la limite dans 7 jours
 
-current_year = datetime.datetime.now().year #Renvoit l'année en cours
+current_year = datetime.datetime.now().year # Renvoie l'année en cours
 
 # Statuts de release_dates valides pour le calendrier (Jouables)
-# 6: Full Release, 34: Advanced Access, 3: Early Access
 VALID_PLAYABLE = {6, 34, 3}
-# Les champs demandés sont identiques pour toutes les requêtes afin de n'avoir qu'une seule Data Class Kotlin
+
+# IDs des game_types à exclure partout : 5 (Mod), 12 (Fork), 14 (Update)
+EXCLUDED_GAME_TYPES = {5, 12, 14}
+
+# Les champs demandés avec l'ajout de game_type
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
-    "hypes, follows, status, themes, created_at," 
+    "hypes, follows, status, themes, created_at, game_type, " 
     "first_release_date, release_dates.*, release_dates.platform.name, "
     "platforms.name, platforms.id, "  # Ajout de platforms.id
     "genres.name, genres.id, "        # Ajout de genres.id
@@ -77,6 +80,13 @@ def clean_games_data(games_data, scores_dict=None):
     cleaned_list = []
     
     for game in games_data:
+        # --- Exclusion des game_types indésirables (5: Mod, 12: Fork, 14: Update) ---
+        g_type = game.get("game_type")
+        if isinstance(g_type, dict):
+            g_type = g_type.get("id")
+        if g_type in EXCLUDED_GAME_TYPES:
+            continue
+            
         game_id = game.get("id")
         
         # --- 1. Extraction des Plateformes ---
@@ -105,7 +115,6 @@ def clean_games_data(games_data, scores_dict=None):
                     pub_ids.append(c_id)
 
         # --- 4. Extraction des Langues ---
-        # On utilise set() pour éviter les doublons de noms de langues
         l_names = list(set(
             ls.get("language", {}).get("name") 
             for ls in game.get("language_supports", []) 
@@ -159,7 +168,6 @@ def get_hybrid_sort_date(game, today_ts=None, future_only=False):
     if today_ts is None: today_ts = int(time.time())
     playable_dates = []
     
-    # On ignore Alpha (1), Beta (2), Offline (4), Cancelled (5)
     EXCLUDED_STATUSES = {1, 2, 4, 5}
     
     for rd in game.get("release_dates", []):
@@ -182,7 +190,6 @@ def get_hybrid_sort_date(game, today_ts=None, future_only=False):
 
 def get_best_date(game, today_ts=None, future_only=False):
     if today_ts is None:
-        import time
         today_ts = int(time.time())
     
     res = get_hybrid_sort_date(game, today_ts, future_only)
@@ -198,22 +205,17 @@ def save_json(data, filename):
 # 4. EXÉCUTION DES CATÉGORIES
 # ==========================================
 
-# --- CATÉGORIE 1 : Les dernières sorties (Les 50 meilleurs jeux des 14 derniers jours) ---
-print("\n📡 Génération : Les dernières sorties (Les 50 meilleurs jeux des 14 derniers jours, trié par popularité)...")
+# --- CATÉGORIE 1 : Les dernières sorties ---
+print("\n📡 Génération : Les dernières sorties...")
 
-# Filtres :
-# - Fenêtre de 7 jours (entre seven_days_ago et today)
-# - cover != null : pour des jeux un peu sérieux
-# - NOUVEAU TRI : sort follows desc (Les jeux les plus suivis en premier)
 query_latest = (
     f"{COMMON_FIELDS} "
-    # 1. On groupe les deux conditions de date dans un grand bloc
     f"where ((first_release_date >= {seven_days_ago} & first_release_date <= {today}) "
     f"| (release_dates.date >= {seven_days_ago} & release_dates.date <= {today})) "
-    # 2. On impose la cover et le statut à TOUS les jeux qui sortent de ce bloc
     f"& release_dates.date_format = 0 "
     f"& cover != null & cover.image_id != null " 
-    f"& (status = null | status != (4, 5)) & hypes != null ; "
+    f"& (status = null | status != (4, 5)) & hypes != null "
+    f"& (game_type = null | game_type != (5, 12, 14)); "
     f"sort hypes desc; "
     f"limit 100;"
 )
@@ -223,7 +225,6 @@ if res.status_code == 200:
     final_latest = []
 
     for g in cleaned:
-        # 1. On cherche une date précise ET jouable dans les 7 derniers jours
         has_precise_recent_release = any(
             rd.get("category") == 0 and 
             rd.get("status") in VALID_PLAYABLE and
@@ -232,28 +233,22 @@ if res.status_code == 200:
             for rd in g.get("release_dates", [])
         )
         
-        # 2. Fallback sur la date principale (si aucune release_date détaillée n'a matché)
-        # On vérifie que l'indentation de ce bloc est BIEN à l'intérieur du "for g in cleaned"
         if not has_precise_recent_release and g.get("first_release_date"):
             if seven_days_ago <= g.get("first_release_date") <= today:
-                # Sécurité : on s'assure que le statut global du jeu n'est pas Alpha/Beta
                 if g.get("status") not in {1, 2}:
                     has_precise_recent_release = True 
 
-        # 3. Ajout final si validé
         if has_precise_recent_release and g.get("cover") and g.get("cover").get("image_id"):
             final_latest.append(g)
 
-    # Tri final (indenté au niveau du IF status_code == 200)
     final_latest.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=False), reverse=True)
     save_json(final_latest[:50], "latest.json")
     print("✅ Fichier latest.json généré avec succès.")
 else:
     print(f"❌ Erreur Latest : {res.text}")
 
-# --- CATÉGORIE 2 : Populaires actuellement (1 mois) ---
+# --- CATÉGORIE 2 : Populaires actuellement ---
 print("\n📡 Génération : Populaires actuellement...")
-# Étape A : Top Primitives
 query_prims = "fields game_id, value; where popularity_type = 1; sort value desc; limit 500;"
 res_prims = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query_prims)
 
@@ -261,16 +256,19 @@ if res_prims.status_code == 200:
     scores_dict = {str(item["game_id"]): item["value"] for item in res_prims.json() if "game_id" in item}
     ids_str = ",".join(scores_dict.keys())
     
-    # Étape B : Détails filtrés sur le dernier mois
     if ids_str:
-        #query_popular = f"{COMMON_FIELDS} where id = ({ids_str}) & (first_release_date >= {one_month_ago} | release_dates.date >= {one_month_ago}); limit 500;"
-        query_popular = f"{COMMON_FIELDS} where id = ({ids_str}) & first_release_date >= {one_month_ago} & first_release_date <= {today}; limit 500;"
+        query_popular = (
+            f"{COMMON_FIELDS} "
+            f"where id = ({ids_str}) "
+            f"& first_release_date >= {one_month_ago} "
+            f"& first_release_date <= {today} "
+            f"& (game_type = null | game_type != (5, 12, 14)); "
+            f"limit 500;"
+        )
         res_games = requests.post(BASE_URL, headers=headers, data=query_popular)
         
         if res_games.status_code == 200:
             cleaned = [g for g in clean_games_data(res_games.json(), scores_dict) if g.get("status") not in {1, 2}]
-
-            # Tri local par pop_score décroissant et limitation à 50
             cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)[:50]
             save_json(cleaned, "popular.json")
             print("✅ Fichier popular.json généré avec succès.")
@@ -286,18 +284,17 @@ query_upcoming = (
     f"{COMMON_FIELDS} "
     f"where ((first_release_date > {today} & first_release_date <= {next_week}) "
     f"| (release_dates.date > {today} & release_dates.date <= {next_week})) "
-    f"& release_dates.date_format = 0 " # On ne veut que des jeux avec AU MOINS une date précise
-    f"& (status = null | status != (6, 7)) & hypes >= 7; "
+    f"& release_dates.date_format = 0 "
+    f"& (status = null | status != (6, 7)) & hypes >= 7 "
+    f"& (game_type = null | game_type != (5, 12, 14)); "
     f"limit 500;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_upcoming)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())
-    # FILTRE DE SÉCURITÉ : On vérifie que la date de cette semaine est bien précise
     final_upcoming = []
     for g in cleaned:
-        # On cherche s'il existe une date précise (category/date_format 0) dans la fenêtre de 7 jours
         if any(rd.get("category") == 0 and rd.get("status") in {6, 34, 3} and rd.get("date") and today < rd.get("date") <= next_week 
                for rd in g.get("release_dates", [])):
             final_upcoming.append(g)
@@ -307,12 +304,10 @@ if res.status_code == 200:
 else:
     print(f"❌ Erreur Upcoming : {res.text}")
     
-# --- CATÉGORIE 4 : Futurs blockbusters (Les plus attendus via Popscore Type 2) ---
+# --- CATÉGORIE 4 : Futurs blockbusters ---
 print("\n📡 Génération : Futurs blockbusters (Popscore - Multi-pages)...")
 
-# Étape A : Parcourir le Top 2500 de Popscore (par pages de 500 via offset)
 scores_dict_bb = {}
-# On fait 5 appels pour récupérer le top 2500 historique
 for offset in [0, 500, 1000, 1500, 2000]:
     query_prims = f"fields game_id, value; where popularity_type = 2; sort value desc; limit 500; offset {offset};"
     res_prims = requests.post("https://api.igdb.com/v4/popularity_primitives", headers=headers, data=query_prims)
@@ -327,17 +322,15 @@ for offset in [0, 500, 1000, 1500, 2000]:
 all_ids = list(scores_dict_bb.keys())
 future_blockbusters = []
 
-# Étape B : Interroger l'endpoint Games par lots (chunks) de 500 IDs
-# On parcourt nos 2500 IDs en coupant par paquets de 500
 for i in range(0, len(all_ids), 500):
     chunk_ids = ",".join(all_ids[i:i+500])
     
-    # On applique ta condition exigeante : Date future OU Année future
     query_bb_games = (
         f"{COMMON_FIELDS} "
         f"where id = ({chunk_ids}) "
         f"& release_dates.y >= {current_year} "
-        f"& (first_release_date > {today} | first_release_date = null); "
+        f"& (first_release_date > {today} | first_release_date = null) "
+        f"& (game_type = null | game_type != (5, 12, 14)); "
         f"limit 500;"
     )
     
@@ -348,23 +341,16 @@ for i in range(0, len(all_ids), 500):
     else:
         print(f"❌ Erreur Games chunk {i} : {res_bb_games.text}")
 
-# Étape C : Nettoyage et tri final
 cleaned_bb = clean_games_data(future_blockbusters, scores_dict_bb)
 
-
-# --- CORRECTION FILTRAGE STRICT PYTHON ---
-# On ne garde que les jeux qui sont VRAIMENT dans le futur.
-# On utilise get_best_date (ou get_hybrid_sort_date) pour vérifier la date réelle.
 future_games_with_date = []
 for g in cleaned_bb:
     sort_ts = get_hybrid_sort_date(g, today, future_only=True)
     if sort_ts > today and sort_ts < 9999999999:
-        g["_tmp_sort_ts"] = sort_ts # On stocke le timestamp pour le tri
+        g["_tmp_sort_ts"] = sort_ts
         future_games_with_date.append(g)
-# ------------------------------------------
 
 all_sorted_chronologically = sorted(future_games_with_date, key=lambda x: x["_tmp_sort_ts"])
-
 cleaned_bb_sorted = all_sorted_chronologically[:50]
 
 for g in cleaned_bb_sorted:
@@ -378,27 +364,13 @@ print("\n📡 Génération : Nouvelles annonces les plus attendues (TBD récents
 
 query_tbd = (
     f"{COMMON_FIELDS} "
-    # 1. Jeux créés sur IGDB depuis moins d'un an (annonces récentes)
     f"where created_at >= {one_year_ago} "
-    
-    # 2. Pas de date de sortie
     f"& first_release_date = null "
-    
-    # 3. Jaquette obligatoire
     f"& cover != null "
-    
-    # 4. Filtrage 'game_type' avec vos IDs exacts :
-    # 0 = Main Game, 8 = Remake, 9 = Remaster, 10 = Expanded Game, 11 = Port
-    # Exclut 1=DLC, 2=Expansion, 3=Bundle, 4=Standalone Expansion, 5=Mod, 6=Episode, 7=Season, etc.
+    # Filtrage strict TBD (seulement jeux principaux, remakes, remasters, expanded, ports)
     f"& (game_type = null | game_type = (0, 8, 9, 10, 11)) "
-    
-    # 5. Notoriété minimale
     f"& (hypes >= 5 | follows >= 5) "
-    
-    # 6. Statut valide (exclut annulé/supprimé)
     f"& (status = null | status != (6, 7)); "
-    
-    # 7. TRI PAR HYPE : Les annonces récentes les plus attendues en premier
     f"sort hypes desc; "
     f"limit 150;"
 )
@@ -406,11 +378,7 @@ query_tbd = (
 res = requests.post(BASE_URL, headers=headers, data=query_tbd)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())
-    
-    # S'assurer qu'il n'y a aucune date DU TOUT
     cleaned = [g for g in cleaned if get_best_date(g) is None]
-    
-    # Tri par Hype pour la liste finale
     cleaned.sort(key=lambda x: x.get("hypes") or 0, reverse=True)
     
     save_json(cleaned[:100], "tbd.json")
