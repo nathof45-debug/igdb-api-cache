@@ -45,6 +45,8 @@ fourteen_days_ago = today - (14 * 24 * 60 * 60)
 one_month_ago = today - (30 * 24 * 60 *60)
 three_months_ago = today - (90 * 24 * 60 * 60)
 
+one_year_ago = int(time.time()) - (365 * 24 * 3600)
+
 next_week = today + 604800 # Calcul de la limite dans 7 jours
 
 current_year = datetime.datetime.now().year #Renvoit l'année en cours
@@ -371,40 +373,49 @@ for g in cleaned_bb_sorted:
 save_json(cleaned_bb_sorted, "blockbusters.json")
 print(f"✅ Fichier blockbusters.json généré avec {len(cleaned_bb_sorted)} hits majeurs, triés chronologiquement.")
 
-# --- CATÉGORIE 5 : Les plus attendus sans date (TBD) - Récemment ajoutés ---
-print("\n📡 Génération : Jeux annoncés récemment (TBD récents...)")
+# --- CATÉGORIE 5 : Nouveaux jeux annoncés & très attendus (TBD) ---
+print("\n📡 Génération : Nouvelles annonces les plus attendues (TBD récents & populaires...)")
 
 query_tbd = (
     f"{COMMON_FIELDS} "
-    # 1. Jeux sans aucune date
-    f"where first_release_date = null "
+    # 1. Jeux créés sur IGDB depuis moins d'un an (annonces récentes)
+    f"where created_at >= {one_year_ago} "
     
-    # 2. Une jaquette obligatoire
+    # 2. Pas de date de sortie
+    f"& first_release_date = null "
+    
+    # 3. Jaquette obligatoire
     f"& cover != null "
     
-    # 3. FILTRE DE NOTORIÉTÉ (Seuil adapté pour inclure les nouveaux jeux)
-    f"& (hypes >= 2 | follows >= 2) "
+    # 4. Filtrage 'game_type' avec vos IDs exacts :
+    # 0 = Main Game, 8 = Remake, 9 = Remaster, 10 = Expanded Game, 11 = Port
+    # Exclut 1=DLC, 2=Expansion, 3=Bundle, 4=Standalone Expansion, 5=Mod, 6=Episode, 7=Season, etc.
+    f"& (game_type = null | game_type = (0, 8, 9, 10, 11)) "
     
-    # 4. SÉCURITÉ STATUT
+    # 5. Notoriété minimale
+    f"& (hypes >= 5 | follows >= 5) "
+    
+    # 6. Statut valide (exclut annulé/supprimé)
     f"& (status = null | status != (6, 7)); "
     
-    # Tri par date de création sur IGDB (du plus récent au plus ancien)
-    f"sort created_at desc; "
+    # 7. TRI PAR HYPE : Les annonces récentes les plus attendues en premier
+    f"sort hypes desc; "
     f"limit 150;"
 )
 
 res = requests.post(BASE_URL, headers=headers, data=query_tbd)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())
-    # On ne garde que si : pas de date DU TOUT
+    
+    # S'assurer qu'il n'y a aucune date DU TOUT
     cleaned = [g for g in cleaned if get_best_date(g) is None]
     
-    # Tri par date de création récente
-    cleaned.sort(key=lambda x: x.get("created_at") or 0, reverse=True)
+    # Tri par Hype pour la liste finale
+    cleaned.sort(key=lambda x: x.get("hypes") or 0, reverse=True)
     
     save_json(cleaned[:100], "tbd.json")
-    print("✅ Fichier tbd.json généré avec succès (trié par ajout récent).")
+    print(f"✅ Fichier tbd.json généré avec succès ({len(cleaned[:100])} jeux).")
 else:
     print(f"❌ Erreur TBD : {res.text}")
-
+    
 print("\n🎉 Toutes les catégories ont été générées avec succès !")
