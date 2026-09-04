@@ -38,8 +38,8 @@ print("✅ Authentification réussie.")
 # ==========================================
 today = int(time.time())
 
-seven_days_ago = today - (7 * 24 * 60 * 60)
-one_month_ago = today - (30 * 24 * 60 * 60)
+seven_days_ago = today - (7 * 24 * 3600)
+two_months_ago = today - (60 * 24 * 3600)
 one_year_ago = int(time.time()) - (365 * 24 * 3600)
 next_week = today + 604800
 current_year = datetime.datetime.now().year
@@ -258,7 +258,7 @@ if res_prims.status_code == 200:
         query_popular = (
             f"{COMMON_FIELDS} "
             f"where id = ({ids_str}) "
-            f"& first_release_date >= {one_month_ago} "
+            f"& first_release_date >= {two_months_ago} "
             f"& first_release_date <= {today} "
             f"{NO_FANGAME_FILTER}; "
             f"limit 500;"
