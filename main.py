@@ -229,7 +229,7 @@ if res.status_code == 200:
             final_latest.append(g)
 
     final_latest.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=False), reverse=True)
-    save_json(final_latest[:50], "latest.json")
+    save_json(final_latest[:100], "latest.json")
     print("✅ Fichier latest.json généré avec succès.")
 
 # --- CATÉGORIE 2 : Populaires actuellement ---
@@ -252,8 +252,8 @@ if res_prims.status_code == 200:
         res_games = requests.post(BASE_URL, headers=headers, data=query_popular)
         if res_games.status_code == 200:
             cleaned = [g for g in clean_games_data(res_games.json(), scores_dict) if g.get("status") not in {1, 2}]
-            cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)[:50]
-            save_json(cleaned, "popular.json")
+            cleaned = sorted(cleaned, key=lambda x: x.get("pop_score") or 0, reverse=True)
+            save_json(cleaned[:100], "popular.json")
             print("✅ Fichier popular.json généré avec succès.")
 
 # --- CATÉGORIE 3 : Sorties populaires de la semaine ---
@@ -276,7 +276,7 @@ if res.status_code == 200:
                for rd in g.get("release_dates", [])):
             final_upcoming.append(g)
     final_upcoming.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=True))
-    save_json(final_upcoming[:50], "upcoming.json")
+    save_json(final_upcoming[:100], "upcoming.json")
 
 # --- CATÉGORIE 4 : Futurs blockbusters ---
 print("\n📡 Génération : Futurs blockbusters (Popscore - Multi-pages)...")
@@ -315,7 +315,7 @@ for g in cleaned_bb:
         future_games_with_date.append(g)
 
 all_sorted_chronologically = sorted(future_games_with_date, key=lambda x: x["_tmp_sort_ts"])
-cleaned_bb_sorted = all_sorted_chronologically[:50]
+cleaned_bb_sorted = all_sorted_chronologically[:100]
 for g in cleaned_bb_sorted:
     if "_tmp_sort_ts" in g: del g["_tmp_sort_ts"]
 
