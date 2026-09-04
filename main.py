@@ -213,24 +213,38 @@ res = requests.post(BASE_URL, headers=headers, data=query_latest)
 if res.status_code == 200:
     cleaned = clean_games_data(res.json())[:100]
     final_latest = []
+    
     for g in cleaned:
+        # 1. SÉCURITÉ ANTI-FUTUR : On supprime toutes les dates > today
+        # Ainsi, l'application Android ne pourra pas afficher "2026"
+        past_releases = [
+            rd for rd in g.get("release_dates", [])
+            if rd.get("date") and rd.get("date") <= today
+        ]
+        g["release_dates"] = past_releases # Remplacement dans l'objet
+        
+        # 2. Vérification stricte : il FAUT une date "précise" (0) et jouable cette semaine
         has_precise_recent_release = any(
             rd.get("category") == 0 and 
             rd.get("status") in VALID_PLAYABLE and
-            rd.get("date") and 
             seven_days_ago <= rd.get("date") <= today 
-            for rd in g.get("release_dates", [])
+            for rd in past_releases
         )
-        if not has_precise_recent_release and g.get("first_release_date"):
-            if seven_days_ago <= g.get("first_release_date") <= today:
-                if g.get("status") not in {1, 2}:
-                    has_precise_recent_release = True 
-        if has_precise_recent_release and g.get("cover") and g.get("cover").get("image_id"):
+        
+        # 3. Sécurité globale : Le jeu dans son ensemble ne doit pas être futur
+        global_date = g.get("first_release_date")
+        is_globally_released = not global_date or global_date <= today
+        
+        if has_precise_recent_release and is_globally_released and g.get("cover") and g.get("cover").get("image_id"):
             final_latest.append(g)
 
+    # Tri par date de sortie pour avoir les plus récents en premier
     final_latest.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=False), reverse=True)
+    
     save_json(final_latest[:100], "latest.json")
     print("✅ Fichier latest.json généré avec succès.")
+else:
+    print(f"❌ Erreur Latest : {res.text}")
 
 # --- CATÉGORIE 2 : Populaires actuellement ---
 print("\n📡 Génération : Populaires actuellement...")
