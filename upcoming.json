@@ -48,16 +48,16 @@
       1459
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "French",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Turkish",
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Japanese",
+      "French",
       "Italian",
-      "Polish",
+      "German",
       "English",
+      "Turkish",
+      "Polish",
       "Chinese (Traditional)"
     ],
     "release_dates": [
@@ -205,10 +205,10 @@
       12884
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "French",
       "Portuguese (Brazil)",
+      "Spanish (Spain)",
+      "French",
+      "German",
       "Italian",
       "English"
     ],
@@ -294,29 +294,29 @@
     ],
     "languages": [
       "Danish",
-      "Spanish (Spain)",
-      "Hungarian",
-      "Arabic",
-      "Swedish",
-      "Turkish",
-      "Russian",
-      "Portuguese (Portugal)",
-      "Thai",
-      "Czech",
-      "English",
-      "Norwegian",
-      "German",
-      "Korean",
-      "Italian",
-      "French",
-      "Japanese",
-      "Finnish",
-      "Chinese (Simplified)",
-      "Portuguese (Brazil)",
-      "Polish",
-      "Ukrainian",
-      "Dutch",
       "Vietnamese",
+      "German",
+      "Finnish",
+      "Russian",
+      "Dutch",
+      "Portuguese (Portugal)",
+      "English",
+      "Czech",
+      "Korean",
+      "Hungarian",
+      "Polish",
+      "Arabic",
+      "Ukrainian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Swedish",
+      "Spanish (Spain)",
+      "Japanese",
+      "French",
+      "Thai",
+      "Italian",
+      "Turkish",
+      "Norwegian",
       "Chinese (Traditional)"
     ],
     "release_dates": [
@@ -340,7 +340,7 @@
     },
     "rating": null,
     "first_release_date": 1788825600,
-    "hypes": 31,
+    "hypes": 34,
     "status": null,
     "follows": null,
     "themes": [
@@ -376,16 +376,16 @@
       10094
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "French",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Russian",
-      "Korean",
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Japanese",
+      "French",
+      "German",
       "Italian",
-      "English"
+      "English",
+      "Russian",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -454,14 +454,14 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "French",
-      "Turkish",
-      "Russian",
       "Portuguese (Brazil)",
+      "Spanish (Spain)",
+      "French",
       "Italian",
-      "English"
+      "German",
+      "English",
+      "Turkish",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -529,13 +529,13 @@
       18643
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "French",
-      "Chinese (Simplified)",
-      "Russian",
       "Portuguese (Brazil)",
-      "English"
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
+      "German",
+      "English",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -606,18 +606,18 @@
       13699
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "French",
-      "Japanese",
       "Chinese (Simplified)",
-      "Turkish",
-      "Korean",
-      "Russian",
+      "Spanish (Spain)",
+      "Japanese",
+      "French",
       "Portuguese (Portugal)",
       "Italian",
-      "Polish",
+      "German",
       "English",
+      "Turkish",
+      "Russian",
+      "Korean",
+      "Polish",
       "Chinese (Traditional)"
     ],
     "release_dates": [
@@ -659,7 +659,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 30,
+    "hypes": 31,
     "status": null,
     "follows": null,
     "themes": [
@@ -697,19 +697,19 @@
       16437
     ],
     "languages": [
-      "Spanish (Spain)",
-      "German",
-      "French",
-      "Japanese",
-      "Ukrainian",
-      "Chinese (Simplified)",
-      "Turkish",
-      "Korean",
-      "Russian",
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Japanese",
+      "French",
       "Italian",
-      "Polish",
+      "German",
       "English",
+      "Turkish",
+      "Ukrainian",
+      "Russian",
+      "Korean",
+      "Polish",
       "Chinese (Traditional)"
     ],
     "release_dates": [
@@ -775,8 +775,8 @@
       634
     ],
     "languages": [
-      "English",
-      "Chinese (Simplified)"
+      "Chinese (Simplified)",
+      "English"
     ],
     "release_dates": [
       {
@@ -796,6 +796,86 @@
         "date": 1789084800,
         "status": 3,
         "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 412303,
+    "name": "Luduvo",
+    "cover": {
+      "id": 588954,
+      "image_id": "cocmfu"
+    },
+    "rating": null,
+    "first_release_date": 1789171200,
+    "hypes": 8,
+    "status": 2,
+    "follows": null,
+    "themes": [
+      33,
+      38
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Linux",
+      "PC (Microsoft Windows)",
+      "Mac"
+    ],
+    "platform_ids": [
+      3,
+      6,
+      14
+    ],
+    "genres": [
+      "Platform",
+      "Adventure"
+    ],
+    "genre_ids": [
+      8,
+      31
+    ],
+    "developers": [
+      "Luduvo Corporation"
+    ],
+    "developer_ids": [
+      79840
+    ],
+    "publishers": [
+      "Luduvo Corporation"
+    ],
+    "publisher_ids": [
+      79840
+    ],
+    "languages": [
+      "English"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 12,
+        "date": 1789171200,
+        "status": 6,
+        "platform_name": "Linux"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 12,
+        "date": 1789171200,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 12,
+        "date": 1789171200,
+        "status": 6,
+        "platform_name": "Mac"
       }
     ]
   }
