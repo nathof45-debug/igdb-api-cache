@@ -48,17 +48,17 @@
       1459
     ],
     "languages": [
-      "Italian",
-      "French",
-      "English",
       "Polish",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)",
       "Japanese",
-      "Turkish",
       "Chinese (Traditional)",
-      "Portuguese (Brazil)"
+      "Turkish",
+      "English",
+      "German",
+      "Italian",
+      "Chinese (Simplified)",
+      "French",
+      "Portuguese (Brazil)",
+      "Spanish (Spain)"
     ],
     "release_dates": [
       {
@@ -205,12 +205,12 @@
       12884
     ],
     "languages": [
-      "Italian",
-      "French",
       "English",
-      "Spanish (Spain)",
       "German",
-      "Portuguese (Brazil)"
+      "Italian",
+      "Portuguese (Brazil)",
+      "French",
+      "Spanish (Spain)"
     ],
     "release_dates": [
       {
@@ -293,31 +293,31 @@
       73440
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Thai",
+      "Polish",
       "Ukrainian",
+      "Arabic",
+      "English",
+      "Dutch",
+      "Italian",
+      "Danish",
+      "Korean",
+      "Chinese (Traditional)",
+      "Russian",
+      "Norwegian",
+      "Vietnamese",
+      "Portuguese (Brazil)",
+      "Swedish",
+      "Thai",
+      "Japanese",
+      "Turkish",
       "German",
       "Hungarian",
-      "Turkish",
-      "Chinese (Traditional)",
-      "Vietnamese",
-      "Dutch",
-      "Polish",
-      "Korean",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Russian",
-      "Arabic",
       "Finnish",
-      "Italian",
       "French",
-      "Swedish",
-      "English",
-      "Czech",
-      "Norwegian",
-      "Portuguese (Portugal)",
       "Spanish (Spain)",
-      "Danish"
+      "Czech",
+      "Chinese (Simplified)",
+      "Portuguese (Portugal)"
     ],
     "release_dates": [
       {
@@ -376,16 +376,16 @@
       10094
     ],
     "languages": [
-      "Italian",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
-      "Chinese (Simplified)",
       "Japanese",
+      "Korean",
+      "English",
+      "German",
+      "Russian",
+      "Italian",
+      "Chinese (Simplified)",
+      "French",
       "Portuguese (Brazil)",
-      "Russian"
+      "Spanish (Spain)"
     ],
     "release_dates": [
       {
@@ -454,14 +454,14 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "Italian",
-      "French",
+      "Turkish",
       "English",
-      "Spanish (Spain)",
       "German",
       "Russian",
-      "Turkish",
-      "Portuguese (Brazil)"
+      "Italian",
+      "Portuguese (Brazil)",
+      "French",
+      "Spanish (Spain)"
     ],
     "release_dates": [
       {
@@ -529,13 +529,13 @@
       18643
     ],
     "languages": [
-      "French",
       "English",
-      "Spanish (Spain)",
+      "Russian",
       "German",
       "Chinese (Simplified)",
-      "Russian",
-      "Portuguese (Brazil)"
+      "French",
+      "Portuguese (Brazil)",
+      "Spanish (Spain)"
     ],
     "release_dates": [
       {
@@ -555,6 +555,81 @@
         "date": 1788998400,
         "status": 6,
         "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 344797,
+    "name": "Shroom and Gloom",
+    "cover": {
+      "id": 501246,
+      "image_id": "coaqri"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 11,
+    "status": null,
+    "follows": null,
+    "themes": [
+      17
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)",
+      "Mac"
+    ],
+    "platform_ids": [
+      6,
+      14
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Turn-based strategy (TBS)",
+      "Adventure",
+      "Indie",
+      "Card & Board Game"
+    ],
+    "genre_ids": [
+      12,
+      16,
+      31,
+      32,
+      35
+    ],
+    "developers": [
+      "Team Lazerbeam"
+    ],
+    "developer_ids": [
+      26654
+    ],
+    "publishers": [
+      "Devolver Digital"
+    ],
+    "publisher_ids": [
+      634
+    ],
+    "languages": [
+      "Chinese (Simplified)",
+      "English"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 10,
+        "date": 1788998400,
+        "status": 3,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 10,
+        "date": 1788998400,
+        "status": 3,
+        "platform_name": "Mac"
       }
     ]
   },
@@ -606,19 +681,19 @@
       13699
     ],
     "languages": [
-      "Italian",
-      "French",
-      "English",
       "Polish",
-      "Portuguese (Portugal)",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
-      "Chinese (Simplified)",
       "Japanese",
-      "Turkish",
+      "Korean",
       "Chinese (Traditional)",
-      "Russian"
+      "Turkish",
+      "English",
+      "German",
+      "Russian",
+      "Italian",
+      "Chinese (Simplified)",
+      "French",
+      "Portuguese (Portugal)",
+      "Spanish (Spain)"
     ],
     "release_dates": [
       {
@@ -697,20 +772,20 @@
       16437
     ],
     "languages": [
-      "Italian",
-      "Ukrainian",
-      "French",
-      "English",
       "Polish",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
-      "Chinese (Simplified)",
       "Japanese",
-      "Turkish",
+      "Chinese (Simplified)",
+      "Ukrainian",
+      "Korean",
       "Chinese (Traditional)",
+      "Turkish",
+      "English",
+      "German",
+      "Russian",
+      "Italian",
       "Portuguese (Brazil)",
-      "Russian"
+      "French",
+      "Spanish (Spain)"
     ],
     "release_dates": [
       {
@@ -719,81 +794,6 @@
         "m": 9,
         "d": 10,
         "date": 1788998400,
-        "status": 3,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
-    "id": 344797,
-    "name": "Shroom and Gloom",
-    "cover": {
-      "id": 501246,
-      "image_id": "coaqri"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 11,
-    "status": null,
-    "follows": null,
-    "themes": [
-      17
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
-    "platform_ids": [
-      6,
-      14
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Turn-based strategy (TBS)",
-      "Adventure",
-      "Indie",
-      "Card & Board Game"
-    ],
-    "genre_ids": [
-      12,
-      16,
-      31,
-      32,
-      35
-    ],
-    "developers": [
-      "Team Lazerbeam"
-    ],
-    "developer_ids": [
-      26654
-    ],
-    "publishers": [
-      "Devolver Digital"
-    ],
-    "publisher_ids": [
-      634
-    ],
-    "languages": [
-      "English",
-      "Chinese (Simplified)"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 11,
-        "date": 1789084800,
-        "status": 3,
-        "platform_name": "Mac"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 11,
-        "date": 1789084800,
         "status": 3,
         "platform_name": "PC (Microsoft Windows)"
       }
