@@ -231,11 +231,10 @@ if res.status_code == 200:
             for rd in past_releases
         )
         
-        # 3. Sécurité globale : Le jeu dans son ensemble ne doit pas être futur
-        global_date = g.get("first_release_date")
-        is_globally_released = not global_date or global_date <= today
+        # 3. On ne bloque plus strictement sur first_release_date si on a une date jouable valide
+        # (L'accès avancé a le droit d'avoir une first_release_date dans le futur)
         
-        if has_precise_recent_release and is_globally_released and g.get("cover") and g.get("cover").get("image_id"):
+        if has_precise_recent_release and g.get("cover") and g.get("cover").get("image_id"):
             final_latest.append(g)
 
     # Tri par date de sortie pour avoir les plus récents en premier
