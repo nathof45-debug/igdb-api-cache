@@ -41,9 +41,9 @@
     ],
     "languages": [
       "Russian",
-      "Korean",
+      "Chinese (Simplified)",
       "English",
-      "Chinese (Simplified)"
+      "Korean"
     ],
     "release_dates": [
       {
@@ -233,19 +233,19 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Portuguese (Portugal)",
-      "Japanese",
-      "Polish",
-      "Russian",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Arabic",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
       "Chinese (Simplified)",
-      "Italian"
+      "Portuguese (Portugal)",
+      "Spanish (Spain)",
+      "Arabic",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -277,7 +277,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 53,
+    "hypes": 54,
     "status": null,
     "follows": null,
     "themes": [
@@ -317,17 +317,17 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
-      "English",
+      "Chinese (Simplified)",
       "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
       "German",
       "Spanish (Mexico)",
-      "Korean",
-      "Chinese (Simplified)",
-      "Italian"
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -490,6 +490,72 @@
     ]
   },
   {
+    "id": 381211,
+    "name": "Bradley the Badger",
+    "cover": {
+      "id": 513741,
+      "image_id": "cob0el"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 42,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Adventure"
+    ],
+    "genre_ids": [
+      31
+    ],
+    "developers": [
+      "Day 4 Night Studios"
+    ],
+    "developer_ids": [
+      72202
+    ],
+    "publishers": [
+      "Focus Entertainment"
+    ],
+    "publisher_ids": [
+      110
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Portuguese (Portugal)",
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
     "id": 389432,
     "name": "Project Windless",
     "cover": {
@@ -540,72 +606,6 @@
         "date": null,
         "status": 6,
         "platform_name": "PlayStation 5"
-      }
-    ]
-  },
-  {
-    "id": 381211,
-    "name": "Bradley the Badger",
-    "cover": {
-      "id": 513741,
-      "image_id": "cob0el"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 41,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "genre_ids": [
-      31
-    ],
-    "developers": [
-      "Day 4 Night Studios"
-    ],
-    "developer_ids": [
-      72202
-    ],
-    "publishers": [
-      "Focus Entertainment"
-    ],
-    "publisher_ids": [
-      110
-    ],
-    "languages": [
-      "Portuguese (Brazil)",
-      "Portuguese (Portugal)",
-      "Japanese",
-      "Russian",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
-      "Chinese (Simplified)",
-      "Italian"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PC (Microsoft Windows)"
       }
     ]
   },
@@ -750,7 +750,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 31,
+    "hypes": 32,
     "status": null,
     "follows": null,
     "themes": [
@@ -794,20 +794,20 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "Polish",
-      "French",
-      "Chinese (Traditional)",
-      "Turkish",
-      "English",
+      "Chinese (Simplified)",
       "Thai",
       "Spanish (Spain)",
+      "Turkish",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
       "German",
       "Spanish (Mexico)",
+      "Japanese",
+      "Italian",
+      "English",
       "Korean",
-      "Chinese (Simplified)",
-      "Italian"
+      "Polish"
     ],
     "release_dates": [
       {
@@ -838,6 +838,112 @@
         "platform_name": "Xbox Series X|S"
       }
     ]
+  },
+  {
+    "id": 404685,
+    "name": "Haex",
+    "cover": {
+      "id": 568428,
+      "image_id": "coc6lo"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 32,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      18,
+      21,
+      38
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Shooter",
+      "Adventure"
+    ],
+    "genre_ids": [
+      5,
+      31
+    ],
+    "developers": [
+      "Dead Astronauts"
+    ],
+    "developer_ids": [
+      77702
+    ],
+    "publishers": [
+      "Dead Astronauts"
+    ],
+    "publisher_ids": [
+      77702
+    ],
+    "languages": [
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Swedish",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 3,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 414966,
+    "name": "Nodusfall",
+    "cover": {
+      "id": 595550,
+      "image_id": "cocrj2"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 31,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17
+    ],
+    "pop_score": null,
+    "platforms": [],
+    "platform_ids": [],
+    "genres": [],
+    "genre_ids": [],
+    "developers": [
+      "HoYoverse"
+    ],
+    "developer_ids": [
+      41907
+    ],
+    "publishers": [
+      "HoYoverse"
+    ],
+    "publisher_ids": [
+      41907
+    ],
+    "languages": [],
+    "release_dates": []
   },
   {
     "id": 381245,
@@ -883,18 +989,18 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "Polish",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
       "Czech",
-      "German",
-      "Korean",
       "Chinese (Simplified)",
-      "Italian"
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -923,112 +1029,6 @@
         "date": null,
         "status": null,
         "platform_name": "Xbox Series X|S"
-      }
-    ]
-  },
-  {
-    "id": 414966,
-    "name": "Nodusfall",
-    "cover": {
-      "id": 595550,
-      "image_id": "cocrj2"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 30,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      17
-    ],
-    "pop_score": null,
-    "platforms": [],
-    "platform_ids": [],
-    "genres": [],
-    "genre_ids": [],
-    "developers": [
-      "HoYoverse"
-    ],
-    "developer_ids": [
-      41907
-    ],
-    "publishers": [
-      "HoYoverse"
-    ],
-    "publisher_ids": [
-      41907
-    ],
-    "languages": [],
-    "release_dates": []
-  },
-  {
-    "id": 404685,
-    "name": "Haex",
-    "cover": {
-      "id": 568428,
-      "image_id": "coc6lo"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 30,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      18,
-      21,
-      38
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Shooter",
-      "Adventure"
-    ],
-    "genre_ids": [
-      5,
-      31
-    ],
-    "developers": [
-      "Dead Astronauts"
-    ],
-    "developer_ids": [
-      77702
-    ],
-    "publishers": [
-      "Dead Astronauts"
-    ],
-    "publisher_ids": [
-      77702
-    ],
-    "languages": [
-      "Russian",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
-      "Swedish",
-      "German",
-      "Korean",
-      "Chinese (Simplified)",
-      "Italian"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 3,
-        "platform_name": "PC (Microsoft Windows)"
       }
     ]
   },
@@ -1157,12 +1157,12 @@
       7930
     ],
     "languages": [
-      "French",
-      "English",
+      "Chinese (Simplified)",
       "Spanish (Spain)",
+      "French",
       "German",
-      "Korean",
-      "Chinese (Simplified)"
+      "English",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -1212,7 +1212,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 27,
+    "hypes": 28,
     "status": null,
     "follows": null,
     "themes": [
@@ -1250,11 +1250,11 @@
       946
     ],
     "languages": [
-      "French",
-      "English",
       "Spanish (Spain)",
+      "French",
       "German",
-      "Italian"
+      "Italian",
+      "English"
     ],
     "release_dates": [
       {
@@ -1334,9 +1334,9 @@
       73482
     ],
     "languages": [
-      "English",
       "Chinese (Simplified)",
-      "Chinese (Traditional)"
+      "Chinese (Traditional)",
+      "English"
     ],
     "release_dates": [
       {
@@ -1553,11 +1553,11 @@
       5040
     ],
     "languages": [
-      "French",
-      "English",
       "Spanish (Spain)",
+      "French",
       "German",
-      "Italian"
+      "Italian",
+      "English"
     ],
     "release_dates": [
       {
@@ -1572,64 +1572,6 @@
     ]
   },
   {
-    "id": 380454,
-    "name": "Supreme Experiment",
-    "cover": {
-      "id": 511295,
-      "image_id": "coayin"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 18,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      18
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "genre_ids": [
-      31
-    ],
-    "developers": [
-      "Argunov Games"
-    ],
-    "developer_ids": [
-      72008
-    ],
-    "publishers": [
-      "Argunov Games"
-    ],
-    "publisher_ids": [
-      72008
-    ],
-    "languages": [
-      "Japanese",
-      "English",
-      "Chinese (Simplified)"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
     "id": 404045,
     "name": "Bancho the Chef",
     "cover": {
@@ -1638,7 +1580,7 @@
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 17,
+    "hypes": 18,
     "status": null,
     "follows": null,
     "themes": [],
@@ -1675,16 +1617,16 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
       "French",
       "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
+      "Russian",
       "German",
-      "Korean",
-      "Chinese (Simplified)",
-      "Italian"
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -1703,6 +1645,164 @@
         "d": null,
         "date": null,
         "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 399232,
+    "name": "Lofsöng",
+    "cover": {
+      "id": 558421,
+      "image_id": "cobyvp"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 18,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "platform_ids": [
+      169,
+      6,
+      167
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      31,
+      32
+    ],
+    "developers": [
+      "Unrelated Studio"
+    ],
+    "developer_ids": [
+      80571
+    ],
+    "publishers": [
+      "Unrelated Studio"
+    ],
+    "publisher_ids": [
+      80571
+    ],
+    "languages": [
+      "Chinese (Simplified)",
+      "Portuguese (Portugal)",
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Ukrainian"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "Xbox Series X|S"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PlayStation 5"
+      }
+    ]
+  },
+  {
+    "id": 405164,
+    "name": "Into the Wind",
+    "cover": {
+      "id": 569253,
+      "image_id": "coc78l"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 17,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Racing",
+      "Simulator",
+      "Adventure"
+    ],
+    "genre_ids": [
+      10,
+      13,
+      31
+    ],
+    "developers": [
+      "Bloom & Gloom"
+    ],
+    "developer_ids": [
+      80617
+    ],
+    "publishers": [
+      "Three Friends"
+    ],
+    "publisher_ids": [
+      62459
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 3,
         "platform_name": "PC (Microsoft Windows)"
       }
     ]
@@ -1748,13 +1848,13 @@
       12319
     ],
     "languages": [
-      "Russian",
       "Portuguese (Portugal)",
-      "Polish",
-      "French",
-      "English",
       "Spanish (Spain)",
-      "German"
+      "French",
+      "Russian",
+      "German",
+      "Polish",
+      "English"
     ],
     "release_dates": [
       {
@@ -1769,19 +1869,20 @@
     ]
   },
   {
-    "id": 405164,
-    "name": "Into the Wind",
+    "id": 380454,
+    "name": "Supreme Experiment",
     "cover": {
-      "id": 569253,
-      "image_id": "coc78l"
+      "id": 511295,
+      "image_id": "coayin"
     },
     "rating": null,
     "first_release_date": null,
-    "hypes": 16,
+    "hypes": 17,
     "status": null,
     "follows": null,
     "themes": [
-      1
+      1,
+      18
     ],
     "pop_score": null,
     "platforms": [
@@ -1791,40 +1892,27 @@
       6
     ],
     "genres": [
-      "Racing",
-      "Simulator",
       "Adventure"
     ],
     "genre_ids": [
-      10,
-      13,
       31
     ],
     "developers": [
-      "Bloom & Gloom"
+      "Argunov Games"
     ],
     "developer_ids": [
-      80617
+      72008
     ],
     "publishers": [
-      "Three Friends"
+      "Argunov Games"
     ],
     "publisher_ids": [
-      62459
+      72008
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Russian",
       "Japanese",
-      "Polish",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
       "Chinese (Simplified)",
-      "Italian"
+      "English"
     ],
     "release_dates": [
       {
@@ -1833,7 +1921,7 @@
         "m": null,
         "d": null,
         "date": null,
-        "status": 3,
+        "status": null,
         "platform_name": "PC (Microsoft Windows)"
       }
     ]
@@ -1887,17 +1975,17 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Japanese",
-      "Polish",
-      "French",
-      "Turkish",
-      "English",
       "Chinese (Simplified)",
       "Spanish (Spain)",
-      "German",
-      "Korean",
+      "Turkish",
+      "French",
       "Chinese (Traditional)",
-      "Italian"
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -1956,18 +2044,18 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "Polish",
-      "French",
-      "Turkish",
-      "English",
+      "Chinese (Simplified)",
       "Spanish (Spain)",
+      "Turkish",
+      "French",
+      "Russian",
       "German",
       "Spanish (Mexico)",
+      "Japanese",
       "Korean",
-      "Chinese (Simplified)",
-      "Italian"
+      "Italian",
+      "English",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -2040,108 +2128,20 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "Polish",
-      "Finnish",
-      "French",
-      "Danish",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
       "Turkish",
-      "English",
       "Arabic",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
-      "Chinese (Simplified)",
-      "Italian"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "Xbox Series X|S"
-      }
-    ]
-  },
-  {
-    "id": 399232,
-    "name": "Lofsöng",
-    "cover": {
-      "id": 558421,
-      "image_id": "cobyvp"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 15,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "platform_ids": [
-      169,
-      6,
-      167
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      31,
-      32
-    ],
-    "developers": [
-      "Unrelated Studio"
-    ],
-    "developer_ids": [
-      80571
-    ],
-    "publishers": [
-      "Unrelated Studio"
-    ],
-    "publisher_ids": [
-      80571
-    ],
-    "languages": [
-      "Russian",
-      "Portuguese (Portugal)",
-      "Japanese",
       "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
+      "Russian",
+      "Danish",
       "German",
+      "Finnish",
+      "Japanese",
+      "Italian",
+      "English",
       "Korean",
-      "Chinese (Simplified)",
-      "Ukrainian",
-      "Italian"
+      "Polish"
     ],
     "release_dates": [
       {
@@ -2150,16 +2150,7 @@
         "m": null,
         "d": null,
         "date": null,
-        "status": null,
-        "platform_name": "Xbox Series X|S"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
+        "status": 6,
         "platform_name": "PC (Microsoft Windows)"
       },
       {
@@ -2168,8 +2159,17 @@
         "m": null,
         "d": null,
         "date": null,
-        "status": null,
+        "status": 6,
         "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "Xbox Series X|S"
       }
     ]
   },
@@ -2231,16 +2231,16 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "Polish",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
       "Chinese (Simplified)",
-      "Italian"
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -2332,18 +2332,18 @@
       23904
     ],
     "languages": [
-      "Russian",
-      "Portuguese (Portugal)",
-      "Japanese",
-      "Polish",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
       "Chinese (Simplified)",
-      "Ukrainian",
-      "Italian"
+      "Portuguese (Portugal)",
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish",
+      "Ukrainian"
     ],
     "release_dates": [
       {
@@ -2403,18 +2403,18 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "Polish",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
       "Chinese (Simplified)",
-      "Ukrainian",
-      "Italian"
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish",
+      "Ukrainian"
     ],
     "release_dates": [
       {
@@ -2493,19 +2493,19 @@
       53692
     ],
     "languages": [
-      "Russian",
       "Portuguese (Brazil)",
-      "Japanese",
-      "Polish",
-      "French",
-      "Chinese (Traditional)",
-      "Turkish",
-      "English",
-      "Spanish (Spain)",
       "Czech",
-      "German",
       "Chinese (Simplified)",
-      "Italian"
+      "Spanish (Spain)",
+      "Turkish",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -2587,16 +2587,16 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "Polish",
-      "French",
-      "English",
+      "Chinese (Simplified)",
       "Thai",
       "Spanish (Spain)",
+      "French",
+      "Russian",
       "German",
+      "Japanese",
+      "Polish",
+      "English",
       "Korean",
-      "Chinese (Simplified)",
       "Italian"
     ],
     "release_dates": [
@@ -2675,20 +2675,20 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Japanese",
-      "Polish",
-      "French",
-      "Turkish",
-      "English",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
       "Czech",
+      "Chinese (Simplified)",
+      "Turkish",
+      "Spanish (Spain)",
+      "French",
+      "Chinese (Traditional)",
       "Hungarian",
       "German",
+      "Japanese",
       "Korean",
-      "Chinese (Traditional)",
+      "Italian",
       "Ukrainian",
-      "Italian"
+      "English",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -2699,6 +2699,87 @@
         "date": null,
         "status": 6,
         "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 415003,
+    "name": "Tarae: The Unbound",
+    "cover": {
+      "id": 597266,
+      "image_id": "cocsuq"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 13,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      17
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "platform_ids": [
+      169,
+      6,
+      167
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "genre_ids": [
+      12,
+      31
+    ],
+    "developers": [
+      "Boundary"
+    ],
+    "developer_ids": [
+      80554
+    ],
+    "publishers": [
+      "Krafton"
+    ],
+    "publisher_ids": [
+      41542
+    ],
+    "languages": [
+      "English",
+      "Korean"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "Xbox Series X|S"
       }
     ]
   },
@@ -2837,15 +2918,15 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "Portuguese (Portugal)",
-      "Japanese",
-      "French",
-      "English",
       "Spanish (Spain)",
+      "French",
       "German",
       "Spanish (Mexico)",
-      "Chinese (Simplified)",
-      "Italian"
+      "Japanese",
+      "Italian",
+      "English"
     ],
     "release_dates": [
       {
@@ -2865,6 +2946,88 @@
         "date": null,
         "status": 6,
         "platform_name": "Xbox Series X|S"
+      }
+    ]
+  },
+  {
+    "id": 415155,
+    "name": "Alkimya: House of Wisdom",
+    "cover": {
+      "id": 595914,
+      "image_id": "cocrt6"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 12,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1,
+      19,
+      21,
+      43
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "platform_ids": [
+      6,
+      167
+    ],
+    "genres": [
+      "Adventure"
+    ],
+    "genre_ids": [
+      31
+    ],
+    "developers": [
+      "Iksyr"
+    ],
+    "developer_ids": [
+      80595
+    ],
+    "publishers": [
+      "Iksyr"
+    ],
+    "publisher_ids": [
+      80595
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Turkish",
+      "Spanish (Spain)",
+      "Arabic",
+      "French",
+      "Chinese (Traditional)",
+      "Russian",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
       }
     ]
   },
@@ -2926,11 +3089,11 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "French",
-      "English",
       "Spanish (Spain)",
+      "French",
       "German",
-      "Italian"
+      "Italian",
+      "English"
     ],
     "release_dates": [
       {
@@ -3042,71 +3205,14 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
+      "Norwegian",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
       "Russian",
+      "German",
       "Japanese",
       "Polish",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "Norwegian",
-      "German",
-      "Chinese (Simplified)"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
-    "id": 397804,
-    "name": "Prove You're Human",
-    "cover": {
-      "id": 568688,
-      "image_id": "coc6sw"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 12,
-    "status": null,
-    "follows": null,
-    "themes": [
-      18
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      31,
-      32
-    ],
-    "developers": [
-      "sunset visitor 斜陽過客"
-    ],
-    "developer_ids": [
-      43443
-    ],
-    "publishers": [
-      "Black Tabby Games"
-    ],
-    "publisher_ids": [
-      28292
-    ],
-    "languages": [
       "English"
     ],
     "release_dates": [
@@ -3220,9 +3326,9 @@
       42450
     ],
     "languages": [
-      "English",
       "Chinese (Simplified)",
-      "Chinese (Traditional)"
+      "Chinese (Traditional)",
+      "English"
     ],
     "release_dates": [
       {
@@ -3280,23 +3386,23 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
+      "Thai",
+      "Chinese (Simplified)",
       "Portuguese (Portugal)",
-      "Japanese",
-      "Polish",
-      "Russian",
+      "Spanish (Spain)",
+      "Arabic",
       "French",
       "Chinese (Traditional)",
-      "English",
-      "Chinese (Simplified)",
-      "Arabic",
-      "Thai",
-      "Spanish (Spain)",
-      "Vietnamese",
+      "Russian",
       "German",
       "Spanish (Mexico)",
+      "Japanese",
+      "Italian",
+      "English",
       "Korean",
-      "Dutch",
-      "Italian"
+      "Polish",
+      "Vietnamese",
+      "Dutch"
     ],
     "release_dates": [
       {
@@ -3365,16 +3471,16 @@
       13699
     ],
     "languages": [
-      "Russian",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
       "Chinese (Simplified)",
-      "Italian"
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -3436,9 +3542,9 @@
       71583
     ],
     "languages": [
-      "English",
+      "German",
       "Czech",
-      "German"
+      "English"
     ],
     "release_dates": [
       {
@@ -3508,91 +3614,9 @@
       21777
     ],
     "languages": [
-      "English",
       "Chinese (Simplified)",
-      "Chinese (Traditional)"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PlayStation 5"
-      }
-    ]
-  },
-  {
-    "id": 415155,
-    "name": "Alkimya: House of Wisdom",
-    "cover": {
-      "id": 595914,
-      "image_id": "cocrt6"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 11,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      19,
-      21,
-      43
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "platform_ids": [
-      6,
-      167
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "genre_ids": [
-      31
-    ],
-    "developers": [
-      "Iksyr"
-    ],
-    "developer_ids": [
-      80595
-    ],
-    "publishers": [
-      "Iksyr"
-    ],
-    "publisher_ids": [
-      80595
-    ],
-    "languages": [
-      "Russian",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "Polish",
-      "French",
       "Chinese (Traditional)",
-      "Turkish",
-      "English",
-      "Arabic",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
-      "Chinese (Simplified)",
-      "Italian"
+      "English"
     ],
     "release_dates": [
       {
@@ -3602,7 +3626,7 @@
         "d": null,
         "date": null,
         "status": 6,
-        "platform_name": "PlayStation 5"
+        "platform_name": "PC (Microsoft Windows)"
       },
       {
         "category": 7,
@@ -3611,16 +3635,16 @@
         "d": null,
         "date": null,
         "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
+        "platform_name": "PlayStation 5"
       }
     ]
   },
   {
-    "id": 415003,
-    "name": "Tarae: The Unbound",
+    "id": 414980,
+    "name": "Dust Origins",
     "cover": {
-      "id": 597266,
-      "image_id": "cocsuq"
+      "id": 595509,
+      "image_id": "cocrhx"
     },
     "rating": null,
     "first_release_date": null,
@@ -3629,41 +3653,40 @@
     "follows": null,
     "themes": [
       1,
-      17
+      18,
+      19,
+      21
     ],
     "pop_score": null,
     "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
+      "PC (Microsoft Windows)"
     ],
     "platform_ids": [
-      169,
-      6,
-      167
+      6
     ],
     "genres": [
+      "Shooter",
       "Role-playing (RPG)",
       "Adventure"
     ],
     "genre_ids": [
+      5,
       12,
       31
     ],
     "developers": [
-      "Boundary"
+      "Airship Syndicate"
     ],
     "developer_ids": [
-      80554
+      6542
     ],
     "publishers": [
-      "Krafton"
+      "Airship Syndicate"
     ],
     "publisher_ids": [
-      41542
+      6542
     ],
     "languages": [
-      "Korean",
       "English"
     ],
     "release_dates": [
@@ -3675,24 +3698,6 @@
         "date": null,
         "status": null,
         "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "Xbox Series X|S"
       }
     ]
   },
@@ -3734,15 +3739,15 @@
     "publisher_ids": [],
     "languages": [
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
       "Russian",
+      "German",
       "Japanese",
       "Polish",
-      "French",
       "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
-      "Chinese (Simplified)"
+      "Korean"
     ],
     "release_dates": [
       {
@@ -3752,6 +3757,116 @@
         "d": null,
         "date": null,
         "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 405079,
+    "name": "Hack '95",
+    "cover": {
+      "id": 569073,
+      "image_id": "coc73l"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 11,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Indie"
+    ],
+    "genre_ids": [
+      32
+    ],
+    "developers": [
+      "Village Studio"
+    ],
+    "developer_ids": [
+      54055
+    ],
+    "publishers": [
+      "Village Studio"
+    ],
+    "publisher_ids": [
+      54055
+    ],
+    "languages": [
+      "English"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 397804,
+    "name": "Prove You're Human",
+    "cover": {
+      "id": 568688,
+      "image_id": "coc6sw"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 11,
+    "status": null,
+    "follows": null,
+    "themes": [
+      18
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      31,
+      32
+    ],
+    "developers": [
+      "sunset visitor 斜陽過客"
+    ],
+    "developer_ids": [
+      43443
+    ],
+    "publishers": [
+      "Black Tabby Games"
+    ],
+    "publisher_ids": [
+      28292
+    ],
+    "languages": [
+      "English"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
         "platform_name": "PC (Microsoft Windows)"
       }
     ]
@@ -3795,21 +3910,21 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "Russian",
-      "Portuguese (Portugal)",
-      "Japanese",
-      "Polish",
-      "French",
-      "Chinese (Traditional)",
-      "Turkish",
-      "English",
-      "Arabic",
-      "Spanish (Spain)",
       "Czech",
-      "German",
       "Chinese (Simplified)",
-      "Ukrainian",
-      "Italian"
+      "Portuguese (Portugal)",
+      "Spanish (Spain)",
+      "Turkish",
+      "Arabic",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Polish",
+      "Ukrainian"
     ],
     "release_dates": [
       {
@@ -3867,65 +3982,14 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "English",
       "Chinese (Simplified)",
       "Spanish (Spain)",
-      "German",
+      "French",
       "Chinese (Traditional)",
-      "Italian"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
-    "id": 379126,
-    "name": "Distant Shore: Bretagne",
-    "cover": {
-      "id": 523358,
-      "image_id": "cob7tq"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 11,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      31,
-      32
-    ],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "English",
-      "Chinese (Simplified)",
-      "French"
+      "German",
+      "Japanese",
+      "Italian",
+      "English"
     ],
     "release_dates": [
       {
@@ -4029,9 +4093,9 @@
       73719
     ],
     "languages": [
-      "English",
       "Chinese (Simplified)",
-      "Chinese (Traditional)"
+      "Chinese (Traditional)",
+      "English"
     ],
     "release_dates": [
       {
@@ -4105,65 +4169,12 @@
       17032
     ],
     "languages": [
-      "Russian",
       "Portuguese (Brazil)",
-      "Japanese",
+      "Chinese (Simplified)",
+      "Russian",
       "Chinese (Traditional)",
-      "English",
       "German",
-      "Chinese (Simplified)"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
-    "id": 405079,
-    "name": "Hack '95",
-    "cover": {
-      "id": 569073,
-      "image_id": "coc73l"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 10,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Indie"
-    ],
-    "genre_ids": [
-      32
-    ],
-    "developers": [
-      "Village Studio"
-    ],
-    "developer_ids": [
-      54055
-    ],
-    "publishers": [
-      "Village Studio"
-    ],
-    "publisher_ids": [
-      54055
-    ],
-    "languages": [
+      "Japanese",
       "English"
     ],
     "release_dates": [
@@ -4173,7 +4184,7 @@
         "m": null,
         "d": null,
         "date": null,
-        "status": 6,
+        "status": null,
         "platform_name": "PC (Microsoft Windows)"
       }
     ]
@@ -4229,6 +4240,57 @@
         "d": null,
         "date": null,
         "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 379126,
+    "name": "Distant Shore: Bretagne",
+    "cover": {
+      "id": 523358,
+      "image_id": "cob7tq"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 10,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      31,
+      32
+    ],
+    "developers": [],
+    "developer_ids": [],
+    "publishers": [],
+    "publisher_ids": [],
+    "languages": [
+      "Chinese (Simplified)",
+      "French",
+      "English"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
         "platform_name": "PC (Microsoft Windows)"
       }
     ]
@@ -4315,68 +4377,6 @@
     ]
   },
   {
-    "id": 414980,
-    "name": "Dust Origins",
-    "cover": {
-      "id": 595509,
-      "image_id": "cocrhx"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 9,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      18,
-      19,
-      21
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Shooter",
-      "Role-playing (RPG)",
-      "Adventure"
-    ],
-    "genre_ids": [
-      5,
-      12,
-      31
-    ],
-    "developers": [
-      "Airship Syndicate"
-    ],
-    "developer_ids": [
-      6542
-    ],
-    "publishers": [
-      "Airship Syndicate"
-    ],
-    "publisher_ids": [
-      6542
-    ],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
     "id": 403803,
     "name": "Dungeon Lurker",
     "cover": {
@@ -4420,13 +4420,13 @@
       5913
     ],
     "languages": [
-      "Japanese",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "German",
       "Chinese (Simplified)",
-      "Italian"
+      "Spanish (Spain)",
+      "French",
+      "German",
+      "Japanese",
+      "Italian",
+      "English"
     ],
     "release_dates": [
       {
@@ -4490,12 +4490,12 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "Russian",
+      "German",
       "Japanese",
       "English",
-      "German",
-      "Korean",
-      "Chinese (Simplified)"
+      "Korean"
     ],
     "release_dates": [
       {
@@ -4600,21 +4600,21 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Portuguese (Portugal)",
-      "Japanese",
-      "Polish",
-      "Russian",
-      "French",
-      "Chinese (Traditional)",
-      "Turkish",
-      "English",
       "Chinese (Simplified)",
+      "Portuguese (Portugal)",
       "Spanish (Spain)",
+      "Turkish",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
       "German",
+      "Japanese",
+      "Italian",
+      "English",
       "Korean",
-      "Dutch",
+      "Polish",
       "Ukrainian",
-      "Italian"
+      "Dutch"
     ],
     "release_dates": [
       {
@@ -4764,12 +4764,12 @@
     "publisher_ids": [],
     "languages": [
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "Portuguese (Portugal)",
-      "Polish",
       "French",
-      "English",
       "German",
-      "Chinese (Simplified)"
+      "Polish",
+      "English"
     ],
     "release_dates": [
       {
@@ -4834,15 +4834,15 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Japanese",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
       "French",
       "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
       "German",
-      "Korean",
-      "Chinese (Simplified)",
-      "Italian"
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -4913,11 +4913,11 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "Japanese",
+      "Chinese (Simplified)",
       "Chinese (Traditional)",
+      "Japanese",
       "English",
-      "Korean",
-      "Chinese (Simplified)"
+      "Korean"
     ],
     "release_dates": [
       {
@@ -4995,14 +4995,14 @@
       517
     ],
     "languages": [
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
       "Russian",
+      "German",
       "Japanese",
       "Polish",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)"
+      "English"
     ],
     "release_dates": [
       {
@@ -5059,15 +5059,15 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
       "Russian",
+      "German",
+      "Finnish",
       "Japanese",
       "Polish",
-      "French",
-      "Finnish",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)"
+      "English"
     ],
     "release_dates": [
       {
@@ -5126,16 +5126,16 @@
       196
     ],
     "languages": [
+      "Czech",
+      "Spanish (Spain)",
+      "French",
       "Russian",
+      "Chinese (Traditional)",
+      "German",
       "Japanese",
       "Polish",
-      "French",
       "English",
-      "Spanish (Spain)",
-      "Czech",
-      "German",
       "Korean",
-      "Chinese (Traditional)",
       "Italian"
     ],
     "release_dates": [
@@ -5193,8 +5193,8 @@
       18629
     ],
     "languages": [
-      "English",
-      "English (UK)"
+      "English (UK)",
+      "English"
     ],
     "release_dates": [
       {
@@ -5241,11 +5241,11 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "Japanese",
+      "Chinese (Simplified)",
       "Chinese (Traditional)",
+      "Japanese",
       "English",
-      "Korean",
-      "Chinese (Simplified)"
+      "Korean"
     ],
     "release_dates": [
       {
@@ -5337,9 +5337,9 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
+      "Chinese (Simplified)",
       "Russian",
-      "English",
-      "Chinese (Simplified)"
+      "English"
     ],
     "release_dates": [
       {
@@ -5349,6 +5349,81 @@
         "d": 21,
         "date": 1771632000,
         "status": 1,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 416111,
+    "name": "Rhapsody in Scarlet",
+    "cover": {
+      "id": 598185,
+      "image_id": "coctk9"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 7,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "platform_ids": [
+      6,
+      167
+    ],
+    "genres": [
+      "Adventure"
+    ],
+    "genre_ids": [
+      31
+    ],
+    "developers": [
+      "Konami"
+    ],
+    "developer_ids": [
+      129
+    ],
+    "publishers": [
+      "Konami"
+    ],
+    "publisher_ids": [
+      129
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
         "platform_name": "PC (Microsoft Windows)"
       }
     ]
@@ -5400,6 +5475,141 @@
     ],
     "languages": [
       "English"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 404740,
+    "name": "Super Yooka-Laylee Kart",
+    "cover": {
+      "id": 568512,
+      "image_id": "coc6o0"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 7,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Racing",
+      "Adventure"
+    ],
+    "genre_ids": [
+      10,
+      31
+    ],
+    "developers": [
+      "Playtonic"
+    ],
+    "developer_ids": [
+      5369
+    ],
+    "publishers": [
+      "Playtonic Friends"
+    ],
+    "publisher_ids": [
+      38269
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
+      "German",
+      "Japanese",
+      "English"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 395178,
+    "name": "Cat Parents",
+    "cover": {
+      "id": 584957,
+      "image_id": "cocjct"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 7,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Simulator",
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      13,
+      31,
+      32
+    ],
+    "developers": [
+      "GAZE IN GAMES"
+    ],
+    "developer_ids": [
+      79346
+    ],
+    "publishers": [
+      "GAZE IN GAMES"
+    ],
+    "publisher_ids": [
+      79346
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Thai",
+      "Spanish (Spain)",
+      "Swedish",
+      "Turkish",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Finnish",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean",
+      "Polish",
+      "Ukrainian",
+      "Vietnamese"
     ],
     "release_dates": [
       {
@@ -5567,11 +5777,11 @@
       69697
     ],
     "languages": [
-      "Russian",
       "Portuguese (Portugal)",
+      "Spanish (Spain)",
+      "Russian",
       "Japanese",
-      "English",
-      "Spanish (Spain)"
+      "English"
     ],
     "release_dates": [
       {
@@ -5582,6 +5792,92 @@
         "date": null,
         "status": null,
         "platform_name": "PC (Microsoft Windows)"
+      }
+    ]
+  },
+  {
+    "id": 370005,
+    "name": "Paradoxical",
+    "cover": {
+      "id": 492444,
+      "image_id": "coajz0"
+    },
+    "rating": null,
+    "first_release_date": null,
+    "hypes": 7,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Linux",
+      "PC (Microsoft Windows)",
+      "Mac"
+    ],
+    "platform_ids": [
+      3,
+      6,
+      14
+    ],
+    "genres": [
+      "Puzzle",
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      9,
+      31,
+      32
+    ],
+    "developers": [
+      "gubebra"
+    ],
+    "developer_ids": [
+      69419
+    ],
+    "publishers": [
+      "Venn Studios"
+    ],
+    "publisher_ids": [
+      66928
+    ],
+    "languages": [
+      "Portuguese (Brazil)",
+      "Spanish (Spain)",
+      "French",
+      "German",
+      "Japanese",
+      "English"
+    ],
+    "release_dates": [
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "Mac"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": null,
+        "platform_name": "Linux"
       }
     ]
   },
@@ -5628,8 +5924,8 @@
       14909
     ],
     "languages": [
-      "Russian",
-      "English"
+      "English",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -5758,17 +6054,17 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
       "Portuguese (Portugal)",
-      "Japanese",
-      "Russian",
-      "French",
-      "Chinese (Traditional)",
-      "English",
       "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
       "German",
       "Spanish (Mexico)",
-      "Korean",
-      "Chinese (Simplified)"
+      "Japanese",
+      "English",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -5842,67 +6138,6 @@
     ]
   },
   {
-    "id": 404740,
-    "name": "Super Yooka-Laylee Kart",
-    "cover": {
-      "id": 568512,
-      "image_id": "coc6o0"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 6,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Racing",
-      "Adventure"
-    ],
-    "genre_ids": [
-      10,
-      31
-    ],
-    "developers": [
-      "Playtonic"
-    ],
-    "developer_ids": [
-      5369
-    ],
-    "publishers": [
-      "Playtonic Friends"
-    ],
-    "publisher_ids": [
-      38269
-    ],
-    "languages": [
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Chinese (Simplified)"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
     "id": 404712,
     "name": "Mr. Records",
     "cover": {
@@ -5945,17 +6180,17 @@
       13699
     ],
     "languages": [
-      "Russian",
       "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "English",
       "Chinese (Simplified)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
       "German",
       "Spanish (Mexico)",
-      "Korean",
-      "Chinese (Traditional)",
-      "Italian"
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -6016,9 +6251,9 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "English",
       "Chinese (Simplified)",
-      "French"
+      "French",
+      "English"
     ],
     "release_dates": [
       {
@@ -6066,12 +6301,12 @@
     "publisher_ids": [],
     "languages": [
       "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
       "French",
       "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
       "German",
-      "Chinese (Simplified)"
+      "English"
     ],
     "release_dates": [
       {
@@ -6187,80 +6422,6 @@
         "d": null,
         "date": null,
         "status": null,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
-    "id": 395178,
-    "name": "Cat Parents",
-    "cover": {
-      "id": 584957,
-      "image_id": "cocjct"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 6,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      13,
-      31,
-      32
-    ],
-    "developers": [
-      "GAZE IN GAMES"
-    ],
-    "developer_ids": [
-      79346
-    ],
-    "publishers": [
-      "GAZE IN GAMES"
-    ],
-    "publisher_ids": [
-      79346
-    ],
-    "languages": [
-      "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "Polish",
-      "French",
-      "Finnish",
-      "Chinese (Traditional)",
-      "Turkish",
-      "English",
-      "Thai",
-      "Spanish (Spain)",
-      "Swedish",
-      "Vietnamese",
-      "German",
-      "Korean",
-      "Chinese (Simplified)",
-      "Ukrainian",
-      "Italian"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
         "platform_name": "PC (Microsoft Windows)"
       }
     ]
@@ -6385,89 +6546,6 @@
     ]
   },
   {
-    "id": 388249,
-    "name": "Nekome: Nazi Hunter",
-    "cover": {
-      "id": 547814,
-      "image_id": "cobqp2"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 6,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "platform_ids": [
-      169,
-      6,
-      167
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "genre_ids": [
-      31
-    ],
-    "developers": [
-      "ProbablyMonsters"
-    ],
-    "developer_ids": [
-      54266
-    ],
-    "publishers": [
-      "ProbablyMonsters"
-    ],
-    "publisher_ids": [
-      54266
-    ],
-    "languages": [
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "English",
-      "German",
-      "Chinese (Simplified)",
-      "Italian"
-    ],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": 6,
-        "platform_name": "Xbox Series X|S"
-      }
-    ]
-  },
-  {
     "id": 380981,
     "name": "Mutter",
     "cover": {
@@ -6513,12 +6591,12 @@
       22400
     ],
     "languages": [
-      "Russian",
-      "Japanese",
-      "French",
-      "English",
       "Spanish (Spain)",
+      "French",
+      "Russian",
       "German",
+      "Japanese",
+      "English",
       "Korean"
     ],
     "release_dates": [
@@ -6578,18 +6656,18 @@
     ],
     "languages": [
       "Portuguese (Brazil)",
-      "Russian",
-      "Polish",
-      "Japanese",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Turkish",
       "French",
       "Chinese (Traditional)",
-      "Turkish",
-      "English",
-      "Spanish (Spain)",
+      "Russian",
       "German",
+      "Japanese",
+      "Italian",
+      "English",
       "Korean",
-      "Chinese (Simplified)",
-      "Italian"
+      "Polish"
     ],
     "release_dates": [
       {
@@ -6647,17 +6725,17 @@
       79889
     ],
     "languages": [
-      "Russian",
-      "Polish",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
-      "German",
-      "Korean",
       "Chinese (Simplified)",
-      "Italian"
+      "Spanish (Spain)",
+      "French",
+      "Russian",
+      "Chinese (Traditional)",
+      "German",
+      "Japanese",
+      "Korean",
+      "Italian",
+      "English",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -6710,17 +6788,17 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "Russian",
-      "Japanese",
-      "French",
-      "Turkish",
-      "English",
       "Chinese (Simplified)",
       "Spanish (Spain)",
-      "German",
-      "Korean",
+      "Turkish",
+      "French",
       "Chinese (Traditional)",
-      "Italian"
+      "Russian",
+      "German",
+      "Japanese",
+      "Italian",
+      "English",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -6753,11 +6831,11 @@
     ]
   },
   {
-    "id": 370005,
-    "name": "Paradoxical",
+    "id": 370498,
+    "name": "Project Retrograde: The Becoming",
     "cover": {
-      "id": 492444,
-      "image_id": "coajz0"
+      "id": 493297,
+      "image_id": "coakmp"
     },
     "rating": null,
     "first_release_date": null,
@@ -6769,44 +6847,38 @@
     ],
     "pop_score": null,
     "platforms": [
-      "Linux",
+      "Xbox Series X|S",
       "PC (Microsoft Windows)",
-      "Mac"
+      "PlayStation 5"
     ],
     "platform_ids": [
-      3,
+      169,
       6,
-      14
+      167
     ],
     "genres": [
-      "Puzzle",
-      "Adventure",
-      "Indie"
+      "Role-playing (RPG)",
+      "Adventure"
     ],
     "genre_ids": [
-      9,
-      31,
-      32
+      12,
+      31
     ],
     "developers": [
-      "gubebra"
+      "Invercity Game Works"
     ],
     "developer_ids": [
-      69419
+      69512
     ],
     "publishers": [
-      "Venn Studios"
+      "Invercity Game Works"
     ],
     "publisher_ids": [
-      66928
+      69512
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "German"
+      "Chinese (Simplified)",
+      "English"
     ],
     "release_dates": [
       {
@@ -6815,7 +6887,16 @@
         "m": null,
         "d": null,
         "date": null,
-        "status": null,
+        "status": 6,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
         "platform_name": "PC (Microsoft Windows)"
       },
       {
@@ -6824,55 +6905,9 @@
         "m": null,
         "d": null,
         "date": null,
-        "status": null,
-        "platform_name": "Mac"
-      },
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "Linux"
+        "status": 6,
+        "platform_name": "Xbox Series X|S"
       }
     ]
-  },
-  {
-    "id": 366711,
-    "name": "Million to One",
-    "cover": {
-      "id": 487245,
-      "image_id": "coafyl"
-    },
-    "rating": null,
-    "first_release_date": null,
-    "hypes": 6,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [],
-    "platform_ids": [],
-    "genres": [
-      "Quiz/Trivia"
-    ],
-    "genre_ids": [
-      26
-    ],
-    "developers": [
-      "Twitch"
-    ],
-    "developer_ids": [
-      19234
-    ],
-    "publishers": [
-      "Twitch"
-    ],
-    "publisher_ids": [
-      19234
-    ],
-    "languages": [],
-    "release_dates": []
   }
 ]
