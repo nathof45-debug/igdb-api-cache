@@ -1,65 +1,5 @@
 [
   {
-    "id": 340029,
-    "name": "Cosmic Fear",
-    "cover": {
-      "id": 451359,
-      "image_id": "co9o9r"
-    },
-    "rating": null,
-    "first_release_date": 1788912000,
-    "hypes": 7,
-    "status": null,
-    "follows": null,
-    "themes": [
-      19
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      31,
-      32
-    ],
-    "developers": [
-      "Alessandro Guzzo"
-    ],
-    "developer_ids": [
-      22984
-    ],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "French",
-      "Italian",
-      "German",
-      "Turkish",
-      "English",
-      "Spanish (Spain)",
-      "Russian",
-      "Portuguese (Brazil)"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 9,
-        "date": 1788912000,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      }
-    ]
-  },
-  {
     "id": 319629,
     "name": "Welcome to Elderfield",
     "cover": {
@@ -113,12 +53,12 @@
       18643
     ],
     "languages": [
-      "French",
-      "German",
       "English",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
       "Russian",
+      "French",
+      "German",
+      "Chinese (Simplified)",
       "Portuguese (Brazil)"
     ],
     "release_dates": [
@@ -265,19 +205,19 @@
       13699
     ],
     "languages": [
-      "French",
+      "Turkish",
+      "Japanese",
+      "English",
+      "Polish",
+      "Portuguese (Portugal)",
       "Chinese (Traditional)",
       "Italian",
-      "Japanese",
-      "German",
-      "Russian",
-      "Turkish",
-      "English",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
-      "Portuguese (Portugal)",
-      "Polish",
-      "Korean"
+      "Russian",
+      "Korean",
+      "French",
+      "German",
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -357,14 +297,14 @@
       28444
     ],
     "languages": [
-      "French",
-      "Spanish (Mexico)",
-      "Italian",
       "Japanese",
-      "German",
       "English",
+      "Spanish (Mexico)",
       "Spanish (Spain)",
+      "Italian",
       "Russian",
+      "French",
+      "German",
       "Portuguese (Brazil)"
     ],
     "release_dates": [
@@ -444,20 +384,20 @@
       16437
     ],
     "languages": [
-      "French",
+      "Turkish",
+      "Japanese",
+      "English",
+      "Polish",
       "Chinese (Traditional)",
       "Italian",
-      "Japanese",
-      "German",
-      "Ukrainian",
-      "Turkish",
-      "English",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
       "Russian",
-      "Polish",
-      "Korean"
+      "Ukrainian",
+      "Korean",
+      "French",
+      "German",
+      "Chinese (Simplified)",
+      "Portuguese (Brazil)"
     ],
     "release_dates": [
       {
@@ -520,16 +460,16 @@
       1459
     ],
     "languages": [
-      "French",
+      "Turkish",
+      "Japanese",
+      "English",
+      "Polish",
       "Chinese (Traditional)",
       "Italian",
-      "Japanese",
-      "German",
-      "Turkish",
-      "English",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
-      "Polish",
+      "French",
+      "German",
+      "Chinese (Simplified)",
       "Portuguese (Brazil)"
     ],
     "release_dates": [
@@ -750,19 +690,19 @@
       16565
     ],
     "languages": [
-      "French",
-      "Chinese (Traditional)",
-      "Spanish (Mexico)",
-      "Italian",
       "Japanese",
-      "German",
       "English",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
+      "Spanish (Mexico)",
+      "Polish",
+      "Chinese (Traditional)",
+      "Italian",
       "Spanish (Spain)",
       "Russian",
-      "Polish",
-      "Korean"
+      "Korean",
+      "French",
+      "German",
+      "Chinese (Simplified)",
+      "Portuguese (Brazil)"
     ],
     "release_dates": [
       {
@@ -876,21 +816,21 @@
       10100
     ],
     "languages": [
-      "French",
-      "Spanish (Mexico)",
-      "Italian",
-      "Portuguese (Portugal)",
-      "German",
       "Japanese",
-      "Czech",
-      "Dutch",
       "English",
-      "Chinese (Simplified)",
+      "Spanish (Mexico)",
       "Korean",
+      "Dutch",
+      "Polish",
+      "Portuguese (Portugal)",
       "Spanish (Spain)",
+      "Italian",
       "Russian",
       "Arabic",
-      "Polish",
+      "French",
+      "German",
+      "Chinese (Simplified)",
+      "Czech",
       "Portuguese (Brazil)"
     ],
     "release_dates": [
@@ -956,14 +896,14 @@
       57550
     ],
     "languages": [
-      "Chinese (Traditional)",
       "Japanese",
-      "Italian",
-      "German",
       "English",
-      "Chinese (Simplified)",
+      "Chinese (Traditional)",
+      "Italian",
       "Spanish (Spain)",
-      "Korean"
+      "Korean",
+      "German",
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -1028,6 +968,360 @@
         "date": 1789430400,
         "status": 6,
         "platform_name": "PlayStation 5"
+      }
+    ]
+  },
+  {
+    "id": 82117,
+    "name": "Two Point Hospital",
+    "cover": {
+      "id": 97393,
+      "image_id": "co235d"
+    },
+    "rating": 75.75363564682594,
+    "first_release_date": 1535500800,
+    "hypes": 7,
+    "status": null,
+    "follows": null,
+    "themes": [
+      27,
+      28
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PlayStation 4",
+      "Linux",
+      "Nintendo Switch 2",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Mac",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "platform_ids": [
+      169,
+      48,
+      3,
+      508,
+      6,
+      167,
+      14,
+      49,
+      130
+    ],
+    "genres": [
+      "Simulator",
+      "Strategy",
+      "Indie"
+    ],
+    "genre_ids": [
+      13,
+      15,
+      32
+    ],
+    "developers": [
+      "Two Point Studios"
+    ],
+    "developer_ids": [
+      14440
+    ],
+    "publishers": [
+      "Sega"
+    ],
+    "publisher_ids": [
+      112
+    ],
+    "languages": [
+      "English",
+      "German",
+      "Polish",
+      "Chinese (Traditional)",
+      "Spanish (Spain)",
+      "Russian",
+      "Italian",
+      "Korean",
+      "French",
+      "Chinese (Simplified)",
+      "Portuguese (Brazil)"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "Nintendo Switch 2"
+      },
+      {
+        "category": 0,
+        "y": 2018,
+        "m": 8,
+        "d": 29,
+        "date": 1535500800,
+        "status": 6,
+        "platform_name": "Linux"
+      },
+      {
+        "category": 0,
+        "y": 2018,
+        "m": 8,
+        "d": 29,
+        "date": 1535500800,
+        "status": 6,
+        "platform_name": "Mac"
+      },
+      {
+        "category": 0,
+        "y": 2020,
+        "m": 2,
+        "d": 25,
+        "date": 1582588800,
+        "status": 6,
+        "platform_name": "Nintendo Switch"
+      },
+      {
+        "category": 0,
+        "y": 2018,
+        "m": 8,
+        "d": 29,
+        "date": 1535500800,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 0,
+        "y": 2020,
+        "m": 2,
+        "d": 25,
+        "date": 1582588800,
+        "status": 6,
+        "platform_name": "PlayStation 4"
+      },
+      {
+        "category": 0,
+        "y": 2020,
+        "m": 2,
+        "d": 25,
+        "date": 1582588800,
+        "status": 6,
+        "platform_name": "Xbox One"
+      },
+      {
+        "category": 0,
+        "y": 2021,
+        "m": 4,
+        "d": 28,
+        "date": 1619568000,
+        "status": 36,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "PlayStation 5"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "Xbox Series X|S"
+      }
+    ]
+  },
+  {
+    "id": 145078,
+    "name": "Woodo",
+    "cover": {
+      "id": 373692,
+      "image_id": "co80cc"
+    },
+    "rating": null,
+    "first_release_date": 1789516800,
+    "hypes": 10,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "Nintendo Switch 2",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Nintendo Switch"
+    ],
+    "platform_ids": [
+      169,
+      508,
+      6,
+      167,
+      130
+    ],
+    "genres": [
+      "Puzzle",
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      9,
+      31,
+      32
+    ],
+    "developers": [
+      "Yullia Prohorova",
+      "Timur Bogotov"
+    ],
+    "developer_ids": [
+      58949,
+      58950
+    ],
+    "publishers": [
+      "Daedalic Entertainment"
+    ],
+    "publisher_ids": [
+      2248
+    ],
+    "languages": [
+      "Turkish",
+      "Japanese",
+      "English",
+      "Thai",
+      "Dutch",
+      "Polish",
+      "Chinese (Traditional)",
+      "Hungarian",
+      "Spanish (Spain)",
+      "Russian",
+      "Italian",
+      "Ukrainian",
+      "Korean",
+      "French",
+      "German",
+      "Chinese (Simplified)",
+      "Czech",
+      "Portuguese (Brazil)"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "Nintendo Switch"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "Nintendo Switch 2"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "Xbox Series X|S"
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "PlayStation 5"
+      }
+    ]
+  },
+  {
+    "id": 371847,
+    "name": "Blackwood",
+    "cover": {
+      "id": 495986,
+      "image_id": "coampe"
+    },
+    "rating": null,
+    "first_release_date": 1789516800,
+    "hypes": 22,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Strategy",
+      "Adventure"
+    ],
+    "genre_ids": [
+      12,
+      15,
+      31
+    ],
+    "developers": [
+      "Attrito M7 Productions"
+    ],
+    "developer_ids": [
+      33407
+    ],
+    "publishers": [
+      "Attrito M7 Productions"
+    ],
+    "publisher_ids": [
+      33407
+    ],
+    "languages": [
+      "Turkish",
+      "English",
+      "Polish",
+      "Spanish (Spain)",
+      "Russian",
+      "Italian",
+      "German",
+      "Chinese (Simplified)",
+      "Portuguese (Brazil)"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 9,
+        "d": 16,
+        "date": 1789516800,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)"
       }
     ]
   }
