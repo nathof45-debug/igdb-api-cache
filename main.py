@@ -42,6 +42,7 @@ seven_days_ago = today - (7 * 24 * 3600)
 two_months_ago = today - (60 * 24 * 3600)
 one_year_ago = int(time.time()) - (365 * 24 * 3600)
 next_week = today + 604800
+next_ten_days = today + (10 * 24 *3600)
 current_year = datetime.datetime.now().year
 
 VALID_PLAYABLE = {6, 34, 3}
@@ -269,12 +270,12 @@ if res_prims.status_code == 200:
             save_json(cleaned[:100], "popular.json")
             print("✅ Fichier popular.json généré avec succès.")
 
-# --- CATÉGORIE 3 : Sorties populaires de la semaine ---
+# --- CATÉGORIE 3 : Sorties populaires à venir ---
 print("\n📡 Génération : Sorties populaires de la semaine...")
 query_upcoming = (
     f"{COMMON_FIELDS} "
-    f"where ((first_release_date > {today} & first_release_date <= {next_week}) "
-    f"| (release_dates.date > {today} & release_dates.date <= {next_week})) "
+    f"where ((first_release_date > {today} & first_release_date <= {next_ten_days}) "
+    f"| (release_dates.date > {today} & release_dates.date <= {next_ten_days})) "
     f"& release_dates.date_format = 0 "
     f"& (status = null | status != (6, 7)) & hypes >= 7 "
     f"{NO_FANGAME_FILTER}; "
