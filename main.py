@@ -286,7 +286,7 @@ if res.status_code == 200:
     cleaned = clean_games_data(res.json())
     final_upcoming = []
     for g in cleaned:
-        if any(rd.get("category") == 0 and rd.get("status") in {6, 34, 3} and rd.get("date") and today < rd.get("date") <= next_week 
+        if any(rd.get("category") == 0 and rd.get("status") in {6, 34, 3} and rd.get("date") and today < rd.get("date") <= next_ten_days
                for rd in g.get("release_dates", [])):
             final_upcoming.append(g)
     final_upcoming.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=True))
