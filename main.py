@@ -271,7 +271,7 @@ if res_prims.status_code == 200:
             print("✅ Fichier popular.json généré avec succès.")
 
 # --- CATÉGORIE 3 : Sorties populaires à venir ---
-print("\n📡 Génération : Sorties populaires de la semaine...")
+print("\n📡 Génération : Sorties populaires jusqu'à 10 jours...")
 query_upcoming = (
     f"{COMMON_FIELDS} "
     f"where ((first_release_date > {today} & first_release_date <= {next_ten_days}) "
