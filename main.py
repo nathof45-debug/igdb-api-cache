@@ -286,9 +286,20 @@ if res.status_code == 200:
     cleaned = clean_games_data(res.json())
     final_upcoming = []
     for g in cleaned:
-        if any(rd.get("category") == 0 and rd.get("status") in {6, 34, 3} and rd.get("date") and today < rd.get("date") <= next_ten_days
-               for rd in g.get("release_dates", [])):
+        has_valid_date = False
+        for rd in g.get("release_dates", []):
+            fmt = rd.get("date_format") if rd.get("date_format") is not None else rd.get("category")
+            status = rd.get("status")
+            rd_date = rd.get("date")
+        
+            # Format 0 = date exacte, statut 6/34/3 ou None = valide, date comprise dans les 10 jours
+            if fmt == 0 and (status in {6, 34, 3} or status is None) and rd_date and (today < rd_date <= next_ten_days):
+                has_valid_date = True
+                break
+            
+        if has_valid_date:
             final_upcoming.append(g)
+        
     final_upcoming.sort(key=lambda g: get_hybrid_sort_date(g, today, future_only=True))
     save_json(final_upcoming[:100], "upcoming.json")
 
