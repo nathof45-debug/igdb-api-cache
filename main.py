@@ -3,13 +3,36 @@ import json
 import requests
 import time
 import datetime
+import sys
 
 print("🔄 Démarrage du script de génération du BFF IGDB...")
 
 # ==========================================
 # 1. AUTHENTIFICATION TWITCH
 # ==========================================
-# ... (inchangé)
+print("🔑 Authentification Twitch en cours...")
+client_id = os.environ.get("TWITCH_CLIENT_ID")
+client_secret = os.environ.get("TWITCH_CLIENT_SECRET")
+
+if not client_id or not client_secret:
+    print("❌ ERREUR : Les variables d'environnement TWITCH_CLIENT_ID ou TWITCH_CLIENT_SECRET sont manquantes.")
+    sys.exit(1)
+
+auth_res = requests.post("https://id.twitch.tv/oauth2/token", data={
+    "client_id": client_id,
+    "client_secret": client_secret,
+    "grant_type": "client_credentials"
+}).json()
+
+if "access_token" not in auth_res:
+    print(f"❌ ERREUR AUTHENTIFICATION : {auth_res}")
+    sys.exit(1)
+
+headers = {
+    "Client-ID": client_id,
+    "Authorization": f"Bearer {auth_res['access_token']}"
+}
+print("✅ Authentification réussie.")
 
 # ==========================================
 # 2. CONFIGURATION DES DATES ET CHAMPS
