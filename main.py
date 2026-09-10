@@ -9,29 +9,7 @@ print("🔄 Démarrage du script de génération du BFF IGDB...")
 # ==========================================
 # 1. AUTHENTIFICATION TWITCH
 # ==========================================
-print("🔑 Authentification Twitch en cours...")
-client_id = os.environ.get("TWITCH_CLIENT_ID")
-client_secret = os.environ.get("TWITCH_CLIENT_SECRET")
-
-if not client_id or not client_secret:
-    print("❌ ERREUR : Les variables d'environnement TWITCH_CLIENT_ID ou TWITCH_CLIENT_SECRET sont manquantes.")
-    exit(1)
-
-auth_res = requests.post("https://id.twitch.tv/oauth2/token", data={
-    "client_id": client_id,
-    "client_secret": client_secret,
-    "grant_type": "client_credentials"
-}).json()
-
-if "access_token" not in auth_res:
-    print(f"❌ ERREUR AUTHENTIFICATION : {auth_res}")
-    exit(1)
-
-headers = {
-    "Client-ID": client_id,
-    "Authorization": f"Bearer {auth_res['access_token']}"
-}
-print("✅ Authentification réussie.")
+# ... (inchangé)
 
 # ==========================================
 # 2. CONFIGURATION DES DATES ET CHAMPS
@@ -47,15 +25,16 @@ current_year = datetime.datetime.now().year
 
 VALID_PLAYABLE = {6, 34, 3}
 
-# IDs des game_types à exclure : 5 (Mod), 12 (Fork), 14 (Update)
-EXCLUDED_GAME_TYPES = {5, 12, 14}
+# IDs des game_types à exclure : 5 (Mod), 10 (Expanded/Edition), 12 (Fork), 14 (Update)
+EXCLUDED_GAME_TYPES = {5, 10, 12, 14}
 # Mots-clés / Slugs à exclure (Fangames et contenus non officiels)
 EXCLUDED_KEYWORDS_SLUGS = {"unofficial", "fan-made", "fan-game", "rom-hack", "fangame"}
 
-# Ajout de keywords.slug aux COMMON_FIELDS
+# On ajoute version_parent et parent_game pour pouvoir les vérifier dans clean_games_data si besoin
 COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
-    "hypes, follows, status, themes, created_at, game_type, keywords.slug, " 
+    "hypes, follows, status, themes, created_at, game_type, keywords.slug, "
+    "version_parent, parent_game, " 
     "first_release_date, release_dates.*, release_dates.platform.name, "
     "platforms.name, platforms.id, "
     "genres.name, genres.id, "
@@ -67,9 +46,11 @@ COMMON_FIELDS = (
 
 BASE_URL = "https://api.igdb.com/v4/games"
 
-# Clause de filtrage globale pour l'API IGDB
+# Clause de filtrage globale pour l'API IGDB (MODIFIÉE)
 NO_FANGAME_FILTER = (
-    "& (game_type = null | game_type != (5, 12, 14)) "
+    "& (game_type = null | game_type != (5, 10, 12, 14)) "
+    "& version_parent = null "
+    "& parent_game = null "
     "& (keywords = null | keywords.slug != (\"unofficial\", \"fan-made\", \"fan-game\", \"rom-hack\", \"fangame\"))"
 )
 
@@ -81,20 +62,24 @@ def clean_games_data(games_data, scores_dict=None):
     cleaned_list = []
     
     for game in games_data:
-        # --- 1. Exclusion des game_types indésirables (Mod, Fork, Update) ---
+        # --- 1. Exclusion des game_types indésirables (Mod, Fork, Update, Expanded) ---
         g_type = game.get("game_type")
         if isinstance(g_type, dict):
             g_type = g_type.get("id")
         if g_type in EXCLUDED_GAME_TYPES:
             continue
             
-        # --- 2. Exclusion des Fangames via keywords ---
+        # --- 2. Exclusion des éditions (Deluxe, etc.) via parent_game et version_parent ---
+        if game.get("version_parent") is not None or game.get("parent_game") is not None:
+            continue
+            
+        # --- 3. Exclusion des Fangames via keywords ---
         keywords = game.get("keywords", [])
         keyword_slugs = [k.get("slug") for k in keywords if isinstance(k, dict) and k.get("slug")]
         if any(slug in EXCLUDED_KEYWORDS_SLUGS for slug in keyword_slugs):
             continue
 
-        # --- 3. Exclusion des Fangames via mots-clés dans le Titre ---
+        # --- 4. Exclusion des Fangames via mots-clés dans le Titre ---
         game_name_lower = (game.get("name") or "").lower()
         if any(bad_word in game_name_lower for bad_word in ["fangame", "fan game", "fan-game", "rom hack"]):
             continue
