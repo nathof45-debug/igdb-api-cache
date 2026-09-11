@@ -73,7 +73,7 @@ BASE_URL = "https://api.igdb.com/v4/games"
 NO_FANGAME_FILTER = (
     "& (game_type = null | game_type != (5, 10, 12, 14)) "
     "& version_parent = null "
-    "& parent_game = null "
+    "& (parent_game = null || game_type = (8, 9))"
     "& (keywords = null | keywords.slug != (\"unofficial\", \"fan-made\", \"fan-game\", \"rom-hack\", \"fangame\"))"
 )
 
@@ -93,8 +93,9 @@ def clean_games_data(games_data, scores_dict=None):
             continue
             
         # --- 2. Exclusion des éditions (Deluxe, etc.) via parent_game et version_parent ---
-        if game.get("version_parent") is not None or game.get("parent_game") is not None:
-            continue
+        if g_type not in {8, 9} :
+            if game.get("version_parent") is not None or game.get("parent_game") is not None:
+                continue
             
         # --- 3. Exclusion des Fangames via keywords ---
         keywords = game.get("keywords", [])
