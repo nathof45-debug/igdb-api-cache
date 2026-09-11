@@ -169,6 +169,7 @@ def clean_games_data(games_data, scores_dict=None):
                     "platform_name": rd.get("platform", {}).get("name") if isinstance(rd.get("platform"), dict) else None
                 } 
                 for rd in game.get("release_dates", [])
+                if isinstance(rd, dict)
             ]
         }
         cleaned_list.append(clean_game)
