@@ -93,7 +93,7 @@ def clean_games_data(games_data, scores_dict=None):
             continue
             
         # --- 2. Exclusion des éditions (Deluxe, etc.) via parent_game et version_parent ---
-        if g_type not in {8, 9}
+        if g_type not in {8, 9} :
             if game.get("version_parent") is not None or game.get("parent_game") is not None:
             continue
             
