@@ -73,7 +73,7 @@ BASE_URL = "https://api.igdb.com/v4/games"
 NO_FANGAME_FILTER = (
     "& (game_type = null | game_type != (5, 10, 12, 14)) "
     "& version_parent = null "
-    "& (parent_game = null || game_type = (8, 9))"
+    "& (parent_game = null | game_type = (8, 9))"
     "& (keywords = null | keywords.slug != (\"unofficial\", \"fan-made\", \"fan-game\", \"rom-hack\", \"fangame\"))"
 )
 
