@@ -58,7 +58,7 @@ COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
     "hypes, follows, status, themes, created_at, game_type, keywords.slug, "
     "version_parent, parent_game, " 
-    "first_release_date, release_dates.*, release_dates.platform.name, "
+    "first_release_date, release_dates.*, release_dates.platform.name, release.dates.platform.id,"
     "platforms.name, platforms.id, "
     "genres.name, genres.id, "
     "involved_companies.id, "
@@ -84,16 +84,19 @@ def clean_games_data(games_data, scores_dict=None):
     """Aplatit et nettoie les données complexes d'IGDB pour le mobile."""
     cleaned_list = []
     
+    # IDs des plateformes à ignorer : 34 (Android), 39 (iOS)
+    EXCLUDED_PLATFORMS = {34, 39}
+    
     for game in games_data:
-        # --- 1. Exclusion des game_types indésirables (Mod, Fork, Update, Expanded) ---
+        # --- 1. Exclusion des game_types indésirables ---
         g_type = game.get("game_type")
         if isinstance(g_type, dict):
             g_type = g_type.get("id")
         if g_type in EXCLUDED_GAME_TYPES:
             continue
             
-        # --- 2. Exclusion des éditions (Deluxe, etc.) via parent_game et version_parent ---
-        if g_type not in {8, 9} :
+        # --- 2. Exclusion des éditions via parent_game et version_parent ---
+        if g_type not in {8, 9}:
             if game.get("version_parent") is not None or game.get("parent_game") is not None:
                 continue
             
@@ -110,10 +113,42 @@ def clean_games_data(games_data, scores_dict=None):
 
         game_id = game.get("id")
         
-        # Plateformes, Genres, Studios, Langues...
+        # --- FILTRAGE DES DATES MOBILES ---
+        filtered_release_dates = []
+        for rd in game.get("release_dates", []):
+            if not isinstance(rd, dict):
+                continue
+            
+            plat = rd.get("platform")
+            # Extraction de l'ID de la plateforme de manière sécurisée
+            plat_id = plat.get("id") if isinstance(plat, dict) else plat
+            
+            if plat_id in EXCLUDED_PLATFORMS:
+                continue # On ignore cette date de sortie
+                
+            filtered_release_dates.append({
+                "category": rd.get("date_format", rd.get("category")),
+                "y": rd.get("y"),
+                "m": rd.get("m"),
+                "d": datetime.datetime.fromtimestamp(rd.get("date")).day if rd.get("date") else None,
+                "date": rd.get("date"),
+                "status": rd.get("status"),
+                "platform_name": plat.get("name") if isinstance(plat, dict) else None,
+                "platform_id": plat_id
+            })
+            
+        # Si le jeu n'est sorti QUE sur mobile, il n'aura plus de dates de sortie.
+        # Décommente la ligne suivante si tu veux totalement exclure de ton app les jeux 100% mobiles :
+        # if not filtered_release_dates: continue
+
+        # Recalcul de la first_release_date SANS les dates mobiles
+        valid_dates = [rd["date"] for rd in filtered_release_dates if rd.get("date")]
+        new_first_release_date = min(valid_dates) if valid_dates else game.get("first_release_date")
+
+        # Plateformes (on peut aussi retirer iOS/Android de la liste principale du jeu si souhaité)
         platforms = game.get("platforms", [])
-        p_names = [p.get("name") for p in platforms if p.get("name")]
-        p_ids = [p.get("id") for p in platforms if p.get("id")]
+        p_names = [p.get("name") for p in platforms if p.get("name") and p.get("id") not in EXCLUDED_PLATFORMS]
+        p_ids = [p.get("id") for p in platforms if p.get("id") and p.get("id") not in EXCLUDED_PLATFORMS]
 
         genres = game.get("genres", [])
         g_names = [g.get("name") for g in genres if g.get("name")]
@@ -144,14 +179,14 @@ def clean_games_data(games_data, scores_dict=None):
             "name": game.get("name"),
             "cover": game.get("cover"),
             "rating": game.get("rating"),
-            "first_release_date": game.get("first_release_date"),
+            "first_release_date": new_first_release_date, # Date corrigée
             "hypes": game.get("hypes"),
             "status": game.get("status"),
             "follows": game.get("follows"),
             "themes": game.get("themes", []),
             "pop_score": scores_dict.get(str(game_id)) if scores_dict else None,
-            "platforms": p_names,
-            "platform_ids": p_ids,
+            "platforms": p_names, # Filtrés sans mobile
+            "platform_ids": p_ids, # Filtrés sans mobile
             "genres": g_names,
             "genre_ids": g_ids,
             "developers": dev_names,
@@ -159,24 +194,12 @@ def clean_games_data(games_data, scores_dict=None):
             "publishers": pub_names,
             "publisher_ids": pub_ids,
             "languages": l_names,
-            "release_dates": [
-                {
-                    "category": rd.get("date_format", rd.get("category")),
-                    "y": rd.get("y"),
-                    "m": rd.get("m"),
-                    "d": datetime.datetime.fromtimestamp(rd.get("date")).day if rd.get("date") else None,
-                    "date": rd.get("date"),
-                    "status": rd.get("status"),
-                    "platform_name": rd.get("platform", {}).get("name") if isinstance(rd.get("platform"), dict) else None
-                } 
-                for rd in game.get("release_dates", [])
-                if isinstance(rd, dict)
-            ]
+            "release_dates": filtered_release_dates # Uniquement les dates non-mobiles
         }
         cleaned_list.append(clean_game)
         
     return cleaned_list
-
+    
 def get_hybrid_sort_date(game, today_ts=None, future_only=False):
     if today_ts is None: today_ts = int(time.time())
     playable_dates = []
