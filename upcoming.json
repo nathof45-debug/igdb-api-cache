@@ -1,247 +1,5 @@
 [
   {
-    "id": 348272,
-    "name": "Moomintroll: Winter's Warmth",
-    "cover": {
-      "id": 542436,
-      "image_id": "cobmjo"
-    },
-    "rating": null,
-    "first_release_date": 1777248000,
-    "hypes": 17,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Mac",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      6,
-      167,
-      14,
-      130
-    ],
-    "genres": [
-      "Puzzle",
-      "Role-playing (RPG)",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      9,
-      12,
-      31,
-      32
-    ],
-    "developers": [
-      "Hyper Games"
-    ],
-    "developer_ids": [
-      10980
-    ],
-    "publishers": [
-      "Hyper Games",
-      "Kakehashi Games"
-    ],
-    "publisher_ids": [
-      10980,
-      9790
-    ],
-    "languages": [
-      "Swedish",
-      "Polish",
-      "Russian",
-      "German",
-      "Danish",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
-      "Finnish",
-      "Norwegian",
-      "Korean",
-      "Chinese (Simplified)",
-      "Turkish"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 4,
-        "d": 27,
-        "date": 1777248000,
-        "status": 6,
-        "platform_name": "Mac"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 4,
-        "d": 27,
-        "date": 1777248000,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 4,
-        "d": 27,
-        "date": 1777248000,
-        "status": null,
-        "platform_name": "Nintendo Switch"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PlayStation 5"
-      }
-    ]
-  },
-  {
-    "id": 361855,
-    "name": "LEGO Batman: Legacy of the Dark Knight",
-    "cover": {
-      "id": 480825,
-      "image_id": "coab09"
-    },
-    "rating": 83.21406404978353,
-    "first_release_date": 1779408000,
-    "hypes": 85,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      27
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "Nintendo Switch 2",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "platform_ids": [
-      169,
-      508,
-      6,
-      167
-    ],
-    "genres": [
-      "Puzzle",
-      "Adventure"
-    ],
-    "genre_ids": [
-      9,
-      31
-    ],
-    "developers": [
-      "Traveller's Tales"
-    ],
-    "developer_ids": [
-      292
-    ],
-    "publishers": [
-      "WB Games"
-    ],
-    "publisher_ids": [
-      50
-    ],
-    "languages": [
-      "Dutch",
-      "Polish",
-      "Russian",
-      "German",
-      "Danish",
-      "Spanish (Mexico)",
-      "Portuguese (Brazil)",
-      "Arabic",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Spanish (Spain)",
-      "Italian",
-      "Korean",
-      "Chinese (Simplified)"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 5,
-        "d": 19,
-        "date": 1779148800,
-        "status": 34,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 5,
-        "d": 22,
-        "date": 1779408000,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 5,
-        "d": 22,
-        "date": 1779408000,
-        "status": 6,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 5,
-        "d": 19,
-        "date": 1779148800,
-        "status": 34,
-        "platform_name": "PlayStation 5"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 5,
-        "d": 22,
-        "date": 1779408000,
-        "status": 6,
-        "platform_name": "Xbox Series X|S"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 5,
-        "d": 19,
-        "date": 1779148800,
-        "status": 34,
-        "platform_name": "Xbox Series X|S"
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "Nintendo Switch 2"
-      }
-    ]
-  },
-  {
     "id": 365465,
     "name": "Dressmaker",
     "cover": {
@@ -293,8 +51,8 @@
       2603
     ],
     "languages": [
-      "Japanese",
       "English",
+      "Japanese",
       "Chinese (Simplified)"
     ],
     "release_dates": [
@@ -404,12 +162,12 @@
       71990
     ],
     "languages": [
-      "Russian",
-      "German",
-      "Portuguese (Brazil)",
       "English",
+      "Portuguese (Brazil)",
+      "Italian",
+      "Russian",
       "Spanish (Spain)",
-      "Italian"
+      "German"
     ],
     "release_dates": [
       {
@@ -490,19 +248,19 @@
       458
     ],
     "languages": [
-      "Ukrainian",
-      "Polish",
-      "Russian",
-      "German",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "Chinese (Traditional)",
       "English",
-      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "Italian",
-      "Korean",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Russian",
+      "Ukrainian",
       "Chinese (Simplified)",
-      "Turkish"
+      "Spanish (Spain)",
+      "Polish",
+      "Turkish",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -591,19 +349,19 @@
       129
     ],
     "languages": [
-      "Polish",
-      "Russian",
-      "German",
-      "Spanish (Mexico)",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
       "English",
-      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "Italian",
-      "Korean",
-      "Chinese (Simplified)"
+      "Spanish (Mexico)",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Russian",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Polish",
+      "French",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -696,16 +454,16 @@
       305
     ],
     "languages": [
-      "German",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
       "English",
-      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "Italian",
-      "Korean",
-      "Chinese (Simplified)"
+      "Chinese (Traditional)",
+      "Japanese",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -811,18 +569,18 @@
       38304
     ],
     "languages": [
+      "English",
+      "Portuguese (Brazil)",
+      "Spanish (Mexico)",
+      "Chinese (Traditional)",
+      "Japanese",
       "Portuguese (Portugal)",
       "Russian",
-      "German",
-      "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
-      "English",
       "Spanish (Spain)",
-      "Korean",
-      "Spanish (Mexico)"
+      "French",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -922,16 +680,16 @@
       19006
     ],
     "languages": [
-      "Portuguese (Portugal)",
-      "Russian",
-      "German",
+      "English",
       "English (UK)",
       "Japanese",
-      "French",
-      "English",
+      "Portuguese (Portugal)",
+      "Russian",
+      "Chinese (Simplified)",
       "Spanish (Spain)",
-      "Korean",
-      "Chinese (Simplified)"
+      "French",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -972,7 +730,7 @@
     },
     "rating": null,
     "first_release_date": 1790035200,
-    "hypes": 26,
+    "hypes": 27,
     "status": null,
     "follows": null,
     "themes": [],
@@ -1016,17 +774,17 @@
       5040
     ],
     "languages": [
-      "Polish",
-      "Russian",
-      "German",
+      "English",
       "Portuguese (Brazil)",
       "Japanese",
-      "French",
-      "English",
-      "Spanish (Spain)",
-      "Korean",
+      "Russian",
       "Chinese (Simplified)",
-      "Turkish"
+      "Spanish (Spain)",
+      "French",
+      "Polish",
+      "Turkish",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -1198,12 +956,12 @@
       224
     ],
     "languages": [
-      "German",
-      "Portuguese (Brazil)",
-      "French",
       "English",
+      "Portuguese (Brazil)",
+      "Italian",
       "Spanish (Spain)",
-      "Italian"
+      "French",
+      "German"
     ],
     "release_dates": [
       {
@@ -1326,19 +1084,19 @@
       24760
     ],
     "languages": [
-      "Polish",
-      "Russian",
-      "German",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "Chinese (Traditional)",
-      "French",
       "English",
-      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "Italian",
-      "Korean",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Russian",
       "Chinese (Simplified)",
-      "Turkish"
+      "Spanish (Spain)",
+      "French",
+      "Polish",
+      "Turkish",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -1471,18 +1229,18 @@
       112
     ],
     "languages": [
-      "Russian",
-      "German",
-      "Spanish (Mexico)",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
       "English",
-      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "Italian",
-      "Korean",
-      "Chinese (Simplified)"
+      "Spanish (Mexico)",
+      "Chinese (Traditional)",
+      "Japanese",
+      "Russian",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -1645,20 +1403,20 @@
       36922
     ],
     "languages": [
-      "Ukrainian",
-      "Portuguese (Portugal)",
-      "Polish",
-      "Russian",
-      "German",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
-      "Chinese (Traditional)",
       "English",
-      "Spanish (Spain)",
-      "Italian",
       "Korean",
+      "Portuguese (Brazil)",
+      "Italian",
+      "Chinese (Traditional)",
+      "Portuguese (Portugal)",
+      "Japanese",
+      "Russian",
+      "Ukrainian",
       "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "French",
+      "Polish",
+      "German",
       "Turkish"
     ],
     "release_dates": [
@@ -1723,18 +1481,18 @@
       46081
     ],
     "languages": [
-      "Polish",
-      "Russian",
-      "German",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "French",
       "English",
-      "Spanish (Spain)",
+      "Portuguese (Brazil)",
       "Italian",
-      "Korean",
+      "Japanese",
+      "Russian",
       "Chinese (Simplified)",
-      "Turkish"
+      "Spanish (Spain)",
+      "French",
+      "Polish",
+      "Turkish",
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -1773,7 +1531,7 @@
       "id": 575930,
       "image_id": "cocce2"
     },
-    "rating": null,
+    "rating": 92.0,
     "first_release_date": 1789516800,
     "hypes": 56,
     "status": null,
@@ -1820,16 +1578,19 @@
       64775
     ],
     "languages": [
-      "Russian",
-      "German",
+      "English",
       "Vietnamese",
       "Portuguese (Brazil)",
-      "Thai",
+      "Chinese (Traditional)",
       "Japanese",
+      "Portuguese (Portugal)",
+      "Thai",
+      "Russian",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
       "French",
-      "English",
-      "Korean",
-      "Chinese (Simplified)"
+      "German",
+      "Korean"
     ],
     "release_dates": [
       {
