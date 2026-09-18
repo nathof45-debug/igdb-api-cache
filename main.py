@@ -58,7 +58,7 @@ COMMON_FIELDS = (
     "fields name, cover.image_id, rating, rating_count, total_rating_count, "
     "hypes, follows, status, themes, created_at, game_type, keywords.slug, "
     "version_parent, parent_game, " 
-    "first_release_date, release_dates.*, release_dates.platform.name, release.dates.platform.id,"
+    "first_release_date, release_dates.*, release_dates.platform.name,"
     "platforms.name, platforms.id, "
     "genres.name, genres.id, "
     "involved_companies.id, "
