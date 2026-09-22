@@ -51,16 +51,16 @@
       305
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
+      "Chinese (Traditional)",
       "Italian",
+      "Japanese",
+      "French",
+      "Spanish (Spain)",
+      "English",
       "German",
       "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Japanese",
-      "English",
-      "Korean",
-      "French"
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -123,19 +123,19 @@
       129
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Italian",
-      "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
       "Chinese (Traditional)",
-      "French",
+      "Italian",
       "Japanese",
+      "Polish",
+      "French",
+      "Spanish (Spain)",
       "English",
-      "Korean",
-      "Polish"
+      "German",
+      "Spanish (Mexico)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -213,17 +213,17 @@
       5040
     ],
     "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
       "Japanese",
+      "Polish",
+      "Spanish (Spain)",
+      "French",
       "English",
-      "Korean",
       "Turkish",
-      "French"
+      "German",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -328,16 +328,16 @@
       19006
     ],
     "languages": [
-      "Chinese (Simplified)",
+      "English (UK)",
+      "Japanese",
+      "Portuguese (Portugal)",
+      "French",
       "Spanish (Spain)",
+      "English",
       "German",
       "Russian",
-      "Japanese",
-      "English",
-      "English (UK)",
-      "Korean",
-      "Portuguese (Portugal)",
-      "French"
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -428,18 +428,18 @@
       38304
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "Portuguese (Brazil)",
-      "German",
-      "Russian",
       "Chinese (Traditional)",
       "Japanese",
-      "English",
-      "Korean",
       "Portuguese (Portugal)",
-      "French"
+      "French",
+      "Spanish (Spain)",
+      "English",
+      "German",
+      "Spanish (Mexico)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -540,17 +540,17 @@
       64974
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
       "Italian",
-      "Spanish (Mexico)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
       "Japanese",
+      "French",
+      "Spanish (Spain)",
       "English",
-      "Korean",
-      "French"
+      "German",
+      "Spanish (Mexico)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -671,415 +671,10 @@
       59330
     ],
     "languages": [
-      "Japanese",
+      "Chinese (Traditional)",
       "Chinese (Simplified)",
       "English",
-      "Chinese (Traditional)"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 22,
-        "date": 1790035200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 304846,
-    "name": "Stuntboost",
-    "cover": {
-      "id": 415539,
-      "image_id": "co8wmr"
-    },
-    "rating": null,
-    "first_release_date": 1790035200,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      3,
-      6
-    ],
-    "genres": [
-      "Platform",
-      "Racing",
-      "Adventure",
-      "Indie",
-      "Arcade"
-    ],
-    "genre_ids": [
-      8,
-      10,
-      31,
-      32,
-      33
-    ],
-    "developers": [
-      "Byting Games"
-    ],
-    "developer_ids": [
-      58914
-    ],
-    "publishers": [
-      "Byting Games"
-    ],
-    "publisher_ids": [
-      58914
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "German",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "English",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 22,
-        "date": 1790035200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 109259,
-    "name": "Nighthawks",
-    "cover": {
-      "id": 120568,
-      "image_id": "co2l14"
-    },
-    "rating": null,
-    "first_release_date": 1790035200,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [
-      17,
-      43
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
-    "platform_ids": [
-      3,
-      6,
-      14
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Simulator",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      12,
-      13,
-      31,
-      32
-    ],
-    "developers": [
-      "Wadjet Eye Games"
-    ],
-    "developer_ids": [
-      2763
-    ],
-    "publishers": [
-      "Wadjet Eye Games"
-    ],
-    "publisher_ids": [
-      2763
-    ],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 22,
-        "date": 1790035200,
-        "status": 6,
-        "platform_name": "Mac",
-        "platform_id": 14
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 22,
-        "date": 1790035200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 378548,
-    "name": "Woman Simulator",
-    "cover": {
-      "id": 507722,
-      "image_id": "coavre"
-    },
-    "rating": null,
-    "first_release_date": 1790035200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      27
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Simulator",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      12,
-      13,
-      31,
-      32
-    ],
-    "developers": [
-      "Sebasa Games"
-    ],
-    "developer_ids": [
-      66634
-    ],
-    "publishers": [
-      "Sebasa Games"
-    ],
-    "publisher_ids": [
-      66634
-    ],
-    "languages": [
-      "Italian",
-      "Spanish (Spain)",
-      "German",
-      "Russian",
-      "English",
-      "Turkish",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 22,
-        "date": 1790035200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 238731,
-    "name": "EbiTapes",
-    "cover": {
-      "id": 320412,
-      "image_id": "co6v8c"
-    },
-    "rating": null,
-    "first_release_date": 1790035200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      17
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
-    "platform_ids": [
-      6,
-      14
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      31,
-      32
-    ],
-    "developers": [
-      "Lilla Turi",
-      "Marton Kiss"
-    ],
-    "developer_ids": [
-      48773,
-      48772
-    ],
-    "publishers": [
-      "Top Hat Studios"
-    ],
-    "publisher_ids": [
-      38304
-    ],
-    "languages": [
-      "English",
-      "Hungarian"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 22,
-        "date": 1790035200,
-        "status": 6,
-        "platform_name": "Mac",
-        "platform_id": 14
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 22,
-        "date": 1790035200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 194240,
-    "name": "Obscurity: Unknown Threat",
-    "cover": {
-      "id": 212834,
-      "image_id": "co4k82"
-    },
-    "rating": null,
-    "first_release_date": 1790035200,
-    "hypes": 1,
-    "status": 2,
-    "follows": null,
-    "themes": [
-      1,
-      18,
-      19,
-      23
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      3,
-      6
-    ],
-    "genres": [
-      "Shooter",
-      "Indie"
-    ],
-    "genre_ids": [
-      5,
-      32
-    ],
-    "developers": [
-      "Obscure Creations"
-    ],
-    "developer_ids": [
-      40426
-    ],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 22,
-        "date": 1790035200,
-        "status": 3,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 25455,
-    "name": "Little Ghost",
-    "cover": {
-      "id": 575112,
-      "image_id": "cocbrc"
-    },
-    "rating": null,
-    "first_release_date": 1790035200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Platform",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      8,
-      31,
-      32
-    ],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [
-      "Sync Book Games"
-    ],
-    "publisher_ids": [
-      81476
-    ],
-    "languages": [
-      "English"
+      "Japanese"
     ],
     "release_dates": [
       {
@@ -1147,8 +742,8 @@
     ],
     "languages": [
       "Japanese",
-      "Chinese (Simplified)",
-      "English"
+      "English",
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -1258,201 +853,16 @@
       69444
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
       "Chinese (Traditional)",
-      "Russian",
-      "German",
       "Japanese",
-      "English",
-      "Korean",
-      "Polish"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 21,
-        "date": 1789948800,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 339966,
-    "name": "Brave New Wonders",
-    "cover": {
-      "id": 604540,
-      "image_id": "cocygs"
-    },
-    "rating": null,
-    "first_release_date": 1789948800,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Strategy",
-      "Indie"
-    ],
-    "genre_ids": [
-      13,
-      15,
-      32
-    ],
-    "developers": [
-      "City From Naught"
-    ],
-    "developer_ids": [
-      37931
-    ],
-    "publishers": [
-      "City From Naught"
-    ],
-    "publisher_ids": [
-      37931
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 21,
-        "date": 1789948800,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 302331,
-    "name": "Ghoul Fright",
-    "cover": {
-      "id": 529426,
-      "image_id": "cobcia"
-    },
-    "rating": null,
-    "first_release_date": 1789948800,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      19,
-      20,
-      21,
-      27,
-      33,
-      44
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Fighting",
-      "Simulator",
-      "Hack and slash/Beat 'em up",
-      "Indie",
-      "Arcade"
-    ],
-    "genre_ids": [
-      4,
-      13,
-      25,
-      32,
-      33
-    ],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "Japanese",
-      "English",
-      "Spanish (Spain)"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 21,
-        "date": 1789948800,
-        "status": 3,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 270906,
-    "name": "Soggy Beans",
-    "cover": {
-      "id": 464012,
-      "image_id": "co9y18"
-    },
-    "rating": null,
-    "first_release_date": 1789948800,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Indie"
-    ],
-    "genre_ids": [
-      13,
-      32
-    ],
-    "developers": [
-      "RATMODE"
-    ],
-    "developer_ids": [
-      64432
-    ],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
       "Polish",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
-      "Italian",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
       "English",
-      "Korean",
-      "French"
+      "German",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -1461,122 +871,6 @@
         "m": 9,
         "d": 21,
         "date": 1789948800,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 405696,
-    "name": "Night Record: Thin Walls",
-    "cover": {
-      "id": 574314,
-      "image_id": "cocb56"
-    },
-    "rating": null,
-    "first_release_date": 1789776000,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [
-      19
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Indie"
-    ],
-    "genre_ids": [
-      13,
-      32
-    ],
-    "developers": [
-      "Althera Studio"
-    ],
-    "developer_ids": [
-      78524
-    ],
-    "publishers": [
-      "Althera Studio"
-    ],
-    "publisher_ids": [
-      78524
-    ],
-    "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Norwegian",
-      "Arabic",
-      "Japanese",
-      "Ukrainian",
-      "English",
-      "Korean",
-      "Portuguese (Portugal)",
-      "Turkish",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 19,
-        "date": 1789776000,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 309487,
-    "name": "Rusted Awakening",
-    "cover": {
-      "id": 487269,
-      "image_id": "coafz9"
-    },
-    "rating": null,
-    "first_release_date": 1789776000,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [],
-    "genre_ids": [],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 19,
-        "date": 1789776000,
         "status": 6,
         "platform_name": "PC (Microsoft Windows)",
         "platform_id": 6
@@ -1638,27 +932,27 @@
       454
     ],
     "languages": [
-      "Spanish (Mexico)",
-      "Turkish",
-      "Polish",
-      "Chinese (Simplified)",
       "Italian",
-      "Portuguese (Brazil)",
-      "Danish",
+      "Polish",
       "Spanish (Spain)",
-      "Chinese (Traditional)",
-      "Swedish",
-      "German",
-      "Japanese",
-      "English",
-      "French",
-      "Czech",
-      "Russian",
-      "Norwegian",
-      "Dutch",
+      "Chinese (Simplified)",
       "Korean",
+      "Swedish",
+      "Turkish",
+      "English",
+      "Danish",
+      "Czech",
+      "Spanish (Mexico)",
+      "Arabic",
+      "Norwegian",
+      "Chinese (Traditional)",
       "Portuguese (Portugal)",
-      "Arabic"
+      "French",
+      "Dutch",
+      "Russian",
+      "Japanese",
+      "German",
+      "Portuguese (Brazil)"
     ],
     "release_dates": [
       {
@@ -1766,14 +1060,14 @@
       79918
     ],
     "languages": [
-      "Spanish (Spain)",
       "Italian",
-      "Spanish (Mexico)",
-      "Portuguese (Brazil)",
-      "German",
-      "Dutch",
+      "Spanish (Spain)",
+      "French",
       "English",
-      "French"
+      "Dutch",
+      "German",
+      "Spanish (Mexico)",
+      "Portuguese (Brazil)"
     ],
     "release_dates": [
       {
@@ -1829,450 +1123,6 @@
     ]
   },
   {
-    "id": 412990,
-    "name": "NASCAR 26",
-    "cover": {
-      "id": 590553,
-      "image_id": "cocno9"
-    },
-    "rating": null,
-    "first_release_date": 1789689600,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "platform_ids": [
-      169,
-      6,
-      167
-    ],
-    "genres": [
-      "Racing",
-      "Simulator",
-      "Sport"
-    ],
-    "genre_ids": [
-      10,
-      13,
-      14
-    ],
-    "developers": [
-      "iRacing.com Motorsport Simulations"
-    ],
-    "developer_ids": [
-      8373
-    ],
-    "publishers": [
-      "iRacing.com Motorsport Simulations"
-    ],
-    "publisher_ids": [
-      8373
-    ],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "Xbox Series X|S",
-        "platform_id": 169
-      }
-    ]
-  },
-  {
-    "id": 409510,
-    "name": "The Grinch 2: Saving Christmas",
-    "cover": {
-      "id": 584987,
-      "image_id": "cocjdn"
-    },
-    "rating": null,
-    "first_release_date": 1789689600,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PlayStation 4",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      169,
-      48,
-      6,
-      167,
-      130
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "genre_ids": [
-      31
-    ],
-    "developers": [
-      "Casual Brothers"
-    ],
-    "developer_ids": [
-      2982
-    ],
-    "publishers": [
-      "Outright Games"
-    ],
-    "publisher_ids": [
-      13848
-    ],
-    "languages": [
-      "Finnish",
-      "Spanish (Spain)",
-      "Italian",
-      "Portuguese (Brazil)",
-      "Swedish",
-      "German",
-      "Dutch",
-      "Norwegian",
-      "French",
-      "English",
-      "Danish",
-      "Polish"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "Nintendo Switch",
-        "platform_id": 130
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "Xbox Series X|S",
-        "platform_id": 169
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PlayStation 4",
-        "platform_id": 48
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      }
-    ]
-  },
-  {
-    "id": 408724,
-    "name": "Sharehouse",
-    "cover": {
-      "id": 576339,
-      "image_id": "coccpf"
-    },
-    "rating": null,
-    "first_release_date": 1789689600,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      19,
-      43,
-      44
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Indie",
-      "Visual Novel"
-    ],
-    "genre_ids": [
-      32,
-      34
-    ],
-    "developers": [
-      "Team Nyxian"
-    ],
-    "developer_ids": [
-      78853
-    ],
-    "publishers": [
-      "Team Nyxian"
-    ],
-    "publisher_ids": [
-      78853
-    ],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 386296,
-    "name": "Nightwater",
-    "cover": {
-      "id": 553379,
-      "image_id": "cobuzn"
-    },
-    "rating": null,
-    "first_release_date": 1789689600,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      33,
-      38,
-      43
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Strategy",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      13,
-      15,
-      31,
-      32
-    ],
-    "developers": [
-      "Studio Ashty"
-    ],
-    "developer_ids": [
-      78137
-    ],
-    "publishers": [
-      "Irox Games",
-      "Studio Ashty"
-    ],
-    "publisher_ids": [
-      61501,
-      78137
-    ],
-    "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Chinese (Traditional)",
-      "Ukrainian",
-      "Japanese",
-      "English",
-      "Korean",
-      "Portuguese (Portugal)",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 319344,
-    "name": "Deeplanders",
-    "cover": {
-      "id": 417465,
-      "image_id": "co8y49"
-    },
-    "rating": null,
-    "first_release_date": 1789689600,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Strategy",
-      "Indie"
-    ],
-    "genre_ids": [
-      15,
-      32
-    ],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "Spanish (Mexico)",
-      "Chinese (Traditional)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "English",
-      "Korean",
-      "Portuguese (Portugal)",
-      "Turkish",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 197140,
-    "name": "Sunken Realms",
-    "cover": {
-      "id": 265211,
-      "image_id": "co5omz"
-    },
-    "rating": null,
-    "first_release_date": 1789689600,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "genre_ids": [
-      31
-    ],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
     "id": 366896,
     "name": "Fire Emblem: Fortune's Weave",
     "cover": {
@@ -2320,15 +1170,15 @@
       70
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Italian",
-      "Spanish (Spain)",
       "Chinese (Traditional)",
-      "German",
+      "Italian",
       "Japanese",
+      "French",
+      "Spanish (Spain)",
       "English",
-      "Korean",
-      "French"
+      "German",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -2464,14 +1314,14 @@
       28714
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "German",
       "Chinese (Traditional)",
       "Japanese",
+      "French",
+      "Spanish (Spain)",
       "English",
-      "Korean",
-      "French"
+      "German",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -2563,12 +1413,12 @@
     ],
     "languages": [
       "Polish",
-      "Chinese (Simplified)",
+      "French",
       "Spanish (Spain)",
+      "English",
       "German",
       "Russian",
-      "English",
-      "French"
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -2624,13 +1474,13 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "German",
-      "Russian",
-      "Dutch",
-      "Ukrainian",
       "Japanese",
+      "French",
       "English",
-      "French"
+      "Dutch",
+      "German",
+      "Ukrainian",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -2724,18 +1574,18 @@
       41364
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "Spanish (Mexico)",
-      "German",
       "Chinese (Traditional)",
+      "Italian",
+      "Japanese",
+      "Spanish (Spain)",
+      "French",
+      "English",
+      "German",
+      "Spanish (Mexico)",
       "Russian",
       "Portuguese (Brazil)",
-      "Japanese",
-      "English",
-      "Korean",
-      "French"
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -2889,10 +1739,10 @@
       12033
     ],
     "languages": [
-      "Chinese (Simplified)",
       "Chinese (Traditional)",
       "Japanese",
       "English",
+      "Chinese (Simplified)",
       "Korean"
     ],
     "release_dates": [
@@ -2982,19 +1832,19 @@
       31606
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
       "Chinese (Traditional)",
-      "French",
+      "Italian",
       "Japanese",
-      "English",
-      "Korean",
+      "Polish",
+      "French",
+      "Spanish (Spain)",
       "Turkish",
-      "Polish"
+      "English",
+      "German",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -3163,1001 +2013,13 @@
       42648
     ],
     "languages": [
-      "Chinese (Simplified)",
       "Chinese (Traditional)",
       "Japanese",
       "English",
+      "Chinese (Simplified)",
       "Korean"
     ],
     "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 386893,
-    "name": "Driving Rogue",
-    "cover": {
-      "id": 529605,
-      "image_id": "cobcn9"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Racing",
-      "Indie",
-      "Arcade"
-    ],
-    "genre_ids": [
-      10,
-      32,
-      33
-    ],
-    "developers": [
-      "Gravity Works"
-    ],
-    "developer_ids": [
-      73267
-    ],
-    "publishers": [
-      "Gravity Works",
-      "Cosmic Shift Studios"
-    ],
-    "publisher_ids": [
-      73267,
-      73268
-    ],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 347830,
-    "name": "Shiba Sweet",
-    "cover": {
-      "id": 463786,
-      "image_id": "co9xuy"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Indie"
-    ],
-    "genre_ids": [
-      13,
-      32
-    ],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "Chinese (Simplified)",
-      "Chinese (Traditional)",
-      "German",
-      "Japanese",
-      "English",
-      "Korean",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 342916,
-    "name": "Flamecraft",
-    "cover": {
-      "id": 599356,
-      "image_id": "cocugs"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [
-      17
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Mac",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      169,
-      6,
-      167,
-      14,
-      130
-    ],
-    "genres": [
-      "Strategy",
-      "Indie",
-      "Card & Board Game"
-    ],
-    "genre_ids": [
-      15,
-      32,
-      35
-    ],
-    "developers": [
-      "Monster Couch"
-    ],
-    "developer_ids": [
-      14900
-    ],
-    "publishers": [
-      "Monster Couch",
-      "Cardboard Alchemy"
-    ],
-    "publisher_ids": [
-      14900,
-      64451
-    ],
-    "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Chinese (Traditional)",
-      "Ukrainian",
-      "Japanese",
-      "English",
-      "Korean",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Nintendo Switch",
-        "platform_id": 130
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Mac",
-        "platform_id": 14
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Xbox Series X|S",
-        "platform_id": 169
-      }
-    ]
-  },
-  {
-    "id": 236885,
-    "name": "YesterSol",
-    "cover": {
-      "id": 479673,
-      "image_id": "coaa49"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      17,
-      18
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Platform",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      8,
-      31,
-      32
-    ],
-    "developers": [
-      "Neat Games"
-    ],
-    "developer_ids": [
-      39202
-    ],
-    "publishers": [
-      "Neat Games"
-    ],
-    "publisher_ids": [
-      39202
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Russian",
-      "Japanese",
-      "English",
-      "Korean"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 414555,
-    "name": "Concrete Burial",
-    "cover": {
-      "id": 594500,
-      "image_id": "cocqpw"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      19
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Shooter",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      5,
-      31,
-      32
-    ],
-    "developers": [
-      "Games From The Abyss"
-    ],
-    "developer_ids": [
-      81382
-    ],
-    "publishers": [
-      "DreadXP"
-    ],
-    "publisher_ids": [
-      36900
-    ],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 408918,
-    "name": "Hunter: The Reckoning - Day for Night",
-    "cover": {
-      "id": 577558,
-      "image_id": "cocdna"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      19,
-      20
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)",
-      "Mac"
-    ],
-    "platform_ids": [
-      3,
-      6,
-      14
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Indie"
-    ],
-    "genre_ids": [
-      12,
-      32
-    ],
-    "developers": [
-      "Choice of Games"
-    ],
-    "developer_ids": [
-      16347
-    ],
-    "publishers": [
-      "Choice of Games"
-    ],
-    "publisher_ids": [
-      16347
-    ],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Mac",
-        "platform_id": 14
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Linux",
-        "platform_id": 3
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 408337,
-    "name": "Dawson Oaks Trailer Park",
-    "cover": {
-      "id": 575242,
-      "image_id": "cocbuy"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      27
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Simulator",
-      "Strategy"
-    ],
-    "genre_ids": [
-      12,
-      13,
-      15
-    ],
-    "developers": [
-      "Striped Panda Studios"
-    ],
-    "developer_ids": [
-      56943
-    ],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "Finnish",
-      "Turkish",
-      "Polish",
-      "Chinese (Simplified)",
-      "Italian",
-      "Portuguese (Brazil)",
-      "Ukrainian",
-      "Danish",
-      "Spanish (Spain)",
-      "German",
-      "Swedish",
-      "Chinese (Traditional)",
-      "Japanese",
-      "English",
-      "French",
-      "Vietnamese",
-      "Czech",
-      "Russian",
-      "Dutch",
-      "Norwegian",
-      "Thai",
-      "Korean",
-      "Hungarian",
-      "Portuguese (Portugal)",
-      "Arabic"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 398226,
-    "name": "Police Chief Simulator",
-    "cover": {
-      "id": 560181,
-      "image_id": "coc08l"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      28,
-      33,
-      38
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Strategy",
-      "Indie"
-    ],
-    "genre_ids": [
-      13,
-      15,
-      32
-    ],
-    "developers": [
-      "Perfect Circle Team"
-    ],
-    "developer_ids": [
-      75730
-    ],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Vietnamese",
-      "Spanish (Spain)",
-      "Italian",
-      "Czech",
-      "Portuguese (Brazil)",
-      "German",
-      "Russian",
-      "Dutch",
-      "Thai",
-      "Ukrainian",
-      "Japanese",
-      "English",
-      "Korean",
-      "Portuguese (Portugal)",
-      "Turkish",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 393460,
-    "name": "20 More, Somehow Even Smaller, Mazes",
-    "cover": {
-      "id": 545516,
-      "image_id": "cobox8"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Puzzle",
-      "Indie"
-    ],
-    "genre_ids": [
-      9,
-      32
-    ],
-    "developers": [
-      "FLEB"
-    ],
-    "developer_ids": [
-      9192
-    ],
-    "publishers": [
-      "FLEB"
-    ],
-    "publisher_ids": [
-      9192
-    ],
-    "languages": [
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 388756,
-    "name": "Huglings",
-    "cover": {
-      "id": 596446,
-      "image_id": "cocs7y"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      17,
-      21,
-      38
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      12,
-      31,
-      32
-    ],
-    "developers": [
-      "Cuddlecados"
-    ],
-    "developer_ids": [
-      73787
-    ],
-    "publishers": [
-      "Papucs Games"
-    ],
-    "publisher_ids": [
-      37230
-    ],
-    "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Italian",
-      "Spanish (Spain)",
-      "German",
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Russian",
-      "Japanese",
-      "English",
-      "Korean",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 372081,
-    "name": "United Heist: Facility Zero",
-    "cover": {
-      "id": 530804,
-      "image_id": "cobdkk"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      43
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      3,
-      6
-    ],
-    "genres": [
-      "Puzzle",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      9,
-      31,
-      32
-    ],
-    "developers": [
-      "No more Sleep"
-    ],
-    "developer_ids": [
-      52881
-    ],
-    "publishers": [
-      "No more Sleep"
-    ],
-    "publisher_ids": [
-      52881
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "Czech",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "French",
-      "Ukrainian",
-      "Japanese",
-      "English",
-      "Korean",
-      "Turkish",
-      "Polish"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Linux",
-        "platform_id": 3
-      }
-    ]
-  },
-  {
-    "id": 369701,
-    "name": "Akiba Lost",
-    "cover": {
-      "id": 491824,
-      "image_id": "coajhs"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "Nintendo Switch 2",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      508,
-      6,
-      167,
-      130
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "genre_ids": [
-      31
-    ],
-    "developers": [
-      "IzanagiGames"
-    ],
-    "developer_ids": [
-      32711
-    ],
-    "publishers": [
-      "IzanagiGames"
-    ],
-    "publisher_ids": [
-      32711
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "Chinese (Traditional)",
-      "Japanese",
-      "English",
-      "Korean"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Nintendo Switch",
-        "platform_id": 130
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Nintendo Switch 2",
-        "platform_id": 508
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      }
-    ]
-  },
-  {
-    "id": 348741,
-    "name": "Warag",
-    "cover": {
-      "id": 602794,
-      "image_id": "cocx4a"
-    },
-    "rating": null,
-    "first_release_date": 1789603200,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      3,
-      6
-    ],
-    "genres": [
-      "Indie"
-    ],
-    "genre_ids": [
-      32
-    ],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Czech",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Japanese",
-      "English",
-      "Korean",
-      "Hungarian",
-      "Portuguese (Portugal)",
-      "Turkish",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Linux",
-        "platform_id": 3
-      },
       {
         "category": 0,
         "y": 2026,
@@ -4215,15 +2077,15 @@
       33407
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
       "Italian",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "English",
+      "Polish",
+      "Spanish (Spain)",
       "Turkish",
-      "Polish"
+      "English",
+      "German",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -4291,26 +2153,26 @@
       2248
     ],
     "languages": [
-      "Spanish (Mexico)",
-      "Turkish",
-      "Polish",
-      "Chinese (Simplified)",
       "Italian",
-      "Portuguese (Brazil)",
-      "Ukrainian",
+      "Polish",
       "Spanish (Spain)",
-      "Chinese (Traditional)",
-      "German",
-      "Japanese",
-      "English",
-      "French",
-      "Czech",
-      "Russian",
-      "Thai",
-      "Dutch",
-      "Korean",
+      "Ukrainian",
+      "Chinese (Simplified)",
       "Hungarian",
-      "Portuguese (Portugal)"
+      "Korean",
+      "Turkish",
+      "English",
+      "Czech",
+      "Spanish (Mexico)",
+      "Chinese (Traditional)",
+      "Thai",
+      "Portuguese (Portugal)",
+      "French",
+      "Dutch",
+      "Russian",
+      "Japanese",
+      "German",
+      "Portuguese (Brazil)"
     ],
     "release_dates": [
       {
@@ -4408,14 +2270,14 @@
       68268
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "German",
       "Chinese (Traditional)",
       "Japanese",
+      "French",
+      "Spanish (Spain)",
       "English",
-      "Korean",
-      "French"
+      "German",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -4547,140 +2409,19 @@
       49441
     ],
     "languages": [
-      "Polish",
-      "Chinese (Simplified)",
+      "Chinese (Traditional)",
       "Italian",
+      "Japanese",
+      "Polish",
+      "French",
       "Spanish (Spain)",
-      "Portuguese (Brazil)",
+      "English",
+      "Turkish",
+      "Dutch",
       "German",
       "Russian",
-      "Dutch",
-      "Chinese (Traditional)",
-      "Japanese",
-      "English",
-      "Korean",
-      "Turkish",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 417785,
-    "name": "We Are Football 2027",
-    "cover": {
-      "id": 602594,
-      "image_id": "cocwyq"
-    },
-    "rating": null,
-    "first_release_date": 1789516800,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      28,
-      33
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Sport",
-      "Strategy"
-    ],
-    "genre_ids": [
-      13,
-      14,
-      15
-    ],
-    "developers": [
-      "Winning Streak Games"
-    ],
-    "developer_ids": [
-      62221
-    ],
-    "publishers": [
-      "Winning Streak Games"
-    ],
-    "publisher_ids": [
-      62221
-    ],
-    "languages": [
-      "German",
-      "English",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 395699,
-    "name": "Patlabor the Case Files",
-    "cover": {
-      "id": 551330,
-      "image_id": "cobteq"
-    },
-    "rating": null,
-    "first_release_date": 1789516800,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "platform_ids": [
-      6,
-      167
-    ],
-    "genres": [],
-    "genre_ids": [],
-    "developers": [
-      "Chime Corporation"
-    ],
-    "developer_ids": [
-      75086
-    ],
-    "publishers": [
-      "Good Smile Company"
-    ],
-    "publisher_ids": [
-      27572
-    ],
-    "languages": [
+      "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Chinese (Traditional)",
-      "Japanese",
-      "English",
       "Korean"
     ],
     "release_dates": [
@@ -4688,219 +2429,11 @@
         "category": 0,
         "y": 2026,
         "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
         "d": 16,
         "date": 1789516800,
         "status": 6,
         "platform_name": "PC (Microsoft Windows)",
         "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 335274,
-    "name": "Duo Quest",
-    "cover": {
-      "id": 601139,
-      "image_id": "cocvub"
-    },
-    "rating": null,
-    "first_release_date": 1789516800,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Strategy",
-      "Indie"
-    ],
-    "genre_ids": [
-      15,
-      32
-    ],
-    "developers": [
-      "1+1 Studios"
-    ],
-    "developer_ids": [
-      63483
-    ],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "Chinese (Simplified)",
-      "Chinese (Traditional)",
-      "Portuguese (Brazil)",
-      "Thai",
-      "Japanese",
-      "English"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 229067,
-    "name": "Roman Sands RE:Build",
-    "cover": {
-      "id": 275800,
-      "image_id": "co5wt4"
-    },
-    "rating": null,
-    "first_release_date": 1789516800,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      19
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PlayStation 4",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Xbox One",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      169,
-      48,
-      6,
-      167,
-      49,
-      130
-    ],
-    "genres": [
-      "Puzzle",
-      "Role-playing (RPG)",
-      "Simulator",
-      "Strategy",
-      "Adventure",
-      "Indie",
-      "Visual Novel"
-    ],
-    "genre_ids": [
-      9,
-      12,
-      13,
-      15,
-      31,
-      32,
-      34
-    ],
-    "developers": [
-      "Arbitrary Metric"
-    ],
-    "developer_ids": [
-      18802
-    ],
-    "publishers": [
-      "Serenity Forge"
-    ],
-    "publisher_ids": [
-      6352
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "Spanish (Mexico)",
-      "German",
-      "Chinese (Traditional)",
-      "Russian",
-      "Dutch",
-      "Portuguese (Brazil)",
-      "Japanese",
-      "English",
-      "Korean",
-      "Portuguese (Portugal)",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "Xbox Series X|S",
-        "platform_id": 169
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "Nintendo Switch",
-        "platform_id": 130
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "PlayStation 4",
-        "platform_id": 48
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": 6,
-        "platform_name": "Xbox One",
-        "platform_id": 49
       }
     ]
   },
@@ -4962,17 +2495,17 @@
       55024
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
       "Chinese (Traditional)",
       "Japanese",
+      "French",
+      "Spanish (Spain)",
       "English",
-      "Korean",
-      "French"
+      "German",
+      "Spanish (Mexico)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -5011,102 +2544,6 @@
         "m": 7,
         "d": 21,
         "date": 1784592000,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 372497,
-    "name": "Airport Baggage Simulator",
-    "cover": {
-      "id": 503853,
-      "image_id": "coasrx"
-    },
-    "rating": null,
-    "first_release_date": 1779926400,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      6,
-      167,
-      130
-    ],
-    "genres": [
-      "Simulator",
-      "Indie"
-    ],
-    "genre_ids": [
-      13,
-      32
-    ],
-    "developers": [
-      "Three River Games"
-    ],
-    "developer_ids": [
-      59188
-    ],
-    "publishers": [
-      "Three River Games"
-    ],
-    "publisher_ids": [
-      59188
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "Italian",
-      "Spanish (Spain)",
-      "Czech",
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Russian",
-      "Norwegian",
-      "Thai",
-      "French",
-      "German",
-      "Japanese",
-      "English",
-      "Korean",
-      "Portuguese (Portugal)",
-      "Turkish",
-      "Polish"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": null,
-        "platform_name": "Nintendo Switch",
-        "platform_id": 130
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 5,
-        "d": 28,
-        "date": 1779926400,
         "status": 6,
         "platform_name": "PC (Microsoft Windows)",
         "platform_id": 6
@@ -5163,22 +2600,22 @@
       50
     ],
     "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Italian",
-      "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Dutch",
       "Chinese (Traditional)",
-      "Arabic",
+      "Italian",
       "Japanese",
-      "English",
+      "Polish",
+      "French",
       "Danish",
-      "Korean",
-      "French"
+      "English",
+      "Spanish (Spain)",
+      "Dutch",
+      "German",
+      "Spanish (Mexico)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Arabic",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -5306,23 +2743,23 @@
       9790
     ],
     "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Finnish",
-      "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "Norwegian",
       "Chinese (Traditional)",
-      "Swedish",
       "Japanese",
+      "Polish",
+      "French",
+      "Spanish (Spain)",
       "English",
       "Danish",
-      "Korean",
       "Turkish",
-      "French"
+      "Swedish",
+      "German",
+      "Spanish (Mexico)",
+      "Russian",
+      "Finnish",
+      "Chinese (Simplified)",
+      "Portuguese (Brazil)",
+      "Norwegian",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -5417,12 +2854,12 @@
       71990
     ],
     "languages": [
-      "Spanish (Spain)",
       "Italian",
+      "Spanish (Spain)",
+      "English",
       "German",
-      "Portuguese (Brazil)",
       "Russian",
-      "English"
+      "Portuguese (Brazil)"
     ],
     "release_dates": [
       {
@@ -5454,105 +2891,6 @@
         "status": 6,
         "platform_name": "Xbox Series X|S",
         "platform_id": 169
-      }
-    ]
-  },
-  {
-    "id": 368187,
-    "name": "There Is More",
-    "cover": {
-      "id": 504590,
-      "image_id": "coatce"
-    },
-    "rating": null,
-    "first_release_date": 1772496000,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      17,
-      21
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      3,
-      6
-    ],
-    "genres": [
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      31,
-      32
-    ],
-    "developers": [
-      "ByteBeyond"
-    ],
-    "developer_ids": [
-      69064
-    ],
-    "publishers": [
-      "ByteBeyond"
-    ],
-    "publisher_ids": [
-      69064
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
-      "English",
-      "Portuguese (Portugal)",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 3,
-        "d": 3,
-        "date": 1772496000,
-        "status": 3,
-        "platform_name": "Linux",
-        "platform_id": 3
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 3,
-        "d": 3,
-        "date": 1772496000,
-        "status": 3,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "Linux",
-        "platform_id": 3
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
       }
     ]
   },
@@ -5613,19 +2951,19 @@
       4501
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Italian",
-      "Spanish (Spain)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
       "Chinese (Traditional)",
-      "Ukrainian",
+      "Italian",
       "Japanese",
-      "English",
       "English (UK)",
-      "Korean",
-      "French"
+      "French",
+      "Spanish (Spain)",
+      "English",
+      "German",
+      "Ukrainian",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -5739,22 +3077,22 @@
       35110
     ],
     "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Italian",
-      "Spanish (Spain)",
-      "Czech",
-      "Portuguese (Brazil)",
-      "German",
-      "Russian",
       "Chinese (Traditional)",
-      "Ukrainian",
+      "Italian",
       "Japanese",
+      "Polish",
+      "French",
+      "Spanish (Spain)",
       "English",
-      "Korean",
-      "Hungarian",
       "Turkish",
-      "French"
+      "German",
+      "Ukrainian",
+      "Czech",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Hungarian",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -5857,19 +3195,19 @@
       68900
     ],
     "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Italian",
-      "Spanish (Mexico)",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
       "Chinese (Traditional)",
+      "Italian",
       "Japanese",
-      "English",
-      "Korean",
+      "Polish",
+      "French",
       "Turkish",
-      "French"
+      "English",
+      "German",
+      "Spanish (Mexico)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -5953,19 +3291,19 @@
       458
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "German",
-      "Portuguese (Brazil)",
-      "Russian",
       "Chinese (Traditional)",
-      "Ukrainian",
+      "Italian",
       "Japanese",
-      "English",
-      "Korean",
+      "Polish",
+      "Spanish (Spain)",
       "Turkish",
-      "Polish"
+      "English",
+      "German",
+      "Ukrainian",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {
@@ -6007,382 +3345,6 @@
         "status": 6,
         "platform_name": "Xbox Series X|S",
         "platform_id": 169
-      }
-    ]
-  },
-  {
-    "id": 288180,
-    "name": "Fortune Avenue",
-    "cover": {
-      "id": 450131,
-      "image_id": "co9nbn"
-    },
-    "rating": null,
-    "first_release_date": 1743984000,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      28
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Linux",
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      3,
-      6
-    ],
-    "genres": [
-      "Simulator",
-      "Strategy",
-      "Adventure",
-      "Indie",
-      "Card & Board Game"
-    ],
-    "genre_ids": [
-      13,
-      15,
-      31,
-      32,
-      35
-    ],
-    "developers": [
-      "Binogure Studio"
-    ],
-    "developer_ids": [
-      14312
-    ],
-    "publishers": [],
-    "publisher_ids": [],
-    "languages": [
-      "Polish",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Czech",
-      "Portuguese (Brazil)",
-      "German",
-      "Russian",
-      "English",
-      "Turkish",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2025,
-        "m": 4,
-        "d": 7,
-        "date": 1743984000,
-        "status": 3,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2025,
-        "m": 4,
-        "d": 7,
-        "date": 1743984000,
-        "status": 3,
-        "platform_name": "Linux",
-        "platform_id": 3
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 18,
-        "date": 1789689600,
-        "status": 6,
-        "platform_name": "Linux",
-        "platform_id": 3
-      }
-    ]
-  },
-  {
-    "id": 203752,
-    "name": "Fountains",
-    "cover": {
-      "id": 424805,
-      "image_id": "co93s5"
-    },
-    "rating": null,
-    "first_release_date": 1734652800,
-    "hypes": 2,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      17
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "Linux",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Mac",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      169,
-      3,
-      6,
-      167,
-      14,
-      130
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      12,
-      31,
-      32
-    ],
-    "developers": [],
-    "developer_ids": [],
-    "publishers": [
-      "Crunching Koalas"
-    ],
-    "publisher_ids": [
-      5047
-    ],
-    "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Russian",
-      "Japanese",
-      "English",
-      "Turkish",
-      "French"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2024,
-        "m": 12,
-        "d": 20,
-        "date": 1734652800,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2024,
-        "m": 12,
-        "d": 20,
-        "date": 1734652800,
-        "status": 6,
-        "platform_name": "Mac",
-        "platform_id": 14
-      },
-      {
-        "category": 0,
-        "y": 2024,
-        "m": 12,
-        "d": 20,
-        "date": 1734652800,
-        "status": 6,
-        "platform_name": "Linux",
-        "platform_id": 3
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Nintendo Switch",
-        "platform_id": 130
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Xbox Series X|S",
-        "platform_id": 169
-      }
-    ]
-  },
-  {
-    "id": 130577,
-    "name": "Little Witch in the Woods",
-    "cover": {
-      "id": 596169,
-      "image_id": "cocs09"
-    },
-    "rating": null,
-    "first_release_date": 1652745600,
-    "hypes": 1,
-    "status": null,
-    "follows": null,
-    "themes": [
-      17
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "PC (Microsoft Windows)",
-      "Mac",
-      "Xbox One",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      169,
-      6,
-      14,
-      49,
-      130
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Simulator",
-      "Strategy",
-      "Adventure",
-      "Indie"
-    ],
-    "genre_ids": [
-      12,
-      13,
-      15,
-      31,
-      32
-    ],
-    "developers": [
-      "Sunny Side Up",
-      "Sunny Side Up"
-    ],
-    "developer_ids": [
-      3730,
-      3730
-    ],
-    "publishers": [
-      "Sunny Side Up",
-      "SK Telecom"
-    ],
-    "publisher_ids": [
-      3730,
-      17165
-    ],
-    "languages": [
-      "Korean",
-      "Chinese (Simplified)",
-      "English",
-      "Japanese"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2022,
-        "m": 5,
-        "d": 17,
-        "date": 1652745600,
-        "status": 3,
-        "platform_name": "Mac",
-        "platform_id": 14
-      },
-      {
-        "category": 0,
-        "y": 2022,
-        "m": 5,
-        "d": 17,
-        "date": 1652745600,
-        "status": 3,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2022,
-        "m": 5,
-        "d": 17,
-        "date": 1652745600,
-        "status": 3,
-        "platform_name": "Xbox One",
-        "platform_id": 49
-      },
-      {
-        "category": 0,
-        "y": 2025,
-        "m": 9,
-        "d": 15,
-        "date": 1757894400,
-        "status": 6,
-        "platform_name": "Mac",
-        "platform_id": 14
-      },
-      {
-        "category": 0,
-        "y": 2025,
-        "m": 9,
-        "d": 15,
-        "date": 1757894400,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2022,
-        "m": 5,
-        "d": 17,
-        "date": 1652745600,
-        "status": 3,
-        "platform_name": "Xbox Series X|S",
-        "platform_id": 169
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 16,
-        "date": 1789516800,
-        "status": null,
-        "platform_name": "Nintendo Switch",
-        "platform_id": 130
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 9,
-        "d": 17,
-        "date": 1789603200,
-        "status": 6,
-        "platform_name": "Xbox One",
-        "platform_id": 49
       }
     ]
   },
@@ -6448,17 +3410,17 @@
       112
     ],
     "languages": [
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
       "Chinese (Traditional)",
-      "Portuguese (Brazil)",
-      "Russian",
-      "German",
+      "Italian",
+      "Polish",
+      "Spanish (Spain)",
       "French",
       "English",
-      "Korean",
-      "Polish"
+      "German",
+      "Russian",
+      "Portuguese (Brazil)",
+      "Chinese (Simplified)",
+      "Korean"
     ],
     "release_dates": [
       {

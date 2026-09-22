@@ -238,7 +238,7 @@ query_latest = (
     f"| (release_dates.date >= {seven_days_ago} & release_dates.date <= {today})) "
     f"& release_dates.date_format = 0 "
     f"& cover != null & cover.image_id != null " 
-    f"& (status = null | status != (4, 5)) & hypes != null "
+    f"& (status = null | status != (4, 5)) & hypes != null & hypes >= 3"
     f"{NO_FANGAME_FILTER}; "
     f"sort hypes desc; "
     f"limit 100;"
