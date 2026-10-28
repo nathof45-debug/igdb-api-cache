@@ -3,10 +3,18 @@ name: Generate IGDB BFF
 # QUAND LANCER LE WORKFLOW ?
 on:
   schedule:
-    - cron: '17 6 * * *'   # Automatiquement tous les jours à 2h17 (heure FR)
-    - cron: '17 12 * * *'  # 14:17 (heure FR)
-    - cron: '17 18 * * *'  # 14:17 (heure FR)
-    - cron: '17 23 * * *'  # 14:17 (heure FR)
+    - cron: '17 1 * * *'
+    - cron: '17 3 * * *'
+    - cron: '17 5 * * *'
+    - cron: '17 7 * * *'
+    - cron: '17 9 * * *'
+    - cron: '17 11 * * *'
+    - cron: '17 13 * * *'
+    - cron: '17 15 * * *'
+    - cron: '17 17 * * *'
+    - cron: '17 19 * * *'
+    - cron: '17 21 * * *'
+    - cron: '17 23 * * *'  
   workflow_dispatch:      # Permet le lancement manuel
   push:
     branches:
