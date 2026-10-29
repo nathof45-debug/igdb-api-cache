@@ -54,13 +54,13 @@
     ],
     "languages": [
       "Japanese",
-      "English",
+      "German",
+      "French",
       "Chinese (Simplified)",
+      "Portuguese (Brazil)",
       "Spanish (Spain)",
       "Russian",
-      "Portuguese (Brazil)",
-      "German",
-      "French"
+      "English"
     ],
     "release_dates": [
       {
@@ -157,19 +157,19 @@
       47979
     ],
     "languages": [
-      "Turkish",
       "Japanese",
-      "English",
+      "Portuguese (Portugal)",
+      "German",
       "Chinese (Simplified)",
-      "Korean",
+      "French",
+      "Turkish",
+      "Portuguese (Brazil)",
       "Spanish (Spain)",
       "Italian",
-      "Thai",
-      "Portuguese (Brazil)",
+      "Korean",
       "Chinese (Traditional)",
-      "German",
-      "Portuguese (Portugal)",
-      "French"
+      "Thai",
+      "English"
     ],
     "release_dates": [
       {
@@ -293,14 +293,14 @@
     ],
     "languages": [
       "Japanese",
-      "English",
+      "German",
+      "French",
       "Chinese (Simplified)",
-      "Korean",
+      "Portuguese (Brazil)",
       "Spanish (Spain)",
       "Italian",
-      "Portuguese (Brazil)",
-      "German",
-      "French"
+      "Korean",
+      "English"
     ],
     "release_dates": [
       {
@@ -380,8 +380,8 @@
       15299
     ],
     "languages": [
-      "English",
-      "Chinese (Simplified)"
+      "Chinese (Simplified)",
+      "English"
     ],
     "release_dates": [
       {
@@ -444,12 +444,16 @@
     ],
     "pop_score": null,
     "platforms": [
+      "Xbox Series X|S",
       "PC (Microsoft Windows)",
-      "PlayStation 5"
+      "PlayStation 5",
+      "Xbox One"
     ],
     "platform_ids": [
+      169,
       6,
-      167
+      167,
+      49
     ],
     "genres": [
       "Adventure",
@@ -473,16 +477,16 @@
     ],
     "languages": [
       "Japanese",
-      "English",
+      "German",
+      "French",
       "Chinese (Simplified)",
-      "Korean",
       "Spanish (Spain)",
       "Italian",
+      "Korean",
       "Polish",
-      "Russian",
       "Chinese (Traditional)",
-      "German",
-      "French"
+      "Russian",
+      "English"
     ],
     "release_dates": [
       {
@@ -504,6 +508,26 @@
         "status": 6,
         "platform_name": "PC (Microsoft Windows)",
         "platform_id": 6
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "Xbox One",
+        "platform_id": 49
+      },
+      {
+        "category": 7,
+        "y": null,
+        "m": null,
+        "d": null,
+        "date": null,
+        "status": 6,
+        "platform_name": "Xbox Series X|S",
+        "platform_id": 169
       }
     ]
   },
@@ -557,28 +581,28 @@
       10100
     ],
     "languages": [
-      "Turkish",
-      "Japanese",
-      "Finnish",
-      "Arabic",
-      "Chinese (Simplified)",
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Spanish (Mexico)",
-      "English",
-      "Spanish (Spain)",
-      "Thai",
-      "Portuguese (Portugal)",
-      "Norwegian",
-      "Swedish",
-      "Korean",
-      "Italian",
-      "Polish",
-      "German",
       "Dutch",
-      "Russian",
+      "Spanish (Mexico)",
+      "German",
+      "French",
+      "Chinese (Simplified)",
+      "Polish",
+      "English",
       "Danish",
-      "French"
+      "Finnish",
+      "Portuguese (Brazil)",
+      "Spanish (Spain)",
+      "Italian",
+      "Arabic",
+      "Swedish",
+      "Japanese",
+      "Norwegian",
+      "Portuguese (Portugal)",
+      "Turkish",
+      "Korean",
+      "Chinese (Traditional)",
+      "Russian",
+      "Thai"
     ],
     "release_dates": [
       {
@@ -672,18 +696,18 @@
     "languages": [
       "Japanese",
       "Spanish (Mexico)",
-      "English",
+      "German",
+      "French",
       "Chinese (Simplified)",
-      "Arabic",
-      "Korean",
+      "Portuguese (Brazil)",
       "Spanish (Spain)",
       "Italian",
+      "Korean",
       "Polish",
-      "Russian",
-      "Portuguese (Brazil)",
       "Chinese (Traditional)",
-      "German",
-      "French"
+      "Russian",
+      "Arabic",
+      "English"
     ],
     "release_dates": [
       {
@@ -792,13 +816,13 @@
     ],
     "languages": [
       "Japanese",
-      "English",
+      "German",
+      "French",
       "Chinese (Simplified)",
+      "Portuguese (Brazil)",
       "Spanish (Spain)",
       "Italian",
-      "Portuguese (Brazil)",
-      "German",
-      "French"
+      "English"
     ],
     "release_dates": [
       {
@@ -861,12 +885,12 @@
     ],
     "languages": [
       "Japanese",
-      "English",
+      "German",
+      "French",
       "Chinese (Simplified)",
       "Spanish (Spain)",
       "Italian",
-      "German",
-      "French"
+      "English"
     ],
     "release_dates": [
       {
@@ -946,18 +970,18 @@
       "Japanese",
       "Spanish (Mexico)",
       "Dutch",
-      "English (UK)",
-      "Chinese (Simplified)",
-      "English",
-      "Korean",
-      "Spanish (Spain)",
-      "Polish",
-      "Italian",
-      "Russian",
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
       "German",
-      "French"
+      "French",
+      "Chinese (Simplified)",
+      "Portuguese (Brazil)",
+      "Spanish (Spain)",
+      "Italian",
+      "Korean",
+      "Polish",
+      "English (UK)",
+      "Chinese (Traditional)",
+      "Russian",
+      "English"
     ],
     "release_dates": [
       {
