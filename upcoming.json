@@ -46,17 +46,17 @@
       59187
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Korean",
       "English",
-      "Polish",
-      "Japanese",
-      "German",
-      "Italian",
-      "Russian",
-      "Spanish (Spain)",
       "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Korean",
+      "Chinese (Traditional)",
+      "German",
+      "Russian",
+      "Italian",
+      "Japanese",
+      "Portuguese (Brazil)",
+      "Polish",
       "French"
     ],
     "release_dates": [
@@ -121,16 +121,16 @@
       5040
     ],
     "languages": [
-      "Portuguese (Brazil)",
+      "English",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
       "Korean",
       "Ukrainian",
-      "English",
-      "Polish",
-      "Japanese",
       "German",
       "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Japanese",
+      "Portuguese (Brazil)",
+      "Polish",
       "French"
     ],
     "release_dates": [
@@ -234,17 +234,17 @@
       54891
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Korean",
-      "Arabic",
-      "Ukrainian",
+      "Chinese (Simplified)",
       "English",
-      "Polish",
+      "Korean",
+      "Ukrainian",
       "German",
-      "Czech",
       "Russian",
       "Spanish (Mexico)",
-      "Chinese (Simplified)",
+      "Arabic",
+      "Portuguese (Brazil)",
+      "Czech",
+      "Polish",
       "French"
     ],
     "release_dates": [
@@ -304,15 +304,15 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "Portuguese (Brazil)",
-      "Korean",
       "English",
-      "Japanese",
-      "German",
-      "Italian",
-      "Russian",
-      "Spanish (Spain)",
       "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Korean",
+      "German",
+      "Russian",
+      "Italian",
+      "Japanese",
+      "Portuguese (Brazil)",
       "French"
     ],
     "release_dates": [
@@ -393,20 +393,20 @@
       34920
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Korean",
       "English",
-      "Japanese",
-      "Polish",
-      "German",
-      "Italian",
-      "Russian",
-      "Portuguese (Portugal)",
-      "Spanish (Spain)",
       "Chinese (Simplified)",
+      "Korean",
+      "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "German",
+      "Russian",
+      "Italian",
+      "Japanese",
+      "Turkish",
+      "Portuguese (Brazil)",
+      "Polish",
       "French",
-      "Turkish"
+      "Portuguese (Portugal)"
     ],
     "release_dates": [
       {
@@ -529,8 +529,8 @@
     ],
     "languages": [
       "English",
-      "Chinese (Simplified)",
-      "Korean"
+      "Korean",
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -608,16 +608,16 @@
       15299
     ],
     "languages": [
+      "English",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Korean",
+      "German",
+      "Japanese",
+      "French",
       "Portuguese (Brazil)",
       "Chinese (Traditional)",
-      "Korean",
-      "English",
-      "Japanese",
-      "German",
-      "Portuguese (Portugal)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "French"
+      "Portuguese (Portugal)"
     ],
     "release_dates": [
       {
@@ -715,19 +715,19 @@
       8212
     ],
     "languages": [
-      "Portuguese (Brazil)",
+      "English",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
       "Korean",
       "Ukrainian",
-      "English",
-      "Japanese",
-      "Polish",
       "German",
-      "Italian",
       "Russian",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "French",
-      "Turkish"
+      "Italian",
+      "Japanese",
+      "Turkish",
+      "Portuguese (Brazil)",
+      "Polish",
+      "French"
     ],
     "release_dates": [
       {
@@ -838,18 +838,18 @@
       112
     ],
     "languages": [
-      "Portuguese (Brazil)",
-      "Chinese (Traditional)",
-      "Korean",
       "English",
-      "Japanese",
-      "English (UK)",
+      "Chinese (Simplified)",
+      "Spanish (Spain)",
+      "Korean",
+      "Chinese (Traditional)",
       "German",
-      "Italian",
       "Russian",
       "Spanish (Mexico)",
-      "Spanish (Spain)",
-      "Chinese (Simplified)",
+      "Italian",
+      "Japanese",
+      "Portuguese (Brazil)",
+      "English (UK)",
       "French"
     ],
     "release_dates": [
@@ -902,6 +902,76 @@
         "status": 6,
         "platform_name": "Nintendo Switch 2",
         "platform_id": 508
+      }
+    ]
+  },
+  {
+    "id": 382400,
+    "name": "Trees Hate You",
+    "cover": {
+      "id": 619649,
+      "image_id": "coda4h"
+    },
+    "rating": null,
+    "first_release_date": 1794787200,
+    "hypes": 13,
+    "status": null,
+    "follows": null,
+    "themes": [
+      27
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      31,
+      32
+    ],
+    "developers": [],
+    "developer_ids": [],
+    "publishers": [],
+    "publisher_ids": [],
+    "languages": [
+      "Italian",
+      "Czech",
+      "Danish",
+      "Spanish (Spain)",
+      "Swedish",
+      "Russian",
+      "Turkish",
+      "French",
+      "Portuguese (Portugal)",
+      "English",
+      "Chinese (Simplified)",
+      "Dutch",
+      "Ukrainian",
+      "Japanese",
+      "Finnish",
+      "Norwegian",
+      "Korean",
+      "German",
+      "Portuguese (Brazil)",
+      "Polish",
+      "Chinese (Traditional)"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 16,
+        "date": 1794787200,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
       }
     ]
   }
