@@ -46,18 +46,18 @@
       59187
     ],
     "languages": [
-      "Chinese (Traditional)",
-      "English",
-      "Russian",
-      "Polish",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Chinese (Simplified)",
-      "Japanese",
-      "German",
       "French",
-      "Korean"
+      "German",
+      "Japanese",
+      "Russian",
+      "Chinese (Traditional)",
+      "Korean",
+      "Portuguese (Brazil)",
+      "English",
+      "Spanish (Spain)",
+      "Polish",
+      "Chinese (Simplified)",
+      "Italian"
     ],
     "release_dates": [
       {
@@ -121,17 +121,17 @@
       5040
     ],
     "languages": [
-      "English",
-      "Russian",
-      "Polish",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Ukrainian",
-      "German",
       "French",
-      "Korean"
+      "German",
+      "Japanese",
+      "Russian",
+      "Korean",
+      "Ukrainian",
+      "Portuguese (Brazil)",
+      "English",
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -234,18 +234,18 @@
       54891
     ],
     "languages": [
-      "English",
-      "Russian",
-      "Polish",
-      "Czech",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
-      "Ukrainian",
-      "Spanish (Mexico)",
-      "Arabic",
-      "German",
       "French",
-      "Korean"
+      "German",
+      "Czech",
+      "Spanish (Mexico)",
+      "Russian",
+      "Korean",
+      "Ukrainian",
+      "Portuguese (Brazil)",
+      "English",
+      "Arabic",
+      "Chinese (Simplified)",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -304,16 +304,16 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "English",
-      "Russian",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Chinese (Simplified)",
-      "Japanese",
-      "German",
       "French",
-      "Korean"
+      "German",
+      "Japanese",
+      "Chinese (Simplified)",
+      "Russian",
+      "Portuguese (Brazil)",
+      "English",
+      "Spanish (Spain)",
+      "Korean",
+      "Italian"
     ],
     "release_dates": [
       {
@@ -393,20 +393,20 @@
       34920
     ],
     "languages": [
-      "Chinese (Traditional)",
-      "English",
-      "Russian",
-      "Polish",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Portuguese (Portugal)",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Turkish",
-      "German",
       "French",
-      "Korean"
+      "German",
+      "Japanese",
+      "Chinese (Simplified)",
+      "Russian",
+      "Chinese (Traditional)",
+      "Portuguese (Portugal)",
+      "Portuguese (Brazil)",
+      "Polish",
+      "English",
+      "Spanish (Spain)",
+      "Turkish",
+      "Korean",
+      "Italian"
     ],
     "release_dates": [
       {
@@ -529,8 +529,8 @@
     ],
     "languages": [
       "English",
-      "Chinese (Simplified)",
-      "Korean"
+      "Korean",
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -608,15 +608,15 @@
       15299
     ],
     "languages": [
+      "French",
+      "German",
+      "Japanese",
+      "Chinese (Simplified)",
       "Chinese (Traditional)",
+      "Portuguese (Portugal)",
+      "Portuguese (Brazil)",
       "English",
       "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Portuguese (Portugal)",
-      "Chinese (Simplified)",
-      "Japanese",
-      "German",
-      "French",
       "Korean"
     ],
     "release_dates": [
@@ -715,19 +715,19 @@
       8212
     ],
     "languages": [
-      "English",
-      "Russian",
-      "Polish",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Italian",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Ukrainian",
-      "Turkish",
-      "German",
       "French",
-      "Korean"
+      "German",
+      "Japanese",
+      "Chinese (Simplified)",
+      "Russian",
+      "Ukrainian",
+      "Portuguese (Brazil)",
+      "Turkish",
+      "English",
+      "Spanish (Spain)",
+      "Polish",
+      "Korean",
+      "Italian"
     ],
     "release_dates": [
       {
@@ -838,19 +838,19 @@
       112
     ],
     "languages": [
-      "Chinese (Traditional)",
-      "English",
-      "Russian",
-      "English (UK)",
-      "Portuguese (Brazil)",
-      "Spanish (Spain)",
-      "Italian",
-      "Chinese (Simplified)",
-      "Japanese",
-      "Spanish (Mexico)",
-      "German",
       "French",
-      "Korean"
+      "German",
+      "Japanese",
+      "Chinese (Simplified)",
+      "Spanish (Mexico)",
+      "Russian",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "English",
+      "Spanish (Spain)",
+      "English (UK)",
+      "Korean",
+      "Italian"
     ],
     "release_dates": [
       {
@@ -940,27 +940,27 @@
     "publishers": [],
     "publisher_ids": [],
     "languages": [
-      "English",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
-      "Ukrainian",
-      "Czech",
-      "Danish",
-      "Dutch",
-      "Russian",
-      "Polish",
-      "Portuguese (Portugal)",
-      "Turkish",
       "German",
-      "Korean",
       "Chinese (Traditional)",
-      "Norwegian",
-      "Spanish (Spain)",
-      "Italian",
-      "Finnish",
+      "Russian",
       "Japanese",
+      "Portuguese (Portugal)",
+      "Danish",
+      "Spanish (Spain)",
+      "Korean",
+      "Polish",
+      "Dutch",
+      "Finnish",
       "Swedish",
-      "French"
+      "Ukrainian",
+      "Norwegian",
+      "English",
+      "Turkish",
+      "Chinese (Simplified)",
+      "French",
+      "Czech",
+      "Portuguese (Brazil)",
+      "Italian"
     ],
     "release_dates": [
       {
@@ -969,6 +969,269 @@
         "m": 11,
         "d": 16,
         "date": 1794787200,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
+      }
+    ]
+  },
+  {
+    "id": 237123,
+    "name": "Moonlight Peaks",
+    "cover": {
+      "id": 461224,
+      "image_id": "co9vvs"
+    },
+    "rating": null,
+    "first_release_date": 1783382400,
+    "hypes": 11,
+    "status": null,
+    "follows": null,
+    "themes": [
+      17,
+      44
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Nintendo Switch 2",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Mac",
+      "Nintendo Switch"
+    ],
+    "platform_ids": [
+      508,
+      6,
+      167,
+      14,
+      130
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Simulator",
+      "Indie"
+    ],
+    "genre_ids": [
+      12,
+      13,
+      32
+    ],
+    "developers": [
+      "Little Chicken Game Company B.V."
+    ],
+    "developer_ids": [
+      15925
+    ],
+    "publishers": [
+      "Little Chicken Game Company B.V.",
+      "XSEED Games",
+      "Marvelous Europe Ltd."
+    ],
+    "publisher_ids": [
+      15925,
+      2187,
+      9066
+    ],
+    "languages": [
+      "German",
+      "Japanese",
+      "Chinese (Simplified)",
+      "Chinese (Traditional)",
+      "English",
+      "Korean"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 7,
+        "d": 7,
+        "date": 1783382400,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 7,
+        "d": 7,
+        "date": 1783382400,
+        "status": 6,
+        "platform_name": "Mac",
+        "platform_id": 14
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 7,
+        "d": 7,
+        "date": 1783382400,
+        "status": 6,
+        "platform_name": "Nintendo Switch",
+        "platform_id": 130
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 7,
+        "d": 7,
+        "date": 1783382400,
+        "status": 6,
+        "platform_name": "Nintendo Switch 2",
+        "platform_id": 508
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 17,
+        "date": 1794873600,
+        "status": 6,
+        "platform_name": "PlayStation 5",
+        "platform_id": 167
+      }
+    ]
+  },
+  {
+    "id": 272780,
+    "name": "Burning Sword: Death Sun",
+    "cover": {
+      "id": 412981,
+      "image_id": "co8unp"
+    },
+    "rating": null,
+    "first_release_date": 1794873600,
+    "hypes": 7,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Hack and slash/Beat 'em up"
+    ],
+    "genre_ids": [
+      25
+    ],
+    "developers": [],
+    "developer_ids": [],
+    "publishers": [
+      "Rising Tide Publishing"
+    ],
+    "publisher_ids": [
+      74587
+    ],
+    "languages": [
+      "German",
+      "Japanese",
+      "Russian",
+      "Thai",
+      "English",
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
+      "Italian"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 17,
+        "date": 1794873600,
+        "status": 3,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
+      }
+    ]
+  },
+  {
+    "id": 385308,
+    "name": "Milki Delivery",
+    "cover": {
+      "id": 541457,
+      "image_id": "coblsh"
+    },
+    "rating": null,
+    "first_release_date": 1794873600,
+    "hypes": 8,
+    "status": null,
+    "follows": null,
+    "themes": [],
+    "pop_score": null,
+    "platforms": [
+      "Linux",
+      "PC (Microsoft Windows)",
+      "Mac"
+    ],
+    "platform_ids": [
+      3,
+      6,
+      14
+    ],
+    "genres": [
+      "Simulator",
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      13,
+      31,
+      32
+    ],
+    "developers": [
+      "Doot",
+      "blibloop"
+    ],
+    "developer_ids": [
+      44896,
+      48688
+    ],
+    "publishers": [
+      "Doot",
+      "Wholesome Games Presents"
+    ],
+    "publisher_ids": [
+      44896,
+      61238
+    ],
+    "languages": [
+      "English"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 17,
+        "date": 1794873600,
+        "status": 6,
+        "platform_name": "Linux",
+        "platform_id": 3
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 17,
+        "date": 1794873600,
+        "status": 6,
+        "platform_name": "Mac",
+        "platform_id": 14
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 17,
+        "date": 1794873600,
         "status": 6,
         "platform_name": "PC (Microsoft Windows)",
         "platform_id": 6
