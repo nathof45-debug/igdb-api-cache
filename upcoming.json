@@ -123,12 +123,12 @@
     "languages": [
       "Japanese",
       "Korean",
+      "English",
+      "Russian",
       "Portuguese (Brazil)",
       "French",
-      "German",
-      "Russian",
-      "English",
-      "Polish"
+      "Polish",
+      "German"
     ],
     "release_dates": [
       {
@@ -359,17 +359,17 @@
     "languages": [
       "Japanese",
       "Spanish (Spain)",
-      "Spanish (Mexico)",
       "Korean",
+      "English",
+      "Russian",
+      "Italian",
       "Chinese (Simplified)",
       "Portuguese (Brazil)",
       "French",
+      "Spanish (Mexico)",
+      "Polish",
       "Chinese (Traditional)",
-      "German",
-      "Russian",
-      "Italian",
-      "English",
-      "Polish"
+      "German"
     ],
     "release_dates": [
       {
@@ -401,6 +401,84 @@
         "status": 3,
         "platform_name": "Xbox Series X|S",
         "platform_id": 169
+      }
+    ]
+  },
+  {
+    "id": 361859,
+    "name": "Warhammer 40,000: Dawn of War IV",
+    "cover": {
+      "id": 480741,
+      "image_id": "coaaxx"
+    },
+    "rating": null,
+    "first_release_date": 1795996800,
+    "hypes": 34,
+    "status": null,
+    "follows": null,
+    "themes": [
+      1
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Strategy"
+    ],
+    "genre_ids": [
+      15
+    ],
+    "developers": [
+      "KING Art"
+    ],
+    "developer_ids": [
+      2397
+    ],
+    "publishers": [
+      "Deep Silver"
+    ],
+    "publisher_ids": [
+      423
+    ],
+    "languages": [
+      "Japanese",
+      "Spanish (Spain)",
+      "Korean",
+      "English",
+      "Russian",
+      "Italian",
+      "Chinese (Simplified)",
+      "Portuguese (Brazil)",
+      "French",
+      "Polish",
+      "Turkish",
+      "Chinese (Traditional)",
+      "German"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 12,
+        "d": 3,
+        "date": 1796256000,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 30,
+        "date": 1795996800,
+        "status": 34,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
       }
     ]
   },
@@ -459,14 +537,14 @@
       "Japanese",
       "Spanish (Spain)",
       "Korean",
+      "English",
+      "Russian",
+      "Italian",
       "Chinese (Simplified)",
       "Portuguese (Brazil)",
       "French",
       "Chinese (Traditional)",
-      "German",
-      "Russian",
-      "Italian",
-      "English"
+      "German"
     ],
     "release_dates": [
       {
