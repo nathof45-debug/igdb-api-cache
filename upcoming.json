@@ -121,14 +121,14 @@
       19006
     ],
     "languages": [
+      "German",
       "Russian",
-      "Korean",
-      "French",
-      "Polish",
       "Portuguese (Brazil)",
       "English",
+      "Korean",
+      "French",
       "Japanese",
-      "German"
+      "Polish"
     ],
     "release_dates": [
       {
@@ -347,19 +347,19 @@
       68871
     ],
     "languages": [
-      "Russian",
-      "Korean",
-      "French",
-      "Polish",
-      "English",
-      "Portuguese (Brazil)",
+      "Spanish (Mexico)",
       "Chinese (Simplified)",
-      "Japanese",
       "Italian",
       "German",
+      "Russian",
+      "Chinese (Traditional)",
+      "Korean",
+      "English",
+      "Portuguese (Brazil)",
+      "French",
       "Spanish (Spain)",
-      "Spanish (Mexico)",
-      "Chinese (Traditional)"
+      "Japanese",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -435,19 +435,19 @@
       423
     ],
     "languages": [
-      "Russian",
-      "Korean",
-      "French",
-      "Polish",
-      "English",
-      "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Turkish",
-      "Japanese",
       "Italian",
       "German",
+      "Russian",
+      "Chinese (Traditional)",
+      "Turkish",
+      "English",
+      "Portuguese (Brazil)",
+      "Korean",
+      "French",
       "Spanish (Spain)",
-      "Chinese (Traditional)"
+      "Japanese",
+      "Polish"
     ],
     "release_dates": [
       {
@@ -520,15 +520,15 @@
       57363
     ],
     "languages": [
-      "Korean",
-      "French",
-      "English",
-      "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Japanese",
       "Italian",
       "German",
-      "Spanish (Spain)"
+      "English",
+      "Korean",
+      "Portuguese (Brazil)",
+      "French",
+      "Spanish (Spain)",
+      "Japanese"
     ],
     "release_dates": [
       {
@@ -567,6 +567,104 @@
         "m": 12,
         "d": 1,
         "date": 1796083200,
+        "status": 6,
+        "platform_name": "Xbox Series X|S",
+        "platform_id": 169
+      }
+    ]
+  },
+  {
+    "id": 293035,
+    "name": "Luma Island",
+    "cover": {
+      "id": 416385,
+      "image_id": "co8xa9"
+    },
+    "rating": 65.4049356203549,
+    "first_release_date": 1732060800,
+    "hypes": 8,
+    "status": null,
+    "follows": null,
+    "themes": [
+      17,
+      38
+    ],
+    "pop_score": null,
+    "platforms": [
+      "Xbox Series X|S",
+      "PC (Microsoft Windows)",
+      "PlayStation 5"
+    ],
+    "platform_ids": [
+      169,
+      6,
+      167
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Adventure",
+      "Indie"
+    ],
+    "genre_ids": [
+      12,
+      31,
+      32
+    ],
+    "developers": [
+      "Feel Free Games"
+    ],
+    "developer_ids": [
+      58915
+    ],
+    "publishers": [
+      "Feel Free Games"
+    ],
+    "publisher_ids": [
+      58915
+    ],
+    "languages": [
+      "Thai",
+      "Dutch",
+      "Chinese (Simplified)",
+      "Italian",
+      "German",
+      "Russian",
+      "Turkish",
+      "English",
+      "Korean",
+      "Portuguese (Brazil)",
+      "French",
+      "Spanish (Spain)",
+      "Japanese",
+      "Polish"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2024,
+        "m": 11,
+        "d": 20,
+        "date": 1732060800,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 12,
+        "d": 2,
+        "date": 1796169600,
+        "status": 6,
+        "platform_name": "PlayStation 5",
+        "platform_id": 167
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 12,
+        "d": 2,
+        "date": 1796169600,
         "status": 6,
         "platform_name": "Xbox Series X|S",
         "platform_id": 169
@@ -625,17 +723,17 @@
       18643
     ],
     "languages": [
-      "Russian",
-      "Korean",
-      "French",
-      "English",
-      "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Japanese",
       "Italian",
       "German",
+      "Russian",
+      "Chinese (Traditional)",
+      "Korean",
+      "English",
+      "Portuguese (Brazil)",
+      "French",
       "Spanish (Spain)",
-      "Chinese (Traditional)"
+      "Japanese"
     ],
     "release_dates": [
       {
