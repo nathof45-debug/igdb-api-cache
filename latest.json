@@ -15,19 +15,19 @@
     "pop_score": null,
     "platforms": [
       "Linux",
-      "PC (Microsoft Windows)",
-      "Mac"
+      "PC (Microsoft Windows)"
     ],
     "platform_ids": [
       3,
-      6,
-      14
+      6
     ],
     "genres": [
+      "Puzzle",
       "Adventure",
       "Indie"
     ],
     "genre_ids": [
+      9,
       31,
       32
     ],
@@ -44,13 +44,15 @@
       68777
     ],
     "languages": [
-      "German",
-      "Japanese",
-      "Russian",
-      "Italian",
       "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "English"
+      "German",
+      "English",
+      "Japanese",
+      "Italian",
+      "Turkish",
+      "Russian",
+      "French",
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -62,16 +64,6 @@
         "status": 6,
         "platform_name": "Linux",
         "platform_id": 3
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 11,
-        "d": 24,
-        "date": 1795478400,
-        "status": 6,
-        "platform_name": "Mac",
-        "platform_id": 14
       },
       {
         "category": 0,
@@ -92,7 +84,7 @@
       "id": 600115,
       "image_id": "cocv1v"
     },
-    "rating": 94.50099662066759,
+    "rating": 94.36132179957787,
     "first_release_date": 1795046400,
     "hypes": 1584,
     "status": null,
@@ -139,19 +131,19 @@
       139
     ],
     "languages": [
-      "German",
-      "Chinese (Traditional)",
-      "Russian",
-      "Japanese",
-      "Spanish (Mexico)",
-      "Italian",
-      "Korean",
       "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "Portuguese (Brazil)",
+      "German",
       "English",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Polish",
+      "Italian",
+      "Spanish (Mexico)",
+      "Korean",
+      "Russian",
       "French",
-      "Polish"
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -229,19 +221,19 @@
       61765
     ],
     "languages": [
+      "Spanish (Spain)",
       "German",
-      "Chinese (Traditional)",
       "Japanese",
-      "Russian",
+      "Czech",
+      "Portuguese (Brazil)",
+      "Chinese (Traditional)",
+      "English",
+      "Polish",
       "Italian",
       "Korean",
-      "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
-      "English",
-      "Czech",
+      "Russian",
       "French",
-      "Polish"
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -334,19 +326,19 @@
       69907
     ],
     "languages": [
+      "Spanish (Spain)",
       "German",
-      "Chinese (Traditional)",
       "Japanese",
-      "Ukrainian",
+      "English",
+      "Portuguese (Brazil)",
+      "Chinese (Traditional)",
+      "Polish",
       "Italian",
       "Korean",
-      "Spanish (Spain)",
+      "Ukrainian",
       "Turkish",
-      "Portuguese (Brazil)",
-      "English",
-      "Chinese (Simplified)",
       "French",
-      "Polish"
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
@@ -368,6 +360,94 @@
         "status": 6,
         "platform_name": "PlayStation 5",
         "platform_id": 167
+      }
+    ]
+  },
+  {
+    "id": 341542,
+    "name": "Might and Magic The Card Game",
+    "cover": {
+      "id": 620427,
+      "image_id": "codaq3"
+    },
+    "rating": 60.31496062992126,
+    "first_release_date": 1771200000,
+    "hypes": 4,
+    "status": null,
+    "follows": null,
+    "themes": [
+      17
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)"
+    ],
+    "platform_ids": [
+      6
+    ],
+    "genres": [
+      "Role-playing (RPG)",
+      "Strategy",
+      "Turn-based strategy (TBS)",
+      "Card & Board Game"
+    ],
+    "genre_ids": [
+      12,
+      15,
+      16,
+      35
+    ],
+    "developers": [
+      "Ubisoft Paris"
+    ],
+    "developer_ids": [
+      841
+    ],
+    "publishers": [
+      "Ubisoft Entertainment"
+    ],
+    "publisher_ids": [
+      104
+    ],
+    "languages": [
+      "Spanish (Spain)",
+      "German",
+      "Portuguese (Portugal)",
+      "English",
+      "Japanese",
+      "Chinese (Traditional)",
+      "Portuguese (Brazil)",
+      "Turkish",
+      "Thai",
+      "Polish",
+      "Italian",
+      "English (UK)",
+      "Spanish (Mexico)",
+      "Korean",
+      "Russian",
+      "French",
+      "Chinese (Simplified)"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 24,
+        "date": 1795478400,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 2,
+        "d": 16,
+        "date": 1771200000,
+        "status": 3,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
       }
     ]
   },
@@ -427,17 +507,17 @@
       19904
     ],
     "languages": [
-      "Portuguese (Portugal)",
-      "German",
-      "Japanese",
-      "Italian",
       "Spanish (Spain)",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
+      "German",
+      "Portuguese (Portugal)",
       "English",
       "Czech",
+      "Japanese",
+      "Portuguese (Brazil)",
+      "Polish",
+      "Italian",
       "French",
-      "Polish"
+      "Chinese (Simplified)"
     ],
     "release_dates": [
       {
