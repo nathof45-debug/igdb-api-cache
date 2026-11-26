@@ -111,14 +111,14 @@
       19006
     ],
     "languages": [
-      "German",
-      "Korean",
-      "French",
       "Polish",
-      "English",
-      "Portuguese (Brazil)",
       "Russian",
-      "Japanese"
+      "Portuguese (Brazil)",
+      "German",
+      "French",
+      "Japanese",
+      "Korean",
+      "English"
     ],
     "release_dates": [
       {
@@ -176,15 +176,15 @@
       39660
     ],
     "languages": [
-      "German",
-      "French",
-      "Polish",
-      "English",
       "Spanish (Spain)",
+      "Polish",
+      "French",
       "Portuguese (Brazil)",
+      "German",
+      "English",
+      "Japanese",
       "Chinese (Simplified)",
-      "Russian",
-      "Japanese"
+      "Russian"
     ],
     "release_dates": [
       {
@@ -254,15 +254,15 @@
       68777
     ],
     "languages": [
-      "German",
-      "French",
-      "English",
-      "Italian",
       "Spanish (Spain)",
-      "Chinese (Simplified)",
-      "Russian",
       "Turkish",
-      "Japanese"
+      "Italian",
+      "French",
+      "German",
+      "English",
+      "Japanese",
+      "Chinese (Simplified)",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -339,22 +339,22 @@
       54891
     ],
     "languages": [
-      "German",
-      "Korean",
-      "French",
-      "Polish",
-      "English",
       "Spanish (Spain)",
-      "Chinese (Traditional)",
-      "Portuguese (Brazil)",
-      "Swedish",
-      "Chinese (Simplified)",
-      "Russian",
       "Ukrainian",
+      "Polish",
+      "Chinese (Traditional)",
+      "Korean",
       "Turkish",
+      "French",
+      "Swedish",
+      "Portuguese (Brazil)",
       "Spanish (Mexico)",
+      "German",
+      "Finnish",
+      "English",
       "Japanese",
-      "Finnish"
+      "Chinese (Simplified)",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -410,6 +410,96 @@
     ]
   },
   {
+    "id": 380953,
+    "name": "Thrifty Business",
+    "cover": {
+      "id": 512789,
+      "image_id": "coazo5"
+    },
+    "rating": null,
+    "first_release_date": 1779062400,
+    "hypes": 6,
+    "status": null,
+    "follows": null,
+    "themes": [
+      28
+    ],
+    "pop_score": null,
+    "platforms": [
+      "PC (Microsoft Windows)",
+      "Mac",
+      "Nintendo Switch"
+    ],
+    "platform_ids": [
+      6,
+      14,
+      130
+    ],
+    "genres": [
+      "Simulator",
+      "Indie"
+    ],
+    "genre_ids": [
+      13,
+      32
+    ],
+    "developers": [
+      "Spellgarden Games"
+    ],
+    "developer_ids": [
+      46073
+    ],
+    "publishers": [
+      "Spellgarden Games"
+    ],
+    "publisher_ids": [
+      46073
+    ],
+    "languages": [
+      "Spanish (Spain)",
+      "Chinese (Simplified)",
+      "Chinese (Traditional)",
+      "French",
+      "Portuguese (Brazil)",
+      "German",
+      "English",
+      "Japanese",
+      "Korean"
+    ],
+    "release_dates": [
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 11,
+        "d": 26,
+        "date": 1795651200,
+        "status": 6,
+        "platform_name": "Nintendo Switch",
+        "platform_id": 130
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 5,
+        "d": 18,
+        "date": 1779062400,
+        "status": 6,
+        "platform_name": "PC (Microsoft Windows)",
+        "platform_id": 6
+      },
+      {
+        "category": 0,
+        "y": 2026,
+        "m": 5,
+        "d": 18,
+        "date": 1779062400,
+        "status": 6,
+        "platform_name": "Mac",
+        "platform_id": 14
+      }
+    ]
+  },
+  {
     "id": 371729,
     "name": "The Floor Above",
     "cover": {
@@ -457,19 +547,19 @@
       69907
     ],
     "languages": [
-      "German",
-      "Korean",
-      "French",
-      "Polish",
-      "English",
-      "Italian",
       "Spanish (Spain)",
-      "Chinese (Traditional)",
-      "Portuguese (Brazil)",
-      "Chinese (Simplified)",
       "Ukrainian",
+      "Polish",
+      "Chinese (Traditional)",
+      "Korean",
+      "Italian",
+      "Portuguese (Brazil)",
+      "French",
+      "German",
       "Turkish",
-      "Japanese"
+      "Japanese",
+      "Chinese (Simplified)",
+      "English"
     ],
     "release_dates": [
       {
@@ -541,23 +631,23 @@
       104
     ],
     "languages": [
-      "German",
-      "Korean",
-      "French",
-      "Polish",
-      "English",
-      "Italian",
       "Spanish (Spain)",
-      "Chinese (Traditional)",
-      "Portuguese (Brazil)",
       "Chinese (Simplified)",
-      "Russian",
+      "Portuguese (Portugal)",
+      "Chinese (Traditional)",
+      "English (UK)",
       "Thai",
       "Turkish",
-      "English (UK)",
+      "Polish",
+      "Italian",
+      "French",
       "Spanish (Mexico)",
+      "Portuguese (Brazil)",
+      "Russian",
+      "German",
+      "English",
       "Japanese",
-      "Portuguese (Portugal)"
+      "Korean"
     ],
     "release_dates": [
       {
