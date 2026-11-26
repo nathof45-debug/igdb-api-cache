@@ -1,149 +1,5 @@
 [
   {
-    "id": 292809,
-    "name": "Azur Promilia",
-    "cover": {
-      "id": 452875,
-      "image_id": "co9pfv"
-    },
-    "rating": null,
-    "first_release_date": 1795651200,
-    "hypes": 12,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)",
-      "PlayStation 5"
-    ],
-    "platform_ids": [
-      6,
-      167
-    ],
-    "genres": [
-      "Adventure"
-    ],
-    "genre_ids": [
-      31
-    ],
-    "developers": [
-      "Shanghai Manjuu"
-    ],
-    "developer_ids": [
-      16059
-    ],
-    "publishers": [
-      "Yostar Games"
-    ],
-    "publisher_ids": [
-      19094
-    ],
-    "languages": [],
-    "release_dates": [
-      {
-        "category": 7,
-        "y": null,
-        "m": null,
-        "d": null,
-        "date": null,
-        "status": null,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 11,
-        "d": 26,
-        "date": 1795651200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 11,
-        "d": 26,
-        "date": 1795651200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 335232,
-    "name": "Appulse",
-    "cover": {
-      "id": 622160,
-      "image_id": "codc28"
-    },
-    "rating": null,
-    "first_release_date": 1795651200,
-    "hypes": 7,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      18
-    ],
-    "pop_score": null,
-    "platforms": [
-      "PC (Microsoft Windows)"
-    ],
-    "platform_ids": [
-      6
-    ],
-    "genres": [
-      "Shooter",
-      "Pinball",
-      "Indie"
-    ],
-    "genre_ids": [
-      5,
-      30,
-      32
-    ],
-    "developers": [
-      "Le Rado"
-    ],
-    "developer_ids": [
-      81798
-    ],
-    "publishers": [
-      "Raw Fury"
-    ],
-    "publisher_ids": [
-      19006
-    ],
-    "languages": [
-      "French",
-      "Russian",
-      "English",
-      "Portuguese (Brazil)",
-      "Korean",
-      "German",
-      "Japanese",
-      "Polish"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 11,
-        "d": 26,
-        "date": 1795651200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      }
-    ]
-  },
-  {
     "id": 187392,
     "name": "Our Life: Now & Forever",
     "cover": {
@@ -347,19 +203,19 @@
       68871
     ],
     "languages": [
-      "French",
-      "Chinese (Traditional)",
-      "Russian",
-      "English",
-      "Korean",
-      "Portuguese (Brazil)",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
       "Spanish (Mexico)",
       "Spanish (Spain)",
+      "Polish",
+      "Chinese (Traditional)",
+      "French",
+      "Chinese (Simplified)",
+      "German",
       "Italian",
-      "Polish"
+      "Korean",
+      "English",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -448,11 +304,11 @@
       294
     ],
     "languages": [
-      "French",
-      "English",
-      "German",
       "Spanish (Mexico)",
-      "Spanish (Spain)"
+      "Spanish (Spain)",
+      "French",
+      "German",
+      "English"
     ],
     "release_dates": [
       {
@@ -516,7 +372,7 @@
     },
     "rating": null,
     "first_release_date": 1795996800,
-    "hypes": 34,
+    "hypes": 35,
     "status": null,
     "follows": null,
     "themes": [
@@ -548,19 +404,19 @@
       423
     ],
     "languages": [
-      "French",
+      "Spanish (Spain)",
+      "Polish",
       "Chinese (Traditional)",
+      "French",
+      "Chinese (Simplified)",
       "Turkish",
-      "Russian",
+      "German",
+      "Italian",
+      "Korean",
       "English",
       "Portuguese (Brazil)",
-      "Korean",
-      "German",
       "Japanese",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian",
-      "Polish"
+      "Russian"
     ],
     "release_dates": [
       {
@@ -633,18 +489,18 @@
       57363
     ],
     "languages": [
-      "Ukrainian",
-      "French",
-      "Chinese (Traditional)",
-      "Russian",
-      "English",
-      "Korean",
-      "Portuguese (Brazil)",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
-      "Italian"
+      "Chinese (Traditional)",
+      "French",
+      "Ukrainian",
+      "Chinese (Simplified)",
+      "German",
+      "Italian",
+      "Korean",
+      "English",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -739,20 +595,20 @@
       58915
     ],
     "languages": [
-      "French",
-      "Turkish",
-      "Russian",
-      "English",
-      "Korean",
-      "Portuguese (Brazil)",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Thai",
-      "Dutch",
       "Spanish (Spain)",
+      "Polish",
+      "French",
+      "Thai",
+      "Chinese (Simplified)",
+      "Turkish",
+      "German",
       "Italian",
-      "Polish"
+      "Korean",
+      "English",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Dutch",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -837,15 +693,15 @@
       41752
     ],
     "languages": [
+      "Spanish (Spain)",
       "French",
-      "Russian",
+      "Chinese (Simplified)",
+      "German",
+      "Korean",
       "English",
       "Portuguese (Brazil)",
-      "Korean",
-      "German",
       "Japanese",
-      "Chinese (Simplified)",
-      "Spanish (Spain)"
+      "Russian"
     ],
     "release_dates": [
       {
@@ -937,16 +793,16 @@
       24760
     ],
     "languages": [
-      "French",
-      "Russian",
-      "English",
-      "Korean",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
+      "Polish",
+      "French",
+      "Chinese (Simplified)",
+      "German",
       "Italian",
-      "Polish"
+      "Korean",
+      "English",
+      "Japanese",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -1033,19 +889,19 @@
       37942
     ],
     "languages": [
-      "French",
-      "Chinese (Traditional)",
-      "Turkish",
-      "Russian",
-      "English",
-      "Korean",
-      "Portuguese (Brazil)",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
+      "Polish",
+      "Chinese (Traditional)",
+      "French",
+      "Chinese (Simplified)",
+      "Turkish",
+      "German",
       "Italian",
-      "Polish"
+      "Korean",
+      "English",
+      "Portuguese (Brazil)",
+      "Japanese",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -1144,15 +1000,15 @@
       26
     ],
     "languages": [
-      "French",
-      "Chinese (Traditional)",
-      "English",
-      "Korean",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
       "Spanish (Spain)",
-      "Italian"
+      "Chinese (Traditional)",
+      "French",
+      "Chinese (Simplified)",
+      "German",
+      "Italian",
+      "Korean",
+      "English",
+      "Japanese"
     ],
     "release_dates": [
       {
@@ -1353,18 +1209,18 @@
       104
     ],
     "languages": [
-      "French",
-      "Chinese (Traditional)",
-      "Russian",
-      "English",
-      "Portuguese (Brazil)",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Dutch",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Polish",
+      "French",
+      "Chinese (Simplified)",
+      "German",
       "Italian",
-      "Polish"
+      "English",
+      "Dutch",
+      "Japanese",
+      "Portuguese (Brazil)",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -1464,15 +1320,15 @@
       82
     ],
     "languages": [
-      "French",
+      "Spanish (Spain)",
       "Chinese (Traditional)",
+      "French",
+      "Chinese (Simplified)",
+      "German",
+      "Italian",
       "English",
       "Portuguese (Brazil)",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian"
+      "Japanese"
     ],
     "release_dates": [
       {
@@ -1590,21 +1446,21 @@
       37
     ],
     "languages": [
-      "Arabic",
-      "French",
-      "Chinese (Traditional)",
-      "Russian",
-      "English",
-      "Portuguese (Brazil)",
-      "Korean",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Thai",
       "Spanish (Mexico)",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "Polish",
+      "French",
+      "Thai",
+      "Chinese (Simplified)",
+      "German",
       "Italian",
-      "Polish"
+      "Korean",
+      "Portuguese (Brazil)",
+      "English",
+      "Japanese",
+      "Russian",
+      "Arabic"
     ],
     "release_dates": [
       {
@@ -1728,19 +1584,19 @@
       40242
     ],
     "languages": [
-      "French",
-      "Chinese (Traditional)",
-      "Turkish",
-      "Russian",
-      "English",
-      "Korean",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Thai",
       "Spanish (Spain)",
+      "Chinese (Traditional)",
+      "French",
+      "Chinese (Simplified)",
+      "Turkish",
+      "German",
       "Italian",
-      "Vietnamese"
+      "Korean",
+      "English",
+      "Thai",
+      "Japanese",
+      "Vietnamese",
+      "Russian"
     ],
     "release_dates": [
       {
@@ -1762,123 +1618,6 @@
         "status": 6,
         "platform_name": "PC (Microsoft Windows)",
         "platform_id": 6
-      }
-    ]
-  },
-  {
-    "id": 262671,
-    "name": "Grime II",
-    "cover": {
-      "id": 596644,
-      "image_id": "cocsdg"
-    },
-    "rating": null,
-    "first_release_date": 1774915200,
-    "hypes": 7,
-    "status": null,
-    "follows": null,
-    "themes": [
-      1,
-      17
-    ],
-    "pop_score": null,
-    "platforms": [
-      "Xbox Series X|S",
-      "Nintendo Switch 2",
-      "PC (Microsoft Windows)",
-      "PlayStation 5",
-      "Nintendo Switch"
-    ],
-    "platform_ids": [
-      169,
-      508,
-      6,
-      167,
-      130
-    ],
-    "genres": [
-      "Role-playing (RPG)",
-      "Indie"
-    ],
-    "genre_ids": [
-      12,
-      32
-    ],
-    "developers": [
-      "Clover Bite"
-    ],
-    "developer_ids": [
-      27705
-    ],
-    "publishers": [
-      "Kwalee"
-    ],
-    "publisher_ids": [
-      18643
-    ],
-    "languages": [
-      "French",
-      "Chinese (Traditional)",
-      "Russian",
-      "English",
-      "Korean",
-      "Portuguese (Brazil)",
-      "German",
-      "Japanese",
-      "Chinese (Simplified)",
-      "Spanish (Spain)",
-      "Italian"
-    ],
-    "release_dates": [
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 3,
-        "d": 31,
-        "date": 1774915200,
-        "status": 6,
-        "platform_name": "PC (Microsoft Windows)",
-        "platform_id": 6
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 3,
-        "d": 31,
-        "date": 1774915200,
-        "status": 6,
-        "platform_name": "PlayStation 5",
-        "platform_id": 167
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 3,
-        "d": 31,
-        "date": 1774915200,
-        "status": 6,
-        "platform_name": "Xbox Series X|S",
-        "platform_id": 169
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 11,
-        "d": 26,
-        "date": 1795651200,
-        "status": null,
-        "platform_name": "Nintendo Switch",
-        "platform_id": 130
-      },
-      {
-        "category": 0,
-        "y": 2026,
-        "m": 11,
-        "d": 26,
-        "date": 1795651200,
-        "status": null,
-        "platform_name": "Nintendo Switch 2",
-        "platform_id": 508
       }
     ]
   }
